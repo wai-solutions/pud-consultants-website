@@ -678,7 +678,7 @@ def city_page(d):
     for p in ps:
         for f in FACTS:
             if f.get('project') in (p['slug'], p['name']) and f.get('url') and f['fact'] not in [x[0] for x in fts]: fts.append((f['fact'], f['url']))
-    facts = ''.join('<div class="fact">%s <a href="%s" target="_blank" rel="noopener">Source</a></div>' % (E(a), E(b)) for a, b in fts[:4])
+    facts = ''  # sourced fact boxes removed from pages (Nov 2026)
     sib = sorted([x for x in PLACES.values() if x['country'] == country and x['slug'] != d['slug']], key=lambda x: -len(x['projects']))[:10]
     sibh = ''.join('<a class="chip" href="%s.html">%s <small>%d</small></a>' % (x['slug'], E(x['name']), len(x['projects'])) for x in sib)
     cts = {}
@@ -751,7 +751,7 @@ def project_page(p):
     gal = ''.join('<button data-full="%s%s"><img src="%s%s" alt="%s: %s" loading="lazy" width="%s" height="%s"></button>' % (R, im['src'], R, im.get('thumb') or im['src'], E(p['name']), E(im.get('note') or p['noun']), im.get('w', ''), im.get('h', '')) for im in imgs)
     st = still_for(slug)
     if st and imgs and st not in DROP and slug not in NO_CLIP_HERO: gal += '<button data-full="%s%s"><img src="%s%s" alt="%s visualisation" loading="lazy"><span class="lbl">Visualisation</span></button>' % (R, st, R, st, E(p['name']))
-    facts = ''.join('<div class="fact">%s <a href="%s" target="_blank" rel="noopener">Source</a></div>' % (E(f['fact']), E(f['url'])) for f in FACTS if f.get('project') in (slug, p['name']) and f.get('url'))
+    facts = ''  # sourced fact boxes removed from pages (Nov 2026)
     pl_ = PLINKS.get(slug); off = ('<p style="margin-top:22px"><a class="btn ghost" href="%s" target="_blank" rel="noopener">Official project site</a></p>' % E(pl_['official_url'])) if pl_ and pl_.get('official_url') else ''
     sv = [s for s in SERVICES if any(c in s['cats'] for c in p.get('category', []))][:2]
     svh = ''.join('<a class="chip" href="%sservices/%s.html">%s</a>' % (R, s['slug'], E(s['name'])) for s in sv)
