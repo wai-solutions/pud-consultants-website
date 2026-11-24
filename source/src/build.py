@@ -419,7 +419,7 @@ def legacy_section():
 
 def home():
     strip = [p for p in PART if has_logo(p)]
-    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" loading="lazy"></span>' % (p['logo'], E(p['name'])) for p in strip)
+    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" height="40"></span>' % (p['logo'], E(p['name'])) for p in strip)
     hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Dr. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
         '<div class="wrap in"><p class="kicker mono" data-r>1966 to 2026 · 60 years · Cairo · Riyadh · Dubai</p>'
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h1>'
