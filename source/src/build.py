@@ -185,6 +185,7 @@ ORG = {'@type': ['Organization', 'ProfessionalService'], '@id': BASE + '/#org', 
                     {'@type': 'Place', 'name': 'PUD Dubai (Palm Jumeirah)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Shoreline 12, Al Anbara, PH 06, Palm Jumeirah', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 509 29 8178'}]}
 WEB = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#site', 'url': BASE + '/', 'name': 'PUD Consultants', 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
 
+HERO_COUNTRIES, HERO_PROJECTS = 12, 200  # rounded figures shown in the home hero
 AMR = load('data/amr.public.json', {})
 NAV = [('about.html', 'About'), ('projects.html', 'Projects'), ('60-years.html', '60 years'), ('people.html', 'People'), ('partners.html', 'Partners'), ('sustainability.html', 'Sustainability'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
 CHAPTERS = [('index.html', 'Home', 'Back to the start'), ('60-years.html', 'The 60-year story', 'Six decades of work'), ('people.html', 'The people', 'The founder and the practice'), ('projects.html', 'The work', 'Every project on one map'),
@@ -425,7 +426,7 @@ def home():
         '<div class="row" data-r="0.3"><a class="btn red" href="projects.html">Explore the work</a><a class="btn ghost" href="projects.html#atlas">Play the 60-year map</a></div>'
         '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>+%d</b><span class="mono">Countries</span></div>'
         '<div class="stat"><b>+%d</b><span class="mono">Projects</span></div><div class="stat"><b>5</b><span class="mono">Offices: Cairo, Riyadh, Dubai</span></div></div></div>'
-        '<p class="cap">Prof. Dr. Abdallah Attia, founder of PUD. Illustrative recreation, not archive footage.</p><i class="scrollcue"></i></section>') % (len(COUNTRIES), len(PROJ))
+        '<p class="cap">Prof. Dr. Abdallah Attia, founder of PUD. Illustrative recreation, not archive footage.</p><i class="scrollcue"></i></section>') % (HERO_COUNTRIES, HERO_PROJECTS)
     marq = '<div class="logos-strip" aria-label="Clients and partners"><div class="track">%s%s</div></div>' % (tiles, tiles) if tiles else ''
     svc = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))) for s in SERVICES)
     intro = ('<section class="sec"><div class="wrap"><div class="grid2"><div><p class="kicker mono" data-r>Our expertise</p><h2 class="h-l" data-r="0.1">Every place has <em>its own rhythm.</em></h2></div>'
