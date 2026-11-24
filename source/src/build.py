@@ -985,6 +985,18 @@ def postprocess():
     print('removed unreferenced files:', removed)
     # 3. prod hosting files
     if MODE == 'prod':
+        # GitHub Pages has no server redirects: old Wix addresses and short aliases get a small page that forwards
+        from urllib.parse import unquote
+        lines = open('data/redirects-wix.txt').read().splitlines() + ['/services  /about.html  301']
+        for ln in lines:
+            parts = ln.split()
+            if len(parts) < 2 or ln.startswith('#'): continue
+            src, dst = unquote(parts[0]).strip('/'), parts[1]
+            if not src or os.path.exists(os.path.join(SITE, src, 'index.html')): continue
+            d = os.path.join(SITE, src); os.makedirs(d, exist_ok=True)
+            open(os.path.join(d, 'index.html'), 'w', encoding='utf-8').write('<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved | PUD Consultants</title><link rel="canonical" href="%s%s"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=%s"><script>location.replace(%s)</script></head><body><a href="%s">This page has moved.</a></body></html>' % (BASE, dst, dst, json.dumps(dst), dst))
+        open(SITE + '/CNAME', 'w').write('www.pudconsultants.com\n')
+        open(SITE + '/.nojekyll', 'w').write('')
         shutil.copy('data/qc/404.html', SITE + '/404.html'); shutil.copy('data/qc/_headers', SITE + '/_headers')
         red = open('data/qc/_redirects').read().rstrip() + '\n' + open('data/redirects-wix.txt').read()
         open(SITE + '/_redirects', 'w').write(red)

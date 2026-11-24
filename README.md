@@ -1,6 +1,6 @@
 # PUD Consultants website
 
-Source of the website at pudconsultants.com (served for now at https://pud.vwch4.com).
+Source of the website at https://www.pudconsultants.com (GitHub Pages, deployed from `site/` on every push to main).
 PUD Consultants: urban planning, master planning and architecture, Cairo, since 1966.
 
 ## What is here

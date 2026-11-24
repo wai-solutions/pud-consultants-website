@@ -1,4 +1,4 @@
-name: Deploy preview to GitHub Pages
+name: Deploy www.pudconsultants.com to GitHub Pages
 
 on:
   push:
@@ -20,19 +20,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # The preview must not compete with www.pudconsultants.com in search:
-      # block crawlers and add a noindex tag to every page of the published copy only.
-      - name: Mark preview as noindex
+      # site/ is the production build: indexable, canonical to www.pudconsultants.com,
+      # with CNAME, .nojekyll and forwarding pages for the old Wix addresses.
+      - name: Check the production build
         run: |
-          mkdir -p _preview && cp -R site/. _preview/
-          printf 'User-agent: *\nDisallow: /\n' > _preview/robots.txt
-          find _preview -name '*.html' -print0 | xargs -0 sed -i 's#<head>#<head><meta name="robots" content="noindex, nofollow">#'
-          touch _preview/.nojekyll
+          test -f site/CNAME && grep -q 'www.pudconsultants.com' site/CNAME
+          ! grep -rl 'noindex,nofollow,noarchive' site --include=index.html
+
+      # Custom domain for an Actions-deployed site lives in the Pages settings, not in the CNAME file.
+      - name: Point GitHub Pages at www.pudconsultants.com
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -sS -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages \
+            -d '{"cname":"www.pudconsultants.com"}' -w '\nHTTP %{http_code}\n'
 
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _preview
+          path: site
 
   deploy:
     needs: build
