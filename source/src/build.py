@@ -294,8 +294,8 @@ def home():
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of helping people live a <em>better life.</em></h1>'
         '<p class="lede" data-r="0.2">Creating spaces that interact with people. Urban planning and master planning across Egypt, Saudi Arabia and the Gulf.</p>'
         '<div class="row" data-r="0.3"><a class="btn red" href="projects.html">Explore the work</a><a class="btn ghost" href="projects.html#atlas">Play the 60-year map</a></div>'
-        '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>%d</b><span class="mono">Countries</span></div>'
-        '<div class="stat"><b>%d</b><span class="mono">Projects</span></div><div class="stat"><b>3</b><span class="mono">Offices: Riyadh, Cairo, Dubai</span></div></div></div>'
+        '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>+%d</b><span class="mono">Countries</span></div>'
+        '<div class="stat"><b>+%d</b><span class="mono">Projects</span></div><div class="stat"><b>5</b><span class="mono">Offices: Cairo, Riyadh, Dubai</span></div></div></div>'
         '<p class="cap">Prof. Dr. Abdallah Attia, founder of PUD. Illustrative recreation, not archive footage.</p><i class="scrollcue"></i></section>') % (len(COUNTRIES), len(PROJ))
     marq = '<div class="logos-strip" aria-label="Clients and partners"><div class="track">%s%s</div></div>' % (tiles, tiles) if tiles else ''
     svc = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))) for s in SERVICES)
