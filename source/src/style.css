@@ -1207,3 +1207,5 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 @media(max-width:800px){.atlas .hud .n{white-space:nowrap}}
 @media(max-width:480px){.atlas .hud .yr{font-size:30px!important}.atlas .story{top:92px!important}.atlas .hud .play{padding:9px 14px!important}}
 @media(max-width:800px){.hero .cap{padding-left:var(--gut)!important;padding-right:var(--gut)!important}}
+/* hero credit: kept for screen readers only; the visible note sits in the founder section */
+.hero .cap{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
