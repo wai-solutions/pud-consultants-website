@@ -127,15 +127,20 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 // services: active row follows scroll and hover; image frame tilts with the mouse
 (()=>{const sx=$('.svx');if(!sx)return;const rows=$$('.svx-list li',sx),figs=$$('.svx-frame figure',sx),frame=$('.svx-frame',sx),desk=matchMedia('(min-width:901px)');
   let act=0;const set=i=>{if(i===act)return;act=i;rows.forEach((r,k)=>r.classList.toggle('on',k===i));figs.forEach((f,k)=>f.classList.toggle('on',k===i))};
-  rows.forEach((r,i)=>{r.addEventListener('mouseenter',()=>desk.matches&&set(i));r.querySelector('a').addEventListener('focus',()=>set(i))});
+  const hov=matchMedia('(hover:hover) and (pointer:fine)');let hovering=false;
+  rows.forEach((r,i)=>{r.addEventListener('mouseenter',()=>{if(!hov.matches)return;hovering=true;sx.querySelector('.svx-list').classList.add('hov');set(i)});
+    r.addEventListener('mousemove',e=>{if(!hovering)return;const b=r.getBoundingClientRect();r.style.setProperty('--mx',((e.clientX-b.left)/b.width-.5).toFixed(3));r.style.setProperty('--my',((e.clientY-b.top)/b.height-.5).toFixed(3))});
+    r.addEventListener('mouseleave',()=>{r.style.removeProperty('--mx');r.style.removeProperty('--my')});
+    r.querySelector('a').addEventListener('focus',()=>set(i))});
+  sx.querySelector('.svx-list').addEventListener('mouseleave',()=>{hovering=false;sx.querySelector('.svx-list').classList.remove('hov');onScroll()});
   const list=$('.svx-list',sx);if(list)list.classList.add('scrolly');
   let rq=0;const onScroll=()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const mid=innerHeight*(desk.matches?.5:.46);let best=0,bd=1e9;
     rows.forEach((r,i)=>{const b=r.getBoundingClientRect();const c=b.top+b.height/2-mid,d=Math.abs(c);if(d<bd){bd=d;best=i}
       // focus 1 at the reading line, fading to 0 about a third of a screen away; dir -1..1 drives the thumbnail drift
-      const f=Math.max(0,1-d/(innerHeight*.34));r.style.setProperty('--f',f.toFixed(3));r.style.setProperty('--dir',Math.max(-1,Math.min(1,c/(innerHeight*.5))).toFixed(3));
+      const f=Math.max(0,1-d/(innerHeight*.22));r.style.setProperty('--f',f.toFixed(3));r.style.setProperty('--dir',Math.max(-1,Math.min(1,c/(innerHeight*.5))).toFixed(3));
       if(!desk.matches&&b.top<innerHeight*.85&&b.bottom>0)r.classList.add('in-v')});
     const lb=list&&list.getBoundingClientRect();if(lb)list.style.setProperty('--lp',Math.max(0,Math.min(1,(mid-lb.top)/lb.height)).toFixed(3));
-    set(best);const b=sx.getBoundingClientRect();frame.style.setProperty('--sp',Math.max(0,Math.min(1,-b.top/(b.height-innerHeight))).toFixed(3))})};
+    if(!hovering)set(best);const b=sx.getBoundingClientRect();frame.style.setProperty('--sp',Math.max(0,Math.min(1,-b.top/(b.height-innerHeight))).toFixed(3))})};
   addEventListener('scroll',onScroll,{passive:true});onScroll();
   if(!reduce)frame.parentElement.addEventListener('mousemove',e=>{const b=frame.getBoundingClientRect();const x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;frame.style.transform='rotateY('+(x*6).toFixed(2)+'deg) rotateX('+(-y*5).toFixed(2)+'deg)'});
   frame.parentElement.addEventListener('mouseleave',()=>{frame.style.transform=''});
@@ -172,7 +177,7 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 
 // small screens: turn card rows into swipe rails with dots and image parallax
 (()=>{const mq=matchMedia('(max-width:800px)');if(!mq.matches)return;
-  const rails=[$('.bento')].filter(Boolean);
+  const rails=[];
   rails.forEach(r=>{r.classList.add('swipe');const kids=[...r.children];const dots=document.createElement('div');dots.className='swipe-dots';dots.setAttribute('aria-hidden','true');
     dots.innerHTML=kids.map(()=>'<i></i>').join('');r.after(dots);const ds=[...dots.children];
     let rq=0;const upd=()=>{rq=0;const W=r.clientWidth;let best=0,bd=1e9;
@@ -240,3 +245,18 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 (()=>{const t=$('.fb-t'),g=$('#fbarG');if(!t||!g)return;const set=o=>{t.setAttribute('aria-expanded',String(o));g.hidden=!o};
   t.addEventListener('click',()=>set(g.hidden));
   $$('.ex-i').forEach(b=>b.addEventListener('click',()=>set(true)));})();
+
+// selected work: vertical scroll drives the projects sideways (pinned)
+(()=>{const sec=$('.hsx');if(!sec)return;const pin=$('.hsx-pin',sec),track=$('.hsx-track',sec),cards=$$('.hs-card',track),bar=$('.hsx-bar i',sec),num=$('.hsx-n b',sec);
+  if(reduce){sec.classList.add('hsx-static');return}
+  sec.classList.add('hsx-on');let dist=0,cur=0,target=0,raf=0,act=-1;
+  const measure=()=>{dist=Math.max(0,track.scrollWidth-innerWidth);sec.style.height=(dist+innerHeight)+'px';read()};
+  const read=()=>{const r=sec.getBoundingClientRect();target=Math.max(0,Math.min(1,-r.top/Math.max(1,dist)))*dist;if(!raf)raf=requestAnimationFrame(tick)};
+  const tick=()=>{raf=0;cur+=(target-cur)*.22;if(Math.abs(target-cur)<.4)cur=target;track.style.transform='translate3d('+(-cur).toFixed(1)+'px,0,0)';
+    const W=innerWidth;let best=0,bd=1e9;cards.forEach((c,i)=>{const b=c.getBoundingClientRect();const off=(b.left+b.width/2-W/2)/W;c.style.setProperty('--sx',Math.max(-1,Math.min(1,off)).toFixed(3));const d=Math.abs(off);if(d<bd){bd=d;best=i}});
+    if(best!==act){act=best;cards.forEach((c,i)=>c.classList.toggle('on',i===best));if(num)num.textContent=String(best+1).padStart(2,'0')}
+    if(bar)bar.style.transform='scaleX('+(dist?cur/dist:0).toFixed(4)+')';if(cur!==target)raf=requestAnimationFrame(tick)};
+  addEventListener('scroll',read,{passive:true});addEventListener('resize',measure);addEventListener('load',measure);measure();
+  // keyboard: focusing a card scrolls the page to it
+  cards.forEach((c,i)=>c.addEventListener('focus',()=>{const top=sec.getBoundingClientRect().top+scrollY;const x=c.offsetLeft-(innerWidth-c.offsetWidth)/2;scrollTo({top:top+Math.max(0,Math.min(dist,x)),behavior:'smooth'})}));
+})();
