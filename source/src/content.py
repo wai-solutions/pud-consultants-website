@@ -6,8 +6,8 @@ H1 = "60 years of helping people live a better life."
 
 DECADES = [
  dict(id='1966', yr='1966', to='1975', title='The professor opens a practice',
-      text='In Cairo, Prof. Abdallah Attia founds PUD in 1966. The first commissions are institutions and city fabric: university halls, bus terminals, regional plans.',
-      beats=[('1966','PUD is founded in Cairo by Prof. Abdallah Abdel Aziz Attia.'),
+      text='In Cairo, Prof. Dr. Abdallah Attia founds PUD in 1966. The first commissions are institutions and city fabric: university halls, bus terminals, regional plans.',
+      beats=[('1966','PUD is founded in Cairo by Prof. Dr. Abdallah Abdel Aziz Attia.'),
              ('1969','Lecture halls and research institute for Ain Shams University.'),
              ('1972','Al-Tahrir bus terminals in Cairo, and the regional and urban plan for Assiut governorate.'),
              ('1973','International competition success for urban communities in Kuwait (PUD record).'),
@@ -50,7 +50,7 @@ DECADES = [
              ('2022','AlUla Strategic Framework Plan; Alamein Riviera vision master plan.'),
              ('2024','Giza Pyramids destination master plan: PUD is part of the WATG team as cultural-heritage specialist.'),
              ('2025','Jabal Thabeer hillside park in Makkah is first runner-up in Future Landscapes (Unbuilt) at the Landscape Middle East Awards.'),
-             ('2026','Sixty years of PUD. Dr Amr Attia is Board Chairman of SHARE Egypt, the first SHARE forum in Africa, at the Grand Egyptian Museum in December.')],
+             ('2026','Sixty years of PUD. Prof. Dr. Amr Attia is Board Chairman of SHARE Egypt, the first SHARE forum in Africa, at the Grand Egyptian Museum in December.')],
       slugs=['khaybar-heritage-area-master-plan','sharaan-nature-reserve-master-plan','alamein-riviera-vision-master-plan','pyramids-plateau-destination-master-plan','jabal-thabeer-park','somou-boulevard-new-cairo']),
 ]
 
@@ -80,8 +80,7 @@ OFFICES = [('Cairo, Sheikh Zayed','Polygon Building 8, Office 208, SODIC, Beverl
            ('Cairo, Heliopolis','115 El Thawra Street, 5th Floor, Heliopolis, Cairo 11757, Egypt','+20 2 2414 7537'),
            ('Riyadh, Diplomatic Quarter','8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia','+966 540 39 8178'),
            ('Riyadh, Al Nakheel','7064 Salem bin Maaqil Street, Al Nakheel District, 4092 Riyadh 12393, Saudi Arabia','800 111 0893'),
-           ('Dubai, Palm Jumeirah','Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE','+971 509 29 8178'),
-           ('Dubai, Jabal Ali','Office G03, Jabal Ali Industrial First, Dubai, UAE','+971 52 2510 777')]
+           ('Dubai, Palm Jumeirah','Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE','+971 509 29 8178')]
 
 STEPS = [
  ('01','It starts as a line on paper.','Every city we have planned began as a drawing, years before anyone moved in.'),
@@ -94,7 +93,7 @@ FAV = {'tut-amon-village-hotel-and-resort','hilton-dahab-village-hotel','marina-
 OVERRIDE = {
  'tut-amon-village-hotel-and-resort': dict(summary="Tut Amun is a village hotel and resort on Lake Nasser in Aswan, designed in 1981 and completed in 1984. Its architecture follows the local Nubian tradition, in a search for a form that is both authentic and contemporary. It later received a certificate as best architectural and urban tourism project (mid-1990s)."),
  'hilton-dahab-village-hotel': dict(summary="Hilton Dahab is a village hotel on the Gulf of Aqaba in Sinai, designed in 1991 for Misr Hotels Company and built in the mid-1990s. Its rooms sit around linked lagoons below the mountains, in forms drawn from Bedouin building."),
- 'marina-el-alamein': dict(summary="Master planning, detailed design and site supervision for the 2,000 hectare Marina El Alamein tourist centre on Egypt's North Coast, for NUCA, Ministry of Housing. Built in phases from 1985, it won the State Encouragement Prize in Architecture in 1990 and became the subject of Dr Amr Attia's 1994 London master's thesis."),
+ 'marina-el-alamein': dict(summary="Master planning, detailed design and site supervision for the 2,000 hectare Marina El Alamein tourist centre on Egypt's North Coast, for NUCA, Ministry of Housing. Built in phases from 1985, it won the State Encouragement Prize in Architecture in 1990 and became the subject of Prof. Dr. Amr Attia's 1994 London master's thesis."),
 }
 
 SVC_CARD = {
@@ -109,7 +108,7 @@ SVC_CARD = {
  'development-consultancy-and-strategic-advisory': 'Feasibility, steering committees and economics for large programmes.',
 }
 MILESTONES = [
- dict(y=1966, t='PUD is founded in Cairo by Prof. Abdallah Attia.', view='egypt', hold=4200),
+ dict(y=1966, t='PUD is founded in Cairo by Prof. Dr. Abdallah Attia.', view='egypt', hold=4200),
  dict(y=1973, t='International competition success in Kuwait.', view='all', hold=3400),
  dict(y=1978, t='Tourism planning for Egypt\'s North West Coast begins.', view='coast', hold=4200),
  dict(y=1985, t='Marina El Alamein breaks ground on Egypt\'s North Coast.', view='coast', hold=3800),

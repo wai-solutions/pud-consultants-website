@@ -56,8 +56,8 @@ for s in seo.SERVICES:
     if s['slug'] in _BODY0: s['body'][0] = _BODY0[s['slug']]
 
 # ---- FAQ openers
-seo.FAQ[0] = ('Who is PUD Consultants?', 'PUD Consultants (Planning & Urban Development Consultants) plans cities, regions and destinations, and designs the buildings and landscapes inside them. Prof. Dr. Abdallah Attia founded the practice in Cairo in 1966, and Prof. Dr. Amr Attia leads it today from offices in Cairo, Riyadh and Dubai.')
-seo.FAQ[3] = ('Who founded PUD and who leads it now?', 'Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr A. Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University and an Eisenhower Fellow (2007).')
+seo.FAQ[1] = ('Who is PUD Consultants?', 'PUD Consultants (Planning & Urban Development Consultants) plans cities, regions and destinations, and designs the buildings and landscapes inside them. Prof. Dr. Abdallah Attia founded the practice in Cairo in 1966, and Prof. Dr. Amr Attia leads it today from offices in Cairo, Riyadh and Dubai.')
+seo.FAQ[4] = ('Who founded PUD and who leads it now?', 'Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University and an Eisenhower Fellow (2007).')
 
 # ---- Amr Attia highlights and page copy
 AMR_HEADLINE = 'He plans destinations from the Pyramids Plateau to Makkah, and teaches the planners who come next.'
@@ -75,7 +75,7 @@ AMR_SPOTLIGHT = [
  dict(img='assets/people/share-egypt-gem.jpg', t='SHARE Architects enters Africa', d='Announcement of the first SHARE forum on the continent, inside the Grand Egyptian Museum.', url='https://share-architects.com'),
 ]
 AMR_GIZA = [
- dict(img='assets/people/giza-framework-1.jpg', t='Giza Pyramids tourism master plan framework', d='WATG led the plan; PUD was cultural-heritage specialist. WATG says the local Egyptologists and heritage architect worked under Dr Attia\'s guidance.'),
+ dict(img='assets/people/giza-framework-1.jpg', t='Giza Pyramids tourism master plan framework', d='WATG led the plan; PUD was cultural-heritage specialist. WATG says the local Egyptologists and heritage architect worked under Prof. Dr. Amr Attia\'s guidance.'),
  dict(img='assets/people/giza-decision-framework.jpg', t='Decision framework', d='Heritage conservation, visitor experience, mobility, community benefit, economic value and resilience in one frame.'),
  dict(img='assets/people/giza-framework-2.jpg', t='The Pyramids Plateau', d='Final framework presented to the Ministry of Tourism in December 2025.'),
 ]

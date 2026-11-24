@@ -23,7 +23,7 @@ SERVICES = [
  dict(slug='sustainable-tourism-planning', name='Sustainable tourism planning', kw='sustainable tourism development',
   h1='Sustainable tourism planning and destination design',
   lead='PUD plans coasts, resorts and heritage destinations that bring visitors and income to a place without consuming what attracted them.',
-  body=['Tourism runs through PUD\'s history. Prof. Abdallah Attia planned Egypt\'s North West Coast and Marina El Alamein, and designed Tut Amun on Lake Nasser and Hilton Dahab in Sinai. His son, Dr Amr Attia, studied tourism policy on that same coast for his PhD at University College London.',
+  body=['Tourism runs through PUD\'s history. Prof. Dr. Abdallah Attia planned Egypt\'s North West Coast and Marina El Alamein, and designed Tut Amun on Lake Nasser and Hilton Dahab in Sinai. His son, Prof. Dr. Amr Attia, studied tourism policy on that same coast for his PhD at University College London.',
         'Today the practice advises on destinations in Egypt and Saudi Arabia, from the Red Sea coast and the Pyramids Plateau to AlUla, Khaybar and the holy sites of Makkah. The aim is destinations rooted in local identity, open year round and resilient in the long term.'],
   points=['Coastal and resort master planning','Destination and tourism design','Heritage tourism and visitor experience','Green Star and sustainable hotel programmes','Tourism strategy and policy','Visitor management and capacity'],
   cats=['Tourism','Hospitality'], extra=['green-star-hotels-initiative','abo-dabbab-marine-field-station'],
@@ -111,7 +111,7 @@ ARTICLES = [
             ('The coasts','The North West Coast and the Red Sea coast became tourism and residential regions from the late 1970s. PUD prepared the North West Coast plans, Marina El Alamein, Marina Matrouh and the Alamein Riviera vision, as well as projects at Ain El Sokhna, Hurghada, Dahab and Marsa Alam.'),
             ('Cities and heritage','Renewal of historic districts, university campuses and city strategies for places such as Tanta, Mansoura and Alexandria sit beside the new-city programme. PUD is the cultural-heritage specialist on the WATG team for the Giza Pyramids Plateau destination plan.')],
   related=['master-planning-and-urban-design','sustainable-tourism-planning'],
-  faq=[('Who planned Marina El Alamein?','Prof. Abdallah Attia and PUD prepared the master plan, detailed design and site supervision for Marina El Alamein for the New Urban Communities Authority (NUCA) from the 1980s.')]),
+  faq=[('Who planned Marina El Alamein?','Prof. Dr. Abdallah Attia and PUD prepared the master plan, detailed design and site supervision for Marina El Alamein for the New Urban Communities Authority (NUCA) from the 1980s.')]),
  dict(slug='urban-planning-in-saudi-arabia', title='Urban Planning in Saudi Arabia: Giga-Projects and Holy Sites | PUD', h1='Urban planning in Saudi Arabia: giga-projects, holy sites and regional plans', desc='How Saudi Arabia plans its cities and destinations: AlUla, Makkah, Jeddah, Riyadh and the Red Sea coast. A short guide from PUD Consultants.',
   q='How is Saudi Arabia planning its cities and destinations?',
   lead='Saudi Arabia is planning at every scale at once: national land strategies, giga-project destinations, holy-site programmes and the growth of Riyadh, Jeddah and Makkah.',
@@ -119,23 +119,23 @@ ARTICLES = [
             ('Holy sites and cities','The holy sites of Makkah and the growth of Jeddah, Madinah, Taif and Jazan are a long-running planning programme. PUD advised on the Al Mashaaer master plan and Jabal Thabeer park for Kidana, and worked with AECOM Arabia on Jeddah, Taif and Jazan plans.'),
             ('Regional plans and housing','Sub-regional plans for the Red Sea coast, land strategies for the Saudi Railway Organization and a density and housing framework for Riyadh, Jeddah and Dammam show the shift from single sites to systems. PUD Saudi opened in Riyadh in 2018.')],
   related=['master-planning-and-urban-design','cultural-heritage-planning'],
-  faq=[('Does PUD have an office in Saudi Arabia?','Yes. PUD Saudi was co-founded in Riyadh in 2018 by Dr Amr Attia. The Riyadh office is in the Diplomatic Quarter.')]),
+  faq=[('Does PUD have an office in Saudi Arabia?','Yes. PUD Saudi was co-founded in Riyadh in 2018 by Prof. Dr. Amr Attia. The Riyadh office is in the Diplomatic Quarter.')]),
 ]
 
 FAQ = [
  ('Is PUD Consultants related to a planned unit development (PUD)?','No. PUD Consultants is an urban planning and architecture practice in Cairo. The acronym stands for Planning and Urban Development.'),
- ('Who is PUD Consultants?','PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Abdallah Abdel Aziz Attia. It has offices in Cairo, Riyadh and Dubai.'),
+ ('Who is PUD Consultants?','PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Abdel Aziz Attia. It has offices in Cairo, Riyadh and Dubai.'),
  ('What does PUD do?','PUD offers nine services: urban and regional planning, master planning and urban design, sustainable tourism planning, cultural heritage planning, architecture and interior design, landscape planning and design, environment and sustainability, infrastructure and mobility planning, and strategic advisory.'),
  ('Where does PUD work?','PUD has worked in {C} countries: Egypt, Saudi Arabia, Kuwait, Iraq, Syria, the UAE, Qatar, Iran, Germany, Cameroon and The Gambia. Most of its projects are in Egypt and Saudi Arabia.'),
- ('Who founded PUD and who leads it now?','Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr A. Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University.'),
+ ('Who founded PUD and who leads it now?','Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University.'),
  ('How many projects has PUD done?','This site documents {N} PUD projects between 1964 and 2026 in {C} countries, each with its own page. They include built work, competition entries, master plans and advisory roles. The list grows as records are verified.'),
  ('What is PUD\'s best-known work?','Marina El Alamein on Egypt\'s North Coast, Tut Amun on Lake Nasser, Hilton Dahab on the Gulf of Aqaba, New Najaf City, the Khaybar heritage area plan, the AlUla Strategic Framework Plan, the Pyramids Plateau destination plan, Jabal Thabeer park in Makkah and Sumou Boulevard in New Cairo.'),
  ('Does PUD work with international firms?','Yes. PUD has collaborated with WATG on more than 30 projects and has worked with AECOM Arabia, Hill International, Gillespies, Systematica, HOK, Buro Happold, SHAKER Group, Dar Al-Handasah and others.'),
  ('Who are PUD\'s clients?','Clients include national authorities such as the New Urban Communities Authority (NUCA), the Ministry of Municipal and Rural Affairs and Housing, the Royal Commission for AlUla and the Royal Commission for Makkah City and Holy Sites, as well as private developers and universities.'),
  ('Does PUD plan sustainable cities?','Yes. PUD designed the Abo Dabbab marine field station on the Red Sea, worked on the Green Star Hotels initiative with GIZ and contributed as sustainability expert to WATG\'s Sharaan Nature Reserve master plan in AlUla.'),
- ('Where are PUD\'s offices?','Cairo (Beverly Hills in Sheikh Zayed City, and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel) and Dubai (Palm Jumeirah and Jabal Ali). Full addresses and phone numbers are on the contact page.'),
+ ('Where are PUD\'s offices?','Cairo (Beverly Hills in Sheikh Zayed City, and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel) and Dubai (Palm Jumeirah). Full addresses and phone numbers are on the contact page.'),
  ('Does PUD work on heritage sites?','Yes. PUD is the cultural-heritage specialist on the WATG team for the Giza Pyramids Plateau destination plan and prepared the development brief for the Khaybar heritage area master plan.'),
- ('How can I contact PUD?','Call the office closest to your site: Cairo on +20 100 198 1111 or +20 2 2414 7537, Riyadh on +966 540 39 8178 or 800 111 0893, or Dubai on +971 509 29 8178 or +971 52 2510 777.'),
+ ('How can I contact PUD?','Call the office closest to your site: Cairo on +20 100 198 1111 or +20 2 2414 7537, Riyadh on +966 540 39 8178 or 800 111 0893, or Dubai on +971 509 29 8178.'),
 ]
 
 # explicit place aliases: city string -> [(place name, country, kind)]; kind 'city' or 'region'

@@ -10,8 +10,10 @@ $('.burger')?.addEventListener('click',()=>{nav.classList.toggle('open');$('.bur
 $$('.nav li a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
 addEventListener('keydown',e=>{if(e.key==='Escape')nav.classList.remove('open')});
 
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -5% 0px'});
-$$('[data-r]').forEach(el=>{const d=el.dataset.r;if(d&&d!=='1')el.style.transitionDelay=d+'s';io.observe(el)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px 15% 0px'});
+$$('[data-r]').forEach(el=>{const d=parseFloat(el.dataset.r);if(d&&d!==1)el.style.transitionDelay=Math.min(d,.2)/2+'s';io.observe(el)});
+// never leave content hidden: anything already scrolled past is shown at once
+let rq=0;addEventListener('scroll',()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const h=innerHeight;$$('[data-r]:not(.in)').forEach(el=>{if(el.getBoundingClientRect().top<h){el.classList.add('in');io.unobserve(el)}})})},{passive:true});
 
 function hasGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
 const GL=hasGL()&&!reduce;

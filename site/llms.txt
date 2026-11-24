@@ -1,12 +1,12 @@
 # PUD Consultants
 
-> PUD Consultants (Planning and Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. Offices: Cairo, Riyadh and Dubai. It is not related to planned unit developments or public utility districts, which share the acronym PUD.
+> PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. Offices: Cairo, Riyadh and Dubai. It is not related to planned unit developments or public utility districts, which share the acronym PUD.
 
 ## Key facts
 - Founded: 1966, Cairo, Egypt
 - Founder: Prof. Dr. Abdallah Abdel Aziz Attia, architect and professor
-- Leader: Prof. Dr. Amr A. Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt
-- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah and Jabal Ali)
+- Leader: Prof. Dr. Amr Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt
+- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah)
 - Work: 192 documented projects in 11 countries, mostly Egypt and Saudi Arabia
 - Partners include WATG, AECOM Arabia, Gillespies, Systematica, Dar Al-Handasah
 
@@ -70,7 +70,6 @@
 - Riyadh, Diplomatic Quarter: 8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia, +966 540 39 8178
 - Riyadh, Al Nakheel: 7064 Salem bin Maaqil Street, Al Nakheel District, 4092 Riyadh 12393, Saudi Arabia, 800 111 0893
 - Dubai, Palm Jumeirah: Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE, +971 509 29 8178
-- Dubai, Jabal Ali: Office G03, Jabal Ali Industrial First, Dubai, UAE, +971 52 2510 777
 
 ## Optional
 - [Full project list](https://www.pudconsultants.com/llms-full.txt)

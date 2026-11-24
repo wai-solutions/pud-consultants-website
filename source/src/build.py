@@ -180,14 +180,13 @@ ORG = {'@type': ['Organization', 'ProfessionalService'], '@id': BASE + '/#org', 
                     {'@type': 'Place', 'name': 'PUD Cairo (Heliopolis)', 'address': {'@type': 'PostalAddress', 'streetAddress': '115 El Thawra Street, 5th Floor, Heliopolis', 'addressLocality': 'Cairo', 'postalCode': '11757', 'addressCountry': 'EG'}, 'telephone': '+20 2 2414 7537'},
                     {'@type': 'Place', 'name': 'PUD Riyadh (Diplomatic Quarter)', 'address': {'@type': 'PostalAddress', 'streetAddress': '8620 Ibn Mousa Street, Diplomatic Quarter', 'addressLocality': 'Riyadh', 'postalCode': '2513', 'addressCountry': 'SA'}, 'telephone': '+966 540 39 8178'},
                     {'@type': 'Place', 'name': 'PUD Riyadh (Al Nakheel)', 'address': {'@type': 'PostalAddress', 'streetAddress': '7064 Salem bin Maaqil Street, Al Nakheel District', 'addressLocality': 'Riyadh', 'postalCode': '12393', 'addressCountry': 'SA'}, 'telephone': '800 111 0893'},
-                    {'@type': 'Place', 'name': 'PUD Dubai (Palm Jumeirah)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Shoreline 12, Al Anbara, PH 06, Palm Jumeirah', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 509 29 8178'},
-                    {'@type': 'Place', 'name': 'PUD Dubai (Jabal Ali)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Office G03, Jabal Ali Industrial First', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 52 2510 777'}]}
+                    {'@type': 'Place', 'name': 'PUD Dubai (Palm Jumeirah)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Shoreline 12, Al Anbara, PH 06, Palm Jumeirah', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 509 29 8178'}]}
 WEB = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#site', 'url': BASE + '/', 'name': 'PUD Consultants', 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
 
 AMR = load('data/amr.public.json', {})
 NAV = [('projects.html', 'Projects'), ('services.html', 'Services'), ('60-years.html', '60 years'), ('people.html', 'People'), ('partners.html', 'Partners'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
 CHAPTERS = [('index.html', 'Home', 'Back to the start'), ('60-years.html', 'The 60-year story', 'Six decades of work'), ('people.html', 'The people', 'The founder and the practice'), ('projects.html', 'The work', 'Every project on one map'),
-            ('services.html', 'What we do', 'Planning, design and advice'), ('partners.html', 'Who we plan with', 'Clients and partners'), ('contact.html', 'Talk to us', 'Three offices')]
+            ('services.html', 'What we do', 'Planning, design and advice'), ('partners.html', 'Who we plan with', 'Clients and partners'), ('contact.html', 'Talk to us', 'Five offices')]
 
 def fit(*c):
     for t in c:
@@ -208,7 +207,7 @@ def page(path, title, body, desc='', active='', schema=None, og_img=None, data=N
             '<meta name="theme-color" content="#000000"><meta property="og:type" content="website"><meta property="og:site_name" content="PUD Consultants"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s"><meta property="og:image" content="%s"><meta property="og:locale" content="en_US">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="%s"><meta name="twitter:description" content="%s"><meta name="twitter:image" content="%s">'
             '<link rel="icon" href="%sassets/logo-mark.png"><link rel="preload" href="%sfonts/antonio-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="%scss/style.css">%s%s</head>'
-            '<body class="%s"><a class="skip" href="#main">Skip to content</a><header class="nav"><div class="wrap in"><a class="brand" href="%sindex.html" aria-label="PUD Consultants, home"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DESIGN</small></span></a>'
+            '<body class="%s"><a class="skip" href="#main">Skip to content</a><header class="nav"><div class="wrap in"><a class="brand" href="%sindex.html" aria-label="PUD Consultants, home"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DEVELOPMENT</small></span></a>'
             '<nav aria-label="Main"><ul>%s</ul></nav><a class="btn red film" href="%scontact.html">Talk to us</a><button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></div></header>'
             '<main id="main">%s</main>%s%s<script type="module" src="%sjs/app.js"></script></body></html>') % (
         E(title), E(d), robots, url, url, url, E(title), E(d), url, og, E(title), E(d), og, R, R, R, sch, head_extra, body_cls, R, R, lis, R, body, footer(R), dat, R)
@@ -260,7 +259,7 @@ def chapter(i, R=''):
     return '<nav class="chapter" aria-label="Story chapters"><div class="wrap"><div class="dots" aria-hidden="true">%s</div><div class="row">%s%s</div></div></nav>' % (dots, a, b)
 
 def welcome_strip(R=''):
-    return '<div class="welcome" data-until="2026-11-26">Dr Amr Attia speaks at SHARE Kazakhstan in Almaty today and tomorrow. <a href="%samr-attia.html">Read his profile</a></div>' % R
+    return '<div class="welcome" data-until="2026-11-26">Prof. Dr. Amr Attia speaks at SHARE Kazakhstan in Almaty on 24 and 25 November. <a href="%samr-attia.html">Read his profile</a></div>' % R
 
 def cta(R='', text='Talk to us', head='Planning something that people will live in?'):
     return '<section class="sec ctaband"><div class="wrap"><h2 class="h-l">%s</h2><p style="margin-top:22px"><a class="btn red" href="%scontact.html">%s</a> <a class="btn ghost" href="%sprojects.html">See our work</a></p></div></section>' % (E(head), R, text, R)
@@ -284,12 +283,12 @@ def with_img_first(ps): return sorted(ps, key=lambda p: (not p.get('featured'), 
 # ---------- pages ----------
 def founder_block(reel_first=True):
     tabs = ''.join('<button aria-pressed="%s" data-src="assets/founder/%s.mp4" data-poster="assets/founder/%s.jpg">%s</button>' % ('true' if i == 0 else 'false', k, k, lab) for i, (k, lab) in enumerate([('draw', 'Drawing'), ('point', 'The plan'), ('stand', 'The city model'), ('award', 'Recognition')]))
-    return '<div class="reel" data-r><video muted loop playsinline preload="metadata" src="assets/founder/draw.mp4" poster="assets/founder/draw.jpg" aria-label="Illustrative recreation of Prof. Abdallah Attia at work"></video><div class="tabs">%s</div></div>' % tabs
+    return '<div class="reel" data-r><video muted loop playsinline preload="metadata" src="assets/founder/draw.mp4" poster="assets/founder/draw.jpg" aria-label="Illustrative recreation of Prof. Dr. Abdallah Attia at work"></video><div class="tabs">%s</div></div>' % tabs
 
 def home():
     strip = [p for p in PART if has_logo(p)]
     tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" loading="lazy"></span>' % (p['logo'], E(p['name'])) for p in strip)
-    hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
+    hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Dr. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
         '<div class="wrap in"><p class="kicker mono" data-r>Urban planning consultants · Since 1966 · Cairo · Riyadh · Dubai</p>'
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of helping people live a <em>better life.</em></h1>'
         '<p class="lede" data-r="0.2">Creating spaces that interact with people. Urban planning and master planning across Egypt, Saudi Arabia and the Gulf.</p>'
@@ -300,7 +299,7 @@ def home():
     marq = '<div class="logos-strip" aria-label="Clients and partners"><div class="track">%s%s</div></div>' % (tiles, tiles) if tiles else ''
     svc = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))) for s in SERVICES)
     intro = ('<section class="sec"><div class="wrap"><div class="grid2"><div><p class="kicker mono" data-r>What we do</p><h2 class="h-l" data-r="0.1">We plan the places <em>people live in.</em></h2></div>'
-        '<div class="stack" data-r="0.2"><p class="p-l">PUD Consultants (Planning and Urban Development Consultants) is an urban planning, master planning and architecture practice, founded in Cairo in 1966 by Prof. Abdallah Attia and led today by Prof. Dr. Amr Attia. We plan cities, regions, campuses and destinations, and design the buildings, landscapes and heritage strategies that make them work. What we draw becomes streets, schools, homes and shorelines for the people who use them.</p>'
+        '<div class="stack" data-r="0.2"><p class="p-l">PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning and architecture practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We plan cities, regions, campuses and destinations, and design the buildings, landscapes and heritage strategies that make them work. What we draw becomes streets, schools, homes and shorelines for the people who use them.</p>'
         '<p class="p-l">Founded in Cairo in 1966, we work across Egypt, Saudi Arabia and the wider region for national authorities, royal commissions, developers and universities, with partners such as WATG and AECOM.</p></div></div>'
         '<div class="svcgrid" data-r="0.2">%s</div></div></section>') % svc
     steps = ''.join('<div class="step"><h2>%s</h2><p>%s</p></div>' % (E(b), E(c)) for a, b, c in STEPS)
@@ -361,7 +360,7 @@ def people():
         founder_block(), E(FOUNDER_LEAD), E(FOUNDER_BIO), f, E(FOUNDER_LOVED_NOTE), loved, amr_photo('', 'light'), E(AMR_HEADLINE), stat_tiles(AMR_TILES)) + chapter(2)
     pers = [{'@context': 'https://schema.org', '@type': 'Person', '@id': BASE + '/people.html#abdallah-attia', 'name': 'Abdallah Abdel Aziz Attia', 'description': 'Architect, professor and founder of PUD Consultants in 1966.', 'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Alexandria University'}, {'@type': 'CollegeOrUniversity', 'name': 'ETH Zurich'}], 'jobTitle': 'Professor of Architecture; founder of PUD Consultants', 'worksFor': {'@id': BASE + '/#org'}},
             {'@context': 'https://schema.org', '@type': 'Person', '@id': BASE + '/amr-attia.html#amr-attia', 'name': 'Amr A. Attia', 'jobTitle': 'Principal, PUD Consultants; Professor of Urban Planning, Ain Shams University', 'worksFor': {'@id': BASE + '/#org'}, 'url': BASE + '/amr-attia.html'}]
-    return page('people.html', 'Prof. Abdallah Attia and Dr Amr Attia | PUD Consultants', body, 'Meet Prof. Dr. Abdallah Attia, who founded PUD in Cairo in 1966, and Prof. Dr. Amr Attia, his son, who leads the practice today.', 'people.html',
+    return page('people.html', 'Prof. Dr. Abdallah Attia and Prof. Dr. Amr Attia | PUD Consultants', body, 'Meet Prof. Dr. Abdallah Attia, who founded PUD in Cairo in 1966, and Prof. Dr. Amr Attia, his son, who leads the practice today.', 'people.html',
                 schema=pers + [crumbs([('Home', ''), ('People', 'people.html')])])
 
 
@@ -448,7 +447,7 @@ def partners_page():
 def contact_page():
     off = ''.join('<div><h2 class="h-m">%s</h2><p class="p-l" style="margin-top:10px">%s</p><p class="p-l"><a class="btn red call" href="tel:%s">Call %s</a></p></div>' % (E(a), E(b), re.sub(r'[^+0-9]', '', c), E(c)) for a, b, c in OFFICES)
     body = '<section class="page-h"><div class="wrap"><p class="kicker mono">Contact</p><h1 class="h-xl" style="max-width:14ch">Talk to us about <em>your next project.</em></h1><p class="lede">Call the office closest to your site. We plan and design from Cairo, Riyadh and Dubai.</p></div></section><section class="sec" style="padding-top:50px"><div class="wrap"><div class="offices">%s</div><div class="photo-strip"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Map of the Middle East with PUD project locations" loading="lazy"></div></div></section>' % off + chapter(6)
-    return page('contact.html', 'Contact PUD Consultants | Offices in Cairo, Riyadh and Dubai', body, 'Talk to PUD about a plan, a destination or a design. Call Cairo +20 100 198 1111, Riyadh +966 540 39 8178 or Dubai +971 52 2510 777.', 'contact.html',
+    return page('contact.html', 'Contact PUD Consultants | Offices in Cairo, Riyadh and Dubai', body, 'Talk to PUD about a plan, a destination or a design. Call Cairo +20 100 198 1111, Riyadh +966 540 39 8178 or Dubai +971 509 29 8178.', 'contact.html',
                 schema=[crumbs([('Home', ''), ('Contact', 'contact.html')]), dict(ORG, **{'@context': 'https://schema.org'})])
 
 RED_SEA = ['port-ghalib-master-plan', 'abo-dabbab-marine-field-station', 'green-star-hotels-initiative', 'yuwdda-sub-regional-plan', 'ain-el-sokhna-tourist-center', 'hurghada-apartments-hotel-and-shopping-mall', 'pyramisa-apartment-hotel-hurghada', 'castle-zaman-hotel-red-sea']
@@ -619,12 +618,12 @@ def project_page(p):
 def llms():
     sig = [p for p in PROJ if p.get('featured')][:10]
     L = ['# PUD Consultants', '',
-         '> PUD Consultants (Planning and Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. Offices: Cairo, Riyadh and Dubai. It is not related to planned unit developments or public utility districts, which share the acronym PUD.', '',
+         '> PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. Offices: Cairo, Riyadh and Dubai. It is not related to planned unit developments or public utility districts, which share the acronym PUD.', '',
          '## Key facts',
          '- Founded: 1966, Cairo, Egypt',
          '- Founder: Prof. Dr. Abdallah Abdel Aziz Attia, architect and professor',
-         '- Leader: Prof. Dr. Amr A. Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt',
-         '- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah and Jabal Ali)',
+         '- Leader: Prof. Dr. Amr Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt',
+         '- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah)',
          '- Work: %d documented projects in %d countries, mostly Egypt and Saudi Arabia' % (len(PROJ), len(COUNTRIES)),
          '- Partners include WATG, AECOM Arabia, Gillespies, Systematica, Dar Al-Handasah', '',
          '## Key pages', '- [Home](%s/)' % BASE, '- [60 years](%s/60-years.html)' % BASE, '- [Projects](%s/projects.html)' % BASE, '- [Services](%s/services.html)' % BASE, '- [People](%s/people.html)' % BASE, '- [Amr Attia](%s/amr-attia.html)' % BASE, '- [Partners](%s/partners.html)' % BASE, '- [FAQ](%s/faq.html)' % BASE, '- [Contact](%s/contact.html)' % BASE, '', '## Services']
