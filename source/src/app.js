@@ -221,3 +221,10 @@ addEventListener('load',()=>ScrollTrigger.refresh());
   const base=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
   fetch(base+'build.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.text():'').then(b=>{b=b.trim();if(!b||b===m.content)return;
     let k='pudReload:'+b;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){return}location.reload()}).catch(()=>{})})();
+
+// selected work: images drift inside their cards while scrolling (desktop; phones use the swipe parallax)
+(()=>{const cards=[...document.querySelectorAll('.bento .pcard')];if(!cards.length||reduce)return;const mq=matchMedia('(min-width:801px)');
+  const vis=new Set();const io2=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?vis.add(e.target):vis.delete(e.target)),{rootMargin:'100px 0px'});cards.forEach(c=>io2.observe(c));
+  let rq=0;const upd=()=>{rq=0;if(!mq.matches)return;const h=innerHeight;vis.forEach(c=>{const r=c.getBoundingClientRect();const off=(r.top+r.height/2-h/2)/h;const im=c.querySelector('img');
+    if(im)im.style.transform='translate3d(0,'+(off*-9).toFixed(2)+'%,0) scale(1.22)'})};
+  addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();})();

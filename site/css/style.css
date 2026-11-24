@@ -1026,3 +1026,5 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 .svx-frame figure.on{visibility:visible;transition:opacity .9s ease,visibility 0s}
 .dz-bg{transition:opacity .45s ease,visibility 0s linear .45s!important}
 .dz-bg.on{transition:opacity .45s ease,visibility 0s!important}
+/* selected work parallax: image larger than its card so the drift never shows an edge */
+@media(min-width:801px){.bento .pcard img{transform:scale(1.22);transition:none!important;will-change:transform}.bento .pcard:hover img{filter:brightness(1.08)}}
