@@ -84,7 +84,7 @@
   "verified_by": "fetched"
  },
  {
-  "project": "Golden Gate, New Cairo",
+  "project": "golden-gate-new-cairo",
   "fact": "With a total investment cost of EGP 20 billion, Golden Gate is in a prime location in the heart of New Cairo.",
   "url": "https://redconproperties.com/redcon-for-offices-and-commercial-centers-achieves-sales-of-egp-1-billion-in-its-first-year-of-operation",
   "source_type": "official",
@@ -93,7 +93,7 @@
   "project_site": "https://redconcon.com/project/golden-gate"
  },
  {
-  "project": "Golden Gate, New Cairo",
+  "project": "golden-gate-new-cairo",
   "fact": "ROCC intended to complete the development of Golden Gate over two phases within 7 years.",
   "url": "https://emasr.net/rocc-celebrates-the-groundbreaking-of-its-egp-20-bn-flagship-project-golden-gate",
   "source_type": "press",
@@ -812,5 +812,29 @@
   "verified_by": "fetched",
   "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
   "quote": "Hurghada is a coastal city that serves as the largest city and capital of the Red Sea Governorate of Egypt."
+ },
+ {
+  "project": "golden-gate-new-cairo",
+  "fact": "Golden Gate has 29 buildings and about 250,000 m² of built-up area; REDCON Construction is building the core and shell, facades, landscape and green roofs.",
+  "url": "https://redconcon.com/project/golden-gate/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "golden-gate-new-cairo",
+  "fact": "Five Golden Gate buildings received the EDGE Advanced preliminary certificate (May 2024), with savings of up to 53% in energy and 44% in water against conventional buildings.",
+  "url": "https://www.redconproperties.com/redcon-properties-golden-gate-project-awarded-prestigious-edge-certification-for-sustainable-and-environmental-practices/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "golden-gate-new-cairo",
+  "fact": "More than 1,500 tons of construction waste were recycled on site in 2023 and the first quarter of 2024.",
+  "url": "https://www.redconproperties.com/redcon-properties-golden-gate-project-awarded-prestigious-edge-certification-for-sustainable-and-environmental-practices/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
  }
 ]
