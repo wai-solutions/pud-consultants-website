@@ -547,11 +547,31 @@ def amr_page():
             'alumniOf': {'@type': 'CollegeOrUniversity', 'name': 'University College London'}, 'sameAs': ['https://www.linkedin.com/in/amr-attia-9181898/', 'https://share-architects.com/speaker/amr-attia/']}
     return page('amr-attia.html', 'Prof. Dr. Amr Attia | Urban Planner, PUD Consultants', body, 'Prof. Dr. Amr Attia leads PUD Consultants and teaches urban planning at Ain Shams University. Eisenhower Fellow. Board Chairman of SHARE Egypt 2026.', 'people.html', schema=[pers, crumbs([('Home', ''), ('People', 'people.html'), ('Amr Attia', 'amr-attia.html')])], og_img='assets/people/amr-attia.jpg')
 
+def expertise_filters():
+    n = {x['slug']: sum(1 for p in PROJ if x['slug'] in svc_of(p)) for x in SERVICES}
+    big = '<button type="button" class="ex-i" data-filter="svc:All" aria-pressed="true">All projects<sup>%d</sup></button>' % len(PROJ) + ''.join(
+        '<button type="button" class="ex-i" data-filter="svc:%s" aria-pressed="false">%s<sup>%d</sup></button>' % (x['slug'], E(x['name']), n[x['slug']]) for x in SERVICES)
+    pill = lambda k, v, lab, on=False: '<button type="button" class="fp" data-filter="%s:%s" aria-pressed="%s">%s</button>' % (k, E(v), 'true' if on else 'false', E(lab))
+    region = pill('region', 'All', 'All regions', True) + pill('region', 'Egypt', 'Egypt') + pill('region', 'Saudi Arabia', 'Saudi Arabia') + pill('region', 'Intl', 'International')
+    types = pill('svc', 'All', 'All types', True) + ''.join(pill('svc', x['slug'], x['name']) for x in SERVICES)
+    era = pill('era', 'All', 'All years', True) + pill('era', '2020', '2020s') + pill('era', '2010', '2010s') + pill('era', '2000', '2000s') + pill('era', 'pre', 'Before 2000')
+    return ('</div></section><section class="sec exf" id="expertise"><div class="wrap"><div class="ex-head"><p class="kicker mono">Expertise</p><div>'
+            '<h2 class="ex-h">Every place has its own rhythm. Every challenge its own context.</h2>'
+            '<p class="p-l" style="margin-top:18px">Our work crosses planning, design and heritage, and each project brings together the best-fit minds from PUD\'s network of planners, architects, economists and specialists.</p>'
+            '<div class="ex-list" role="group" aria-label="Expertise">%s</div></div></div></div>'
+            '<div class="fbar"><div class="wrap fbar-top"><span class="fb-t"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg>Filter by</span>'
+            '<input class="search" type="search" placeholder="Search projects, cities, clients" aria-label="Search projects"><span class="count"></span></div>'
+            '<div class="wrap fbar-g"><div role="group" aria-label="Region"><h4>Region</h4>%s</div><div role="group" aria-label="Project type"><h4>Project type</h4>%s</div><div role="group" aria-label="Era"><h4>Era</h4>%s</div></div></div>'
+            '<div class="wrap" style="padding-top:34px">') % (big, region, types, era)
+
+def svc_of(p):
+    return [x['slug'] for x in SERVICES if any(c in x['cats'] for c in p.get('category', [])) or p['slug'] in x['extra']]
+
 def projects_page():
     cs = sorted({p['country'] for p in PROJ}); cats = sorted({c for p in PROJ for c in p.get('category', [])})
     ch = lambda k, vals: ''.join('<button class="chip" data-filter="%s:%s" aria-pressed="%s">%s</button>' % (k, E(v), 'true' if v == 'All' else 'false', E(v)) for v in ['All'] + vals)
     data = [dict(slug=p['slug'], name=p['name'], city=p.get('city', ''), country=p['country'], year=str(p['year']), year_start=p.get('year_start') or 2000, client=p.get('client', ''), category=p.get('category', []), lat=p.get('lat'), lon=p.get('lon'),
-                 featured=bool(p.get('featured')), thumb=thumb(p['slug']) or '', url='projects/%s.html' % p['slug']) for p in PROJ]
+                 featured=bool(p.get('featured')), thumb=thumb(p['slug']) or '', url='projects/%s.html' % p['slug'], svc=svc_of(p)) for p in PROJ]
     order = sorted(range(len(PROJ)), key=lambda i: (not PROJ[i].get('featured'), not thumb(PROJ[i]['slug']), -(PROJ[i].get('year_start') or 0)))
     grid = ''.join(card(PROJ[i], '', i=i) for i in order)
     ccs = ''.join('<a href="countries/%s.html"><b>%s</b><span>%d projects</span></a>' % (cslug(c), E(c), len(ps)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1])))
@@ -561,11 +581,10 @@ def projects_page():
         '<div class="side"><button class="chip" data-view="all">Region</button><button class="chip" data-view="egypt">Egypt</button><button class="chip" data-view="ksa">Saudi Arabia</button><button class="chip" data-view="makkah">Makkah</button><span style="display:flex;gap:6px"><button class="chip" data-view="in" aria-label="Zoom in">+</button><button class="chip" data-view="out" aria-label="Zoom out">&minus;</button></span></div>'
         '<div class="hud"><div class="yrbox"><div class="yr">2026</div><div class="n mono"></div></div><input type="range" min="1964" max="2026" value="2026" aria-label="Year"><button class="btn red play">Play the story</button><button class="chip speed">Speed 1x</button><div class="legend"><span>1964</span><i></i><span>2026</span></div></div></div>'
         '<div class="cardsel"><img alt=""><div><h3 class="h-m"></h3><p class="note" style="font-size:14px"></p></div><a class="btn ghost" href="#">Open project</a></div>'
-        '<div class="tools"><input class="search" type="search" placeholder="Search projects, cities, clients" aria-label="Search projects"><span class="count"></span></div>'
-        '<div class="tools" role="group" aria-label="Country">%s</div><div class="tools" role="group" aria-label="Type">%s</div>'
+        + expertise_filters() +
         '<div class="pgrid">%s</div>'
         '<h2 class="h-m" style="margin-top:70px">Browse by country</h2><div class="cnrow">%s</div><h2 class="h-m" id="cities" style="margin-top:50px">Browse by city and region</h2><div class="chiplist">%s</div>'
-        '<p class="note" style="margin-top:26px">The map shows the Middle East at city-level positions. Projects in Germany, Cameroon and The Gambia appear in the list only.</p></div></section>') % (ch('country', cs), ch('cat', cats), grid, ccs, cities) + chapter(3)
+        '<p class="note" style="margin-top:26px">The map shows the Middle East at city-level positions. Projects in Germany, Cameroon and The Gambia appear in the list only.</p></div></section>') % (grid, ccs, cities) + chapter(3)
     return page('projects.html', 'Urban Planning Projects in Egypt, Saudi Arabia and Beyond | PUD', body,
                 'Explore %d PUD projects on an interactive map: urban plans, master plans, destinations and buildings in Egypt, Saudi Arabia and the wider region.' % len(PROJ), 'projects.html',
                 schema=[crumbs([('Home', ''), ('Projects', 'projects.html')]), {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD Consultants projects', 'numberOfItems': len(PROJ), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/projects/' + PROJ[j]['slug'] + '.html', 'name': PROJ[j]['name']} for i, j in enumerate(order[:60])]}], data=data, ms=MILESTONES)

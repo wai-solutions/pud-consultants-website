@@ -67,8 +67,10 @@ if(lb){const imgs=$$('.gal button');let i=0;const img=$('img',lb);const show=n=>
 const DATA=window.__PROJECTS||[];const MS=window.__MILESTONES||[];
 const box=$('.atlas .box');
 let atlas=null;
-const state={q:'',country:'All',cat:'All',year:2026};
-function pass(p){return (state.country==='All'||p.country===state.country)&&(state.cat==='All'||p.category.includes(state.cat))&&(!state.q||(p.name+' '+p.city+' '+p.client+' '+p.country).toLowerCase().includes(state.q))}
+const state={q:'',country:'All',cat:'All',region:'All',svc:'All',era:'All',year:2026};
+const eraOk=y=>state.era==='All'||(state.era==='pre'?y<2000:(y>=+state.era&&y<+state.era+10));
+const regOk=c=>state.region==='All'||(state.region==='Intl'?(c!=='Egypt'&&c!=='Saudi Arabia'):c===state.region);
+function pass(p){return (state.country==='All'||p.country===state.country)&&(state.cat==='All'||p.category.includes(state.cat))&&regOk(p.country)&&(state.svc==='All'||(p.svc||[]).includes(state.svc))&&eraOk(p.year_start)&&(!state.q||(p.name+' '+p.city+' '+p.client+' '+p.country).toLowerCase().includes(state.q))}
 function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct)ct.textContent=n+' project'+(n===1?'':'s')}
 function count(){return DATA.filter(p=>pass(p)&&p.year_start<=state.year).length}
 function applyMap(){atlas&&atlas.setFilter(pass);atlas&&atlas.setYear(state.year);const y=$('.atlas .yr');if(y)y.textContent=state.year;const n=$('.atlas .n');if(n)n.textContent=count()+' projects'}
@@ -85,11 +87,12 @@ function showNow(y){if(!now)return;const L=DATA.filter(p=>p.year_start===y&&pass
 if(box&&GL&&DATA.length){
   Promise.all([fetch(box.dataset.geo).then(r=>r.json()),import('./atlas.js')]).then(([geo,m])=>{
     atlas=m.atlasScene(box,geo,DATA,{onSelect:p=>{const c=$('.cardsel');if(!c)return;c.classList.add('on');const im=$('img',c);im.src=p.thumb||'';im.style.display=p.thumb?'':'none';$('h3',c).textContent=p.name;$('p',c).textContent=(p.city?p.city+', ':'')+p.country+' · '+p.year+' · '+p.client;$('a',c).href=p.url}});
-    applyAll();
+    applyAll();box.classList.add('ready');$('canvas',box).addEventListener('webglcontextlost',()=>box.classList.remove('ready'));
     $$('[data-view]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.view;if(v==='in')atlas.zoomBy(1.4);else if(v==='out')atlas.zoomBy(1/1.4);else moveTo(v)}));
   });
 }else if(box){box.classList.add('static')}
-$$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const [k,v]=b.dataset.filter.split(':');state[k]=v;$$('[data-filter^="'+k+':"]').forEach(x=>x.setAttribute('aria-pressed',x===b));applyAll()}));
+$$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const [k,v]=b.dataset.filter.split(':');state[k]=v;$$('[data-filter^="'+k+':"]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter===b.dataset.filter)));applyAll();
+  if(b.classList.contains('ex-i')){const g=$('.pgrid');g&&g.scrollIntoView({behavior:'smooth',block:'start'})}}));
 $('.search')?.addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();applyAll()});
 const sl=$('.atlas input[type=range]');const playBtn=$('.play');let run=0,speed=1;
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
