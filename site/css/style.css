@@ -1074,3 +1074,11 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 .fbar-g[hidden]{display:none}
 .fbar-top .count{font-size:15px;color:#bdbdbd}.fbar-top .count b{color:#ffffff;font-weight:600}
 .fbar-top .search{margin-left:auto}
+/* expertise laid out like the homepage sections: kicker above, everything from the left edge */
+.ex-head{display:block}
+.ex-head>.kicker{margin:0 0 14px}
+.ex-head .h-l{max-width:22ch}
+.ex-head .p-l{max-width:62ch}
+.ex-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 48px}
+@media(max-width:900px){.ex-list{grid-template-columns:1fr 1fr}}@media(max-width:560px){.ex-list{grid-template-columns:1fr}}
+.ex-i{display:block;align-self:start}
