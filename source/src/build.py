@@ -318,8 +318,10 @@ def home():
         '<div><p class="kicker mono" data-r>The founder</p><h2 class="h-l" data-r="0.1">Prof. Dr. Abdallah <em>Attia</em></h2><p class="p-l" style="margin-top:20px" data-r="0.2">%s</p>'
         '<ul class="facts" data-r="0.25">%s</ul><p class="note">The footage here is an illustrative recreation made for the 60-year celebration. It is not archive film.</p><p style="margin-top:22px"><a class="btn ghost" href="people.html">Read his story</a></p></div></div></div></section>') % (founder_block(), E(FOUNDER_LEAD), facts)
     feat = [p for p in PROJ if p.get('featured') and thumb(p['slug'])][:6]
+    nac = BYSLUG.get('new-administrative-capital-phases-2-4')
+    if nac and nac not in feat and thumb(nac['slug']): feat.insert(1, nac)  # Egypt's New Administrative Capital, always in Selected work
     bento = ''.join(card(p, '', tag=p['cat1'], cls='b%d' % (i + 1)) for i, p in enumerate(feat))
-    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">Six places that show <em>how we plan.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
+    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">Six decades that show <em>how we plan.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
     cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b><span>%d projects</span></a>' % (cslug(c), E(c), len(ps)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
     teaser = ('<section class="sec mapteaser"><div class="wrap grid2"><div><p class="kicker mono" data-r>The map</p><h2 class="h-l" data-r="0.1">Sixty years of work, <em>on one map.</em></h2><p class="p-l" style="margin:18px 0 26px" data-r="0.2">Watch the practice spread from Cairo across the region. Every pin opens a project page with its client, partners and facts.</p><p data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div>'
               '<a class="mapimg" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy"></a></div>'
