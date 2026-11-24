@@ -326,7 +326,7 @@ STORY = [('cmc-1-vision', 'Cairo Media City vision concept master plan at night,
          ('gp-4-people', 'Families walking and cycling along a green stream walk, Green Pearl, Dubai', 'green-pearl-prime-dubai-competition', 'Green Pearl, Dubai', 'Concept master plan competition · Dubai, UAE')]
 def depth_story():
     shots = ''.join('<figure class="shot%s" data-i="%d" data-href="projects/%s.html" data-name="%s" data-sub="%s"><img src="assets/story/%s.jpg" srcset="assets/story/%s-m.jpg 1000w, assets/story/%s.jpg 1800w" sizes="100vw" alt="%s"%s></figure>'
-                    % (' on' if i == 0 else '', i, slug, E(nm), E(sub), f, f, f, E(alt), '' if i == 0 else ' loading="lazy"') for i, (f, alt, slug, nm, sub) in enumerate(STORY))
+                    % (' on' if i == 0 else '', i, slug, E(nm), E(sub), f, f, f, E(alt), ' loading="lazy" fetchpriority="low"') for i, (f, alt, slug, nm, sub) in enumerate(STORY))
     steps = ''.join('<div class="step"><span class="n mono">%s</span><h2>%s</h2><p>%s</p></div>' % (a, E(b), E(c)) for a, b, c in STEPS)
     f0 = STORY[0]
     return ('<section class="stage depth" aria-label="From vision to the people: four PUD projects"><div class="pin">'
@@ -419,7 +419,7 @@ def legacy_section():
 
 def home():
     strip = [p for p in PART if has_logo(p)]
-    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" height="40"></span>' % (p['logo'], E(p['name'])) for p in strip)
+    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" height="40" fetchpriority="low"></span>' % (p['logo'], E(p['name'])) for p in strip)
     hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Dr. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
         '<div class="wrap in"><p class="kicker mono" data-r>1966 to 2026 · 60 years · Cairo · Riyadh · Dubai</p>'
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h1>'
