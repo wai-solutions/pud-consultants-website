@@ -453,6 +453,8 @@ def home():
     feat = [p for p in PROJ if p.get('featured') and thumb(p['slug'])][:6]
     nac = BYSLUG.get('new-administrative-capital-phases-2-4')
     if nac and nac not in feat and thumb(nac['slug']): feat.insert(1, nac)  # Egypt's New Administrative Capital, always in Selected work
+    tut = BYSLUG.get('tut-amon-village-hotel-and-resort')
+    if tut and tut not in feat and thumb(tut['slug']): feat.insert(3, tut)  # the founder's favourite, always in Selected work
     bento = ''.join(card(p, '', tag=p['cat1'], cls='hs-card') for i, p in enumerate(feat))
     featsec = ('<section class="hsx" id="work" aria-label="Selected work"><div class="hsx-pin"><div class="wrap hsx-head"><div><p class="kicker mono">Selected work</p><h2 class="h-l sw-h">From regional visions<br>to city-making<br><em>to the Holy Sites.</em></h2></div>'
                '<div class="hsx-meta"><span class="hsx-n mono"><b>01</b> / %02d</span><a class="btn ghost" href="projects.html">All projects</a></div></div>'
