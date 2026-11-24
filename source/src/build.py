@@ -600,9 +600,15 @@ def partners_page():
     return page('partners.html', 'Clients and Partners: WATG, AECOM, NUCA, AlUla | PUD Consultants', body, 'WATG, AECOM, NUCA, the Royal Commission for AlUla, Saudi Aramco, universities and developers: the clients and partners PUD Consultants plans with.', 'partners.html',
                 schema=[crumbs([('Home', ''), ('Partners', 'partners.html')])])
 
+def map_block(R=''):
+    pin = '<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19 12 31 12 31s10.5-12 10.5-19.6C22.5 5.6 18 1 12 1z"/><circle cx="12" cy="11.5" r="4.2"/></svg>'
+    mp = lambda x, y, name, side='': '<span class="mpin2 %s" style="left:%s%%;top:%s%%">%s<b>%s</b></span>' % (side, x, y, pin, name)
+    return ('<a class="mapimg big" href="%sprojects.html" data-r="0.2"><img src="%sassets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy">%s</a>'
+            % (R, R, mp(44.8, 33.5, 'Palestine') + mp(33, 6, 'Germany', 'r') + mp(3, 63, 'Gambia', 'r')))
+
 def contact_page():
     off = ''.join('<div><h2 class="h-m">%s</h2><p class="p-l" style="margin-top:10px">%s</p><p class="p-l"><a class="btn red call" href="tel:%s">Call %s</a></p></div>' % (E(a), E(b), re.sub(r'[^+0-9]', '', c), E(c)) for a, b, c in OFFICES)
-    body = '<section class="page-h"><div class="wrap"><p class="kicker mono">Contact</p><h1 class="h-xl" style="max-width:14ch">Every great place starts <em>with a conversation.</em></h1><p class="lede">Call the office closest to your site. We plan and design from Cairo, Riyadh and Dubai.</p></div></section><section class="sec" style="padding-top:50px"><div class="wrap"><div class="offices">%s</div><div class="photo-strip"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Map of the Middle East with PUD project locations" loading="lazy"></div></div></section>' % off + chapter(6)
+    body = '<section class="page-h"><div class="wrap"><p class="kicker mono">Contact</p><h1 class="h-xl" style="max-width:14ch">Every great place starts <em>with a conversation.</em></h1><p class="lede">Call the office closest to your site. We plan and design from Cairo, Riyadh and Dubai.</p></div></section><section class="sec" style="padding-top:50px"><div class="wrap"><div class="offices">%s</div><div style="margin-top:clamp(50px,6vw,80px)">%s</div></div></section>' % (off, map_block()) + chapter(6)
     return page('contact.html', 'Contact PUD Consultants | Offices in Cairo, Riyadh and Dubai', body, 'Talk to PUD about a plan, a destination or a design. Call Cairo +20 100 198 1111, Riyadh +966 540 39 8178 or Dubai +971 509 29 8178.', 'contact.html',
                 schema=[crumbs([('Home', ''), ('Contact', 'contact.html')]), dict(ORG, **{'@context': 'https://schema.org'})])
 
