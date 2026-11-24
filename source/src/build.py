@@ -449,7 +449,7 @@ def home():
     nac = BYSLUG.get('new-administrative-capital-phases-2-4')
     if nac and nac not in feat and thumb(nac['slug']): feat.insert(1, nac)  # Egypt's New Administrative Capital, always in Selected work
     bento = ''.join(card(p, '', tag=p['cat1'], cls='b%d' % (i + 1)) for i, p in enumerate(feat))
-    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">From regional visions to city-making&hellip; <em>to the Holy Sites.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
+    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l sw-h" data-r="0.1">From regional visions<br>to city-making<br><em>to the Holy Sites.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
     cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b></a>' % (cslug(c), E(c)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
     PIN = '<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19 12 31 12 31s10.5-12 10.5-19.6C22.5 5.6 18 1 12 1z"/><circle cx="12" cy="11.5" r="4.2"/></svg>'
     def mpin(x, y, name, side=''):
