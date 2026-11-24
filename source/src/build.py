@@ -403,7 +403,7 @@ def sustain_section():
     items = ''.join('<li><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg><b>%s</b><span class="t">%s</span></li>' % (IC.get(a, ''), E(a), E(b)) for a, b in SUSTAIN)
     return ('<section class="sec sustain2"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r><span>Sustainability and responsibility</span></p>'
             '<p class="ap-lead" data-r="0.1">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards. <a href="services/environment-and-sustainability.html">Our commitment</a></p></div>'
-            '<a class="ap-img" href="projects/alamein-riviera-vision-master-plan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/story/sustain-alamein-riviera.jpg" alt="Homes around a planted lagoon at dusk, Alamein Riviera" loading="lazy" style="object-position:50% 65%"></span><span class="ap-cap mono">Alamein Riviera · North Coast, Egypt</span></a>'
+            '<a class="ap-img" href="projects/alamein-riviera-vision-master-plan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/story/sustain-alamein-riviera.jpg" alt="Homes around a planted lagoon at dusk, Alamein Riviera" loading="lazy" style="object-position:50%% 65%%"></span><span class="ap-cap mono">Alamein Riviera · North Coast, Egypt</span></a>'
             '<ol class="five2" data-r="0.1">%s</ol></div></section>') % items
 
 def legacy_section():
