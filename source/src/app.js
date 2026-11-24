@@ -145,11 +145,13 @@ addEventListener('load',()=>ScrollTrigger.refresh());
   const bgs=$$('.dz-bg',dz),ps=$$('.dz-p',dz),btns=$$('.dz-rail button',dz),yr=$('.dz-year span',dz),pin=$('.dz-pin',dz),rail=$('.dz-rail',dz);let act=-1;
   const go=i=>{if(i===act)return;act=i;bgs.forEach((b,k)=>b.classList.toggle('on',k===i));ps.forEach((p,k)=>p.classList.toggle('on',k===i));
     btns.forEach((b,k)=>k===i?b.setAttribute('aria-current','true'):b.removeAttribute('aria-current'));yr.textContent=btns[i].textContent.trim()};
-  let rq=0;const upd=()=>{rq=0;const b=dz.getBoundingClientRect(),total=dz.offsetHeight-innerHeight;const p=Math.max(0,Math.min(.9999,-b.top/total));
-    const f=p*n,i=Math.floor(f),lp=f-i;go(i);pin.style.setProperty('--lp',lp.toFixed(3));rail.style.setProperty('--gp',p.toFixed(4))};
+  const imgs=bgs.map(b=>b.querySelector('img'));let mx=0,my=0,lp=0;
+  const paint=()=>{const im=imgs[act];if(im)im.style.transform='translate3d('+(-mx*12).toFixed(1)+'px,'+(-my*10).toFixed(1)+'px,0) scale('+(1.16-lp*.12).toFixed(4)+')';yr.style.transform='translate3d('+(-lp*6).toFixed(2)+'vw,0,0)'};
+  let rq=0;const upd=()=>{rq=0;const b=dz.getBoundingClientRect(),total=dz.offsetHeight-innerHeight;if(b.bottom<0||b.top>innerHeight)return;const p=Math.max(0,Math.min(.9999,-b.top/total));
+    const f=p*n,i=Math.floor(f);lp=f-i;go(i);paint();rail.style.setProperty('--gp',p.toFixed(4))};
   addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();
   btns.forEach((b,i)=>b.addEventListener('click',()=>{const top=dz.getBoundingClientRect().top+scrollY;const total=dz.offsetHeight-innerHeight;scrollTo({top:top+total*(i+.15)/n,behavior:'smooth'})}));
-  pin.addEventListener('mousemove',e=>{pin.style.setProperty('--mx',(e.clientX/innerWidth-.5).toFixed(3));pin.style.setProperty('--my',(e.clientY/innerHeight-.5).toFixed(3))});})();
+  let mq=0;pin.addEventListener('mousemove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5;if(!mq)mq=requestAnimationFrame(()=>{mq=0;paint()})});})();
 
 // culture: the quote lights up word by word as it scrolls into view
 (()=>{const ws=$$('.cq p span');if(!ws.length)return;if(reduce){ws.forEach(w=>w.classList.add('lit'));return}

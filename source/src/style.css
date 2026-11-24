@@ -977,7 +977,8 @@ footer.f3 .fine{margin-top:44px;padding-top:18px;border-top:1px solid var(--line
 @media(max-width:800px){.depth .shot[data-i="1"] img{object-position:45% 50%}.depth .shot[data-i="2"] img{object-position:62% 50%}.depth .shot[data-i="3"] img{object-position:55% 50%}}
 
 /* ===== stability + performance ===== */
-html{overflow-x:clip}
+/* clip, not hidden: hidden on body/html turns body into a scroll container and breaks every sticky section */
+html{overflow-x:visible}body{overflow-x:clip!important}
 .logos2{grid-template-columns:minmax(0,1fr)}
 .lrow,.lmq{min-width:0;max-width:100%}
 /* backdrop blur is the main scroll cost over moving images: use solid tints instead */
@@ -990,3 +991,24 @@ html{overflow-x:clip}
 .depth .shot.past img{filter:none!important}
 .depth .shot img{will-change:auto}
 .depth .shot.on img{will-change:transform}
+
+/* decade image caption sits above the decade rail, never on top of it */
+.dz-bg figcaption{bottom:auto;top:clamp(160px,20vh,200px)}
+/* GPU-friendly motion: no clip-path animation, moving layers on their own compositor layer */
+.depth .shot{clip-path:none!important;transform:scale(1.04);transition:opacity .8s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)!important}
+.depth .shot.on{transform:none}
+.depth .shot.past{transform:scale(1.08)}
+.dz-bg img,.dz-year span,.legacy .big,.ap-par,.svx-frame figure.on img,.sbg{will-change:transform;backface-visibility:hidden}
+.dz-bg{will-change:opacity}
+/* decades: transforms are written by script on the active image only (no per-frame CSS variables) */
+.dz-bg img{transform:scale(1.16);transition:none!important}
+.dz-year span{transform:none;transition:none!important}
+/* only the visible full-screen layer is rendered; others are hidden after their fade-out */
+.dz-bg{will-change:auto!important;visibility:hidden;transition:opacity 1.1s ease,visibility 0s linear 1.1s!important}
+.dz-bg.on{visibility:visible;transition:opacity 1.1s ease,visibility 0s!important}
+.depth .shot{visibility:hidden;transition:opacity .8s ease,transform 1.1s cubic-bezier(.2,.7,.2,1),visibility 0s linear .8s!important}
+.depth .shot.on{visibility:visible;transition:opacity .8s ease,transform 1.1s cubic-bezier(.2,.7,.2,1),visibility 0s!important}
+.svx-frame figure{visibility:hidden;transition:opacity .9s ease,visibility 0s linear .9s}
+.svx-frame figure.on{visibility:visible;transition:opacity .9s ease,visibility 0s}
+.dz-bg{transition:opacity .45s ease,visibility 0s linear .45s!important}
+.dz-bg.on{transition:opacity .45s ease,visibility 0s!important}
