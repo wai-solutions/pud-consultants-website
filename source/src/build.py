@@ -309,15 +309,18 @@ def services_immersive():
             '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
 
+STORY = [('makkah-1-vision', 'The Makkah Township vision master plan, drawn across the valley'),
+         ('makkah-2-street', 'A residential street in Makkah Township'),
+         ('makkah-3-detail', 'A children\'s play area in a Makkah Township neighbourhood'),
+         ('makkah-4-people', 'Wadi Park, Makkah Township, with families walking toward the mosque')]
 def depth_story():
-    frames = ['assets/seq/cmc/%02d.webp' % k for k in range(1, 50)]
-    frames_m = ['assets/seq/cmc-m/%02d.webp' % k for k in range(1, 50)]
+    shots = ''.join('<figure class="shot%s" data-i="%d"><img src="assets/story/%s.jpg" srcset="assets/story/%s-m.jpg 1000w, assets/story/%s.jpg 1800w" sizes="100vw" alt="%s"%s></figure>'
+                    % (' on' if i == 0 else '', i, f, f, f, E(alt), '' if i == 0 else ' loading="lazy"') for i, (f, alt) in enumerate(STORY))
     steps = ''.join('<div class="step"><span class="n mono">%s</span><h2>%s</h2><p>%s</p></div>' % (a, E(b), E(c)) for a, b, c in STEPS)
-    return ('<section class="stage depth" aria-label="Into a PUD plan: Cairo Media City, Giza" data-frames="%s" data-frames-m="%s"><div class="pin">'
-            '<div class="cam"><img class="poster" src="assets/stills/cairo-media-city-egypt.jpg" alt="Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon" loading="lazy"><canvas aria-hidden="true"></canvas></div>'
-            '<div class="vig"></div><div class="steps">%s</div>'
-            '<a class="projtag" href="projects/cairo-media-city.html"><span class="mono">The project</span><b>Cairo Media City</b><small>Vision concept master plan · Giza, Egypt</small><i aria-hidden="true">&rarr;</i></a>'
-            '<div class="bar" aria-hidden="true"><i></i></div><p class="hint mono">Scroll</p></div></section>') % (','.join(frames), ','.join(frames_m), steps)
+    return ('<section class="stage depth" aria-label="From vision to the people: Makkah Township"><div class="pin">'
+            '<div class="cam">%s</div><div class="vig"></div><div class="steps">%s</div>'
+            '<a class="projtag" href="projects/makkah-township-vision-master-plan.html"><span class="mono">The project</span><b>Makkah Township</b><small>Vision master plan · Makkah · with WATG</small><i aria-hidden="true">&rarr;</i></a>'
+            '<div class="bar" aria-hidden="true"><i></i></div><p class="hint mono">Scroll</p></div></section>') % (shots, steps)
 
 APPROACH = [
  ('Listen', 'Every project starts by listening: to the land, its history and the people who will live, work, pray and visit there.', 'assets/people/giza-framework-1.jpg'),
@@ -326,11 +329,9 @@ APPROACH = [
  ('Deliver', 'From visionary master planning to precise execution, transferring knowledge and building capabilities along the way.', 'assets/stills/jorhum-ksa.jpg'),
 ]
 def approach_section():
-    panels = ''.join('<button class="ap%s" type="button" aria-expanded="%s"><img src="%s" alt="" loading="lazy"><span class="n mono">%02d</span><b>%s</b><span class="t">%s</span></button>'
-                     % (' on' if i == 0 else '', 'true' if i == 0 else 'false', img, i + 1, E(h), E(t)) for i, (h, t, img) in enumerate(APPROACH))
-    return ('<section class="sec approach"><div class="wrap"><div class="grid2"><div><p class="kicker mono" data-r>Our approach</p><h2 class="h-l" data-r="0.1">We don\'t believe in <em>one-size-fits-all.</em></h2></div>'
-            '<p class="p-l" data-r="0.2">Every place has its own rhythm, and every challenge its own context. So each project brings together its own team, its own questions and its own answers, around a shared mission.</p></div>'
-            '<div class="aps" data-r="0.2">%s</div></div></section>') % panels
+    return ('<section class="sec approach"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r>Our approach</p>'
+            '<p class="ap-lead" data-r="0.1">We don\'t believe in one-size-fits-all. Every project starts by listening, then curates the best-fit minds (planners, architects, economists and global experts) around a shared mission. <a href="services.html">Explore our expertise</a></p></div>'
+            '<a class="ap-img" href="projects/ramla-concept-master-plan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/story/approach-ramla.jpg" alt="Beachfront town centre, Ramla, North Coast" loading="lazy"></span><span class="ap-cap mono">Ramla Beachfront Town Centre · North Coast, Egypt</span></a></div></section>')
 
 DEC_BG = {'1966': ('assets/founder/draw.jpg', 'Prof. Dr. Abdallah Attia at work. Illustrative recreation.'),
           '1976': ('assets/stills/tut-amoun-village-2.jpg', 'Tut Amun Village, Lake Nasser, Aswan'),

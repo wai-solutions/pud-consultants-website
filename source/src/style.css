@@ -784,3 +784,48 @@ b,strong{font-weight:700}
  .legacy .tri{font-size:24px}
  .cq p{font-size:15vw}
 }
+
+/* ===== v6.2 story: four shots from one project ===== */
+.depth .cam{transform:none!important}
+.depth .shot{position:absolute;inset:0;margin:0;overflow:hidden;opacity:0;clip-path:inset(14% 12% 14% 12% round 28px);transition:opacity .9s ease,clip-path 1.2s cubic-bezier(.2,.7,.2,1)}
+.depth .shot img{width:100%;height:100%;object-fit:cover;transform:scale(calc(1.04 + var(--lp,0) * .18));transition:transform .25s linear,filter 1.2s ease;will-change:transform}
+.depth .shot.on{opacity:1;clip-path:inset(0 0 0 0 round 0);z-index:2}
+.depth .shot.past{opacity:0;clip-path:inset(0 0 0 0);z-index:1}
+.depth .shot.past img{transform:scale(1.4);filter:blur(8px);transition:transform 1.2s cubic-bezier(.2,.7,.2,1),filter 1.2s ease}
+.depth .shot[data-i="0"] img{object-position:50% 60%}
+.depth .vig{z-index:3}.depth .steps,.depth .projtag,.depth .bar,.depth .hint{z-index:4}
+.depth .step h2{text-shadow:0 2px 30px rgba(0,0,0,.6)}
+.stage.static .shot{position:relative;opacity:1;clip-path:none;height:60vh}.stage.static .cam{position:relative;opacity:1;z-index:0}
+@media(max-width:800px){.depth .shot[data-i="1"] img{object-position:62% 50%}.depth .shot[data-i="2"] img{object-position:30% 50%}.depth .shot[data-i="3"] img{object-position:70% 50%}}
+
+/* ===== v6.3 calm approach, compact services on phones ===== */
+.approach{background:var(--ink)}
+.ap-txt{max-width:1000px}
+.ap-lead{font-family:var(--sans);font-weight:300;font-size:clamp(22px,2.4vw,34px);line-height:1.4;color:#ececec;margin-top:22px}
+.ap-lead a{color:#ffffff;text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:6px;text-decoration-thickness:1px}
+.ap-lead a:hover{color:var(--red)}
+.ap-img{position:relative;display:block;margin-top:clamp(36px,5vw,64px);border-radius:var(--r);overflow:hidden;aspect-ratio:16/8}
+.ap-par{position:absolute;inset:-8% 0;display:block}
+.ap-par img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.ap-img:hover .ap-par img{transform:scale(1.03)}
+.ap-img::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 70%,rgba(0,0,0,.55))}
+.ap-cap{position:absolute;left:22px;bottom:18px;z-index:2;color:#ffffff}
+@media(max-width:800px){.ap-img{aspect-ratio:4/3}.ap-lead{font-size:21px}.ap-cap{left:14px;bottom:12px;font-size:10px}}
+
+/* story: project card on top on phones so message 04 stays readable */
+@media(max-width:800px){.projtag{top:84px;bottom:auto}}
+
+/* services on phones: one compact row each */
+@media(max-width:900px){
+ .svx{padding-bottom:40px}
+ .svx .svx-head{margin-bottom:24px}
+ .svx .svx-list li{margin:0;border-top:1px solid var(--line)}.svx .svx-list li:last-child{border-bottom:1px solid var(--line)}
+ .svx .svx-list a{min-height:0;height:auto;max-height:none;padding:12px 0;border-radius:0;overflow:visible;display:grid;grid-template-columns:64px 1fr 22px;grid-template-rows:auto auto;gap:2px 14px;align-items:center;align-content:center;isolation:auto}
+ .svx .svx-list a::before{display:none}
+ .svx .svx-list .mbg{position:relative;inset:auto;z-index:0;grid-row:1/3;grid-column:1;width:64px;height:64px;border-radius:12px;object-fit:cover;transform:none!important;display:block}
+ .svx .svx-list .n{display:none}
+ .svx .svx-list b{grid-column:2;grid-row:1;font-size:21px;font-weight:400;line-height:1.1;color:#ffffff;transform:none!important;align-self:end}
+ .svx .svx-list .d{grid-column:2;grid-row:2;font-size:13.5px;line-height:1.35;color:#a9a9a9;max-height:none;opacity:1;margin:2px 0 0;align-self:start}
+ .svx .svx-list i{grid-column:3;grid-row:1/3;opacity:1;transform:none;font-size:20px}
+}
+.depth .steps{opacity:1}

@@ -24,24 +24,13 @@ if(hv){if(reduce){hv.pause();hv.removeAttribute('autoplay')}else{new Intersectio
 
 const stage=$('.stage.depth');
 if(stage&&!reduce){
-  const steps=$$('.step',stage),bar=$('.bar i',stage),pin=$('.pin',stage),cam=$('.cam',stage),cv=$('canvas',stage),ctx=cv.getContext('2d');
-  const small=matchMedia('(max-width:800px)').matches;const list=(small?stage.dataset.framesM:stage.dataset.frames).split(',');
-  const imgs=new Array(list.length);let loaded=0,cur=-1,want=0;
-  const size=()=>{const d=Math.min(devicePixelRatio||1,2);cv.width=cv.clientWidth*d;cv.height=cv.clientHeight*d;cur=-1;draw()};
-  function nearest(k){for(let o=0;o<list.length;o++){if(imgs[k-o]&&imgs[k-o].complete&&imgs[k-o].naturalWidth)return imgs[k-o];if(imgs[k+o]&&imgs[k+o].complete&&imgs[k+o].naturalWidth)return imgs[k+o]}return null}
-  function draw(){const im=nearest(want);if(!im||!cv.width)return;const k=want;if(k===cur)return;cur=k;
-    const cw=cv.width,ch=cv.height,r=Math.max(cw/im.naturalWidth,ch/im.naturalHeight),w=im.naturalWidth*r,h=im.naturalHeight*r;ctx.drawImage(im,(cw-w)/2,(ch-h)/2,w,h)}
-  let started=false;const load=()=>{if(started)return;started=true;
-    const order=[0,list.length-1,...[...Array(list.length).keys()].filter(k=>k&&k<list.length-1)];
-    order.forEach(k=>{const im=new Image();im.decoding='async';im.onload=()=>{loaded++;if(k===0||loaded>3){stage.classList.add('ready');size()}cur=-1;draw()};im.src=list[k];imgs[k]=im})};
-  new IntersectionObserver(es=>{if(es[0].isIntersecting)load()},{rootMargin:'120% 0px'}).observe(stage);
-  addEventListener('resize',size);
+  const steps=$$('.step',stage),shots=$$('.shot',stage),bar=$('.bar i',stage),pin=$('.pin',stage),n=steps.length;let act=-1;
   ScrollTrigger.create({trigger:stage,start:'top top',end:'bottom bottom',scrub:true,onUpdate:s=>{const p=s.progress;bar.style.height=(p*100)+'%';
-    pin.style.setProperty('--end',Math.max(0,Math.min(1,(p-.84)/.12)));
-    want=Math.min(list.length-1,Math.round(p*(list.length-1)));draw();
-    const e=p*p*(3-2*p);cam.style.setProperty('--z',(1+e*.9).toFixed(4));
-    const idx=Math.min(steps.length-1,Math.floor(p*steps.length*.999));steps.forEach((el,i)=>el.classList.toggle('on',i===idx&&p<.86))}});
-  cam.style.setProperty('--fx',matchMedia('(max-width:800px)').matches?'46%':'55%');cam.style.setProperty('--fy','38%');steps[0].classList.add('on');
+    pin.style.setProperty('--end',Math.max(0,Math.min(1,(p-.86)/.1)));
+    const f=Math.min(n-.0001,p*n),i=Math.floor(f),lp=f-i;
+    if(i!==act){act=i;shots.forEach((el,k)=>{el.classList.toggle('on',k===i);el.classList.toggle('past',k<i)});steps.forEach((el,k)=>el.classList.toggle('on',k===i))}
+    shots[i].style.setProperty('--lp',lp.toFixed(3))}});
+  shots[0].classList.add('on');steps[0].classList.add('on');
 }else if(stage){stage.classList.add('static');$$('.step',stage).forEach(e=>e.classList.add('on'))}
 
 const tlo=$('.tl-outer');
@@ -174,11 +163,11 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 
 // small screens: turn card rows into swipe rails with dots and image parallax
 (()=>{const mq=matchMedia('(max-width:800px)');if(!mq.matches)return;
-  const rails=[$('.bento'),$('.svx-list'),$('.aps'),$('.five')].filter(Boolean);
+  const rails=[$('.bento'),$('.five')].filter(Boolean);
   rails.forEach(r=>{r.classList.add('swipe');const kids=[...r.children];const dots=document.createElement('div');dots.className='swipe-dots';dots.setAttribute('aria-hidden','true');
     dots.innerHTML=kids.map(()=>'<i></i>').join('');r.after(dots);const ds=[...dots.children];
     let rq=0;const upd=()=>{rq=0;const W=r.clientWidth;let best=0,bd=1e9;
       kids.forEach((k,i)=>{const b=k.getBoundingClientRect();const off=(b.left+b.width/2-W/2)/W;k.style.setProperty('--sx',Math.max(-1,Math.min(1,off)).toFixed(3));const d=Math.abs(off);if(d<bd){bd=d;best=i}});
       ds.forEach((d,i)=>d.classList.toggle('on',i===best));kids.forEach((k,i)=>k.classList.toggle('in-v',i===best))};
     r.addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()});
-  const st=$('.stage.depth .cam');if(st){st.style.setProperty('--fx','46%')}})();
+})();
