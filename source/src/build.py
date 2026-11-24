@@ -318,9 +318,9 @@ def services_immersive():
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
 
 STORY = [('cmc-1-vision', 'Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon', 'cairo-media-city', 'Cairo Media City', 'Vision concept master plan · Giza'),
-         ('makkah-2-street', 'A residential street in Makkah Township', 'makkah-township-vision-master-plan', 'Makkah Township', 'Vision master plan · Makkah · with WATG'),
-         ('makkah-3-plaza', 'A shaded plaza in Makkah Township where families meet at café tables', 'makkah-township-vision-master-plan', 'Makkah Township', 'Vision master plan · Makkah · with WATG'),
-         ('riviera-4-people', 'People walking along the Marina Town promenade, Alamein Riviera', 'alamein-riviera-vision-master-plan', 'Alamein Riviera', 'Vision master plan · North Coast, Egypt')]
+         ('gp-2-street', 'A tree-lined street opening onto a neighbourhood square, Green Pearl, Dubai', 'green-pearl-prime-dubai-competition', 'Green Pearl, Dubai', 'Concept master plan competition · Dubai, UAE'),
+         ('gp-3-detail', 'Children and parents at a neighbourhood playground, Green Pearl, Dubai', 'green-pearl-prime-dubai-competition', 'Green Pearl, Dubai', 'Concept master plan competition · Dubai, UAE'),
+         ('gp-4-people', 'Families walking and cycling along a green stream walk, Green Pearl, Dubai', 'green-pearl-prime-dubai-competition', 'Green Pearl, Dubai', 'Concept master plan competition · Dubai, UAE')]
 def depth_story():
     shots = ''.join('<figure class="shot%s" data-i="%d" data-href="projects/%s.html" data-name="%s" data-sub="%s"><img src="assets/story/%s.jpg" srcset="assets/story/%s-m.jpg 1000w, assets/story/%s.jpg 1800w" sizes="100vw" alt="%s"%s></figure>'
                     % (' on' if i == 0 else '', i, slug, E(nm), E(sub), f, f, f, E(alt), '' if i == 0 else ' loading="lazy"') for i, (f, alt, slug, nm, sub) in enumerate(STORY))

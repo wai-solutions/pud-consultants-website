@@ -973,3 +973,5 @@ footer.f3 .fine{margin-top:44px;padding-top:18px;border-top:1px solid var(--line
 .depth .shot[data-i="2"] img{object-position:40% 60%}
 .depth .shot[data-i="3"] img{object-position:55% 60%}
 @media(max-width:800px){.depth .shot[data-i="2"] img{object-position:35% 50%}.depth .shot[data-i="3"] img{object-position:62% 50%}}
+.depth .shot[data-i="1"] img,.depth .shot[data-i="2"] img,.depth .shot[data-i="3"] img{object-position:50% 55%}
+@media(max-width:800px){.depth .shot[data-i="1"] img{object-position:45% 50%}.depth .shot[data-i="2"] img{object-position:62% 50%}.depth .shot[data-i="3"] img{object-position:55% 50%}}
