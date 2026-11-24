@@ -163,7 +163,7 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 
 // small screens: turn card rows into swipe rails with dots and image parallax
 (()=>{const mq=matchMedia('(max-width:800px)');if(!mq.matches)return;
-  const rails=[$('.bento'),$('.five')].filter(Boolean);
+  const rails=[$('.bento')].filter(Boolean);
   rails.forEach(r=>{r.classList.add('swipe');const kids=[...r.children];const dots=document.createElement('div');dots.className='swipe-dots';dots.setAttribute('aria-hidden','true');
     dots.innerHTML=kids.map(()=>'<i></i>').join('');r.after(dots);const ds=[...dots.children];
     let rq=0;const upd=()=>{rq=0;const W=r.clientWidth;let best=0,bd=1e9;

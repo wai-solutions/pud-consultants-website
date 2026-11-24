@@ -6,6 +6,8 @@ from content import *
 from seo import *
 import copy2
 from copy2 import *
+import copy3
+from copy3 import LEAD_HTML, RETIRED
 E = html.escape
 SITE = os.environ.get('SITE_DIR', ROOT + '/site'); BASE = 'https://www.pudconsultants.com'; MODE = os.environ.get('MODE', 'preview'); TODAY = datetime.date.today().isoformat()
 
@@ -304,7 +306,7 @@ def services_immersive():
         img, slug, cap = SVC_MEDIA.get(s['slug'], ('assets/stills/cairo-media-city-egypt.jpg', '', ''))
         media += '<figure data-i="%d"%s><img src="%s" alt="%s" loading="lazy"><figcaption class="mono">%s</figcaption></figure>' % (i, ' class="on"' if i == 0 else '', img, E(cap), E(cap))
         rows += ('<li data-i="%d"%s><a href="services/%s.html"><img class="mbg" src="%s" alt="" loading="lazy"><span class="n mono">%02d</span><b>%s</b><span class="d">%s</span><i aria-hidden="true">&rarr;</i></a></li>'
-                 % (i, ' class="on"' if i == 0 else '', s['slug'], img, i + 1, E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))))
+                 % (i, ' class="on"' if i == 0 else '', s['slug'], img, i + 1, E(s['name']), LEAD_HTML.get(s['slug']) or E(s['lead'])))
     return ('<section class="svx" id="expertise"><div class="wrap svx-head"><div><p class="kicker mono" data-r>Our expertise</p><h2 class="h-l" data-r="0.1">Every place has <em>its own rhythm.</em></h2></div>'
             '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
@@ -383,7 +385,7 @@ def culture_section():
     q = ' '.join('<span>%s</span>' % E(w) for w in words)
     vals = ''.join('<li><b>%s</b><span>%s</span></li>' % (E(a), E(b)) for a, b in VALUES)
     return ('<section class="sec culture"><div class="wrap"><p class="kicker mono" data-r>Our culture</p><blockquote class="cq"><p>%s</p><footer class="mono">Prof. Dr. Amr Attia, CEO</footer></blockquote>'
-            '<p class="trio mono" data-r>Leadership · Harmony · Clarity</p><ul class="vals" data-r="0.1">%s</ul><p style="margin-top:34px"><a class="btn ghost" href="people.html">Meet our people</a></p></div></section>') % (q, vals)
+            '<p style="margin-top:34px"><a class="btn ghost" href="people.html">Meet our people</a></p></div></section>') % q
 
 SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade, walkability and public space.'),
            ('Society', 'Inclusive, affordable and connected neighbourhoods that give every generation a place to belong.'),
@@ -391,11 +393,11 @@ SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade
            ('Environment', 'Working with nature, not against it: responsible land use and green building standards.'),
            ('Planet', 'Resilient regions for a changing climate, planned for compact, low-carbon growth.')]
 def sustain_section():
-    items = ''.join('<li data-r="%.2f"><span class="n mono">%02d</span><b>%s</b><span>%s</span></li>' % (0.05 * i, i + 1, E(a), E(b)) for i, (a, b) in enumerate(SUSTAIN))
-    return ('<section class="sustain"><div class="sbg" data-px="0.18"><img src="assets/p/heliopark/01.jpg" alt="" loading="lazy"></div><div class="wrap">'
-            '<p class="kicker mono" data-r><span>Sustainability and responsibility</span></p><h2 class="h-l" data-r="0.1">Designing with purpose. <em>Building for tomorrow.</em></h2>'
-            '<p class="p-l lead" data-r="0.15">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards.</p>'
-            '<ol class="five">%s</ol><p style="margin-top:30px"><a class="btn ghost" href="services/environment-and-sustainability.html">Our commitment</a></p><p class="scap mono">Heliopark, New Cairo</p></div></section>') % items
+    items = ''.join('<li><span class="n mono">%02d</span><b>%s</b><span class="t">%s</span></li>' % (i + 1, E(a), E(b)) for i, (a, b) in enumerate(SUSTAIN))
+    return ('<section class="sec sustain2"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r><span>Sustainability and responsibility</span></p>'
+            '<p class="ap-lead" data-r="0.1">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards. <a href="services/environment-and-sustainability.html">Our commitment</a></p></div>'
+            '<a class="ap-img" href="projects/heliopark-concept-masterplan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/p/heliopark/02.jpg" alt="Heliopark, New Cairo" loading="lazy"></span><span class="ap-cap mono">Heliopark · New Cairo</span></a>'
+            '<ol class="five2" data-r="0.1">%s</ol></div></section>') % items
 
 def legacy_section():
     return ('<section class="legacy"><div class="big" aria-hidden="true" data-px="0.25">60</div><div class="wrap">'
@@ -440,12 +442,15 @@ def home():
     if nac and nac not in feat and thumb(nac['slug']): feat.insert(1, nac)  # Egypt's New Administrative Capital, always in Selected work
     bento = ''.join(card(p, '', tag=p['cat1'], cls='b%d' % (i + 1)) for i, p in enumerate(feat))
     featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">From regional visions to city-making&hellip; <em>to the Holy Sites.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
-    cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b><span>%d projects</span></a>' % (cslug(c), E(c), len(ps)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
+    cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b></a>' % (cslug(c), E(c)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
     teaser = ('<section class="sec mapteaser"><div class="wrap grid2"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">From Egypt <em>to global destinations.</em></h2><p class="p-l" style="margin:18px 0 26px" data-r="0.2">From Alex to Aswan along the Mediterranean, the Red Sea and the Nile, across the Red Sea to Jeddah, AlUla and the Holy Sites, and on to Kuwait, Iraq, Syria, the UAE and Cameroon. Watch the practice spread from Cairo; every pin opens a project with its client, partners and facts.</p><p data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div>'
-              '<a class="mapimg" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy"></a></div>'
+              '<a class="mapimg" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy"><span class="mpin" style="left:44.2%%;top:33%%"><i></i><b>Palestine</b></span><span class="medge" style="left:27%%;top:5%%">&uarr; Germany</span><span class="medge" style="left:3%%;top:47%%">&larr; Gambia</span></a></div>'
               '<div class="wrap"><div class="cnrow">%s</div></div></section>') % cn_cards
-    pl = ''.join('<a href="partners.html"><img src="%s" alt="%s logo" loading="lazy"></a>' % (p['logo'], E(p['name'])) for p in strip[:18])
-    partners = ('<section class="sec paper"><div class="wrap"><p class="kicker mono" data-r>Clients &amp; partners</p><h2 class="h-l" data-r="0.1">Trusted by clients. <em>Built with partners.</em></h2><p class="p-l" style="margin-top:18px;max-width:58ch" data-r="0.15">100+ clients and 90+ collaborations across six decades, from ministries and royal commissions to the world\'s leading design firms.</p><div class="pl" data-r="0.2">%s</div><p style="margin-top:28px"><a class="btn dark" href="partners.html">All clients and partners</a></p></div></section>') % pl if pl else ''
+    def lrow(L): return ''.join('<span class="lg"><img src="%s" alt="%s" loading="lazy"></span>' % (p['logo'], E(p['name'])) for p in L)
+    cl = [p for p in strip if p.get('type') == 'client']; pt = [p for p in strip if p.get('type') != 'client']
+    pl = ('<div class="lrow"><p class="mono lt">Our trusted clients</p><div class="lmq"><div class="ltr">%s%s</div></div></div>'
+          '<div class="lrow rev"><p class="mono lt">Partners &amp; collaborations</p><div class="lmq"><div class="ltr">%s%s</div></div></div>') % (lrow(cl), lrow(cl), lrow(pt), lrow(pt))
+    partners = ('<section class="sec paper"><div class="wrap"><p class="kicker mono" data-r>Clients &amp; partners</p><h2 class="h-l" data-r="0.1">Trusted by clients. <em>Built with partners.</em></h2><p class="p-l" style="margin-top:18px;max-width:58ch" data-r="0.15">100+ clients and 90+ collaborations across six decades, from ministries and royal commissions to the world\'s leading design firms.</p><div class="logos2" data-r="0.2">%s</div><p style="margin-top:28px"><a class="btn dark" href="partners.html">All clients and partners</a></p></div></section>') % pl if pl else ''
     fq = '<section class="sec"><div class="wrap">%s<p style="margin-top:24px"><a class="btn ghost" href="faq.html">More questions</a></p></div></section>' % faq_html(FAQ[:5])
     amr_card = ('<section class="sec amrcard"><div class="wrap"><div class="grid2 amrg"><div data-r>%s</div><div><p class="kicker" data-r>The new chapter</p><h2 class="h-l" data-r="0.1">Prof. Dr. Amr Attia</h2><p class="p-l" style="margin-top:18px" data-r="0.2">%s</p>%s'
         '<p style="margin-top:8px" data-r="0.3"><a class="btn red" href="amr-attia.html">Read his profile</a></p></div></div>'
@@ -477,6 +482,8 @@ def people():
         '<h2 class="h-m" style="margin-top:70px">Three projects the practice singles out</h2><p class="p-l" style="margin-top:10px">%s</p><div class="loved">%s</div></div></section>'
         '<section class="sec paper"><div class="wrap grid2 amrg"><div>%s</div><div><p class="kicker">Leadership</p><h2 class="h-l">Prof. Dr. Amr Attia</h2><p class="p-l" style="margin-top:16px">%s</p>%s<p style="margin-top:6px"><a class="btn dark" href="amr-attia.html">Read his full profile</a></p></div></div></section>') % (
         founder_block(), E(FOUNDER_LEAD), E(FOUNDER_BIO), f, E(FOUNDER_LOVED_NOTE), loved, amr_photo('', 'light'), E(AMR_HEADLINE), stat_tiles(AMR_TILES)) + chapter(2)
+    vals = '<section class="sec culture" style="padding-top:10px;padding-bottom:30px"><div class="wrap"><p class="trio mono" style="margin-top:0">Leadership · Harmony · Clarity</p><ul class="vals">%s</ul></div></section>' % ''.join('<li><b>%s</b><span>%s</span></li>' % (E(a_), E(b_)) for a_, b_ in VALUES)
+    body = body.replace('</section>', '</section>' + vals, 1)
     pers = [{'@context': 'https://schema.org', '@type': 'Person', '@id': BASE + '/people.html#abdallah-attia', 'name': 'Abdallah Abdel Aziz Attia', 'description': 'Architect, professor and founder of PUD Consultants in 1966.', 'alumniOf': [{'@type': 'CollegeOrUniversity', 'name': 'Alexandria University'}, {'@type': 'CollegeOrUniversity', 'name': 'ETH Zurich'}], 'jobTitle': 'Professor of Architecture; founder of PUD Consultants', 'worksFor': {'@id': BASE + '/#org'}},
             {'@context': 'https://schema.org', '@type': 'Person', '@id': BASE + '/amr-attia.html#amr-attia', 'name': 'Amr A. Attia', 'jobTitle': 'Principal, PUD Consultants; Professor of Urban Planning, Ain Shams University', 'worksFor': {'@id': BASE + '/#org'}, 'url': BASE + '/amr-attia.html'}]
     return page('people.html', 'Prof. Dr. Abdallah Attia and Prof. Dr. Amr Attia | PUD Consultants', body, 'Meet Prof. Dr. Abdallah Attia, who founded PUD in Cairo in 1966, and Prof. Dr. Amr Attia, his son, who leads the practice today.', 'people.html',
@@ -573,7 +580,7 @@ RED_SEA = ['port-ghalib-master-plan', 'abo-dabbab-marine-field-station', 'green-
 def red_sea_page():
     R = '../'; ps = [BYSLUG[s] for s in RED_SEA if s in BYSLUG]
     qa = [('Does PUD plan Red Sea destinations?', 'Yes. PUD has worked on Port Ghalib and the Abo Dabbab marine field station at Marsa Alam, Hurghada, Ain El Sokhna and the Red Sea sub-regional plan for Yanbu, Umluj, Al Wajh and Duba in Saudi Arabia, and on the Green Star Hotels initiative with GIZ.')]
-    body = ('<section class="page-h"><div class="wrap"><p class="crumb"><a href="../services/sustainable-tourism-planning.html">Sustainable tourism planning</a></p><h1 class="h-xl" style="max-width:18ch">Planning Red Sea destinations.</h1><p class="lede" style="max-width:56ch">PUD Consultants has planned Red Sea destinations in Egypt and Saudi Arabia: Port Ghalib and Abo Dabbab at Marsa Alam, Hurghada, Ain El Sokhna, the Green Star Hotels initiative and the sub-regional plan for Yanbu, Umluj, Al Wajh and Duba.</p></div></section>'
+    body = ('<section class="page-h"><div class="wrap"><p class="crumb"><a href="../services/master-planning-and-urban-design.html">Urban design and master planning</a></p><h1 class="h-xl" style="max-width:18ch">Planning Red Sea destinations.</h1><p class="lede" style="max-width:56ch">PUD Consultants has planned Red Sea destinations in Egypt and Saudi Arabia: Port Ghalib and Abo Dabbab at Marsa Alam, Hurghada, Ain El Sokhna, the Green Star Hotels initiative and the sub-regional plan for Yanbu, Umluj, Al Wajh and Duba.</p></div></section>'
             '<section class="sec" style="padding-top:30px"><div class="wrap"><div class="pgrid">%s</div>%s</div></section>') % (''.join(card(p, R) for p in ps), faq_html(qa)) + cta(R)
     return page('destinations/red-sea.html', 'Sustainable Tourism Planning on the Red Sea | PUD Consultants', body, 'Red Sea destination planning by PUD Consultants: Port Ghalib, Abo Dabbab, Hurghada, Ain El Sokhna and the Yanbu to Duba sub-regional plan.', 'services.html',
                 schema=[faq_ld(qa), crumbs([('Home', ''), ('Services', 'services.html'), ('Red Sea destinations', 'destinations/red-sea.html')])], og_img=hero_img(ps[0]['slug']) if ps else None)
@@ -598,9 +605,9 @@ def article_page(a):
 
 def services_page():
     gr = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 110))) for s in SERVICES)
-    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Services</p><h1 class="h-xl" style="max-width:16ch">From visionary master plans <em>to precise execution.</em></h1><p class="lede" style="max-width:46ch">Urban and regional planning, master planning, architecture, heritage, landscape and strategic advice for public and private clients.</p></div></section>'
+    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Services</p><h1 class="h-xl" style="max-width:16ch">From visionary master plans <em>to precise execution.</em></h1><p class="lede" style="max-width:46ch">Six services, one integrated practice: planning and city making, urban design and master planning, architecture, sustainability, heritage and strategic advice.</p></div></section>'
             '<section class="sec" style="padding-top:20px"><div class="wrap"><div class="svcgrid">%s</div><h2 class="h-m" style="margin-top:70px">How we work</h2><p class="p-l" style="margin-top:12px">We start by listening: stakeholder engagement and a close reading of the place. Then we assemble the team each project needs from our network of planners, architects, designers, sustainability experts, economists and social scientists. Six principles guide every project: insight-driven planning, scenario-based thinking, collaborative co-creation, legacy-oriented design, agile project structuring and integrated sustainability.</p></div></section>') % gr + chapter(4)
-    return page('services.html', 'Urban Planning and Master Planning Services | PUD Consultants', body, 'Nine services from PUD Consultants: urban and regional planning, master planning, tourism, heritage, landscape, architecture, sustainability and advisory.', 'services.html',
+    return page('services.html', 'Urban Planning and Master Planning Services | PUD Consultants', body, 'Six services from PUD Consultants: urban and regional planning and city making, urban design and master planning, architecture, sustainable development, cultural heritage and strategic advisory.', 'services.html',
                 schema=[crumbs([('Home', ''), ('Services', 'services.html')]), {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD services', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/services/' + s['slug'] + '.html', 'name': s['name']} for i, s in enumerate(SERVICES)]}])
 
 def service_page(s):
@@ -788,11 +795,14 @@ def main():
     W('index.html', home()); W('60-years.html', story()); W('people.html', people()); W('projects.html', projects_page()); W('partners.html', partners_page()); W('contact.html', contact_page())
     W('amr-attia.html', amr_page()); W('services.html', services_page()); W('insights.html', insights_page()); W('faq.html', faq_page()); os.makedirs(SITE + '/destinations', exist_ok=True); W('destinations/red-sea.html', red_sea_page())
     for s in SERVICES: W('services/%s.html' % s['slug'], service_page(s))
+    for old, new in RETIRED.items():
+        W('services/%s.html' % old, '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="%s/services/%s.html"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=%s.html"></head><body><a href="%s.html">This service is now part of another page.</a></body></html>' % (BASE, new, new, new))
     for a in ARTICLES: W('insights/%s.html' % a['slug'], article_page(a))
     for p in PROJ: W('projects/%s.html' % p['slug'], project_page(p))
     for d in PLACES.values(): W('cities/%s.html' % d['slug'], city_page(d))
     for c, ps in COUNTRIES.items(): W('countries/%s.html' % cslug(c), country_page(c, ps))
     skip = {'cities/%s.html' % s for s in NOINDEX_CITIES if s in PLACES and len(PLACES[s]['projects']) < 2}
+    skip |= {'services/%s.html' % o for o in RETIRED}
     open(SITE + '/sitemap.xml', 'w').write(sitemap([x for x in paths if x not in skip])); open(SITE + '/llms.txt', 'w').write(llms()); open(SITE + '/llms-full.txt', 'w').write(llms_full().replace(' – ', ', '))
     open(SITE + '/robots.txt', 'w').write(('User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % BASE) if MODE == 'prod' else 'User-agent: *\nDisallow: /\n')
     print('MODE', MODE, 'pages', len(paths), 'projects', len(PROJ), 'places', len(PLACES), 'countries', len(COUNTRIES), 'logos', sum(1 for p in PART if has_logo(p)))

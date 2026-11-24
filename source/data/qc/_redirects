@@ -13,3 +13,7 @@ http://www.pudconsultants.com/* https://www.pudconsultants.com/:splat 301!
 /faq         /faq.html      301
 /60-years    /60-years.html 301
 # 404.html at the root is served automatically for unknown paths on Netlify and Cloudflare Pages.
+# Services merged into the six profile services (Nov 2026)
+/services/sustainable-tourism-planning.html   /services/master-planning-and-urban-design.html   301
+/services/landscape-planning-and-design.html  /services/master-planning-and-urban-design.html   301
+/services/infrastructure-and-mobility-planning.html /services/urban-and-regional-planning.html  301

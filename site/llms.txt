@@ -22,15 +22,12 @@
 - [Contact](https://www.pudconsultants.com/contact.html)
 
 ## Services
-- [Urban and regional planning](https://www.pudconsultants.com/services/urban-and-regional-planning.html): We plan how cities and regions grow: land use, mobility, housing and infrastructure, aligned with national visions and tested with the people affected.
-- [Master planning and urban design](https://www.pudconsultants.com/services/master-planning-and-urban-design.html): From an empty site to a working district. We plan mixed-use destinations, communities and campuses with walkable streets, public space and phasing.
-- [Sustainable tourism planning](https://www.pudconsultants.com/services/sustainable-tourism-planning.html): Destinations that keep what visitors come for. We plan coasts, resorts and heritage sites that earn all year and protect their landscape and identity.
-- [Cultural heritage planning](https://www.pudconsultants.com/services/cultural-heritage-planning.html): Heritage is not a backdrop. We build it into the plan, so new development continues the story of a place instead of replacing it.
-- [Architecture and interior design](https://www.pudconsultants.com/services/architecture-and-interior-design.html): Buildings that belong to their place. Hotels, campuses, offices and homes shaped by climate, setting and the people who use them.
-- [Landscape planning and design](https://www.pudconsultants.com/services/landscape-planning-and-design.html): Parks, waterfronts and open space are where a plan meets daily life. We design them to be used, easy to reach and at home in their landscape.
-- [Environment and sustainability](https://www.pudconsultants.com/services/environment-and-sustainability.html): Low-carbon, climate-resilient planning and green infrastructure, from a Red Sea marine field station to WATG's Sharaan Nature Reserve master plan.
-- [Infrastructure and mobility planning](https://www.pudconsultants.com/services/infrastructure-and-mobility-planning.html): Streets, tunnels, stormwater and rail planned together with the city, so networks serve neighbourhoods instead of cutting through them.
-- [Strategic advisory and development consultancy](https://www.pudconsultants.com/services/development-consultancy-and-strategic-advisory.html): Plans that can be built and paid for. We link vision to feasibility, investment strategy and development economics on large programmes.
+- [Urban & Regional Planning & City Making](https://www.pudconsultants.com/services/urban-and-regional-planning.html): We design resilient regions and vibrant cities through integrated frameworks that align land use, mobility, infrastructure and growth strategies with long-term national visions.
+- [Urban Design & Master Planning](https://www.pudconsultants.com/services/master-planning-and-urban-design.html): We lead large-scale urban development, shaping mixed-use destinations and smart districts with strategic zoning, land optimisation and future-ready urban systems.
+- [Architectural & Experiential Design](https://www.pudconsultants.com/services/architecture-and-interior-design.html): We deliver context-driven, high-impact architecture across sectors, fusing aesthetics, functionality and user experience into signature landmarks and spaces.
+- [Environmentally Sustainable Development](https://www.pudconsultants.com/services/environment-and-sustainability.html): We embed sustainability into every layer: low-carbon strategies, green infrastructure and ecological systems that future-proof projects and meet global standards.
+- [Cultural Heritage & Identity Preservation](https://www.pudconsultants.com/services/cultural-heritage-planning.html): We protect cultural identity by integrating heritage into urban and architectural design, ensuring continuity, relevance and authenticity.
+- [Strategic Advisory & Green Economy](https://www.pudconsultants.com/services/development-consultancy-and-strategic-advisory.html): We provide end-to-end consulting and development economics, aligning vision with market feasibility, investment strategy and regenerative economic models.
 
 ## Guides
 - [What is urban planning?](https://www.pudconsultants.com/insights/what-is-urban-planning.html): Urban planning decides how land in cities and regions is used, connected and looked after, so that people can live, work and move well.
