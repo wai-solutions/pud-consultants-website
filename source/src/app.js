@@ -28,7 +28,7 @@ if(stage&&!reduce){
   ScrollTrigger.create({trigger:stage,start:'top top',end:'bottom bottom',scrub:true,onUpdate:s=>{const p=s.progress;bar.style.height=(p*100)+'%';
     pin.style.setProperty('--end',Math.max(0,Math.min(1,(p-.86)/.1)));
     const f=Math.min(n-.0001,p*n),i=Math.floor(f),lp=f-i;
-    if(i!==act){act=i;shots.forEach((el,k)=>{el.classList.toggle('on',k===i);el.classList.toggle('past',k<i)});steps.forEach((el,k)=>el.classList.toggle('on',k===i))}
+    if(i!==act){act=i;shots.forEach((el,k)=>{el.classList.toggle('on',k===i);el.classList.toggle('past',k<i)});steps.forEach((el,k)=>el.classList.toggle('on',k===i));const sh=shots[i],tg=$('.projtag',stage);if(tg&&sh.dataset.name){tg.href=sh.dataset.href;$('b',tg).textContent=sh.dataset.name;$('small',tg).textContent=sh.dataset.sub;tg.classList.remove('swap');void tg.offsetWidth;tg.classList.add('swap')}}
     shots[i].style.setProperty('--lp',lp.toFixed(3))}});
   shots[0].classList.add('on');steps[0].classList.add('on');
 }else if(stage){stage.classList.add('static');$$('.step',stage).forEach(e=>e.classList.add('on'))}

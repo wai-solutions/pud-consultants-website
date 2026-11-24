@@ -317,18 +317,19 @@ def services_immersive():
             '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
 
-STORY = [('cmc-1-vision', 'Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon'),
-         ('makkah-2-street', 'A residential street in Makkah Township'),
-         ('makkah-3-detail', 'A children\'s play area in a Makkah Township neighbourhood'),
-         ('makkah-4-people', 'Wadi Park, Makkah Township, with families walking toward the mosque')]
+STORY = [('cmc-1-vision', 'Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon', 'cairo-media-city', 'Cairo Media City', 'Vision concept master plan · Giza'),
+         ('makkah-2-street', 'A residential street in Makkah Township', 'makkah-township-vision-master-plan', 'Makkah Township', 'Vision master plan · Makkah · with WATG'),
+         ('makkah-3-plaza', 'A shaded plaza in Makkah Township where families meet at café tables', 'makkah-township-vision-master-plan', 'Makkah Township', 'Vision master plan · Makkah · with WATG'),
+         ('riviera-4-people', 'People walking along the Marina Town promenade, Alamein Riviera', 'alamein-riviera-vision-master-plan', 'Alamein Riviera', 'Vision master plan · North Coast, Egypt')]
 def depth_story():
-    shots = ''.join('<figure class="shot%s" data-i="%d"><img src="assets/story/%s.jpg" srcset="assets/story/%s-m.jpg 1000w, assets/story/%s.jpg 1800w" sizes="100vw" alt="%s"%s></figure>'
-                    % (' on' if i == 0 else '', i, f, f, f, E(alt), '' if i == 0 else ' loading="lazy"') for i, (f, alt) in enumerate(STORY))
+    shots = ''.join('<figure class="shot%s" data-i="%d" data-href="projects/%s.html" data-name="%s" data-sub="%s"><img src="assets/story/%s.jpg" srcset="assets/story/%s-m.jpg 1000w, assets/story/%s.jpg 1800w" sizes="100vw" alt="%s"%s></figure>'
+                    % (' on' if i == 0 else '', i, slug, E(nm), E(sub), f, f, f, E(alt), '' if i == 0 else ' loading="lazy"') for i, (f, alt, slug, nm, sub) in enumerate(STORY))
     steps = ''.join('<div class="step"><span class="n mono">%s</span><h2>%s</h2><p>%s</p></div>' % (a, E(b), E(c)) for a, b, c in STEPS)
-    return ('<section class="stage depth" aria-label="From vision to the people: Makkah Township"><div class="pin">'
+    f0 = STORY[0]
+    return ('<section class="stage depth" aria-label="From vision to the people: four PUD projects"><div class="pin">'
             '<div class="cam">%s</div><div class="vig"></div><div class="steps">%s</div>'
-            '<a class="projtag" href="projects/makkah-township-vision-master-plan.html"><span class="mono">The project</span><b>Makkah Township</b><small>Vision master plan · Makkah · with WATG</small><i aria-hidden="true">&rarr;</i></a>'
-            '<div class="bar" aria-hidden="true"><i></i></div><p class="hint mono">Scroll</p></div></section>') % (shots, steps)
+            '<a class="projtag" href="projects/%s.html"><span class="mono">The project</span><b>%s</b><small>%s</small><i aria-hidden="true">&rarr;</i></a>'
+            '<div class="bar" aria-hidden="true"><i></i></div><p class="hint mono">Scroll</p></div></section>') % (shots, steps, f0[2], E(f0[3]), E(f0[4]))
 
 APPROACH = [
  ('Listen', 'Every project starts by listening: to the land, its history and the people who will live, work, pray and visit there.', 'assets/people/giza-framework-1.jpg'),

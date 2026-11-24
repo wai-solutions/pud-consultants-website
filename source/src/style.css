@@ -966,3 +966,10 @@ footer.f3 .fine{margin-top:44px;padding-top:18px;border-top:1px solid var(--line
 @media(max-width:600px){.f3-g{grid-template-columns:1fr 1fr;gap:26px 20px}.f3-sv{grid-column:1/-1}footer.f3{padding-bottom:96px}}
 .depth .shot[data-i="0"] img{object-position:50% 50%}
 .depth .shot[data-i="0"] img{object-position:50% 12%;transform-origin:50% 40%}@media(max-width:800px){.depth .shot[data-i="0"] img{object-position:42% 30%}}
+/* project card follows each shot */
+.depth .projtag{opacity:1!important;transform:none!important}
+.depth .projtag.swap{animation:tagin .6s cubic-bezier(.2,.7,.2,1)}
+@keyframes tagin{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.depth .shot[data-i="2"] img{object-position:40% 60%}
+.depth .shot[data-i="3"] img{object-position:55% 60%}
+@media(max-width:800px){.depth .shot[data-i="2"] img{object-position:35% 50%}.depth .shot[data-i="3"] img{object-position:62% 50%}}
