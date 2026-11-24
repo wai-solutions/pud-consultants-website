@@ -73,7 +73,7 @@ const regOk=c=>state.region==='All'||(state.region==='Intl'?(c!=='Egypt'&&c!=='S
 function pass(p){return (state.country==='All'||p.country===state.country)&&(state.cat==='All'||p.category.includes(state.cat))&&regOk(p.country)&&(state.svc==='All'||(p.svc||[]).includes(state.svc))&&eraOk(p.year_start)&&(!state.q||(p.name+' '+p.city+' '+p.client+' '+p.country).toLowerCase().includes(state.q))}
 function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct){const T=+ct.dataset.total||DATA.length;ct.innerHTML=n>=T?'<b>'+T+'</b> projects':'<b>'+n+'</b> of '+T+' projects'}}
 function count(){return DATA.filter(p=>pass(p)&&p.year_start<=state.year).length}
-function applyMap(){atlas&&atlas.setFilter(pass);atlas&&atlas.setYear(state.year);const y=$('.atlas .yr');if(y)y.textContent=state.year;const n=$('.atlas .n');if(n)n.textContent=count()+' projects'}
+function applyMap(){atlas&&atlas.setFilter(pass);atlas&&atlas.setYear(state.year);const y=$('.atlas .yr');if(y)y.textContent=state.year;const n=$('.atlas .n');if(n){const c=count();n.textContent=c+(c===1?' project':' projects')}}
 function applyAll(){applyMap();applyGrid()}
 let gridT=null;const applyGridSoon=()=>{clearTimeout(gridT);gridT=setTimeout(applyGrid,220)};
 const V={all:[43,26,1],egypt:[31,28.5,3.1],ksa:[43,24,1.9],makkah:[39.9,21.4,5],coast:[28.6,31,5],iraq:[41,33,2.3],riyadh:[46.7,24.7,3.4],alula:[39.3,25.8,3.8],giza:[31.1,29.9,5.4]};

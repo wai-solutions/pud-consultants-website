@@ -48,7 +48,7 @@ export function atlasScene(box,geo,projects,api){
   function size(){const r=box.getBoundingClientRect();w=Math.max(2,r.width);h=Math.max(2,r.height);renderer.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
   new ResizeObserver(size).observe(box);size();
   const tip=box.querySelector('.tip');
-  function place(){vx+=(tvx-vx)*.08;vz+=(tvz-vz)*.08;zoom+=(tz-zoom)*.08;const d=(w/h<1.1?64:46)/zoom;const a=-0.0+rot*.0;const el=.95-tilt*.0;
+  function place(){vx+=(tvx-vx)*.08;vz+=(tvz-vz)*.08;zoom+=(tz-zoom)*.08;const ar=w/h,d=(ar<1.1?46*Math.min(2.3,Math.max(1.39,1.5/ar)):46)/zoom;const a=-0.0+rot*.0;const el=.95-tilt*.0;
     cam.position.set(vx+Math.sin(rot)*d*.35+mx*1.2,d*Math.sin(el)-my*1.2,vz+d*Math.cos(el)*.62);cam.lookAt(vx,0,vz)}
   box.addEventListener('pointermove',e=>{const r=box.getBoundingClientRect();mouse.x=((e.clientX-r.left)/r.width)*2-1;mouse.y=-((e.clientY-r.top)/r.height)*2+1;mx=mouse.x*.6;my=mouse.y*.6;
     if(drag){rot=clamp(rot-e.movementX*.003,-.9,.9)} });
