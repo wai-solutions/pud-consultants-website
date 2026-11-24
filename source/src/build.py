@@ -85,6 +85,7 @@ def still_for(slug):
         if not st: continue
         for cand in ('assets/stills/%s.jpg' % st, 'assets/stills/%s-egypt.jpg' % st, 'assets/stills/%s-ksa.jpg' % st, 'assets/stills/%s.jpg' % re.sub(r'-(egypt|ksa)$', '', st)):
             if ex(cand): return cand
+NO_CLIP_HERO = {'tut-amon-village-hotel-and-resort'}
 def clip_for(slug):
     st = clipof.get(slug, {}).get('mov')
     if st and ex('assets/clips/%s.mp4' % st): return 'assets/clips/%s.mp4' % st, 'assets/clips/%s.jpg' % st
@@ -729,6 +730,7 @@ def related_for(p):
 
 def project_page(p):
     R = '../'; slug = p['slug']; himg = hero_img(slug); clp, clp_poster = clip_for(slug)
+    if slug in NO_CLIP_HERO: clp, clp_poster = None, None  # newer, sharper photos replace the old clip
     imgs = imgsets.get(slug, [])
     place = ', '.join(x for x in [p.get('city'), p['country']] if x)
     typ = '%s in %s' % (p['noun'], place)
@@ -748,7 +750,7 @@ def project_page(p):
     meta_html = ''.join('<div><span class="k mono">%s</span><span class="v">%s</span></div>' % (k, v) for k, v in meta)
     gal = ''.join('<button data-full="%s%s"><img src="%s%s" alt="%s: %s" loading="lazy" width="%s" height="%s"></button>' % (R, im['src'], R, im.get('thumb') or im['src'], E(p['name']), E(im.get('note') or p['noun']), im.get('w', ''), im.get('h', '')) for im in imgs)
     st = still_for(slug)
-    if st and imgs and st not in DROP: gal += '<button data-full="%s%s"><img src="%s%s" alt="%s visualisation" loading="lazy"><span class="lbl">Visualisation</span></button>' % (R, st, R, st, E(p['name']))
+    if st and imgs and st not in DROP and slug not in NO_CLIP_HERO: gal += '<button data-full="%s%s"><img src="%s%s" alt="%s visualisation" loading="lazy"><span class="lbl">Visualisation</span></button>' % (R, st, R, st, E(p['name']))
     facts = ''.join('<div class="fact">%s <a href="%s" target="_blank" rel="noopener">Source</a></div>' % (E(f['fact']), E(f['url'])) for f in FACTS if f.get('project') in (slug, p['name']) and f.get('url'))
     pl_ = PLINKS.get(slug); off = ('<p style="margin-top:22px"><a class="btn ghost" href="%s" target="_blank" rel="noopener">Official project site</a></p>' % E(pl_['official_url'])) if pl_ and pl_.get('official_url') else ''
     sv = [s for s in SERVICES if any(c in s['cats'] for c in p.get('category', []))][:2]

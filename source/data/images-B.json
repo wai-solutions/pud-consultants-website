@@ -2508,5 +2508,27 @@
     "note": "Water courts and a glass bridge at dusk, Golden Gate, New Cairo"
    }
   ]
+ },
+ {
+  "folder": "Tut Amun Village",
+  "slug_guess": "tut-amoun",
+  "items": [
+   {
+    "src": "assets/p/tut-amoun/01.jpg",
+    "thumb": "assets/p/tut-amoun/01_t.jpg",
+    "w": 1672,
+    "h": 941,
+    "kind": "photo",
+    "note": "Tut Amun Village terraced in stone and render up the hillside above Lake Nasser, Aswan"
+   },
+   {
+    "src": "assets/p/tut-amoun/02.jpg",
+    "thumb": "assets/p/tut-amoun/02_t.jpg",
+    "w": 1672,
+    "h": 941,
+    "kind": "photo",
+    "note": "Arcaded café terrace with rattan chairs and garden views, Tut Amun Village, Aswan"
+   }
+  ]
  }
 ]
