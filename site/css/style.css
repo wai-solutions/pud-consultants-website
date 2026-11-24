@@ -587,3 +587,4 @@ b,strong{font-weight:700}
 .eco,.svc .eco,.svc span.eco,.ticks .eco,.facts .eco{display:inline!important;background:none!important;color:inherit;padding:0!important;border-radius:0;font-weight:inherit}
 .sec.paper .eco,.tl-wrap .eco,.pl .eco,.sec.paper .svc .eco,.tiles .eco{color:var(--green)!important;font-weight:inherit}
 .h-xl .eco,.h-l .eco,.h-m .eco{color:inherit!important}
+.eco{font:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;line-height:inherit!important;margin:0!important}
