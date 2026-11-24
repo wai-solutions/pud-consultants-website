@@ -1,0 +1,3249 @@
+[
+ {
+  "slug": "cairo-media-city",
+  "name": "Cairo Media City",
+  "year": "2026",
+  "year_start": 2026,
+  "country": "Egypt",
+  "city": "Giza",
+  "lat": 29.96,
+  "lon": 31.07,
+  "category": [
+   "Masterplan",
+   "Advisory",
+   "Tourism"
+  ],
+  "client": "NUCA, TDA and Giza Governorate",
+  "partners": [
+   "watg",
+   "shaker-group"
+  ],
+  "summary": "Vision concept master plan in Giza, close to the Pyramids and at the convergence of Egypt's emerging high-speed rail network, for NUCA, TDA and Giza Governorate. PUD's scope: local planning and design, master planning advisory, stakeholder management, and archaeology and Egyptology advisory.",
+  "role": "Local planning and design; master planning advisory, stakeholder management, archaeology and Egyptology advisory",
+  "drive_clip": "Egypt/Videos/Cairo Media City.mov",
+  "drive_still": "Egypt/Cairo Media City - Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "jorhum-destination",
+  "name": "Jorhum Destination",
+  "year": "2026",
+  "year_start": 2026,
+  "country": "Saudi Arabia",
+  "city": "Makkah",
+  "lat": 21.42,
+  "lon": 39.83,
+  "category": [
+   "Masterplan",
+   "Mixed use",
+   "Advisory"
+  ],
+  "client": "Jorhum Real Estate Development Company (JRDC)",
+  "partners": [],
+  "summary": "Advisory and master planning for Jorhum, a 990,000 m2 mixed-use destination in Makkah, for Jorhum Real Estate Development Company (JRDC). The work is ongoing in 2026.",
+  "role": "Technical oversight, design review of consultant work, strategy development and market analysis",
+  "drive_clip": "KSA/Videos/JORHUM.mov",
+  "drive_still": "KSA/JORHUM - KSA.png",
+  "featured": false
+ },
+ {
+  "slug": "muzdalifah-park",
+  "name": "Muzdalifah Park",
+  "year": "2026",
+  "year_start": 2026,
+  "country": "Saudi Arabia",
+  "city": "Muzdalifah, Makkah",
+  "lat": 21.39,
+  "lon": 39.91,
+  "category": [
+   "Landscape",
+   "Advisory"
+  ],
+  "client": "Kidana Development Company (KDC), on behalf of the Royal Commission for Makkah City and Holy Sites (RCMC)",
+  "partners": [],
+  "summary": "Design advisory and design review for a park at Muzdalifah, Makkah, for Kidana Development Company on behalf of the Royal Commission for Makkah City and Holy Sites.",
+  "role": "Design advisory and design review; conceptual design oversight for Muzdalifah",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "somou-boulevard-new-cairo",
+  "name": "Sumou Boulevard, New Cairo",
+  "year": "2026",
+  "year_start": 2026,
+  "country": "Egypt",
+  "city": "Mostakbal City, New Cairo",
+  "lat": 30.17,
+  "lon": 31.62,
+  "category": [
+   "Mixed use",
+   "Advisory"
+  ],
+  "client": "Paragon-Adeer",
+  "partners": [],
+  "summary": "SUMOU Blvd. is the first flagship project of Paragon-Adeer, a joint venture of Adeer International and Paragon Developments, anchored by a 2 km boulevard in Mostakbal City, New Cairo. PUD provided the subject-matter-expert group advising the steering committee that reviews the design work (2026).",
+  "role": "Steering committee advisory: supplied the subject-matter experts who review the design work",
+  "drive_clip": "Egypt/Videos/SumouBlvd.mov",
+  "drive_still": "Egypt/SumouBlvd - Egypt.png",
+  "featured": true
+ },
+ {
+  "slug": "jabal-thabeer-park",
+  "name": "Jabal Thabeer Park (Mina, Makkah)",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Saudi Arabia",
+  "city": "Mina, Makkah",
+  "lat": 21.41,
+  "lon": 39.89,
+  "category": [
+   "Landscape",
+   "Masterplan"
+  ],
+  "client": "",
+  "partners": [
+   "gillespies",
+   "studio-4215",
+   "systematica"
+  ],
+  "summary": "Landscape design for a 250,000 m2 hillside park at Mina beside the Jamarat Bridge in Makkah, with Gillespies, Studio 4215 and Systematica. The team was first runner-up in Future Landscapes (Unbuilt) at the Landscape Middle East Awards 2025.",
+  "role": "Landscape design partner: strategic zoning and access optimisation, inclusive mobility network, landscape integration",
+  "drive_clip": "KSA/Videos/Jabal Thabeer.mov",
+  "drive_still": "KSA/Jabal Thabeer - KSA.png",
+  "featured": true
+ },
+ {
+  "slug": "majar-al-kabsh-pre-concept-design",
+  "name": "Majar Al Kabsh Pre-Concept Design",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Saudi Arabia",
+  "city": "Mina, Makkah",
+  "lat": 21.41,
+  "lon": 39.89,
+  "category": [
+   "Advisory",
+   "Masterplan"
+  ],
+  "client": "Kidana Development Company (KDC), supported by the Royal Commission for Makkah and the Ministry of Hajj",
+  "partners": [],
+  "summary": "Steering committee advisory on the pre-concept design for Majar Al Kabsh, part of the expanded development framework of Mina, Makkah, for Kidana Development Company. PUD provided the subject-matter experts who reviewed the consultant's work.",
+  "role": "Steering committee advisory: provided the subject-matter experts to review the work and manage the design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "massoumbou-diwom-vision-master-plan",
+  "name": "Massoumbou-Diwom Vision Master Plan",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Cameroon",
+  "city": "Massoumbou-Diwom (Douala area)",
+  "lat": 4.3,
+  "lon": 9.95,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "MAETUR",
+  "partners": [
+   "pgesco"
+  ],
+  "summary": "Vision master plan for Massoumbou-Diwom near Douala, Cameroon, for MAETUR, developed with PGESCO: an interim 50% plan and a final plan scaled for up to 1.1 million residents.",
+  "role": "Complete spatial programming and land-use strategy, scenarios, urban form and mobility, phased development strategy",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "new-administrative-capital-phases-2-4",
+  "name": "New Administrative Capital: Strategic Advisory, Phases 2 to 4",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Egypt",
+  "city": "New Administrative Capital",
+  "lat": 30.02,
+  "lon": 31.76,
+  "category": [
+   "Masterplan",
+   "Advisory"
+  ],
+  "client": "ACUD (Administrative Capital for Urban Development)",
+  "partners": [
+   "dar-al-handasah"
+  ],
+  "summary": "Strategic advisory on the master plan for Phases 2, 3 and 4 of Egypt's New Administrative Capital for ACUD, including consultant selection support and steering committee coordination.",
+  "role": "Strategic advisory and master planning support; consultant selection support and steering committee coordination",
+  "drive_clip": "Egypt/Videos/New administrative Capital.mov",
+  "drive_still": "Egypt/New Administrative Capital _Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "port-ghalib-master-plan",
+  "name": "Port Ghalib Master Plan",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Egypt",
+  "city": "Marsa Alam",
+  "lat": 25.53,
+  "lon": 34.63,
+  "category": [
+   "Masterplan",
+   "Tourism",
+   "Hospitality"
+  ],
+  "client": null,
+  "partners": [
+   "watg"
+  ],
+  "summary": "Vision master plan for Port Ghalib at Marsa Alam on Egypt's Red Sea coast, developed with WATG as a story-led destination of five resort districts, about 6,170 hotel keys and 3,000 residential units. PUD's role centred on design leadership, spatial storytelling and development advisory.",
+  "role": "Master plan strategic framework, spatial programming and land-use strategy, resort district definition, development brief structuring",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "yuwdda-sub-regional-plan",
+  "name": "Yanbu, Umluj, Al Wajh and Duba Sub-Regional Plan (YUWDDA)",
+  "year": "2025",
+  "year_start": 2025,
+  "country": "Saudi Arabia",
+  "city": "Yanbu, Umluj, Al Wajh and Duba (Red Sea coast)",
+  "lat": 25.0,
+  "lon": 37.3,
+  "category": [
+   "Regional planning",
+   "Advisory"
+  ],
+  "client": "YUWDDA (Yanbu, Umluj, Al Wajh and Duba Development Authority), via Metropoli / Typsa",
+  "partners": [
+   "metropoli",
+   "typsa",
+   "indra"
+  ],
+  "summary": "Advisory on the sub-regional and local plans for four Red Sea governorates, Yanbu, Umluj, Al Wajh and Duba, covering about 50,000 km2, for the YUWDDA development authority via Metropoli and Typsa.",
+  "role": "Urban and regional planning advisory",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-mashaaer-al-mugaddassah-master-plan",
+  "name": "Al Mashaaer Al Mugaddassah Master Plan",
+  "year": "2024-2025",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Makkah (Mina, Muzdalifah, Arafat)",
+  "lat": 21.4,
+  "lon": 39.92,
+  "category": [
+   "Masterplan",
+   "Regional planning"
+  ],
+  "client": "Kidana Development Company (KDC), on behalf of the Royal Commission for Makkah City and Holy Sites (RCMC)",
+  "partners": [],
+  "summary": "Strategic master plan for the holy sites of Makkah (Mina, Muzdalifah and Arafat), for Kidana Development Company on behalf of the Royal Commission for Makkah City and Holy Sites.",
+  "role": "Strategic master planning and urban oversight, subject-matter experts panel, crowd and pilgrimage management, infrastructure and investment strategy; steering committee for the Al Rabita design competition",
+  "drive_clip": "KSA/Videos/Al Mashaaer Al Mugaddassah.mov",
+  "drive_still": "KSA/Al Mashaaer Al Mugaddassah - KSA.png",
+  "featured": false
+ },
+ {
+  "slug": "al-rabita-pre-concept-design-competition",
+  "name": "Al Rabita Pre-Concept Design Competition",
+  "year": "2024",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Makkah",
+  "lat": 21.41,
+  "lon": 39.89,
+  "category": [
+   "Competition",
+   "Infrastructure"
+  ],
+  "client": "Kidana Development Company (KDC), supported by the Royal Commission for Makkah and the Ministry of Hajj",
+  "partners": [],
+  "summary": "Pre-concept design competition for Al Rabita, a multi-modal transit hub serving Al Mashaer in Makkah, for Kidana Development Company. PUD formed and coordinated the steering committee and led the competition jury.",
+  "role": "Formation and coordination of the steering committee; competition jury leadership",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "fawaz-alhokair-bvlgari-mansion-dubai",
+  "name": "Fawaz Alhokair Bvlgari Mansion, Jumeirah Bay Island, Dubai",
+  "year": "2024",
+  "year_start": 2024,
+  "country": "United Arab Emirates",
+  "city": "Jumeirah Bay Island, Dubai",
+  "lat": 25.21,
+  "lon": 55.24,
+  "category": [
+   "Housing"
+  ],
+  "client": "Fawaz Alhokair",
+  "partners": [
+   "naga-architects"
+  ],
+  "summary": "Private beachfront mansion on Jumeirah Bay Island, Dubai, designed with NAGA Signature Interior Design.",
+  "role": "Client representative and design manager",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "fawaz-alhokair-estate-riyadh",
+  "name": "Fawaz Alhokair Estate, Riyadh",
+  "year": "2024",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Al Waseel, Riyadh",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Housing",
+   "Landscape"
+  ],
+  "client": "Fawaz Alhokair",
+  "partners": [
+   "watg",
+   "frantz-slater-design-collective",
+   "naga-architects"
+  ],
+  "summary": "Private estate of 2,400 m2 built-up area in Al Waseel, Riyadh, with WATG, Frantz Slater and NAGA coordinated across architecture, interiors and landscape.",
+  "role": "Client representative and strategic design manager (design oversight and management, in progress)",
+  "drive_clip": "KSA/Videos/Fawaz Al Hokair Estate.mov",
+  "drive_still": "KSA/Fawaz Al Hokair Estate - KSA.png",
+  "featured": false
+ },
+ {
+  "slug": "fawaz-alhokair-palace-extension-riyadh",
+  "name": "Fawaz Alhokair Palace Extension, Riyadh",
+  "year": "2024",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Riyadh",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Housing"
+  ],
+  "client": "a private client",
+  "partners": [
+   "naga-architects"
+  ],
+  "summary": "Private residence extension in Riyadh, with NAGA Signature Interior Design.",
+  "role": "Client representative and design manager",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "kidana-al-khaif",
+  "name": "Kidana Al Khaif (Mina, Muzdalifah and Arafat)",
+  "year": "2024-2026",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Makkah (Mina, Muzdalifah, Arafat)",
+  "lat": 21.4,
+  "lon": 39.92,
+  "category": [
+   "Masterplan",
+   "Advisory"
+  ],
+  "client": "Kidana Development Company (KDC), on behalf of the Royal Commission for Makkah City and Holy Sites (RCMC)",
+  "partners": [
+   "som",
+   "buro-happold"
+  ],
+  "summary": "Advisory and master planning for the holy sites of Mina (7.8 km2), Muzdalifah (11.9 km2) and Arafat (12.2 km2) in Makkah, for Kidana Development Company on behalf of the Royal Commission for Makkah City and Holy Sites. The work is ongoing in 2026.",
+  "role": "Design advisory and design review: brief validation, strategic master planning and urban oversight, subject-matter experts panel, landscape and environmental planning, crowd and pilgrimage management, infrastructure and investment strategy",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": true
+ },
+ {
+  "slug": "pyramids-plateau-destination-master-plan",
+  "name": "Pyramids Plateau Destination Master Plan",
+  "year": "2024-2025",
+  "year_start": 2024,
+  "country": "Egypt",
+  "city": "Giza",
+  "lat": 29.98,
+  "lon": 31.13,
+  "category": [
+   "Masterplan",
+   "Tourism",
+   "Heritage"
+  ],
+  "client": "NUCA, TDA and Giza Governorate",
+  "partners": [
+   "watg",
+   "shaker-group",
+   "luxury-partners"
+  ],
+  "summary": "Tourism master plan for the Giza Pyramids plateau, from Sphinx International Airport to the UNESCO World Heritage Site of Memphis and its Necropolis. WATG leads; PUD is cultural-heritage specialist on the team. The final framework was presented to the Ministry of Tourism in December 2025.",
+  "role": "Cultural-heritage specialist on WATG's team: masterplanning and urban advisory, stakeholder management, archaeology and Egyptology advisory, heritage and cultural landscape conservation",
+  "drive_clip": "Egypt/Videos/Pyramids Plateau.mov",
+  "drive_still": "Egypt/Pyramids Plateau - Egypt.png",
+  "featured": true
+ },
+ {
+  "slug": "riyadh-plan-stakeholder-engagement-plan",
+  "name": "Riyadh Plan: Stakeholder Engagement Plan",
+  "year": "2024",
+  "year_start": 2024,
+  "country": "Saudi Arabia",
+  "city": "Riyadh",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Advisory"
+  ],
+  "client": "Royal Commission for Riyadh City (RCRC)",
+  "partners": [
+   "atkinsrealis"
+  ],
+  "summary": "Stakeholder engagement plan to align more than 100 governmental and institutional entities behind the Riyadh Plan, for the Royal Commission for Riyadh City, with AtkinsRealis.",
+  "role": "Strategic advisory, urban planning, city making, governance and stakeholder engagement",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "la-vista-town-new-cairo",
+  "name": "La Vista Town, New Cairo",
+  "year": "2023",
+  "year_start": 2023,
+  "country": "Egypt",
+  "city": "New Cairo",
+  "lat": 30.03,
+  "lon": 31.47,
+  "category": [
+   "Masterplan"
+  ],
+  "client": null,
+  "partners": [],
+  "summary": "Concept master plan for La Vista Town, a residential community in New Cairo.",
+  "role": "Concept development",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "ramla-concept-master-plan",
+  "name": "Ramla Concept Master Plan",
+  "year": "2023",
+  "year_start": 2023,
+  "country": "Egypt",
+  "city": "North Coast",
+  "lat": 30.9,
+  "lon": 28.5,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Marakez",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Concept master plan for a tourism development on Egypt's North Coast, for Marakez.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "alamein-riviera-vision-master-plan",
+  "name": "Al Alamein Riviera Vision Master Plan",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Egypt",
+  "city": "North Coast (New Alamein)",
+  "lat": 30.83,
+  "lon": 28.95,
+  "category": [
+   "Masterplan",
+   "Tourism",
+   "Mixed use"
+  ],
+  "client": "China State Construction",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Vision master plan for a coastal destination of about 996 hectares in New Alamein on Egypt's North Coast, for China State Construction, with WATG.",
+  "role": "Strategic master planning, urban and landscape design, infrastructure strategy",
+  "drive_clip": "Egypt/Videos/Al Alamein Reveira.mov",
+  "drive_still": "Egypt/Al_alamein Reveira _ Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "alula-strategic-framework-plan",
+  "name": "AlUla Strategic Framework Plan",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.61,
+  "lon": 37.92,
+  "category": [
+   "Regional planning",
+   "Masterplan"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "County-wide strategic framework plan for the Royal Commission for AlUla, led by WATG with PUD as local partner. Eisenhower Fellowships' profile of Dr Amr Attia says the plans now work as binding planning instruments within a development programme above $15 billion.",
+  "role": "Local partner to WATG",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": true
+ },
+ {
+  "slug": "najran-northern-border-design-guidelines",
+  "name": "Architectural Design Guidelines for Najran and the Northern Border Region",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Saudi Arabia",
+  "city": "Najran and the Northern Border Region",
+  "lat": 17.49,
+  "lon": 44.13,
+  "category": [
+   "Regional planning",
+   "Heritage"
+  ],
+  "client": "Ministry of Municipal, Rural Affairs and Housing (MOMRAH)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Architectural design guidelines in Najran and the Northern Border Region for the Ministry of Municipal, Rural Affairs and Housing (MOMRAH), with WATG.",
+  "role": "Local consultancy and stakeholder coordination, field surveys, design guidelines, project management",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "badya-mixed-use-and-gate",
+  "name": "Badya Mixed Use and Gate",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Egypt",
+  "city": "6th of October City",
+  "lat": 29.95,
+  "lon": 30.92,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Palm Hills Developments (PHD)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Mixed-use development and gate in 6th of October City for Palm Hills Developments (PHD), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "etap-tourism-development-ras-el-hekma",
+  "name": "ETAP Tourism Development",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Egypt",
+  "city": "Ras El Hekma",
+  "lat": 31.22,
+  "lon": 27.88,
+  "category": [
+   "Tourism"
+  ],
+  "client": "Marakez",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Tourism development project in Ras El Hekma for Marakez, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "madaar-ras-el-hekma",
+  "name": "Madaar Ras El Hekma (Azha Ras Al Hekma)",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Egypt",
+  "city": "Ras El Hekma, North Coast",
+  "lat": 31.22,
+  "lon": 27.88,
+  "category": [
+   "Masterplan",
+   "Tourism",
+   "Landscape"
+  ],
+  "client": "Madaar for Development",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Master planning, advisory and concept landscape zoning for a site of about 140 hectares with 832 metres of seafront in Ras El Hekma on the North Coast for Madaar for Development, with WATG.",
+  "role": "Master planning, advisory, concept landscape zoning",
+  "drive_clip": "Egypt/Videos/Azha Ras Al Hekma.mov",
+  "drive_still": "Egypt/Azha Ras Al Hekma - Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "palm-hills-golf-views-apartments",
+  "name": "Palm Hills Golf Views Apartments",
+  "year": "2022",
+  "year_start": 2022,
+  "country": "Egypt",
+  "city": "6th of October City",
+  "lat": 29.95,
+  "lon": 30.92,
+  "category": [
+   "Housing"
+  ],
+  "client": "Palm Hills Developments (PHD)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Apartments project in 6th of October City for Palm Hills Developments (PHD), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "abu-qir-city-and-port-extension",
+  "name": "Abu Qir City and Port Extension",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "Egypt",
+  "city": "Abu Qir, Alexandria",
+  "lat": 31.32,
+  "lon": 30.06,
+  "category": [
+   "Masterplan",
+   "Infrastructure"
+  ],
+  "client": "Egyptian Naval Forces",
+  "partners": [],
+  "summary": "Vision, strategy and master plan for the extension of Abu Qir City and Port, Alexandria, for the Egyptian Naval Forces.",
+  "role": "Port zoning and master plan, economic study, city master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "gargoub-new-port-city",
+  "name": "Gargoub New Port City",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "Egypt",
+  "city": "Gargoub, Matrouh",
+  "lat": 31.42,
+  "lon": 26.5,
+  "category": [
+   "Masterplan",
+   "Infrastructure",
+   "Mixed use"
+  ],
+  "client": "Egyptian Naval Forces",
+  "partners": [
+   "hill-international",
+   "watg"
+  ],
+  "summary": "Vision master plan for Gargoub New Port City on Egypt's north-western Mediterranean coast, a waterfront of 23 km and 170 km2, for the Egyptian Naval Forces, with Hill International.",
+  "role": "Vision master planning, urban and regional planning advisory, coastal development strategy",
+  "drive_clip": "Egypt/Videos/Gargoub New Port City - Matrouh.mov",
+  "drive_still": "Egypt/Gargoub New port city matrouh - Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "green-pearl-prime-dubai-competition",
+  "name": "Green Pearl Concept Master Plan Competition (Prime Dubai)",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "United Arab Emirates",
+  "city": "Dubai",
+  "lat": 25.2,
+  "lon": 55.27,
+  "category": [
+   "Competition",
+   "Masterplan"
+  ],
+  "client": "ARM",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Concept master plan competition in Dubai for ARM, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "heliopark-concept-masterplan",
+  "name": "Heliopark Concept Masterplan",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "Egypt",
+  "city": "New Cairo",
+  "lat": 30.03,
+  "lon": 31.47,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "Hassan Allam Properties",
+  "partners": [],
+  "summary": "Concept master plan for Heliopark, a 7 km2 smart and green residential community of 10,000 housing units in New Cairo, for Hassan Allam Properties.",
+  "role": "Master planning, landscape design, environmental planning, sustainability and smart infrastructure",
+  "drive_clip": null,
+  "drive_still": "Egypt/Heliopark - Egypt.png",
+  "featured": false
+ },
+ {
+  "slug": "project-line-al-khafji-concept-master-plan",
+  "name": "Project Line Concept Master Plan (Al Khafji)",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "Saudi Arabia",
+  "city": "Al Khafji",
+  "lat": 28.43,
+  "lon": 48.49,
+  "category": [
+   "Masterplan",
+   "Mixed use"
+  ],
+  "client": "Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Concept master plan for a coastal development in Al Khafji for the Public Investment Fund (PIF), with WATG.",
+  "role": "Concept master plan development, land-use and tourism potential assessment, coastal development framework",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "sharaan-nature-reserve-master-plan",
+  "name": "Sharaan Nature Reserve Master Plan",
+  "year": "2021-2022",
+  "year_start": 2021,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.55,
+  "lon": 37.85,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "WATG's master plan for the Sharaan Nature Reserve in AlUla for the Royal Commission for AlUla (2021-2022). PUD contributed as master planning and sustainability subject-matter expert.",
+  "role": "Master planning and sustainability subject matter expert",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "simaisma-beach-and-lusail-islands",
+  "name": "Simaisma Beach and Lusail Islands",
+  "year": "2021",
+  "year_start": 2021,
+  "country": "Qatar",
+  "city": "Lusail",
+  "lat": 25.42,
+  "lon": 51.5,
+  "category": [
+   "Tourism",
+   "Masterplan"
+  ],
+  "client": null,
+  "partners": [
+   "watg",
+   "horwath-htl"
+  ],
+  "summary": "Concept work for Simaisma Beach and the Lusail islands in Qatar, prepared in 2021 with WATG and Horwath HTL.",
+  "role": "Concept development",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-faw-heritage-area-pre-concept-master-plan",
+  "name": "Al Faw Heritage Area Pre-Concept Master Plan",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Riyadh Region",
+  "lat": 19.83,
+  "lon": 45.28,
+  "category": [
+   "Masterplan",
+   "Heritage"
+  ],
+  "client": "McKinsey and Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Pre-concept master plan in Riyadh Region for McKinsey and the Public Investment Fund, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-ras-al-abiyad-pre-concept-master-plan",
+  "name": "Al Ras Al Abiyad Pre-Concept Master Plan",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Madinah Region",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "McKinsey and Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Pre-concept master plan in Madinah Region for McKinsey and the Public Investment Fund, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-soudah-master-plan-competition",
+  "name": "Al Soudah Master Plan Competition",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Aseer Region",
+  "lat": 18.27,
+  "lon": 42.36,
+  "category": [
+   "Competition",
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Soudah Development Company (SDC)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Master plan competition in Aseer Region for the Soudah Development Company (SDC), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "black-pegasus-design-competition",
+  "name": "Black Pegasus Design Competition",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.61,
+  "lon": 37.92,
+  "category": [
+   "Competition"
+  ],
+  "client": "Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Design competition in AlUla for the Public Investment Fund (PIF), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "elysium-mixed-use-development",
+  "name": "Elysium Mixed Use Development",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Egypt",
+  "city": "Shorouq City",
+  "lat": 30.14,
+  "lon": 31.61,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "NHMC Group",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Mixed-use development in Shorouq City for NHMC Group, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "golden-gate-new-cairo",
+  "name": "Golden Gate",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Egypt",
+  "city": "New Cairo",
+  "lat": 30.03,
+  "lon": 31.47,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "Redcon, Egypt",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Golden Gate, a development in New Cairo, for Redcon, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": true
+ },
+ {
+  "slug": "khaybar-heritage-area-master-plan",
+  "name": "Khaybar Heritage Area Master Plan",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Khaybar, AlUla",
+  "lat": 25.7,
+  "lon": 39.29,
+  "category": [
+   "Masterplan",
+   "Heritage",
+   "Tourism"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Development brief for the Khaybar Heritage Area master plan for the Royal Commission for AlUla, with WATG, linking volcanic landscapes, archaeological sites and natural assets into one visitor journey.",
+  "role": "Development brief preparation, master planning, customer experience framework, capacity development and stakeholder training",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "king-salman-bay-mixed-use-development",
+  "name": "King Salman Bay Mixed Use Development",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Strategy& (PwC)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Mixed-use development in Jeddah for Strategy& (PwC), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "makkah-township-vision-master-plan",
+  "name": "Makkah Township Vision Master Plan",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Makkah",
+  "lat": 21.42,
+  "lon": 39.83,
+  "category": [
+   "Masterplan"
+  ],
+  "client": null,
+  "partners": [
+   "watg"
+  ],
+  "summary": "Vision master plan for a township in Makkah.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "rcu-alula-master-planning-advisory",
+  "name": "Master Planning Advisory Services for the Royal Commission for AlUla",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.61,
+  "lon": 37.92,
+  "category": [
+   "Advisory",
+   "Masterplan"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Master planning advisory services in AlUla for the Royal Commission for AlUla, with WATG.",
+  "role": "Master planning advisory",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "new-jeddah-downtown-master-plan",
+  "name": "New Jeddah Downtown Master Plan",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Masterplan",
+   "Mixed use"
+  ],
+  "client": "Public Investment Fund (PIF)",
+  "partners": [
+   "watg",
+   "hak",
+   "cracknell",
+   "buro-happold"
+  ],
+  "summary": "Master plan in Jeddah for the Public Investment Fund (PIF), with WATG, HAK, Cracknell and Buro Happold.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "project-elephant-pre-concept-master-plan",
+  "name": "Project Elephant Pre-Concept Master Plan",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Empty Quarter",
+  "lat": 20.5,
+  "lon": 51.0,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "Strategy& and Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Pre-concept master plan in Empty Quarter for Strategy& and the Public Investment Fund, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "project-oval-design-competition",
+  "name": "Project Oval Design Competition",
+  "year": "2020",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Jabal Al Lith",
+  "lat": 20.15,
+  "lon": 40.27,
+  "category": [
+   "Competition"
+  ],
+  "client": "Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Design competition in Jabal Al Lith for the Public Investment Fund (PIF), with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "project-raha-water-park-jeddah",
+  "name": "Project Raha Water Park",
+  "year": "2020-2021",
+  "year_start": 2020,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Tourism"
+  ],
+  "client": "BCG and Public Investment Fund (PIF)",
+  "partners": [
+   "watg"
+  ],
+  "summary": "Water park project in Jeddah for BCG and the Public Investment Fund, with WATG.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jeddah-hamdaniyah-investment-lands-concept-master-plan",
+  "name": "Al Hamdaniyah Investment Lands Concept Master Plan, Jeddah",
+  "year": "2019",
+  "year_start": 2019,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Masterplan"
+  ],
+  "client": null,
+  "partners": [],
+  "summary": "Concept master plan for investment lands in Al Hamdaniyah, Jeddah.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "alula-county-infrastructure-master-plan",
+  "name": "AlUla County Infrastructure Master Plan",
+  "year": "2019-2020",
+  "year_start": 2019,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.61,
+  "lon": 37.92,
+  "category": [
+   "Infrastructure",
+   "Regional planning"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Infrastructure master plan for AlUla County, about 25,000 km2 with a population of about 45,000 across 51 settlements, for the Royal Commission for AlUla, with AECOM.",
+  "role": "Master planning",
+  "drive_clip": "KSA/Videos/Al ULA County Infrastructure.mov",
+  "drive_still": "KSA/Al ULA County Infrastructure.png",
+  "featured": false
+ },
+ {
+  "slug": "dhahran-investment-land-concept-master-plan",
+  "name": "King Abdulaziz Road Investment Land Concept Master Plan, Dhahran",
+  "year": "2019",
+  "year_start": 2019,
+  "country": "Saudi Arabia",
+  "city": "Dhahran",
+  "lat": 26.29,
+  "lon": 50.11,
+  "category": [
+   "Masterplan"
+  ],
+  "client": null,
+  "partners": [],
+  "summary": "Concept master plan for an investment site on King Abdulaziz Road in Dhahran.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "royal-commission-alula-advisory-services",
+  "name": "Royal Commission for AlUla Advisory Services",
+  "year": "2019",
+  "year_start": 2019,
+  "country": "Saudi Arabia",
+  "city": "AlUla",
+  "lat": 26.61,
+  "lon": 37.92,
+  "category": [
+   "Advisory"
+  ],
+  "client": "Royal Commission for AlUla (RCU)",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Advisory services in AlUla for the Royal Commission for AlUla, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "royal-commission-makkah-city-holy-sites-advisory",
+  "name": "Royal Commission for Makkah City and Holy Sites Advisory Services",
+  "year": "2019",
+  "year_start": 2019,
+  "country": "Saudi Arabia",
+  "city": "Makkah",
+  "lat": 21.42,
+  "lon": 39.83,
+  "category": [
+   "Advisory"
+  ],
+  "client": "Royal Commission for Makkah City and Holy Sites (RCMC)",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Advisory services in Makkah for the Royal Commission for Makkah City and Holy Sites, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "taj-al-riyadh",
+  "name": "Taj Al Riyadh",
+  "year": "2018-2019",
+  "year_start": 2018,
+  "country": "Saudi Arabia",
+  "city": "Riyadh",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "Al Mozaini Real Estate Co., with the Ministry of Housing",
+  "partners": [],
+  "summary": "Master planning and urban design alternatives for a residential-lifestyle community of more than 500 hectares in north-east Riyadh near King Khalid International Airport, for Al Mozaini Real Estate with the Ministry of Housing.",
+  "role": "Master planning and urban design alternatives",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-jawhara-residence",
+  "name": "Al Jawhara Residence",
+  "year": "2017-2018",
+  "year_start": 2017,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Housing",
+   "Masterplan"
+  ],
+  "client": "Al Mozaini for Real Estate Development Co.",
+  "partners": [
+   "khatib-alami"
+  ],
+  "summary": "Gated family community in Jeddah for Al Mozaini for Real Estate Development Co., with Khatib and Alami.",
+  "role": "Master planning, architecture, landscape design, interior design, engineering",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jazan-city-primary-downstream-industries",
+  "name": "Jazan City for Primary and Downstream Industries",
+  "year": "2017-2018",
+  "year_start": 2017,
+  "country": "Saudi Arabia",
+  "city": "Jazan",
+  "lat": 16.89,
+  "lon": 42.55,
+  "category": [
+   "Industrial",
+   "Masterplan"
+  ],
+  "client": "Royal Commission for Jubail & Yanbu",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Planning for Jazan City for Primary and Downstream Industries, for the Royal Commission for Jubail & Yanbu, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "residential-density-planning-framework-dammam-riyadh-jeddah",
+  "name": "Planning Framework for Residential Density Improvement in Dammam, Riyadh and Jeddah",
+  "year": "2017-2018",
+  "year_start": 2017,
+  "country": "Saudi Arabia",
+  "city": "Dammam, Riyadh and Jeddah",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Housing",
+   "Advisory"
+  ],
+  "client": "Ministry of Housing / Ministry of Municipal & Rural Affairs",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Planning framework for residential density improvement and development in Dammam, Riyadh and Jeddah, for Ministry of Housing / Ministry of Municipal & Rural Affairs, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "rua-al-haram-concept-master-plan-competition",
+  "name": "Rua Al Haram Concept Master Planning Competition",
+  "year": "2017",
+  "year_start": 2017,
+  "country": "Saudi Arabia",
+  "city": "Makkah",
+  "lat": 21.42,
+  "lon": 39.83,
+  "category": [
+   "Competition",
+   "Masterplan"
+  ],
+  "client": "Public Investment Fund / RAH DMO",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Concept master planning competition in Makkah for Public Investment Fund / RAH DMO, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "saudi-railway-land-and-property-assets-strategy",
+  "name": "Strategic Plan for the Optimisation of Saudi Railway Organization's Land and Property Assets",
+  "year": "2017-2018",
+  "year_start": 2017,
+  "country": "Saudi Arabia",
+  "city": "Saudi Arabia (nationwide)",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Advisory",
+   "Infrastructure"
+  ],
+  "client": "SRO – Saudi Railway Organization",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Strategic plan to optimise the land and property assets of the Saudi Railway Organization (SRO), with AECOM.",
+  "role": "Strategic land-use planning, asset optimization strategy, economic and sustainability advisory",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "commercial-registry-branding-manual",
+  "name": "Branding Manual and Technical Specifications for the Commercial Registry and Notary Offices",
+  "year": "2016",
+  "year_start": 2016,
+  "country": "Egypt",
+  "city": "Egypt (national programme)",
+  "lat": 30.04,
+  "lon": 31.24,
+  "category": [
+   "Advisory"
+  ],
+  "client": "Ministry of Finance and Ministry of Telecommunication",
+  "partners": [
+   "ernst-young",
+   "se-and-partners"
+  ],
+  "summary": "Branding manual and technical specifications for commercial registry and notary offices, part of Egypt's national public-private partnership programme to upgrade government services, for the Ministry of Finance and the Ministry of Telecommunication, with Ernst & Young and SE & Partners.",
+  "role": "Branding manual and technical specifications",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "fanarah-tourist-resort",
+  "name": "Fanarah Tourist Resort",
+  "year": "2016",
+  "year_start": 2016,
+  "country": "Egypt",
+  "city": "Jefeira, North Coast",
+  "lat": 31.2,
+  "lon": 27.6,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "AK for Real Estate Investment",
+  "partners": [],
+  "summary": "Master plan for a 5.5 km2 tourist resort at Jefeira on Egypt's North Coast, for AK for Real Estate Investment.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "suez-canal-tunnels-port-said",
+  "name": "Three Tunnels under the Suez Canal",
+  "year": "2015",
+  "year_start": 2015,
+  "country": "Egypt",
+  "city": "Port Said (Suez Canal)",
+  "lat": 31.26,
+  "lon": 32.3,
+  "category": [
+   "Infrastructure"
+  ],
+  "client": "Egyptian National Authority for Tunnels",
+  "partners": [
+   "paymacotas",
+   "getinsa",
+   "bect"
+  ],
+  "summary": "Feasibility study, design and tender documents for three tunnels under the Suez Canal at Port Said, for the Egyptian National Authority for Tunnels, with Paymacotas, Getinsa and BECT.",
+  "role": "Feasibility study, design and tender documents",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-rabwa-resettlement-program",
+  "name": "Al-Rabwa Resettlement Programme",
+  "year": "2013",
+  "year_start": 2013,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Housing",
+   "Masterplan"
+  ],
+  "client": "JSDP - Saudi Aramco / Makkah Al Mokkarramah Region",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Resettlement programme in Jeddah for JSDP, Saudi Aramco and the Makkah Region, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jazan-economic-city",
+  "name": "Jazan Economic City",
+  "year": "2013-2016",
+  "year_start": 2013,
+  "country": "Saudi Arabia",
+  "city": "Jazan",
+  "lat": 16.89,
+  "lon": 42.55,
+  "category": [
+   "Masterplan",
+   "Industrial"
+  ],
+  "client": "Saudi Aramco",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Economic city planning project in Jazan for Saudi Aramco, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jeddah-regional-strategic-and-local-plans",
+  "name": "Jeddah City: Regional, Strategic and Local Plans",
+  "year": "2013-2015",
+  "year_start": 2013,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Regional planning",
+   "Masterplan"
+  ],
+  "client": "Jeddah Municipality (The Amana)",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Regional, strategic and local plans in Jeddah for Jeddah Municipality (The Amana), with AECOM.",
+  "role": "Planning advisory and urban strategy support",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "cairo-airport-city",
+  "name": "Cairo Airport City",
+  "year": "2012",
+  "year_start": 2012,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.12,
+  "lon": 31.4,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "EHCAAN, funded by World Bank",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Airport city planning project in Cairo for EHCAAN, funded by World Bank, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "downtown-cairo-regeneration",
+  "name": "Downtown Cairo Regeneration",
+  "year": "2012",
+  "year_start": 2012,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.05,
+  "lon": 31.24,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "General Organization for Physical Planning, Ministry of Development",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Regeneration plan for downtown Cairo for the General Organization for Physical Planning, Ministry of Development, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jeddah-spatial-framework-plan",
+  "name": "Jeddah Spatial Framework Plan",
+  "year": "2012",
+  "year_start": 2012,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Masterplan",
+   "Regional planning"
+  ],
+  "client": "JSDP - Saudi Aramco / Makkah Al Mokkarramah Region",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Spatial framework plan in Jeddah for JSDP, Saudi Aramco and the Makkah Region, with AECOM.",
+  "role": "Strategic urban advisor: planning support and framework integration",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "taif-development-plan",
+  "name": "Taif Development Plan (TDP)",
+  "year": "2012",
+  "year_start": 2012,
+  "country": "Saudi Arabia",
+  "city": "Taif",
+  "lat": 21.27,
+  "lon": 40.42,
+  "category": [
+   "Masterplan",
+   "Regional planning"
+  ],
+  "client": "Taif Municipality and Consortia",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Development plan in Taif for Taif Municipality and Consortia, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "jeddah-stormwater-drainage-program",
+  "name": "Jeddah Stormwater Drainage Programme",
+  "year": "2011-2012",
+  "year_start": 2011,
+  "country": "Saudi Arabia",
+  "city": "Jeddah",
+  "lat": 21.54,
+  "lon": 39.17,
+  "category": [
+   "Infrastructure"
+  ],
+  "client": "JSDP - Saudi Aramco / Makkah Al Mokkarramah Region",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Stormwater drainage programme in Jeddah for JSDP, Saudi Aramco and the Makkah Region, with AECOM.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "north-coast-regional-vision-fuka-matrouh",
+  "name": "Regional Vision for the North Coast and Tourism Development Master Plan for Fuka-Matrouh",
+  "year": "2011",
+  "year_start": 2011,
+  "country": "Egypt",
+  "city": "Fuka-Matrouh sub-region, North Coast",
+  "lat": 31.07,
+  "lon": 27.79,
+  "category": [
+   "Regional planning",
+   "Tourism",
+   "Masterplan"
+  ],
+  "client": "Tourism Development Authority / General Organization for Physical Planning",
+  "partners": [
+   "wep",
+   "think-gdc"
+  ],
+  "summary": "Regional vision and tourism development master plan for the Fuka-Matrouh sub-region of Egypt's North Coast, for the Tourism Development Authority and the General Organization for Physical Planning.",
+  "role": "Regional vision and tourism development master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": true
+ },
+ {
+  "slug": "prince-talal-hurghada-waterfront",
+  "name": "Private Waterfront Property in Hurghada",
+  "year": "2011",
+  "year_start": 2011,
+  "country": "Egypt",
+  "city": "Hurghada",
+  "lat": 27.26,
+  "lon": 33.81,
+  "category": [
+   "Masterplan",
+   "Advisory"
+  ],
+  "client": "Kingdom Holding Company",
+  "partners": [
+   "aecom"
+  ],
+  "summary": "Master planning and economic study for a private waterfront property in Hurghada for Kingdom Holding Company, with AECOM.",
+  "role": "Master planning and economic study",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "cairo-gate-master-plan",
+  "name": "Cairo Gate Master Plan",
+  "year": "2010",
+  "year_start": 2010,
+  "country": "Egypt",
+  "city": "Nasr City, Cairo",
+  "lat": 30.06,
+  "lon": 31.33,
+  "category": [
+   "Masterplan",
+   "Mixed use"
+  ],
+  "client": "Cairo Stadium Authority",
+  "partners": [],
+  "summary": "Master planning (900,000 m2) and regeneration of the Cairo International Stadium, Olympic halls, International Conference Centre and Abbassiya Psychiatric Hospital in Nasr City, Cairo, for the Cairo Stadium Authority.",
+  "role": "Master planning and regeneration",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "reflections-mixed-use-complex-sheikh-zayed",
+  "name": "Reflections Mixed Use Complex",
+  "year": "2010",
+  "year_start": 2010,
+  "country": "Egypt",
+  "city": "Sheikh Zayed City",
+  "lat": 30.02,
+  "lon": 30.97,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Cleopatra Group",
+  "partners": [
+   "david-denton-architects"
+  ],
+  "summary": "Mixed-use complex in Sheikh Zayed City for Cleopatra Group, with David Denton Architects.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "faculty-of-agriculture-urban-renewal-cairo-university",
+  "name": "Urban Renewal of the Faculty of Agriculture, Cairo University",
+  "year": "2010",
+  "year_start": 2010,
+  "country": "Egypt",
+  "city": "Giza (Cairo University)",
+  "lat": 30.03,
+  "lon": 31.21,
+  "category": [
+   "Education",
+   "Masterplan"
+  ],
+  "client": "Cairo University / Shoura Group",
+  "partners": [],
+  "summary": "Urban renewal of the faculty campus in Giza, at Cairo University, for Cairo University / Shoura Group.",
+  "role": "Urban renewal",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "abo-dabbab-marine-field-station",
+  "name": "Abo Dabbab Marine Field Station",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Egypt",
+  "city": "Marsa Alam",
+  "lat": 25.33,
+  "lon": 34.73,
+  "category": [
+   "Education"
+  ],
+  "client": "HEPCA",
+  "partners": [],
+  "summary": "Design of the LEED Platinum Abo Dabbab marine field station at Marsa Alam, Egypt, for HEPCA.",
+  "role": "Design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "fao-international-marine-port-city",
+  "name": "Fao International Marine Port City",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Iraq",
+  "city": "Fao",
+  "lat": 29.98,
+  "lon": 48.48,
+  "category": [
+   "Masterplan",
+   "Infrastructure"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Master planning of a marine port city in Fao for Al Aqeelah for Real Estate Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "green-star-hotels-initiative",
+  "name": "Green Star Hotels Initiative",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Egypt",
+  "city": "Egypt (national programme)",
+  "lat": 30.04,
+  "lon": 31.24,
+  "category": [
+   "Advisory",
+   "Hospitality",
+   "Tourism"
+  ],
+  "client": "Strategic Alliance (STA) and GIZ",
+  "partners": [],
+  "summary": "National initiative for sustainable hotels and tourism destinations in Egypt, for the Strategic Alliance (STA) and GIZ.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "homs-international-airport-city",
+  "name": "Homs International Airport City",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Syria",
+  "city": "Homs",
+  "lat": 34.73,
+  "lon": 36.72,
+  "category": [
+   "Masterplan",
+   "Infrastructure"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Master planning of an airport city in Homs for Al Aqeelah for Real Estate Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "faculty-of-agriculture-campus-master-plan",
+  "name": "Master Plan of the Faculty of Agriculture Campus, Cairo University",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Egypt",
+  "city": "Giza (Cairo University)",
+  "lat": 30.03,
+  "lon": 31.21,
+  "category": [
+   "Education",
+   "Masterplan"
+  ],
+  "client": "Faculty of Agriculture / Shoura Chemicals",
+  "partners": [],
+  "summary": "Campus master plan in Giza, at Cairo University, for Faculty of Agriculture / Shoura Chemicals.",
+  "role": "Master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "reflections-cleopatra-water-courts",
+  "name": "Reflections (Cleopatra Water Courts)",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Egypt",
+  "city": "Sheikh Zayed City",
+  "lat": 30.02,
+  "lon": 30.97,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Eldorado / Cleopatra Group",
+  "partners": [
+   "david-denton-architects"
+  ],
+  "summary": "Design of a mixed-use complex of 160,000 m2 GLA in Sheikh Zayed City for Eldorado / Cleopatra Group, with David Denton Architects.",
+  "role": "Design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "faculty-of-agriculture-students-affairs-complex",
+  "name": "Students' Affairs Complex, Faculty of Agriculture, Cairo University",
+  "year": "2009",
+  "year_start": 2009,
+  "country": "Egypt",
+  "city": "Giza (Cairo University)",
+  "lat": 30.03,
+  "lon": 31.21,
+  "category": [
+   "Education"
+  ],
+  "client": "Faculty of Agriculture / Shoura Chemicals",
+  "partners": [],
+  "summary": "Students' affairs complex on the faculty campus in Giza, at Cairo University, for Faculty of Agriculture / Shoura Chemicals.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-aqeelah-oasis-damascus",
+  "name": "Al Aqeelah Oasis",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Syria",
+  "city": "Damascus",
+  "lat": 33.51,
+  "lon": 36.28,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Oasis development in Damascus for Al Aqeelah for Real Estate Development.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-aqeeq-marina-al-khiran",
+  "name": "Al-Aqeeq Marina",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Kuwait",
+  "city": "Al Khiran",
+  "lat": 28.66,
+  "lon": 48.38,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Hydra / Al Aqeelah for Real Estate Development",
+  "partners": [
+   "hok",
+   "obd"
+  ],
+  "summary": "Concept master plan for a marina development in Al Khiran for Hydra / Al Aqeelah for Real Estate Development, with HOK, OBD.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "city-of-knowledge-university-of-islamic-sciences-najaf",
+  "name": "City of Knowledge and University of Islamic Sciences",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Iraq",
+  "city": "Najaf",
+  "lat": 32.0,
+  "lon": 44.34,
+  "category": [
+   "Education",
+   "Masterplan"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Master planning of a city of knowledge and university in Najaf for Al Aqeelah for Real Estate Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "investors-tourism-village-new-damietta",
+  "name": "Investors Tourism Village, New Damietta",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Egypt",
+  "city": "New Damietta City",
+  "lat": 31.42,
+  "lon": 31.7,
+  "category": [
+   "Tourism",
+   "Hospitality"
+  ],
+  "client": "Assembly of Investors in New Damietta",
+  "partners": [],
+  "summary": "Urban and architectural design of an 86,000 m2 coastal tourism village of 74 semi-attached villas and 50 hostels in New Damietta City, for the Assembly of Investors in New Damietta.",
+  "role": "Urban design and architectural design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "maria-heights-tourist-complex-homs",
+  "name": "Maria Heights Tourist Complex",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Syria",
+  "city": "Homs",
+  "lat": 34.73,
+  "lon": 36.72,
+  "category": [
+   "Tourism",
+   "Masterplan",
+   "Hospitality"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Master plan, urban planning and architecture for the Maria Heights tourist complex in Homs, Syria, for Al Aqeelah for Real Estate Development.",
+  "role": "Master planning (urban planning and architecture)",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "new-najaf-city",
+  "name": "New Najaf City",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Iraq",
+  "city": "Najaf",
+  "lat": 32.0,
+  "lon": 44.34,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Concept master plan for a new city in Najaf for Al Aqeelah for Real Estate Development.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "om-el-baneen-oasis-najaf",
+  "name": "Om El Baneen Oasis",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Iraq",
+  "city": "Najaf",
+  "lat": 32.0,
+  "lon": 44.34,
+  "category": [
+   "Masterplan"
+  ],
+  "client": "Al Aqeelah for Real Estate Development",
+  "partners": [],
+  "summary": "Master planning of an oasis development in Najaf for Al Aqeelah for Real Estate Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "tehran-laleh-hotel",
+  "name": "Tehran Laleh Hotel",
+  "year": "2008",
+  "year_start": 2008,
+  "country": "Iran",
+  "city": "Tehran",
+  "lat": 35.69,
+  "lon": 51.39,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al-Aqeelah for Investment and Real Estate Development",
+  "partners": [
+   "think-gdc"
+  ],
+  "summary": "Design of the Laleh Hotel in Tehran, Iran, with Think.GDC, for Al-Aqeelah for Investment and Real Estate Development.",
+  "role": "Design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "el-khamayel-city-6th-of-october",
+  "name": "El-Khamayel City",
+  "year": "2007",
+  "year_start": 2007,
+  "country": "Egypt",
+  "city": "6th of October City",
+  "lat": 29.95,
+  "lon": 30.92,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "Ministry of Interior",
+  "partners": [],
+  "summary": "Master plan for El-Khamayel City in 6th of October City, for the Ministry of Interior.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "mansoura-strategic-plan",
+  "name": "Strategic Planning for Mansoura City",
+  "year": "2007",
+  "year_start": 2007,
+  "country": "Egypt",
+  "city": "Mansoura",
+  "lat": 31.04,
+  "lon": 31.38,
+  "category": [
+   "Masterplan",
+   "Advisory"
+  ],
+  "client": "General Organization for Physical Planning",
+  "partners": [
+   "cupud"
+  ],
+  "summary": "Strategic plan for Mansoura city, for the General Organization for Physical Planning, with CUPUD at Ain Shams University.",
+  "role": "Strategic planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "tanta-strategic-plan",
+  "name": "Strategic Planning for Tanta City",
+  "year": "2007",
+  "year_start": 2007,
+  "country": "Egypt",
+  "city": "Tanta",
+  "lat": 30.79,
+  "lon": 31.0,
+  "category": [
+   "Masterplan",
+   "Advisory"
+  ],
+  "client": "General Organization for Physical Planning",
+  "partners": [],
+  "summary": "Strategic plan for Tanta city, for the General Organization for Physical Planning.",
+  "role": "Strategic planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "alex-gate-agpp-master-plan",
+  "name": "Alex Gate Master Plan (Alexandria Growth Pole Project)",
+  "year": "2006",
+  "year_start": 2006,
+  "country": "Egypt",
+  "city": "Alexandria",
+  "lat": 31.2,
+  "lon": 29.92,
+  "category": [
+   "Masterplan",
+   "Mixed use"
+  ],
+  "client": "Alexandria Governorate / funded by the World Bank",
+  "partners": [
+   "chemonix",
+   "ehaf"
+  ],
+  "summary": "Master planning for the Alex Gate mixed-use project, part of the Alexandria Growth Pole Project (AGPP) in Alexandria for Alexandria Governorate / funded by the World Bank, with Chemonics Egypt and EHAF.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "alex-gate-mixed-use-development",
+  "name": "Alex Gate Mixed Use Development",
+  "year": "2006",
+  "year_start": 2006,
+  "country": "Egypt",
+  "city": "Alexandria",
+  "lat": 31.2,
+  "lon": 29.92,
+  "category": [
+   "Mixed use",
+   "Masterplan"
+  ],
+  "client": "Alexandria Governorate / funded by the World Bank",
+  "partners": [],
+  "summary": "Urban planning and urban design for Alex Gate, a mixed-use development in Alexandria, for Alexandria Governorate, funded by the World Bank.",
+  "role": "Urban planning and urban design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "frankfurt-book-fair-arab-world-galleries",
+  "name": "Arab World Participation Galleries, Frankfurt Book Fair",
+  "year": "2004",
+  "year_start": 2004,
+  "country": "Germany",
+  "city": "Frankfurt",
+  "lat": 50.11,
+  "lon": 8.68,
+  "category": [
+   "Advisory"
+  ],
+  "client": "Arab League / Ministry of Culture",
+  "partners": [
+   "dr-yasser-mansour",
+   "dr-zeinab-shafik",
+   "dr-walid-abdelmoneim"
+  ],
+  "summary": "Design of the Arab World participation galleries at the Frankfurt Book Fair in Germany, for the Arab League and Ministry of Culture. The team that won first prize in the international competition included Dr Amr Attia.",
+  "role": "Design of the participation galleries",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "palm-beach-resort-landscape-riyadh",
+  "name": "Palm Beach Resort Landscape Design",
+  "year": "2006",
+  "year_start": 2006,
+  "country": "Saudi Arabia",
+  "city": "Riyadh",
+  "lat": 24.71,
+  "lon": 46.68,
+  "category": [
+   "Landscape",
+   "Tourism"
+  ],
+  "client": "a private client",
+  "partners": [],
+  "summary": "Landscape design for a resort in Riyadh for a private client.",
+  "role": "Landscape design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "rotana-offices-and-studios-nile-plaza",
+  "name": "Rotana Offices and Studios, Nile Plaza",
+  "year": "2005",
+  "year_start": 2005,
+  "country": "Egypt",
+  "city": "Garden City, Cairo",
+  "lat": 30.04,
+  "lon": 31.23,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Kingdom Holding Company",
+  "partners": [],
+  "summary": "Project management and supervision for offices and studios in Garden City, Cairo, for Kingdom Holding Company.",
+  "role": "Project management and supervision",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-matrouh-phase-3",
+  "name": "Marina Matrouh Tourist Centre, Phase 3",
+  "year": "2004",
+  "year_start": 2004,
+  "country": "Egypt",
+  "city": "Marsa Matrouh, North Coast",
+  "lat": 31.35,
+  "lon": 27.24,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Samala & Alam El Roum for Urban Development",
+  "partners": [],
+  "summary": "Master planning for phase 3 of a tourist centre in Marsa Matrouh on the North Coast for Samala and Alam El Roum for Urban Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false,
+  "part_of": "marina-matrouh"
+ },
+ {
+  "slug": "nahdet-el-arab-tourism-complex-phase-2",
+  "name": "Nahdet El Arab Tourism Complex, Phase 2",
+  "year": "2003",
+  "year_start": 2003,
+  "country": "Egypt",
+  "city": "Ain El Sokhna",
+  "lat": 29.6,
+  "lon": 32.33,
+  "category": [
+   "Tourism"
+  ],
+  "client": "Samatour",
+  "partners": [],
+  "summary": "Phase 2 of a tourism complex in Ain El Sokhna for Samatour.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "strategic-planning-rural-settlements-egypt",
+  "name": "Strategic Planning for Rural Settlements in Egypt",
+  "year": "2003",
+  "year_start": 2003,
+  "country": "Egypt",
+  "city": "Egypt (rural settlements)",
+  "lat": 30.8,
+  "lon": 31.0,
+  "category": [
+   "Regional planning"
+  ],
+  "client": "General Organization for Physical Planning",
+  "partners": [],
+  "summary": "Strategic planning for rural settlements in Egypt, for General Organization for Physical Planning.",
+  "role": "Strategic planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "directive-plans-rural-settlements-egypt",
+  "name": "Directive Plans for Rural Settlements in Egypt",
+  "year": "2002",
+  "year_start": 2002,
+  "country": "Egypt",
+  "city": "Egypt (rural settlements)",
+  "lat": 30.8,
+  "lon": 31.0,
+  "category": [
+   "Regional planning"
+  ],
+  "client": "General Organization for Physical Planning",
+  "partners": [],
+  "summary": "Directive plans for rural settlements in Egypt, for General Organization for Physical Planning.",
+  "role": "Directive plans",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "magra-el-oyoun-urban-renewal",
+  "name": "Urban Renewal around Magra El Oyoun (Aqueducts), Historic Cairo",
+  "year": "2002",
+  "year_start": 2002,
+  "country": "Egypt",
+  "city": "Historic Cairo",
+  "lat": 30.02,
+  "lon": 31.25,
+  "category": [
+   "Heritage",
+   "Masterplan"
+  ],
+  "client": "Ministry of Culture",
+  "partners": [],
+  "summary": "Urban renewal of the areas surrounding the Magra El Oyoun aqueducts in Historic Cairo for Ministry of Culture.",
+  "role": "Urban renewal",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "royal-oasis-sheikh-zayed",
+  "name": "The Royal Oasis",
+  "year": "2001",
+  "year_start": 2001,
+  "country": "Egypt",
+  "city": "Sheikh Zayed City",
+  "lat": 30.02,
+  "lon": 30.97,
+  "category": [
+   "Mixed use",
+   "Housing",
+   "Hospitality"
+  ],
+  "client": "Capital Group",
+  "partners": [],
+  "summary": "The Royal Oasis, a residential, shopping and hotel complex in Sheikh Zayed City, for Capital Group.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "ain-shams-faculty-of-medicine-expansion-stage-2",
+  "name": "Faculty of Medicine Expansion Project, Ain Shams University (Second Stage)",
+  "year": "2000",
+  "year_start": 2000,
+  "country": "Egypt",
+  "city": "Abbassiya, Cairo",
+  "lat": 30.075,
+  "lon": 31.285,
+  "category": [
+   "Education",
+   "Healthcare"
+  ],
+  "client": "Ain Shams University",
+  "partners": [],
+  "summary": "Faculty of medicine expansion project, second stage in Abbassiya, Cairo, for Ain Shams University.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-matrouh-phase-2",
+  "name": "Marina Matrouh Tourist Centre, Phase 2",
+  "year": "2000",
+  "year_start": 2000,
+  "country": "Egypt",
+  "city": "Marsa Matrouh, North Coast",
+  "lat": 31.35,
+  "lon": 27.24,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Samala & Alam El Roum for Urban Development",
+  "partners": [],
+  "summary": "Master planning for phase 2 of a tourist centre in Marsa Matrouh on the North Coast for Samala and Alam El Roum for Urban Development.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false,
+  "part_of": "marina-matrouh"
+ },
+ {
+  "slug": "sukhna-heights-tourist-resort",
+  "name": "Sukhna Heights Tourist Resort",
+  "year": "1999",
+  "year_start": 1999,
+  "country": "Egypt",
+  "city": "Ain El Sokhna, Gulf of Suez",
+  "lat": 29.6,
+  "lon": 32.33,
+  "category": [
+   "Tourism",
+   "Hospitality"
+  ],
+  "client": "Suez Company for Urban Development",
+  "partners": [],
+  "summary": "Tourist resort in Ain El Sokhna on the Gulf of Suez for Suez Company for Urban Development.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "ain-el-sokhna-tourist-center",
+  "name": "Ain El Sokhna Tourist Centre",
+  "year": "1998",
+  "year_start": 1998,
+  "country": "Egypt",
+  "city": "Ain El Sokhna, Gulf of Suez",
+  "lat": 29.6,
+  "lon": 32.33,
+  "category": [
+   "Tourism",
+   "Masterplan"
+  ],
+  "client": "Suez Company for Urban Development",
+  "partners": [],
+  "summary": "Tourist centre in Ain El Sokhna on the Gulf of Suez for Suez Company for Urban Development.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-madinah-hotels-detailed-designs",
+  "name": "Al Hashimi, Al Kattan, Al Shirbini and Al Zahem Hotels and Residential Complexes",
+  "year": "1998",
+  "year_start": 1998,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Detailed designs for four hotel and residential complexes in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Detailed designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-latakia-master-plan-and-detailed-design",
+  "name": "Marina Latakia",
+  "year": "1997",
+  "year_start": 1997,
+  "country": "Syria",
+  "city": "Latakia",
+  "lat": 35.52,
+  "lon": 35.79,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Al Sham Palace",
+  "partners": [],
+  "summary": "Master planning and detailed designs in Latakia for Al Sham Palace.",
+  "role": "Master planning and detailed design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "nahdet-el-arab-tourism-complex",
+  "name": "Nahdet El Arab Tourism Complex",
+  "year": "1997",
+  "year_start": 1997,
+  "country": "Egypt",
+  "city": "Ain El Sokhna",
+  "lat": 29.6,
+  "lon": 32.33,
+  "category": [
+   "Tourism"
+  ],
+  "client": "Samatour",
+  "partners": [],
+  "summary": "Tourism complex in Ain El Sokhna for Samatour.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "south-jahrah-residential-community",
+  "name": "South Jahrah Residential Community",
+  "year": "1996",
+  "year_start": 1996,
+  "country": "Kuwait",
+  "city": "Jahra",
+  "lat": 29.34,
+  "lon": 47.66,
+  "category": [
+   "Housing",
+   "Masterplan"
+  ],
+  "client": "Kuwait Housing Authority",
+  "partners": [],
+  "summary": "Planning and urban design for a residential community in Jahra for Kuwait Housing Authority.",
+  "role": "Planning and urban design",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-kattan-hotel-concept-design",
+  "name": "Al Kattan Hotel, Commercial and Residential Complex (Concept Design)",
+  "year": "1995",
+  "year_start": 1995,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Concept designs for a hotel, commercial and residential complex in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Concept designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-hashimi-hotel-concept-design",
+  "name": "Al-Hashimi Hotel, Commercial and Residential Complex (Concept Design)",
+  "year": "1995",
+  "year_start": 1995,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Concept designs for a hotel, commercial and residential complex in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Concept designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-shirbini-complex-concept-design",
+  "name": "Al-Shirbini Commercial and Residential Complex (Concept Design)",
+  "year": "1995",
+  "year_start": 1995,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Mixed use",
+   "Housing"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Concept designs for a commercial and residential complex in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Concept designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-zahem-hotel-concept-design",
+  "name": "Al-Zahem Hotel, Commercial and Residential Complex (Concept Design)",
+  "year": "1995",
+  "year_start": 1995,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Concept designs for a hotel, commercial and residential complex in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Concept designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "basharia-hotel-concept-design",
+  "name": "Basharia Hotel, Commercial and Residential Complex (Concept Design)",
+  "year": "1994",
+  "year_start": 1994,
+  "country": "Saudi Arabia",
+  "city": "Madinah",
+  "lat": 24.47,
+  "lon": 39.61,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Al Madinah Central Area Development Authority",
+  "partners": [
+   "eng-khaled-ramadan"
+  ],
+  "summary": "Concept designs for a hotel, commercial and residential complex in Madinah for Al Madinah Central Area Development Authority.",
+  "role": "Concept designs",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "crystal-asfour-factory-and-headquarters-extension",
+  "name": "Crystal Asfour Factory and Headquarters Extension",
+  "year": "1994",
+  "year_start": 1994,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.04,
+  "lon": 31.24,
+  "category": [
+   "Industrial"
+  ],
+  "client": "Crystal Asfour",
+  "partners": [],
+  "summary": "Extension of a factory and headquarters in Cairo for Crystal Asfour.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "ain-shams-faculty-of-medicine-concept-master-plan-phase-1",
+  "name": "Faculty of Medicine, Ain Shams University: Concept Master Plan (Phase 1)",
+  "year": "1994",
+  "year_start": 1994,
+  "country": "Egypt",
+  "city": "Abbassiya, Cairo",
+  "lat": 30.075,
+  "lon": 31.285,
+  "category": [
+   "Education",
+   "Healthcare",
+   "Masterplan"
+  ],
+  "client": "Ain Shams University",
+  "partners": [],
+  "summary": "Concept master plan for the faculty of medicine, phase 1 in Abbassiya, Cairo, for Ain Shams University.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "hurghada-apartments-hotel-and-shopping-mall",
+  "name": "Hurghada Apartments Hotel and Shopping Mall",
+  "year": "1994",
+  "year_start": 1994,
+  "country": "Egypt",
+  "city": "Hurghada",
+  "lat": 27.26,
+  "lon": 33.81,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Misr Company for Real Estate and Touristic Investment",
+  "partners": [],
+  "summary": "Apartments hotel and shopping mall in Hurghada for Misr Company for Real Estate and Touristic Investment.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-matrouh",
+  "name": "Marina Matrouh Tourist Centre",
+  "year": "1994-2004",
+  "year_start": 1994,
+  "country": "Egypt",
+  "city": "Marsa Matrouh, North Coast",
+  "lat": 31.35,
+  "lon": 27.24,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "Samala & Alam El Roum for Urban Development",
+  "partners": [],
+  "summary": "The Marina Matrouh tourist centre on Egypt's North Coast, planned in phases from 1994 to 2004 for Samala and Alam Al-Roum Company for Urban Development. Phases 2 and 3 have their own records.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": true
+ },
+ {
+  "slug": "marina-latakia-tourist-complex",
+  "name": "Marina Latakia Tourist Complex",
+  "year": "1993",
+  "year_start": 1993,
+  "country": "Syria",
+  "city": "Latakia",
+  "lat": 35.52,
+  "lon": 35.79,
+  "category": [
+   "Tourism",
+   "Hospitality"
+  ],
+  "client": "Arab Company for Development & Tourism / Al Sham Palace",
+  "partners": [],
+  "summary": "Tourist complex in Latakia for the Arab Company for Development and Tourism and Al Sham Palace.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-el-alamein-venicia-phase-3",
+  "name": "Marina El Alamein Tourist Centre (Phase 3): Venicia",
+  "year": "1992",
+  "year_start": 1992,
+  "country": "Egypt",
+  "city": "North Coast",
+  "lat": 30.83,
+  "lon": 28.95,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "NUCA, Ministry of Housing",
+  "partners": [],
+  "summary": "Phase 3 (Venicia) of the tourist centre, from km 104 to km 106 along the Alexandria-Matrouh coastal road in North Coast for NUCA, Ministry of Housing.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false,
+  "part_of": "marina-el-alamein"
+ },
+ {
+  "slug": "continental-savoy-hotel-and-shopping-complex",
+  "name": "Continental Savoy Hotel and Shopping Complex",
+  "year": "1991",
+  "year_start": 1991,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.047,
+  "lon": 31.245,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Misr Hotels Company",
+  "partners": [],
+  "summary": "Hotel and shopping complex at Gomhoreya Square in Cairo for Misr Hotels Company.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "hilton-dahab-village-hotel",
+  "name": "Hilton Dahab Village Hotel",
+  "year": "1991",
+  "year_start": 1991,
+  "country": "Egypt",
+  "city": "Dahab, Sinai",
+  "lat": 28.5,
+  "lon": 34.51,
+  "category": [
+   "Hospitality",
+   "Tourism"
+  ],
+  "client": "Misr Hotels Company",
+  "partners": [],
+  "summary": "Village hotel on the Gulf of Aqaba at Dahab, Sinai, for Misr Hotels Company: 200 rooms and 20 suites around linked lagoons, merging Bedouin vernacular forms with a modern resort layout.",
+  "role": "Urban planning, architecture and landscape design",
+  "drive_clip": "Egypt/Videos/Hilton Dahab.mov",
+  "drive_still": "Egypt/Hilton Dahab - Egypt.png",
+  "featured": true
+ },
+ {
+  "slug": "rivoli-commercial-complex-and-hotel",
+  "name": "Rivoli Commercial Complex and Hotel",
+  "year": "1988",
+  "year_start": 1988,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.05,
+  "lon": 31.24,
+  "category": [
+   "Hospitality",
+   "Mixed use"
+  ],
+  "client": "Misr Hotels Company",
+  "partners": [],
+  "summary": "Commercial complex and hotel in Cairo for Misr Hotels Company.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "tahrir-street-residential-administrative-shopping-complex",
+  "name": "Residential, Administrative and Shopping Complex, Tahrir Street",
+  "year": "1987",
+  "year_start": 1987,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.05,
+  "lon": 31.23,
+  "category": [
+   "Mixed use",
+   "Housing"
+  ],
+  "client": "Al Sharq Insurance Company",
+  "partners": [],
+  "summary": "Residential, administrative and shopping complex in Cairo for Al Sharq Insurance Company.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "marina-el-alamein",
+  "name": "Marina El Alamein",
+  "year": "1985-1997",
+  "year_start": 1985,
+  "country": "Egypt",
+  "city": "North Coast",
+  "lat": 30.83,
+  "lon": 28.95,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "NUCA, Ministry of Housing",
+  "partners": [],
+  "summary": "Master planning, detailed design and site supervision for the 2,000 hectare Marina El Alamein tourist centre on the North Coast, for NUCA, Ministry of Housing.",
+  "role": "Master planning, detailed design and site supervision",
+  "drive_clip": "Egypt/Videos/Marina Al Alamein.mov",
+  "drive_still": "Egypt/Marina Al Alamein - Egypt.png",
+  "featured": true
+ },
+ {
+  "slug": "marina-el-alamein-concept-master-plan",
+  "name": "Marina El Alamein Tourist Centre: Concept Master Plan",
+  "year": "1986",
+  "year_start": 1986,
+  "country": "Egypt",
+  "city": "North Coast",
+  "lat": 30.83,
+  "lon": 28.95,
+  "category": [
+   "Masterplan",
+   "Tourism"
+  ],
+  "client": "NUCA, Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Concept master plan for the tourist centre in North Coast for NUCA, Ministry of Housing and New Communities.",
+  "role": "Concept master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false,
+  "part_of": "marina-el-alamein"
+ },
+ {
+  "slug": "alexandria-west-planning-maxx-to-km-34",
+  "name": "Planning of the Region between Maxx District (8th km) and the 34th km West of Alexandria",
+  "year": "1984",
+  "year_start": 1984,
+  "country": "Egypt",
+  "city": "West of Alexandria",
+  "lat": 31.1,
+  "lon": 29.7,
+  "category": [
+   "Regional planning"
+  ],
+  "client": "NUCA, Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Regional planning of the area between the Maxx district (8th km) and the 34th km west of Alexandria in West of Alexandria for NUCA, Ministry of Housing and New Communities.",
+  "role": "Planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "north-west-coast-structure-plan",
+  "name": "Structure Planning for the North West Coast Region",
+  "year": "1982",
+  "year_start": 1982,
+  "country": "Egypt",
+  "city": "North West Coast",
+  "lat": 31.0,
+  "lon": 28.5,
+  "category": [
+   "Regional planning"
+  ],
+  "client": "NUCA, Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Structure planning for the North West Coast region in North West Coast for NUCA, Ministry of Housing and New Communities.",
+  "role": "Structure planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "tut-amon-village-hotel-and-resort",
+  "name": "Tut Amun Village Hotel and Resort",
+  "year": "1981",
+  "year_start": 1981,
+  "country": "Egypt",
+  "city": "Aswan",
+  "lat": 24.09,
+  "lon": 32.9,
+  "category": [
+   "Hospitality",
+   "Tourism"
+  ],
+  "client": "Misr Aswan for Tourism Development",
+  "partners": [],
+  "summary": "A hospitality and tourism project in Aswan, Egypt (1981) for Misr Aswan for Tourism Development.",
+  "role": "",
+  "drive_clip": "Egypt/Videos/TUT Amoun.mov",
+  "drive_still": "Egypt/TUT Amoun Village - Egypt.png",
+  "featured": true
+ },
+ {
+  "slug": "nile-residential-administrative-shopping-twin-towers",
+  "name": "The Nile Twin Towers",
+  "year": "1980",
+  "year_start": 1980,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.05,
+  "lon": 31.23,
+  "category": [
+   "Mixed use",
+   "Housing"
+  ],
+  "client": "Al Sharq Company for Development",
+  "partners": [],
+  "summary": "Residential, administrative and shopping twin towers in Cairo for Al Sharq Company for Development.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-salam-oasis-master-plan",
+  "name": "Al-Salam Oasis Master Planning",
+  "year": "1979",
+  "year_start": 1979,
+  "country": "Egypt",
+  "city": "Cairo-Alexandria desert road",
+  "lat": 30.4,
+  "lon": 30.5,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "NUCA, Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Master planning of an oasis along the Cairo-Alexandria desert road in Cairo-Alexandria desert road for NUCA, Ministry of Housing and New Communities.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "el-shams-city-assiut",
+  "name": "El-Shams City Master Planning, Assiut",
+  "year": "1979",
+  "year_start": 1979,
+  "country": "Egypt",
+  "city": "Assiut",
+  "lat": 27.18,
+  "lon": 31.18,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Master planning of a city in Assiut for Ministry of Housing and New Communities.",
+  "role": "Master planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "el-shams-city-housing-companies",
+  "name": "El-Shams City Masterplan (El-Kahira and El-Nasr Companies for Housing)",
+  "year": "1979",
+  "year_start": 1979,
+  "country": "Egypt",
+  "city": "Egypt (site not stated)",
+  "lat": 30.04,
+  "lon": 31.24,
+  "category": [
+   "Masterplan",
+   "Housing"
+  ],
+  "client": "Ministry of Housing",
+  "partners": [],
+  "summary": "Master plan for El-Shams City for the El-Kahira and El-Nasr housing companies in Egypt, for Ministry of Housing.",
+  "role": "Master plan",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "military-officers-club-abu-dhabi",
+  "name": "The Military Officers Club",
+  "year": "1979",
+  "year_start": 1979,
+  "country": "United Arab Emirates",
+  "city": "Abu Dhabi",
+  "lat": 24.45,
+  "lon": 54.38,
+  "category": [
+   "Hospitality"
+  ],
+  "client": "UAE Armed Forces",
+  "partners": [],
+  "summary": "Officers club in Abu Dhabi for the UAE Armed Forces.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "maadi-housing-and-offices-complex",
+  "name": "Housing and Offices Complex in Maadi",
+  "year": "1978",
+  "year_start": 1978,
+  "country": "Egypt",
+  "city": "Maadi, Cairo",
+  "lat": 29.96,
+  "lon": 31.25,
+  "category": [
+   "Housing",
+   "Mixed use"
+  ],
+  "client": "a private client",
+  "partners": [],
+  "summary": "Housing and offices complex in Maadi, Cairo, for a private client.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "north-west-coast-tourism-development-planning",
+  "name": "Tourism Development Planning for the North West Coast Region",
+  "year": "1978",
+  "year_start": 1978,
+  "country": "Egypt",
+  "city": "North West Coast",
+  "lat": 31.0,
+  "lon": 28.5,
+  "category": [
+   "Regional planning",
+   "Tourism"
+  ],
+  "client": "Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Tourism development planning for the North West Coast region in North West Coast for Ministry of Housing and New Communities.",
+  "role": "Tourism development planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "kuwait-shopping-mall-offices-and-garage",
+  "name": "Shopping Mall, Offices and Multi-Storey Garage in Kuwait",
+  "year": "1976",
+  "year_start": 1976,
+  "country": "Kuwait",
+  "city": "Kuwait",
+  "lat": 29.37,
+  "lon": 47.98,
+  "category": [
+   "Mixed use"
+  ],
+  "client": "Kuwait Real Estate Company",
+  "partners": [],
+  "summary": "Shopping mall, offices and multi-storey garage in Kuwait, for Kuwait Real Estate Company.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-jahraa-housing-project-kuwait",
+  "name": "Al-Jahraa Housing Project",
+  "year": "1975",
+  "year_start": 1975,
+  "country": "Kuwait",
+  "city": "Jahra",
+  "lat": 29.34,
+  "lon": 47.66,
+  "category": [
+   "Housing"
+  ],
+  "client": "Kuwait Housing Authority",
+  "partners": [],
+  "summary": "Housing project in Jahra for Kuwait Housing Authority.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-ashish-urbanized-communities-kuwait",
+  "name": "Al-Ashish Urbanized Communities",
+  "year": "1974",
+  "year_start": 1974,
+  "country": "Kuwait",
+  "city": "Kuwait",
+  "lat": 29.37,
+  "lon": 47.98,
+  "category": [
+   "Housing",
+   "Masterplan"
+  ],
+  "client": "Kuwait Real Estate Company",
+  "partners": [],
+  "summary": "Urbanized communities in Kuwait, for Kuwait Real Estate Company.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "al-tahrir-bus-terminals",
+  "name": "Al-Tahrir Bus Terminals",
+  "year": "1972",
+  "year_start": 1972,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.044,
+  "lon": 31.235,
+  "category": [
+   "Infrastructure"
+  ],
+  "client": "Cairo Governorate",
+  "partners": [],
+  "summary": "Bus terminals at Tahrir Square in Cairo for Cairo Governorate.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "assiut-regional-and-urban-planning",
+  "name": "Regional and Urban Planning for Assiut Governorate",
+  "year": "1972",
+  "year_start": 1972,
+  "country": "Egypt",
+  "city": "Assiut",
+  "lat": 27.18,
+  "lon": 31.18,
+  "category": [
+   "Regional planning"
+  ],
+  "client": "NUCA, Ministry of Housing and New Communities",
+  "partners": [],
+  "summary": "Regional and urban planning in Assiut for NUCA, Ministry of Housing and New Communities.",
+  "role": "Regional and urban planning",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "potato-cold-stores-minya-kafr-el-zayat",
+  "name": "Potatoes Cold Stores in Minya and Kafr El-Zayat",
+  "year": "1970",
+  "year_start": 1970,
+  "country": "Egypt",
+  "city": "Minya and Kafr El-Zayat",
+  "lat": 28.11,
+  "lon": 30.75,
+  "category": [
+   "Industrial"
+  ],
+  "client": "Ministry of Agriculture",
+  "partners": [],
+  "summary": "Potato cold stores in Minya and Kafr El-Zayat for Ministry of Agriculture.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "ain-shams-lecture-halls-and-research-institute",
+  "name": "Lecture Halls and Research Institute, Ain Shams University",
+  "year": "1969",
+  "year_start": 1969,
+  "country": "Egypt",
+  "city": "Cairo",
+  "lat": 30.075,
+  "lon": 31.285,
+  "category": [
+   "Education"
+  ],
+  "client": "Ain Shams University",
+  "partners": [
+   "dr-farouk-el-gohary"
+  ],
+  "summary": "Lecture halls and research institute in Cairo for Ain Shams University.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "cotton-ginning-factories-el-wadi-and-delta",
+  "name": "Cotton Ginning Factories for El-Wadi and Delta Companies",
+  "year": "1964",
+  "year_start": 1964,
+  "country": "Egypt",
+  "city": "Egypt (site not stated)",
+  "lat": 30.8,
+  "lon": 31.0,
+  "category": [
+   "Industrial"
+  ],
+  "client": "Ministry of Agriculture",
+  "partners": [],
+  "summary": "Cotton ginning factories in Egypt, for Ministry of Agriculture.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false
+ },
+ {
+  "slug": "organ-transplant-center-nasser-institute",
+  "name": "Organ Transplant Centre, Nasser Institute for Research and Treatment",
+  "year": null,
+  "year_start": null,
+  "country": "Egypt",
+  "city": "Greater Cairo",
+  "lat": 30.12,
+  "lon": 31.25,
+  "category": [
+   "Healthcare"
+  ],
+  "client": "Nasser Institute for Research and Treatment",
+  "partners": [
+   "hill-international"
+  ],
+  "summary": "Organ transplant centre for the Nasser Institute for Research and Treatment in Greater Cairo.",
+  "role": "",
+  "drive_clip": null,
+  "drive_still": null,
+  "featured": false,
+  "undated": true
+ }
+]

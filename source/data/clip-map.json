@@ -1,0 +1,130 @@
+{
+ "Egypt/Al_alamein Reveira _ Egypt.png": {
+  "slug": "alamein-riviera-vision-master-plan",
+  "kind": "still"
+ },
+ "Egypt/Azha Ras Al Hekma - Egypt.png": {
+  "slug": "madaar-ras-el-hekma",
+  "kind": "still"
+ },
+ "Egypt/Cairo Media City - Egypt.png": {
+  "slug": "cairo-media-city",
+  "kind": "still"
+ },
+ "Egypt/Gargoub New port city matrouh - Egypt.png": {
+  "slug": "gargoub-new-port-city",
+  "kind": "still"
+ },
+ "Egypt/Heliopark - Egypt.png": {
+  "slug": "heliopark-concept-masterplan",
+  "kind": "still"
+ },
+ "Egypt/Hilton Dahab - Egypt.png": {
+  "slug": "hilton-dahab-village-hotel",
+  "kind": "still"
+ },
+ "Egypt/Marina Al Alamein - Egypt.png": {
+  "slug": "marina-el-alamein",
+  "kind": "still"
+ },
+ "Egypt/New Administrative Capital _Egypt.png": {
+  "slug": "new-administrative-capital-phases-2-4",
+  "kind": "still"
+ },
+ "Egypt/Pyramids Plateau - Egypt.png": {
+  "slug": "pyramids-plateau-destination-master-plan",
+  "kind": "still"
+ },
+ "Egypt/SumouBlvd - Egypt.png": {
+  "slug": "somou-boulevard-new-cairo",
+  "kind": "still"
+ },
+ "Egypt/TUT Amoun Village - Egypt.png": {
+  "slug": "tut-amon-village-hotel-and-resort",
+  "kind": "still"
+ },
+ "Egypt/TUT Amoun Village 2.png": {
+  "slug": "tut-amon-village-hotel-and-resort",
+  "kind": "still"
+ },
+ "Egypt/Videos/Al Alamein Reveira.mov": {
+  "slug": "alamein-riviera-vision-master-plan",
+  "kind": "video"
+ },
+ "Egypt/Videos/Azha Ras Al Hekma.mov": {
+  "slug": "madaar-ras-el-hekma",
+  "kind": "video"
+ },
+ "Egypt/Videos/Cairo Media City.mov": {
+  "slug": "cairo-media-city",
+  "kind": "video"
+ },
+ "Egypt/Videos/Gargoub New Port City - Matrouh.mov": {
+  "slug": "gargoub-new-port-city",
+  "kind": "video"
+ },
+ "Egypt/Videos/Hilton Dahab.mov": {
+  "slug": "hilton-dahab-village-hotel",
+  "kind": "video"
+ },
+ "Egypt/Videos/Marina Al Alamein.mov": {
+  "slug": "marina-el-alamein",
+  "kind": "video"
+ },
+ "Egypt/Videos/New administrative Capital.mov": {
+  "slug": "new-administrative-capital-phases-2-4",
+  "kind": "video"
+ },
+ "Egypt/Videos/Pyramids Plateau.mov": {
+  "slug": "pyramids-plateau-destination-master-plan",
+  "kind": "video"
+ },
+ "Egypt/Videos/SumouBlvd.mov": {
+  "slug": "somou-boulevard-new-cairo",
+  "kind": "video"
+ },
+ "Egypt/Videos/TUT Amoun.mov": {
+  "slug": "tut-amon-village-hotel-and-resort",
+  "kind": "video"
+ },
+ "KSA/Al Mashaaer Al Mugaddassah - KSA.png": {
+  "slug": "al-mashaaer-al-mugaddassah-master-plan",
+  "kind": "still"
+ },
+ "KSA/Al ULA County Infrastructure.png": {
+  "slug": "alula-county-infrastructure-master-plan",
+  "kind": "still"
+ },
+ "KSA/Fawaz Al Hokair Estate - KSA.png": {
+  "slug": "fawaz-alhokair-estate-riyadh",
+  "kind": "still"
+ },
+ "KSA/JORHUM - KSA.png": {
+  "slug": "jorhum-destination",
+  "kind": "still"
+ },
+ "KSA/Jabal Thabeer - KSA.png": {
+  "slug": "jabal-thabeer-park",
+  "kind": "still"
+ },
+ "KSA/Videos/Al Mashaaer Al Mugaddassah.mov": {
+  "slug": "al-mashaaer-al-mugaddassah-master-plan",
+  "kind": "video"
+ },
+ "KSA/Videos/Al ULA County Infrastructure.mov": {
+  "slug": "alula-county-infrastructure-master-plan",
+  "kind": "video"
+ },
+ "KSA/Videos/Fawaz Al Hokair Estate.mov": {
+  "slug": "fawaz-alhokair-estate-riyadh",
+  "kind": "video"
+ },
+ "KSA/Videos/JORHUM.mov": {
+  "slug": "jorhum-destination",
+  "kind": "video"
+ },
+ "KSA/Videos/Jabal Thabeer.mov": {
+  "slug": "jabal-thabeer-park",
+  "kind": "video"
+ }
+}

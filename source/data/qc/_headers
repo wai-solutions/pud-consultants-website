@@ -1,0 +1,45 @@
+# Netlify and Cloudflare Pages. Place at the site root (next to index.html).
+# Do not add a catch-all Cache-Control for /* : HTML must stay revalidating.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+  Content-Type: text/html; charset=utf-8
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# CSS and JS keep fixed file names (style.css, app.js), so cache for a day and revalidate.
+/css/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+/js/*
+  Cache-Control: public, max-age=86400, stale-while-revalidate=604800
+
+# Fonts never change under the same name.
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# Images, clips and map data: one week, then revalidate.
+/assets/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=2592000
+/data/*
+  Cache-Control: public, max-age=604800
+  Content-Type: application/geo+json
+
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+/robots.txt
+  Cache-Control: public, max-age=3600
+  Content-Type: text/plain; charset=utf-8
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8

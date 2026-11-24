@@ -1,0 +1,86 @@
+[
+ {
+  "project_slug": "somou-boulevard-new-cairo",
+  "official_url": "https://paragonadeer.com/",
+  "logo": null,
+  "source": "Official Sumou Boulevard site by PARAGON | ADEER (loaded 2026-11-24; title 'Sumou Boulevard'); site header is the Paragon-Adeer JV wordmark, so no project logo"
+ },
+ {
+  "project_slug": "madaar-ras-el-hekma",
+  "official_url": "https://www.madaar.com/projects/azha-ras-al-hekma",
+  "logo": null,
+  "source": "Madaar's official Azha Ras Al Hekma project page (loaded 2026-11-24)"
+ },
+ {
+  "project_slug": "ramla-concept-master-plan",
+  "official_url": "https://marakez.net/projects/ramla",
+  "logo": "assets/logos/proj-ramla.png",
+  "source": "Marakez official Ramla project page (loaded 2026-11-24); logo https://marakez.net/img/ramla.svg"
+ },
+ {
+  "project_slug": "badya-mixed-use-and-gate",
+  "official_url": "https://palmhillsdeveloper.com/projects/badya.html",
+  "logo": null,
+  "source": "Palm Hills official Badya project page (loaded 2026-11-24); page only carries the Palm Hills logo"
+ },
+ {
+  "project_slug": "palm-hills-golf-views-apartments",
+  "official_url": "https://palmhillsdeveloper.com/projects/golf-views.html",
+  "logo": null,
+  "source": "Palm Hills official Golf Views project page (loaded 2026-11-24)"
+ },
+ {
+  "project_slug": "golden-gate-new-cairo",
+  "official_url": "https://www.redconproperties.com/projects/",
+  "logo": null,
+  "source": "Redcon Properties official projects page listing GOLDEN GATE (loaded 2026-11-24)"
+ },
+ {
+  "project_slug": "jorhum-destination",
+  "official_url": "https://jorhum.com.sa/",
+  "logo": "assets/logos/proj-jorhum-destination.png",
+  "source": "Jorhum official site (loaded 2026-11-24); logo https://jorhum.com.sa/wp-content/themes/jorhum_theme/assets/icons/jorhum-logo.svg"
+ },
+ {
+  "project_slug": "port-ghalib-master-plan",
+  "official_url": "https://www.portghalib.com/",
+  "logo": "assets/logos/proj-port-ghalib.png",
+  "source": "Port Ghalib official site (loaded 2026-11-24); logo file was already in assets/logos"
+ },
+ {
+  "project_slug": "gargoub-new-port-city",
+  "official_url": "https://gargoub.com/",
+  "logo": null,
+  "source": "Gargoub Special Economic Zone official site (loaded 2026-11-24); no usable logo file found on page"
+ },
+ {
+  "project_slug": "grand-egyptian-museum-competition",
+  "official_url": "https://gem.eg/",
+  "logo": "assets/logos/proj-grand-egyptian-museum.png",
+  "source": "Grand Egyptian Museum official site (loaded 2026-11-24); logo https://cdn.gem.eg/wwwroot/images/Logo.png. The museum's brand, not a competition logo"
+ },
+ {
+  "project_slug": "new-administrative-capital-phases-2-4",
+  "official_url": "https://acud.eg/",
+  "logo": null,
+  "source": "ACUD official site (loaded 2026-11-24); ACUD logo is in partners.json (acud)"
+ },
+ {
+  "project_slug": "sharaan-nature-reserve-master-plan",
+  "official_url": "https://www.rcu.gov.sa/en/strategic-initiatives/sharaan-nature-reserve",
+  "logo": null,
+  "source": "RCU official Sharaan Nature Reserve page (loaded 2026-11-24); page carries the RCU logo only"
+ },
+ {
+  "project_slug": "new-jeddah-downtown-master-plan",
+  "official_url": "https://www.jeddahcentral.com/",
+  "logo": null,
+  "source": "Jeddah Central Development Company official site (loaded 2026-11-24); header logo is white-on-transparent so not used"
+ },
+ {
+  "project_slug": "massoumbou-diwom-vision-master-plan",
+  "official_url": "https://www.maetur-cameroun.com/",
+  "logo": "assets/logos/proj-massoumbou-diwom.png",
+  "source": "MAETUR official site (loaded 2026-11-24) presents the Massoumbou-Diwom project; logo file was already in assets/logos"
+ }
+]

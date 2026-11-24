@@ -1,0 +1,816 @@
+[
+ {
+  "project": "Somou Boulevard (Sumou Boulevard), Mostakbal City",
+  "fact": "The new entity's first milestone is a major collaboration with MIDAR, the master developer of Mostakbal City, to develop the city's largest mixed-use project to date, spanning more than 500,000 sqm and backed by investments exceeding EGP 70 bn.",
+  "url": "https://adeerinternational.com/egypt-saudi-partnership-adeer-paragon-alliance-signs-development-agreement-with-midar-for-500000-sqm-project-in-mostakbal-city",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://paragonadeer.com/"
+ },
+ {
+  "project": "Heliopark, New Cairo",
+  "fact": "Heliopolis Company for Housing and Development has released the booklet of conditions for the development of Heliopark project over an area of 1,695 feddans in New Cairo.",
+  "url": "https://www.zawya.com/en/business/heliopolis-housing-launches-heliopark-development-project-c7esn7og",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Heliopark, New Cairo",
+  "fact": "PUD's own project page lists the Heliopark, New Cairo, Egypt project with Hassan Allam Properties as client.",
+  "url": "https://www.pudconsultants.com/master-planning/heliopark%2C-new-cairo%2C-egypt",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Khaybar Heritage Area, AlUla",
+  "fact": "The RCU has been tasked with the reinvigoration and sensitive development of the Khaybar Heritage Area within the narrative of AlUla, connecting two destinations together into one journey.",
+  "url": "https://www.pudconsultants.com/collaborations/khaybar-heritage-area%2C-alula%2C-ksa",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Khaybar Heritage Area, AlUla",
+  "fact": "WATG was contracted to develop the Development Brief and outline the scope of work for delivering the Master Plan for Khaybar Heritage Area.",
+  "url": "https://www.pudconsultants.com/collaborations/khaybar-heritage-area%2C-alula%2C-ksa",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Sharaan Nature Reserve (Sharaan National Park), AlUla",
+  "fact": "Sharaan National Park is a 1,543-square-kilometer nature reserve in AlUla, Saudi Arabia, for which WATG was appointed master planner by the Royal Commission for AlUla in August 2021.",
+  "url": "https://www.watg.com/project/sharaan-national-park/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://rcu.gov.sa/en/strategic-initiatives/sharaan-nature-reserve"
+ },
+ {
+  "project": "Sharaan Nature Reserve (Sharaan National Park), AlUla",
+  "fact": "The WATG master plan designates 90.5% of the site for habitat restoration and conservation, with the remaining 10% allocated to light-touch ecotourism, scientific research, and education.",
+  "url": "https://www.watg.com/project/sharaan-national-park/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://rcu.gov.sa/en/strategic-initiatives/sharaan-nature-reserve"
+ },
+ {
+  "project": "Al Alamein Riviera, North Coast",
+  "fact": "PUD's collaborations page lists Al Alamein Rivera (Riviera), North Coast, Egypt with China State Construction / Ministry of Housing, Utilities and Urban Communities as client, in collaboration with WATG.",
+  "url": "https://www.pudconsultants.com/collaborations/al-alamein-rivera%2C-north-coast%2C-egypt",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Ras El Hekma - Madaar (Azha Ras Al Hekma)",
+  "fact": "The masterplan, designed by the world-renowned firm WATG, is created to provide a seamless lifestyle where comfort, connection, and convenience meet.",
+  "url": "https://www.madaar.com/projects/azha-ras-al-hekma",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://www.madaar.com/projects/azha-ras-al-hekma"
+ },
+ {
+  "project": "Ras El Hekma - Modon city (WATG Advisory; separate from the Madaar/Marakez schemes)",
+  "fact": "Ras El Hekma is described as a city-scale destination development on Egypt's North Coast led by developer Modon International Real Estate, planned to accommodate a population of over one million people across 17 distinct precincts.",
+  "url": "https://www.watg.com/ras-el-hekma-reshaping-tourism-on-egypts-north-coast/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Golden Gate, New Cairo",
+  "fact": "With a total investment cost of EGP 20 billion, Golden Gate is in a prime location in the heart of New Cairo.",
+  "url": "https://redconproperties.com/redcon-for-offices-and-commercial-centers-achieves-sales-of-egp-1-billion-in-its-first-year-of-operation",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://redconcon.com/project/golden-gate"
+ },
+ {
+  "project": "Golden Gate, New Cairo",
+  "fact": "ROCC intended to complete the development of Golden Gate over two phases within 7 years.",
+  "url": "https://emasr.net/rocc-celebrates-the-groundbreaking-of-its-egp-20-bn-flagship-project-golden-gate",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://redconcon.com/project/golden-gate"
+ },
+ {
+  "project": "Kidana Al Kheif / Al Mashaer sites, Makkah",
+  "fact": "Parsons serves as the Program and Construction Management consultant to Kidana Development Company (KDC), the executive arm of the Royal Commission for Makkah City and Holy Sites (RCMC), on the Al Mashaer sites Transformation Program covering Mina, Muzdalifah, Arafat and Hima Al Mashaer.",
+  "url": "https://www.parsons.com/project/kidana-holy-sites-transformation-program-makkah-city-saudi-arabia/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://kidana.com.sa/en/"
+ },
+ {
+  "project": "Jabal Thabeer Park, Mina (Kidana)",
+  "fact": "Jabal Thabeer is a concept masterplan that reimagines Mount Thabeer as a sanctuary for reflection, prayer and rest, created in partnership with client Kidana, PUD Consultants, Systematica and Studio 4215.",
+  "url": "https://www.gillespies.co.uk/stories/three-projects-shortlisted-at-the-2026-pineapple-awards",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Jabal Thabeer Park, Mina (Kidana)",
+  "fact": "Gillespies was awarded first runner-up in the Future Landscapes: Vision in Progress (Unbuilt) category at the Landscape Middle East Awards 2025 for its concept masterplan for Jabal Thabeer Park in Makkah, designed for Kidana.",
+  "url": "https://www.gillespies.co.uk/stories/landscape-middle-east-awards-2025",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Pyramids Destination master plan, Giza",
+  "fact": "Together, the teams carefully selected cultural heritage specialists (PUD), branding consultants (Luxury Partners), and engineers (Shaker).",
+  "url": "https://www.watg.com/project/tourism-master-plan-at-giza-pyramids/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Pyramids Destination master plan, Giza",
+  "fact": "Partnering with WATG, Luxury Partners was appointed by the Egyptian government to define the first unified destination identity for the Giza Pyramids region.",
+  "url": "https://luxury-branding.com/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet"
+ },
+ {
+  "project": "Pyramids Destination master plan, Giza",
+  "fact": "WATG's planning and advisory teams were appointed in 2024 by the Egyptian government to develop a major tourism master plan around the perimeter of the 162-square-kilometer UNESCO World Heritage Site.",
+  "url": "https://www.watg.com/project/tourism-master-plan-at-giza-pyramids/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Pyramids Destination master plan, Giza",
+  "fact": "WATG's final master plan framework for the Giza Pyramids region was presented to Egypt's Ministry of Tourism in December 2025.",
+  "url": "https://www.watg.com/giza-pyramids-master-plan/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "New Administrative Capital, Egypt (Phases 2-4)",
+  "fact": "PUD led the international Steering Committee advising on the strategic masterplan for Phases 2 to 4, the 180,000 feddan beyond Phase 1; the client is ACUD and the lead designer is Dar Al-Handasah.",
+  "url": "https://share-architects.com/project/the-new-capital-of-egypt-egypt",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "New Administrative Capital, Egypt (Phases 2-4)",
+  "fact": "ACUD said the combined area of the second, third, and fourth phases spans 190 thousand acres, and named the project's general consultant as the consortium of Dar Al-Handasah, Siemens, and Savills.",
+  "url": "https://invest-gate.me/news/acud-conducts-workshop-to-revise-strategic-plan-for-future-phases-of-the-nac",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Port Ghalib, Marsa Alam",
+  "fact": "Port Ghalib is a waterfront premier integrated resort community situated on 18kms of virgin shoreline, with a 32 million square meter masterplan.",
+  "url": "https://www.portghalib.com/about-us",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://www.portghalib.com/",
+  "project_logo": "assets/logos/proj-port-ghalib.png"
+ },
+ {
+  "project": "Badya, 6th of October City",
+  "fact": "On an area of approximately 1,260 hectares, a human-centered, green and resource efficient city will be developed for about 150,000 inhabitants, offering about 48,000 workplaces.",
+  "url": "https://www.as-p.com/projects/integrated-planning-badya-city-968",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://palmhillsdeveloper.com/projects/badya.html"
+ },
+ {
+  "project": "Badya, 6th of October City",
+  "fact": "Palm Hills Developments presents Badya as 'a fully integrated city by Palm Hills designed for modern living'.",
+  "url": "https://palmhillsdeveloper.com/projects/badya.html",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://palmhillsdeveloper.com/projects/badya.html"
+ },
+ {
+  "project": "Palm Hills Golf Views, 6 October City",
+  "fact": "Palm Hills Golf Views is an upscale residential community in 6th of October City developed by Palm Hills, located beside the Palm Hills Golf Course.",
+  "url": "https://www.propertyfinder.eg/en/new-projects/palm-hills/palm-hills-golf-views",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet",
+  "project_site": "https://palmhillsdeveloper.com/projects/golf-views.html"
+ },
+ {
+  "project": "Rua Al Haram, Makkah",
+  "fact": "RUA AlHaram AlMakki develops the master plan shaping a comprehensive plan for regeneration, securing land and integrating heritage assets into the overall plan.",
+  "url": "https://ruaalharam.com/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet",
+  "project_site": "https://ruaalharam.com/"
+ },
+ {
+  "project": "Rua Al Haram, Makkah",
+  "fact": "The Economist Impact piece describes the development as having 12m sq metres of gross floor area, led by master developer RUA AlHaram AlMakki, a PIF company.",
+  "url": "https://insights.economistenterprise.com/projects/foreign-ownership-holy-cities",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://ruaalharam.com/"
+ },
+ {
+  "project": "Jazan Economic City, KSA",
+  "fact": "AECOM's Ports team carried out the masterplan, Front End Engineering Design (FEED), detailed design and tender documents for the Jazan Economic City (JEC) Port and Infrastructure Project.",
+  "url": "https://aecom.com/projects/increasing-port-productivity-globally/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Jazan City for Primary & Downstream Industries (JCPDI), KSA",
+  "fact": "The Royal Commission for Jubail and Yanbu signed a SAR 21 million contract with AECOM Arabia Ltd. to conduct the planning studies for the city.",
+  "url": "https://www.argaam.com/en/article/articledetail/id/506382",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Gargoub New Port City, Matrouh",
+  "fact": "The Egyptian Naval Forces commissioned Hill International to develop a vision masterplan for a new Economic City & Commercial Port in Matrouh; the site has a waterfront that extends to 23 km and an area of 170 km2 (PUD's page, in collaboration with WATG).",
+  "url": "https://www.pudconsultants.com/collaborations/gargoub-new-port-city%2C-matrouh%2C-egypt",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet",
+  "project_site": "https://gargoub.com/"
+ },
+ {
+  "project": "Gargoub New Port City, Matrouh",
+  "fact": "The Gargoub Special Economic Zone site describes its vision as a 'Modern & Sustainable Metropolitan Community' - a Special Economic Zone and Coastal Port City on the Southern Mediterranean Sea.",
+  "url": "https://gargoub.com/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://gargoub.com/"
+ },
+ {
+  "project": "Fanarah / Jefaira, North Coast",
+  "fact": "Inertia is the master developer of the 5.5-million-square-meter Jefaira project and the landlord is AK, an Egyptian investment company.",
+  "url": "https://invest-gate.me/features/inertia-elevates-egypts-real-estate-market",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://inertiaegypt.com/projects/jefaira"
+ },
+ {
+  "project": "Grand Egyptian Museum international competition",
+  "fact": "The competition was won by the Irish practice Heneghan Peng Architects; the prize was US$250,000.",
+  "url": "https://en.wikipedia.org/wiki/Grand_Egyptian_Museum",
+  "source_type": "wiki",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Marina El Alamein",
+  "fact": "Marina El Alamein is located on the northern coast of Egypt, with an 11 km long beach, about 300 km from Cairo, in the El Alamein area.",
+  "url": "https://en.wikipedia.org/wiki/Marina_El_Alamein",
+  "source_type": "wiki",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Hilton Dahab Village Hotel, Sinai",
+  "fact": "Hilton inaugurated a new resort hotel in Dahab combined with a network of artificial lakes; the 163 unit and suite resort was built at an investment of $18 million (Globes, 21 March 1999).",
+  "url": "https://en.globes.co.il/en/article-360784",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Massoumbou-Diwom, Cameroon",
+  "fact": "The Massoumbou-Diwom project covers a surface area of 7,700 hectares, divided into residential, commercial, industrial and institutional zones; the pilot phase of 550 hectares aims to accommodate 90,000 inhabitants across 15,000 households.",
+  "url": "https://theguardianpostcameroon.com/post/5043/fr/massoumbou-diwom-acquiring-land-differently-with-transparency",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://massoumbou-diwom.cm/",
+  "project_logo": "assets/logos/proj-massoumbou-diwom.png"
+ },
+ {
+  "project": "Massoumbou-Diwom, Cameroon",
+  "fact": "MAETUR launched a smart city project in the Yabassi district, Nkam Division, Littoral Region, and signed a partnership with the Power Generation Engineering and Services Company (PGESCO) on 4 June in Cairo.",
+  "url": "https://www.theguardianpostcameroon.com/post/4951/fr/maetur-launches-major-smart-city-project-in-massoumbou-diwom",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://massoumbou-diwom.cm/",
+  "project_logo": "assets/logos/proj-massoumbou-diwom.png"
+ },
+ {
+  "project": "Project Line, Al Khafji",
+  "fact": "The community will be located within Project Line, a new master plan development in Al Khafji city with a Neutral Zone covering an area of 5,770 square kilometres.",
+  "url": "https://meedprojects.com/project-profile?pid=414394",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "New Jeddah Downtown (Jeddah Central)",
+  "fact": "The New Downtown Jeddah Project, also known as the Jeddah Central Development Project, spans 5.7 million square meters and is driven by the Jeddah Central Development Company (JCDC), a wholly owned subsidiary of PIF, as master developer.",
+  "url": "https://araburban.org/infohub/projects?id=9531",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet"
+ },
+ {
+  "project": "King Salman Bay, Jeddah",
+  "fact": "Five teams have submitted bids for the contract covering the marine infrastructure works at King Salman Bay on the Red Sea coast, north of Jeddah.",
+  "url": "https://www.meed.com/five-bid-for-king-salman-bay-construction-work",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched"
+ },
+ {
+  "project": "Al Soudah (Soudah Peaks), Aseer",
+  "fact": "HRH the Crown Prince launched the masterplan to develop Soudah and parts of Rijal Almaa into Soudah Peaks, a luxury mountain tourism destination set 3,015 meters above sea level on Saudi Arabia's highest peak (note: PUD's list shows a 2020 Al Soudah master plan competition; the launched masterplan is a separate stage).",
+  "url": "https://soudah.sa/en/soudah-development-newsroom/hrh-crown-prince-launches-soudah-peaks-masterplan",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "project_site": "https://www.soudahpeaks.com/"
+ },
+ {
+  "project": "Jeddah Stormwater Drainage Program and Jeddah Spatial Framework Plan",
+  "fact": "AECOM delivered a Major Stormwater System Master Plan for Jeddah and three related urban improvement projects, including a spatial framework plan and an unplanned settlements strategy.",
+  "url": "https://publications.aecom.com/water/managing-flood-risk/projects/jeddah-stormwater-drainage-programme/",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet"
+ },
+ {
+  "project": "Jeddah Stormwater Drainage Program and Jeddah Spatial Framework Plan",
+  "fact": "The Jeddah Stormwater Drainage Program was developed in response to the catastrophic flooding experienced in the City of Jeddah in 2009 and 2011.",
+  "url": "https://publications.aecom.com/ksa-careers/blog_bill-price.html",
+  "source_type": "official",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet"
+ },
+ {
+  "project": "Cairo Airport City",
+  "fact": "The Egyptian Holding Company for Airports & Air Navigation (Ehcaan) awarded the consultancy contract for a development strategy and masterplan for Cairo Airport City to US-based Aecom; the World Bank helped finance the related terminal renovation loan.",
+  "url": "https://meed.com/aecom-wins-project-management-for-cairo-airport-city",
+  "source_type": "press",
+  "fetched": "2026-11-24",
+  "verified_by": "search-snippet"
+ },
+ {
+  "project": "Reflections Mixed Use Complex",
+  "project_slug": "reflections-mixed-use-complex-sheikh-zayed",
+  "fact": "Sheikh Zayed City: Sheikh Zayed City is a city in Giza Governorate, Egypt and part of the Greater Cairo urban area.",
+  "url": "https://en.wikipedia.org/wiki/Sheikh_Zayed_City",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Sheikh Zayed City is a city in Giza Governorate, Egypt and part of the Greater Cairo urban area."
+ },
+ {
+  "project": "The Royal Oasis",
+  "project_slug": "royal-oasis-sheikh-zayed",
+  "fact": "Sheikh Zayed City: The population of Sheikh Zayed administrative district was estimated at 99,891 on 1 July 2025 by Egypt's Central Agency for Public Mobilization and Statistics (CAPMAS).",
+  "url": "https://en.wikipedia.org/wiki/Sheikh_Zayed_City",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "The population of Sheikh Zayed administrative district was estimated at 99,891 on 1 July 2025 by Egypt's Central Agency for Public Mobilization and Statistics (CAPMAS)."
+ },
+ {
+  "project": "Reflections (Cleopatra Water Courts)",
+  "project_slug": "reflections-cleopatra-water-courts",
+  "fact": "Sheikh Zayed City: Established in 1995, located approximately 20 km from the Mohandiseen district and 28 km from Tahrir Square in the Downtown Cairo.",
+  "url": "https://en.wikipedia.org/wiki/Sheikh_Zayed_City",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Established in 1995, located approximately 20 km from the Mohandiseen district and 28 km from Tahrir Square in the Downtown Cairo."
+ },
+ {
+  "project": "El-Khamayel City",
+  "project_slug": "el-khamayel-city-6th-of-october",
+  "fact": "6th of October: It is a satellite city, located adjacent to Giza, and is part of the Greater Cairo region.",
+  "url": "https://en.wikipedia.org/wiki/6th_of_October_(city)",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is a satellite city, located adjacent to Giza, and is part of the Greater Cairo region."
+ },
+ {
+  "project": "Sukhna Heights Tourists Resort",
+  "project_slug": "sukhna-heights-tourist-resort",
+  "fact": "Ain Sokhna: It is situated 55 kilometres (34 mi) south of Suez and approximately 120 kilometres (75 mi) east of Cairo.",
+  "url": "https://en.wikipedia.org/wiki/Ain_Sokhna",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is situated 55 kilometres (34 mi) south of Suez and approximately 120 kilometres (75 mi) east of Cairo."
+ },
+ {
+  "project": "Waterfront Property of HRH Prince Talal Bin Abdelaziz, Hurghada",
+  "project_slug": "prince-talal-hurghada-waterfront",
+  "fact": "Hurghada: Hurghada has grown from a small fishing village to one of the largest resort destinations along the Red Sea coast, stretching close to 40 km.",
+  "url": "https://en.wikipedia.org/wiki/Hurghada",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Hurghada has grown from a small fishing village to one of the largest resort destinations along the Red Sea coast, stretching close to 40 km."
+ },
+ {
+  "project": "Marina Matrouh Tourist Center",
+  "project_slug": "marina-matrouh",
+  "fact": "Marsa Matrouh: Marsa Matrouh is a port city and the capital of Matrouh Governorate in Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Marsa_Matrouh",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Marsa Matrouh is a port city and the capital of Matrouh Governorate in Egypt."
+ },
+ {
+  "project": "Marina Matrouh Tourist Center, Phase 2",
+  "project_slug": "marina-matrouh-phase-2",
+  "fact": "Marsa Matrouh: It is located 240 km (150 mi) west of Alexandria and 222 km (138 mi) east of Sallum on the main highway from the Nile Delta to the Libyan border.",
+  "url": "https://en.wikipedia.org/wiki/Marsa_Matrouh",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is located 240 km (150 mi) west of Alexandria and 222 km (138 mi) east of Sallum on the main highway from the Nile Delta to the Libyan border."
+ },
+ {
+  "project": "Abo Dabbab Marine Field Station",
+  "project_slug": "abo-dabbab-marine-field-station",
+  "fact": "Marsa Alam: Marsa Alam is a relatively recently built town; its development began in 1995 through the investments of the Kuwaiti Al-Kharafi Group, which established the town and its initial facilities, resorts and infrastructure.",
+  "url": "https://en.wikipedia.org/wiki/Marsa_Alam",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Marsa Alam is a relatively recently built town; its development began in 1995 through the investments of the Kuwaiti Al-Kharafi Group, which established the town and its initial facilities, resorts and infrastructure."
+ },
+ {
+  "project": "Strategic Planning for Mansoura City",
+  "project_slug": "mansoura-strategic-plan",
+  "fact": "Mansoura: The city is the capital of the Dakahlia Governorate and has an estimated population of 600,000 as of 2024.",
+  "url": "https://en.wikipedia.org/wiki/Mansoura,_Egypt",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "The city is the capital of the Dakahlia Governorate and has an estimated population of 600,000 as of 2024."
+ },
+ {
+  "project": "Strategic Planning for Tanta City",
+  "project_slug": "tanta-strategic-plan",
+  "fact": "Tanta: It had a population of 530,000 in 2024, making it the seventh most populous city in Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Tanta",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It had a population of 530,000 in 2024, making it the seventh most populous city in Egypt."
+ },
+ {
+  "project": "Regional and Urban Planning for Assiut Governorate",
+  "project_slug": "assiut-regional-and-urban-planning",
+  "fact": "Asyut: Located in Upper Egypt, it is the capital of the modern Asyut Governorate in Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Asyut",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Located in Upper Egypt, it is the capital of the modern Asyut Governorate in Egypt."
+ },
+ {
+  "project": "Tut Amon Village Hotel and Resort",
+  "project_slug": "tut-amon-village-hotel-and-resort",
+  "fact": "Aswan: Aswan is a city in Upper Egypt and the capital of the Aswan Governorate.",
+  "url": "https://en.wikipedia.org/wiki/Aswan",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Aswan is a city in Upper Egypt and the capital of the Aswan Governorate."
+ },
+ {
+  "project": "Investors Tourism Village, New Damietta",
+  "project_slug": "investors-tourism-village-new-damietta",
+  "fact": "New Damietta: Situated along the coast of the Mediterranean Sea, the city was established in 1980 by the New Urban Communities Authority.",
+  "url": "https://en.wikipedia.org/wiki/New_Damietta",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Situated along the coast of the Mediterranean Sea, the city was established in 1980 by the New Urban Communities Authority."
+ },
+ {
+  "project": "Abu Qir City and Port Extension",
+  "project_slug": "abu-qir-city-and-port-extension",
+  "fact": "Abu Qir: It is located on Abu Qir Peninsula, with Abu Qir Bay to the east.",
+  "url": "https://en.wikipedia.org/wiki/Abu_Qir",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is located on Abu Qir Peninsula, with Abu Qir Bay to the east."
+ },
+ {
+  "project": "Three Tunnels under the Suez Canal",
+  "project_slug": "suez-canal-tunnels-port-said",
+  "fact": "Port Said: In 2024, it had a population of 790,000 people.",
+  "url": "https://en.wikipedia.org/wiki/Port_Said",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "In 2024, it had a population of 790,000 people."
+ },
+ {
+  "project": "Housing and Offices Complex in Maadi",
+  "project_slug": "maadi-housing-and-offices-complex",
+  "fact": "Maadi: Maadi is a leafy and once suburban district in the Southern Area of Cairo, Egypt, on the east bank of the Nile about 12 kilometers (7.5 mi) upriver from downtown Cairo.",
+  "url": "https://en.wikipedia.org/wiki/Maadi",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Maadi is a leafy and once suburban district in the Southern Area of Cairo, Egypt, on the east bank of the Nile about 12 kilometers (7.5 mi) upriver from downtown Cairo."
+ },
+ {
+  "project": "Rotana Offices and Studios, Nile Plaza",
+  "project_slug": "rotana-offices-and-studios-nile-plaza",
+  "fact": "Garden City: Garden City is an early-20th-century real estate development loosely based on the English garden city movement, and is today a mixed residential and administrative quarter in qism Qasr al-Nil in the West District of Cairo, Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Garden_City,_Cairo",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Garden City is an early-20th-century real estate development loosely based on the English garden city movement, and is today a mixed residential and administrative quarter in qism Qasr al-Nil in the West District of Cairo, Egypt."
+ },
+ {
+  "project": "Cairo Gate Master Plan",
+  "project_slug": "cairo-gate-master-plan",
+  "fact": "Nasr City: Nasr City / Victory City forms two of the nine districts of the Eastern Area of Cairo, Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Nasr_City",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Nasr City / Victory City forms two of the nine districts of the Eastern Area of Cairo, Egypt."
+ },
+ {
+  "project": "Makkah Township Vision Master Plan",
+  "project_slug": "makkah-township-vision-master-plan",
+  "fact": "Makkah: Makkah is a city in the Hejaz region of western Saudi Arabia and the capital of the Makkah Region.",
+  "url": "https://en.wikipedia.org/wiki/Mecca",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Mecca, officially Makkah al-Mukarramah, is a city in the Hejaz region of western Saudi Arabia and is the capital of Mecca Province."
+ },
+ {
+  "project": "Jeddah City: Regional, Strategic and Local Plans",
+  "project_slug": "jeddah-regional-strategic-and-local-plans",
+  "fact": "Jeddah: Jeddah is the largest city in the Makkah Region, the second-largest city in Saudi Arabia after Riyadh, and the country's main commercial centre.",
+  "url": "https://en.wikipedia.org/wiki/Jeddah",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Jeddah is the largest city in Mecca Province, the second-largest city in Saudi Arabia after Riyadh, and the country's main commercial center."
+ },
+ {
+  "project": "Taif Development Plan (TDP)",
+  "project_slug": "taif-development-plan",
+  "fact": "Taif: Located at an elevation of 1,879 m (6,165 ft) in the slopes of the Hijaz Mountains, which themselves are part of the Sarat Mountains, the city has a population of 563,282 people in 2022, making it one of the most populous cities in the kingdom.",
+  "url": "https://en.wikipedia.org/wiki/Taif",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Located at an elevation of 1,879 m (6,165 ft) in the slopes of the Hijaz Mountains, which themselves are part of the Sarat Mountains, the city has a population of 563,282 people in 2022, making it one of the most populous cities in the kingdom."
+ },
+ {
+  "project": "AlUla Strategic Framework Plan",
+  "project_slug": "alula-strategic-framework-plan",
+  "fact": "AlUla: AlUla is an ancient Arabian oasis city and governorate in the Madinah Region of Saudi Arabia, 350 kilometres northwest of the city of Madinah.",
+  "url": "https://en.wikipedia.org/wiki/Al-Ula",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "al-Ula, officially AlUla, is an ancient Arabian oasis city and governorate located in Medina Province, Saudi Arabia, 350 kilometres northwest of the city of Medina."
+ },
+ {
+  "project": "Al Hashimi, Al Kattan, Al Shirbini and Al Zahem Hotels and Residential Complexes",
+  "project_slug": "al-madinah-hotels-detailed-designs",
+  "fact": "Madinah: The population as of 2022 is 1,477,023, making it the fourth-most populous city in the country.",
+  "url": "https://en.wikipedia.org/wiki/Medina",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "The population as of 2022 is 1,477,023, making it the fourth-most populous city in the country."
+ },
+ {
+  "project": "Architectural Design Guidelines for Najran and the Northern Border Region",
+  "project_slug": "najran-northern-border-design-guidelines",
+  "fact": "Najran: As of the 2022 census, the city population was 381,431, with the population of the governorate of Najran being 592,300.",
+  "url": "https://en.wikipedia.org/wiki/Najran",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "As of the 2022 census, the city population was 381,431, with the population of the governorate of Najran being 592,300."
+ },
+ {
+  "project": "King Abdulaziz Road Investment Land Concept Master Plan, Dhahran",
+  "project_slug": "dhahran-investment-land-concept-master-plan",
+  "fact": "Dhahran: With a total population of 143,936 as of 2022, it is a major administrative centre for the Saudi oil industry.",
+  "url": "https://en.wikipedia.org/wiki/Dhahran",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "With a total population of 143,936 as of 2022, it is a major administrative center for the Saudi oil industry."
+ },
+ {
+  "project": "Taj Al Riyadh",
+  "project_slug": "taj-al-riyadh",
+  "fact": "Riyadh: Riyadh is the capital and largest city of Saudi Arabia, as well as the largest city on the Arabian Peninsula.",
+  "url": "https://en.wikipedia.org/wiki/Riyadh",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Riyadh is the capital and largest city of Saudi Arabia, as well as the largest city on the Arabian Peninsula."
+ },
+ {
+  "project": "Planning Framework for Residential Density Improvement in Dammam, Riyadh and Jeddah",
+  "project_slug": "residential-density-planning-framework-dammam-riyadh-jeddah",
+  "fact": "Dammam: An industrial port city on the coast of the Persian Gulf, it had a population of 1,386,166 as of 2022, making it the country's fifth-largest city after Riyadh, Jeddah, Makkah and Madinah.",
+  "url": "https://en.wikipedia.org/wiki/Dammam",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "An industrial port city on the coast of the Persian Gulf, it had a population of 1,386,166 as of 2022, making it the country's fifth-largest city after Riyadh, Jeddah, Mecca, and Medina."
+ },
+ {
+  "project": "Project Elephant Pre-Concept Master Plan",
+  "project_slug": "project-elephant-pre-concept-master-plan",
+  "fact": "Rub' al Khali: The desert covers some 650,000 km2 (250,000 sq mi), including parts of Saudi Arabia, Oman, the United Arab Emirates, and Yemen.",
+  "url": "https://en.wikipedia.org/wiki/Rub'_al_Khali",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "The desert covers some 650,000 km2 (250,000 sq mi), including parts of Saudi Arabia, Oman, the United Arab Emirates, and Yemen."
+ },
+ {
+  "project": "New Najaf City",
+  "project_slug": "new-najaf-city",
+  "fact": "Najaf: Its estimated population in 2024 was about 1.41 million people.",
+  "url": "https://en.wikipedia.org/wiki/Najaf",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Its estimated population in 2024 was about 1.41 million people."
+ },
+ {
+  "project": "Marina Latakia",
+  "project_slug": "marina-latakia-master-plan-and-detailed-design",
+  "fact": "Latakia: Latakia, officially Lattakia, is the principal port city of Syria and capital city of the Latakia Governorate located on the Mediterranean coast.",
+  "url": "https://en.wikipedia.org/wiki/Latakia",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Latakia, officially Lattakia, is the principal port city of Syria and capital city of the Latakia Governorate located on the Mediterranean coast."
+ },
+ {
+  "project": "Maria Heights Tourist Complex",
+  "project_slug": "maria-heights-tourist-complex-homs",
+  "fact": "Homs: It is 501 m (1,644 ft) above sea level and is located 162 km (101 mi) north of Damascus.",
+  "url": "https://en.wikipedia.org/wiki/Homs",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is 501 m (1,644 ft) above sea level and is located 162 km (101 mi) north of Damascus."
+ },
+ {
+  "project": "Al Aqeelah Oasis",
+  "project_slug": "al-aqeelah-oasis-damascus",
+  "fact": "Damascus: Damascus is the capital and largest city of Syria.",
+  "url": "https://en.wikipedia.org/wiki/Damascus",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Damascus is the capital and largest city of Syria."
+ },
+ {
+  "project": "South Jahrah Residential Community",
+  "project_slug": "south-jahrah-residential-community",
+  "fact": "Al Jahra: Al Jahra is an area located 32 kilometres (20 mi) west of the centre of Kuwait City in Kuwait.",
+  "url": "https://en.wikipedia.org/wiki/Al_Jahra",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Al Jahra is an area located 32 kilometres (20 mi) west of the centre of Kuwait City in Kuwait."
+ },
+ {
+  "project": "Simaisma Beach and Lusail Islands",
+  "project_slug": "simaisma-beach-and-lusail-islands",
+  "fact": "Lusail: Lusail is the third-largest city in Qatar after Doha and Al-Rayyan, and serves as an important economic hub.",
+  "url": "https://en.wikipedia.org/wiki/Lusail",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Lusail is the third-largest city in Qatar after Doha and Al-Rayyan, and serves as an important economic hub."
+ },
+ {
+  "project": "Arab World Participation Galleries, Frankfurt Book Fair",
+  "project_slug": "frankfurt-book-fair-arab-world-galleries",
+  "fact": "Frankfurt Book Fair: The five-day annual event in mid-October is held at the Frankfurt Trade Fair grounds in Frankfurt am Main, Germany.",
+  "url": "https://en.wikipedia.org/wiki/Frankfurt_Book_Fair",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "The five-day annual event in mid-October is held at the Frankfurt Trade Fair grounds in Frankfurt am Main, Germany."
+ },
+ {
+  "project": "Tehran Laleh Hotel",
+  "project_slug": "tehran-laleh-hotel",
+  "fact": "Tehran: Tehran is the capital and largest city of Iran.",
+  "url": "https://en.wikipedia.org/wiki/Tehran",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Tehran is the capital and largest city of Iran."
+ },
+ {
+  "project": "Yanbu, Umluj, Al Wajh and Duba Sub-Regional Plan (YUWDDA)",
+  "project_slug": "yuwdda-sub-regional-plan",
+  "fact": "Yanbu: It is a major port and industrial centre, known for its oil refineries and the Yanbu Industrial City.",
+  "url": "https://en.wikipedia.org/wiki/Yanbu",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "It is a major port and industrial center, known for its oil refineries and the Yanbu Industrial City."
+ },
+ {
+  "project": "La Vista Town, New Cairo",
+  "project_slug": "la-vista-town-new-cairo",
+  "fact": "New Cairo: New Cairo is a modern satellite city within the Cairo Governorate and the metropolitan area of Greater Cairo, set up by presidential decree in 1995.",
+  "url": "https://en.wikipedia.org/wiki/New_Cairo",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "New Cairo is a modern satellite city within the Cairo Governorate of Egypt and the metropolitan area of Greater Cairo, whose formation was first initiated by a presidential decree in 1995 during the presidency of former Egyptian President Hosni Mubarak."
+ },
+ {
+  "project": "Hurghada Apartments Hotel and Shopping Mall",
+  "project_slug": "hurghada-apartments-hotel-and-shopping-mall",
+  "fact": "Hurghada: Hurghada is a coastal city that serves as the largest city and capital of the Red Sea Governorate of Egypt.",
+  "url": "https://en.wikipedia.org/wiki/Hurghada",
+  "source_type": "wikipedia",
+  "fetched": "2026-11-24",
+  "verified_by": "fetched",
+  "note": "Context fact about the place where the project sits; the sentence is quoted from the Wikipedia article summary.",
+  "quote": "Hurghada is a coastal city that serves as the largest city and capital of the Red Sea Governorate of Egypt."
+ }
+]

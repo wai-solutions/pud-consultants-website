@@ -1,0 +1,1403 @@
+[
+ {
+  "slug": "watg",
+  "name": "WATG",
+  "type": "partner",
+  "logo": "assets/logos/watg.png",
+  "url": "https://www.watg.com/",
+  "url_verified": true,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-01]",
+  "projects": [
+   "plist:0",
+   "plist:1",
+   "plist:2",
+   "plist:3",
+   "plist:4",
+   "plist:5",
+   "plist:6",
+   "plist:7",
+   "plist:8",
+   "plist:9",
+   "plist:11",
+   "plist:12",
+   "plist:13",
+   "plist:14",
+   "plist:15",
+   "plist:16",
+   "plist:17",
+   "plist:18",
+   "plist:19",
+   "plist:20",
+   "plist:21"
+  ]
+ },
+ {
+  "slug": "aecom",
+  "name": "AECOM",
+  "type": "partner",
+  "logo": "assets/logos/aecom.png",
+  "url": "https://aecom.com/",
+  "url_verified": true,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-16]",
+  "projects": [
+   "plist:22",
+   "plist:23",
+   "plist:24",
+   "plist:25",
+   "plist:27",
+   "plist:28",
+   "plist:29",
+   "plist:30",
+   "plist:31",
+   "plist:32",
+   "plist:33",
+   "plist:34",
+   "plist:35",
+   "plist:36",
+   "plist:40"
+  ]
+ },
+ {
+  "slug": "hill-international",
+  "name": "Hill International",
+  "type": "partner",
+  "logo": "assets/logos/hill-international.png",
+  "url": "https://www.hillintl.com/",
+  "url_verified": true,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-00]",
+  "projects": [],
+  "projects_other": [
+   "Gargoub New Port City, Matrouh (client Egyptian Naval Forces / Hill International, per PUD site)"
+  ]
+ },
+ {
+  "slug": "hok",
+  "name": "HOK",
+  "type": "partner",
+  "logo": "assets/logos/hok.png",
+  "url": "https://www.hok.com/",
+  "url_verified": true,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-06; identified as HOK, matches Wikimedia Commons https://commons.wikimedia.org/wiki/File:HOK_logo.svg]",
+  "projects": [
+   "plist:58"
+  ]
+ },
+ {
+  "slug": "buro-happold",
+  "name": "Buro Happold",
+  "type": "partner",
+  "logo": "assets/logos/buro-happold.png",
+  "url": "https://www.burohappold.com/",
+  "url_verified": true,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Buro_Happold_brand_identity.svg (public domain per Commons; trademark of Buro Happold)",
+  "projects": [
+   "plist:9"
+  ],
+  "projects_other": [
+   "Kidana Al Kheif 2026 (with SOM, per story bible)"
+  ]
+ },
+ {
+  "slug": "som",
+  "name": "SOM (Skidmore, Owings & Merrill)",
+  "type": "partner",
+  "logo": "assets/logos/som.png",
+  "url": "https://www.som.com/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Skidmore,_Owings_%26_Merrill_logo.svg (public domain per Commons; trademark of SOM)",
+  "projects": [],
+  "projects_other": [
+   "Kidana Al Kheif 2026 (with BuroHappold, per story bible)"
+  ]
+ },
+ {
+  "slug": "gillespies",
+  "name": "Gillespies",
+  "type": "partner",
+  "logo": "assets/logos/gillespies.png",
+  "url": "https://www.gillespies.co.uk/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.gillespies.co.uk/ (site share image showing wordmark on brand-colour card, public page)",
+  "projects": [],
+  "projects_other": [
+   "Jabal Thabeer Park, Kidana, Makkah"
+  ]
+ },
+ {
+  "slug": "systematica",
+  "name": "Systematica",
+  "type": "partner",
+  "logo": "assets/logos/systematica.png",
+  "url": "https://www.systematica.net/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.systematica.net/ (og:image logo, public page)",
+  "projects": [],
+  "projects_other": [
+   "Jabal Thabeer Park, Kidana, Makkah"
+  ]
+ },
+ {
+  "slug": "studio-4215",
+  "name": "Studio 4215",
+  "type": "partner",
+  "logo": "assets/logos/studio-4215.png",
+  "url": "https://studio4215.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://studio4215.com/ (links/logo.png, public page)",
+  "projects": [],
+  "projects_other": [
+   "Jabal Thabeer Park, Kidana, Makkah"
+  ]
+ },
+ {
+  "slug": "shaker-group",
+  "name": "SHAKER Consultancy Group",
+  "type": "partner",
+  "logo": "assets/logos/shaker-group.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-08]",
+  "projects": [],
+  "projects_other": [
+   "Pyramids Destination masterplan, Giza (engineers, per WATG)"
+  ]
+ },
+ {
+  "slug": "luxury-partners",
+  "name": "Luxury Partners",
+  "type": "partner",
+  "logo": "assets/logos/luxury-partners.png",
+  "url": "https://luxury-branding.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://luxurypartners.travel/ (header logo SVG, public page)",
+  "projects": [],
+  "projects_other": [
+   "Pyramids Destination masterplan, Giza (branding, per WATG)"
+  ]
+ },
+ {
+  "slug": "dar-al-handasah",
+  "name": "Dar Al-Handasah (Dar)",
+  "type": "partner",
+  "logo": "assets/logos/dar-al-handasah.png",
+  "url": "https://dar.com/",
+  "url_verified": true,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:DarLogo2016.jpg (CC BY-SA 4.0, attribution required; Dar logo 2016)",
+  "projects": [],
+  "projects_other": [
+   "New Administrative Capital Phases 2-4 (lead designer, per SHARE project card)"
+  ]
+ },
+ {
+  "slug": "naga-architects",
+  "name": "NAGA Architects",
+  "type": "partner",
+  "logo": "assets/logos/naga-architects.png",
+  "url": "https://www.naga.ae/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.naga.ae/ (header logo, public page)",
+  "projects": [],
+  "projects_other": [
+   "5 joint projects per story bible matrix (not itemised in plist)"
+  ]
+ },
+ {
+  "slug": "wep-germany",
+  "name": "WEP (Germany)",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:41"
+  ]
+ },
+ {
+  "slug": "think-gdc",
+  "name": "think-GDC (Seattle)",
+  "type": "partner",
+  "logo": null,
+  "url": "http://www.thinkgdc.com",
+  "url_verified": true,
+  "logo_source": null,
+  "projects": [
+   "plist:41",
+   "plist:52"
+  ]
+ },
+ {
+  "slug": "louis-berger",
+  "name": "Louis Berger",
+  "type": "partner",
+  "logo": "assets/logos/louis-berger.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-09]",
+  "projects": []
+ },
+ {
+  "slug": "sabbour",
+  "name": "Sabbour Consulting",
+  "type": "partner",
+  "logo": "assets/logos/sabbour.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-10]",
+  "projects": []
+ },
+ {
+  "slug": "orplan",
+  "name": "ORplan",
+  "type": "partner",
+  "logo": "assets/logos/orplan.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-04]",
+  "projects": []
+ },
+ {
+  "slug": "giugiaro-architettura",
+  "name": "Giugiaro Architettura",
+  "type": "partner",
+  "logo": "assets/logos/giugiaro-architettura.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-02]",
+  "projects": []
+ },
+ {
+  "slug": "den-consultants",
+  "name": "DEN Architectural Design Consultants",
+  "type": "partner",
+  "logo": "assets/logos/den-consultants.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-07]",
+  "projects": []
+ },
+ {
+  "slug": "darat-alumran",
+  "name": "Darat Al Umran",
+  "type": "partner",
+  "logo": "assets/logos/darat-alumran.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-14]",
+  "projects": []
+ },
+ {
+  "slug": "saudi-diyar",
+  "name": "Saudi Diyar Consultants",
+  "type": "partner",
+  "logo": "assets/logos/saudi-diyar.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-15]",
+  "projects": []
+ },
+ {
+  "slug": "pacer-consultants",
+  "name": "PACER Consultants",
+  "type": "partner",
+  "logo": "assets/logos/pacer-consultants.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-13]",
+  "projects": []
+ },
+ {
+  "slug": "joe-farah",
+  "name": "Joe Farah Interior Designer",
+  "type": "partner",
+  "logo": "assets/logos/joe-farah.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-05]",
+  "projects": []
+ },
+ {
+  "slug": "osama-bukhamseen-design",
+  "name": "Osama Bukhamseen Design",
+  "type": "partner",
+  "logo": "assets/logos/osama-bukhamseen-design.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-12]",
+  "projects": []
+ },
+ {
+  "slug": "desifr-studio",
+  "name": "de::sifr studio",
+  "type": "partner",
+  "logo": "assets/logos/desifr-studio.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD site https://www.pudconsultants.com/ (Our Partners section) [partners-11]",
+  "projects": []
+ },
+ {
+  "slug": "typsa",
+  "name": "TYPSA",
+  "type": "partner",
+  "logo": "assets/logos/typsa.png",
+  "url": "https://www.typsa.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.typsa.com/ (site logo, public page)",
+  "projects": [],
+  "projects_other": [
+   "YUWDAA sub-regional plan 2025 (per story bible matrix)"
+  ]
+ },
+ {
+  "slug": "indra",
+  "name": "Indra",
+  "type": "partner",
+  "logo": "assets/logos/indra.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Indra_Group_logo.svg (public domain per Commons)",
+  "projects": [],
+  "projects_other": [
+   "YUWDAA sub-regional plan 2025 (per story bible matrix)"
+  ]
+ },
+ {
+  "slug": "metropoli",
+  "name": "Metropoli",
+  "type": "partner",
+  "logo": "assets/logos/metropoli.png",
+  "url": "https://fmetropoli.org/",
+  "url_verified": true,
+  "logo_source": "Official site https://fmetropoli.org/ (header logo, symbol-x-NICO.png; symbol only, matches header seen in browser)",
+  "projects": [],
+  "projects_other": [
+   "YUWDAA sub-regional plan 2025 (per story bible matrix)"
+  ]
+ },
+ {
+  "slug": "foster-partners",
+  "name": "Foster + Partners",
+  "type": "partner",
+  "logo": "assets/logos/foster-partners.png",
+  "url": "https://www.fosterandpartners.com/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Foster_and_partners.svg (public domain per Commons)",
+  "projects": [],
+  "projects_other": [
+   "Competitions (per story bible)"
+  ]
+ },
+ {
+  "slug": "big",
+  "name": "BIG (Bjarke Ingels Group)",
+  "type": "partner",
+  "logo": "assets/logos/big.png",
+  "url": "https://big.dk/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Bjarke_Ingels_Group_logo.svg (public domain per Commons)",
+  "projects": [],
+  "projects_other": [
+   "Competitions (per story bible)"
+  ]
+ },
+ {
+  "slug": "farrells",
+  "name": "Farrells",
+  "type": "partner",
+  "logo": null,
+  "url": "https://www.farrells.com/",
+  "url_verified": true,
+  "logo_source": null,
+  "projects": [],
+  "projects_other": [
+   "Competitions (per story bible)"
+  ]
+ },
+ {
+  "slug": "cracknell",
+  "name": "Cracknell",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:9"
+  ]
+ },
+ {
+  "slug": "hak",
+  "name": "HAK",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:9"
+  ]
+ },
+ {
+  "slug": "david-denton-architects",
+  "name": "David Denton Architects",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:43",
+   "plist:53"
+  ]
+ },
+ {
+  "slug": "eng-khaled-ramadan",
+  "name": "Eng. Khaled Ramadan",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:75",
+   "plist:82",
+   "plist:83",
+   "plist:84",
+   "plist:85",
+   "plist:87"
+  ]
+ },
+ {
+  "slug": "dr-walid-abdelmoneim",
+  "name": "Dr. Walid Abdelmoneim",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:64"
+  ]
+ },
+ {
+  "slug": "paymacotas-getinsa-bect",
+  "name": "Paymacotas, Getinsa and BECT",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:39"
+  ]
+ },
+ {
+  "slug": "se-and-partners",
+  "name": "SE & Partners",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:38"
+  ]
+ },
+ {
+  "slug": "ey",
+  "name": "EY (Ernst & Young)",
+  "type": "partner",
+  "logo": "assets/logos/ey.png",
+  "url": "https://www.ey.com/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image31.png) (EY, collaborator on the 2016 commercial registry branding project)",
+  "projects": [
+   "plist:38"
+  ]
+ },
+ {
+  "slug": "chemonics-ehaf",
+  "name": "Chemonics Egypt and EHAF",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:63"
+  ]
+ },
+ {
+  "slug": "cupud-ain-shams",
+  "name": "CUPUD, Ain Shams University",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:61"
+  ]
+ },
+ {
+  "slug": "obd",
+  "name": "OBD",
+  "type": "partner",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:58"
+  ]
+ },
+ {
+  "slug": "nuca",
+  "name": "NUCA (New Urban Communities Authority)",
+  "type": "client",
+  "logo": "assets/logos/nuca.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image22.jpeg)",
+  "projects": [
+   "plist:77",
+   "plist:93",
+   "plist:98",
+   "plist:99",
+   "plist:100",
+   "plist:104",
+   "plist:106",
+   "plist:107",
+   "plist:113"
+  ]
+ },
+ {
+  "slug": "ministry-of-housing",
+  "name": "Ministry of Housing, Egypt and Saudi Arabia",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:33",
+   "plist:77",
+   "plist:93",
+   "plist:98",
+   "plist:99",
+   "plist:100",
+   "plist:104",
+   "plist:105",
+   "plist:106",
+   "plist:107",
+   "plist:113"
+  ]
+ },
+ {
+  "slug": "momrah",
+  "name": "MOMRAH (Ministry of Municipal, Rural Affairs and Housing, KSA)",
+  "type": "client",
+  "logo": "assets/logos/momrah.png",
+  "url": "https://www.momrah.gov.sa/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image28.png)",
+  "projects": [
+   "plist:0",
+   "plist:33"
+  ]
+ },
+ {
+  "slug": "rcu",
+  "name": "Royal Commission for AlUla (RCU)",
+  "type": "client",
+  "logo": "assets/logos/rcu.png",
+  "url": "https://www.rcu.gov.sa/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image15.png)",
+  "projects": [
+   "plist:7",
+   "plist:18",
+   "plist:36"
+  ]
+ },
+ {
+  "slug": "pif",
+  "name": "PIF (Public Investment Fund)",
+  "type": "client",
+  "logo": "assets/logos/pif.png",
+  "url": "https://www.pif.gov.sa/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image14.png)",
+  "projects": [
+   "plist:8",
+   "plist:9",
+   "plist:11",
+   "plist:12",
+   "plist:13",
+   "plist:14",
+   "plist:19",
+   "plist:21",
+   "plist:35"
+  ]
+ },
+ {
+  "slug": "rcmc",
+  "name": "RCMC (Royal Commission for Makkah City and Holy Sites)",
+  "type": "client",
+  "logo": "assets/logos/rcmc.png",
+  "url": "https://www.rcmc.gov.sa/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image24.png)",
+  "projects": [
+   "plist:34"
+  ]
+ },
+ {
+  "slug": "kidana",
+  "name": "Kidana Development Company",
+  "type": "client",
+  "logo": null,
+  "url": "https://kidana.com.sa/en/",
+  "url_verified": true,
+  "logo_source": null,
+  "projects": [],
+  "projects_other": [
+   "Kidana Al Kheif 2026; Jabal Thabeer Park (per story bible and Gillespies)"
+  ]
+ },
+ {
+  "slug": "saudi-aramco",
+  "name": "Saudi Aramco",
+  "type": "client",
+  "logo": "assets/logos/saudi-aramco.png",
+  "url": "https://www.aramco.com/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image30.jpeg)",
+  "projects": [
+   "plist:22",
+   "plist:23",
+   "plist:28",
+   "plist:30"
+  ]
+ },
+ {
+  "slug": "marakez",
+  "name": "Marakez",
+  "type": "client",
+  "logo": "assets/logos/marakez.png",
+  "url": "https://marakez.net/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image9.jpg)",
+  "projects": [
+   "plist:1"
+  ]
+ },
+ {
+  "slug": "palm-hills",
+  "name": "Palm Hills Developments",
+  "type": "client",
+  "logo": "assets/logos/palm-hills.png",
+  "url": "https://palmhillsdeveloper.com/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image6.jpg)",
+  "projects": [
+   "plist:2",
+   "plist:3"
+  ]
+ },
+ {
+  "slug": "madaar",
+  "name": "Madaar Development",
+  "type": "client",
+  "logo": "assets/logos/madaar.png",
+  "url": "https://www.madaar.com/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image10.jpg)",
+  "projects": [
+   "plist:4"
+  ]
+ },
+ {
+  "slug": "hassan-allam-properties",
+  "name": "Hassan Allam Properties",
+  "type": "client",
+  "logo": "assets/logos/hassan-allam-properties.png",
+  "url": "https://www.hap.com.eg/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image12.jpg)",
+  "projects": [
+   "plist:10"
+  ]
+ },
+ {
+  "slug": "redcon",
+  "name": "Redcon Construction (Redcon Properties / ROCC)",
+  "type": "client",
+  "logo": "assets/logos/redcon.png",
+  "url": "https://redconcon.com/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image11.jpg)",
+  "projects": [
+   "plist:15"
+  ]
+ },
+ {
+  "slug": "cleopatra-group",
+  "name": "Cleopatra Group",
+  "type": "client",
+  "logo": "assets/logos/cleopatra-group.png",
+  "url": "https://www.groupcleopatra.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.groupcleopatra.com/en/ (theme img group_logo_bigger.png)",
+  "projects": [
+   "plist:43",
+   "plist:53"
+  ]
+ },
+ {
+  "slug": "ain-shams-university",
+  "name": "Ain Shams University",
+  "type": "client",
+  "logo": "assets/logos/ain-shams-university.png",
+  "url": "https://www.asu.edu.eg/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image34.png)",
+  "projects": [
+   "plist:74",
+   "plist:89",
+   "plist:115"
+  ]
+ },
+ {
+  "slug": "ain-shams-faculty-of-medicine",
+  "name": "Ain Shams University, Faculty of Medicine",
+  "type": "client",
+  "logo": "assets/logos/ain-shams-faculty-of-medicine.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image33.png)",
+  "projects": [
+   "plist:74",
+   "plist:89"
+  ]
+ },
+ {
+  "slug": "cairo-university",
+  "name": "Cairo University",
+  "type": "client",
+  "logo": "assets/logos/cairo-university.png",
+  "url": "https://cu.edu.eg/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Cairo_University_new_logo.png (CC BY 4.0, attribution required)",
+  "projects": [
+   "plist:44"
+  ]
+ },
+ {
+  "slug": "kingdom-holding",
+  "name": "Kingdom Holding Company",
+  "type": "client",
+  "logo": "assets/logos/kingdom-holding.png",
+  "url": "https://www.kingdom.com.sa/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image19.png)",
+  "projects": [
+   "plist:40",
+   "plist:67"
+  ]
+ },
+ {
+  "slug": "fawaz-alhokair",
+  "name": "Fawaz Alhokair",
+  "type": "client",
+  "logo": null,
+  "url": "https://www.fawazalhokairfashion.com/",
+  "url_verified": true,
+  "logo_source": null,
+  "projects": [],
+  "projects_other": [
+   "5 matrix rows per story bible (not itemised in plist)"
+  ]
+ },
+ {
+  "slug": "al-aqeelah",
+  "name": "Al Aqeelah (Al-Aqeelah for Real Estate Development)",
+  "type": "client",
+  "logo": "assets/logos/al-aqeelah.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image32.jpeg)",
+  "projects": [
+   "plist:45",
+   "plist:46",
+   "plist:47",
+   "plist:48",
+   "plist:49",
+   "plist:50",
+   "plist:51",
+   "plist:52",
+   "plist:58"
+  ]
+ },
+ {
+  "slug": "talaat-moustafa-group",
+  "name": "Talaat Moustafa Group",
+  "type": "client",
+  "logo": "assets/logos/talaat-moustafa-group.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image5.png)",
+  "projects": []
+ },
+ {
+  "slug": "saudi-egyptian-developers",
+  "name": "Saudi Egyptian Developers (SED)",
+  "type": "client",
+  "logo": "assets/logos/saudi-egyptian-developers.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image8.jpg)",
+  "projects": []
+ },
+ {
+  "slug": "inertia",
+  "name": "Inertia",
+  "type": "client",
+  "logo": "assets/logos/inertia.png",
+  "url": "https://inertiaegypt.com/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image13.png)",
+  "projects": [],
+  "projects_other": [
+   "Fanarah / Jefaira North Coast (Inertia is master developer; landlord AK per Invest-Gate)"
+  ]
+ },
+ {
+  "slug": "roshn",
+  "name": "ROSHN",
+  "type": "client",
+  "logo": "assets/logos/roshn.png",
+  "url": "https://www.roshn.sa/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image16.png)",
+  "projects": []
+ },
+ {
+  "slug": "gopp",
+  "name": "GOPP (General Organization for Physical Planning)",
+  "type": "client",
+  "logo": "assets/logos/gopp.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image17.jpeg)",
+  "projects": [
+   "plist:60",
+   "plist:61",
+   "plist:68",
+   "plist:69",
+   "plist:25"
+  ],
+  "projects_other": [
+   "plist:25 Downtown Cairo Regeneration: its client sits on the following plist row (index 26: General Organization for Physical Planning, Ministry of Development)"
+  ]
+ },
+ {
+  "slug": "tda",
+  "name": "TDA (Tourism Development Authority)",
+  "type": "client",
+  "logo": "assets/logos/tda.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image18.jpeg) (source image only 59x64 px after the PUD crop: low resolution)",
+  "projects": [
+   "plist:41"
+  ]
+ },
+ {
+  "slug": "giza-governorate",
+  "name": "Giza Governorate",
+  "type": "client",
+  "logo": "assets/logos/giza-governorate.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Giza_Governorate_Logo_(Egypt).png (public domain per Commons)",
+  "projects": [],
+  "projects_other": [
+   "Pyramids / Giza (per story bible clients list)"
+  ]
+ },
+ {
+  "slug": "madinah-development-authority",
+  "name": "Al Madinah Al Munawarah Development Authority (Madinah Central Area Development Authority)",
+  "type": "client",
+  "logo": "assets/logos/madinah-development-authority.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image20.jpeg)",
+  "projects": [
+   "plist:75",
+   "plist:82",
+   "plist:83",
+   "plist:84",
+   "plist:85",
+   "plist:87"
+  ]
+ },
+ {
+  "slug": "alexandria-governorate",
+  "name": "Alexandria Governorate",
+  "type": "client",
+  "logo": "assets/logos/alexandria-governorate.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image21.jpeg)",
+  "projects": [
+   "plist:62",
+   "plist:63"
+  ]
+ },
+ {
+  "slug": "saudi-railways",
+  "name": "Saudi Railway Organization / Saudi Arabia Railways (SAR)",
+  "type": "client",
+  "logo": "assets/logos/saudi-railways.png",
+  "url": "https://www.sar.com.sa/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image23.jpeg)",
+  "projects": [
+   "plist:32"
+  ]
+ },
+ {
+  "slug": "rcjy",
+  "name": "Royal Commission for Jubail and Yanbu (RCJY)",
+  "type": "client",
+  "logo": "assets/logos/rcjy.png",
+  "url": "https://www.rcjy.gov.sa/",
+  "url_verified": true,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image25.jpeg)",
+  "projects": [
+   "plist:31"
+  ]
+ },
+ {
+  "slug": "giz",
+  "name": "GIZ",
+  "type": "client",
+  "logo": "assets/logos/giz.png",
+  "url": "https://www.giz.de/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image26.png)",
+  "projects": [
+   "plist:55"
+  ]
+ },
+ {
+  "slug": "world-bank",
+  "name": "World Bank",
+  "type": "client",
+  "logo": "assets/logos/world-bank.png",
+  "url": "https://www.worldbank.org/",
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image27.jpeg)",
+  "projects": [
+   "plist:24",
+   "plist:62",
+   "plist:63"
+  ]
+ },
+ {
+  "slug": "egypt-ministry-of-interior",
+  "name": "Ministry of Interior (Egypt)",
+  "type": "client",
+  "logo": "assets/logos/egypt-ministry-of-interior.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image36.jpeg)",
+  "projects": [
+   "plist:59"
+  ]
+ },
+ {
+  "slug": "league-of-arab-states",
+  "name": "League of Arab States",
+  "type": "client",
+  "logo": "assets/logos/league-of-arab-states.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image37.jpeg) (bottom 11% cropped to remove a VectorStock watermark strip)",
+  "projects": [
+   "plist:64"
+  ]
+ },
+ {
+  "slug": "shoura-group",
+  "name": "Shoura Group / Shoura Chemicals",
+  "type": "client",
+  "logo": "assets/logos/shoura-group.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "PUD \"partners logos rev1.pptx\" (image35.jpeg)",
+  "projects": [
+   "plist:44",
+   "plist:56",
+   "plist:57"
+  ]
+ },
+ {
+  "slug": "china-state-construction",
+  "name": "China State Construction Engineering Corporation (CSCEC)",
+  "type": "client",
+  "logo": "assets/logos/china-state-construction.png",
+  "url": "https://english.cscec.com/",
+  "url_verified": true,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:China_State_Construction_Engineering_Corporation_logo.svg (public domain per Commons)",
+  "projects": [
+   "plist:5"
+  ]
+ },
+ {
+  "slug": "paragon-developments",
+  "name": "Paragon Developments (Paragon-Adeer)",
+  "type": "client",
+  "logo": "assets/logos/paragon-developments.png",
+  "url": "https://paragon-developments.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://paragon-developments.com/ (site logo, public page)",
+  "projects": [],
+  "projects_other": [
+   "Somou Boulevard 2026 (per story bible and PUD matrix)"
+  ]
+ },
+ {
+  "slug": "mckinsey",
+  "name": "McKinsey & Company",
+  "type": "client",
+  "logo": "assets/logos/mckinsey.png",
+  "url": "https://www.mckinsey.com/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:McKinsey_and_Company_Logo_1.svg (public domain per Commons)",
+  "projects": [
+   "plist:11",
+   "plist:13"
+  ]
+ },
+ {
+  "slug": "strategy-and",
+  "name": "Strategy& (PwC)",
+  "type": "client",
+  "logo": "assets/logos/strategy-and.png",
+  "url": "https://www.strategyand.pwc.com/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Strategyand-logo-black.png (public domain per Commons)",
+  "projects": [
+   "plist:12",
+   "plist:20"
+  ]
+ },
+ {
+  "slug": "bcg",
+  "name": "Boston Consulting Group (BCG)",
+  "type": "client",
+  "logo": "assets/logos/bcg.png",
+  "url": "https://www.bcg.com/",
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:The_Boston_Consulting_Group_logo.svg (public domain per Commons)",
+  "projects": [
+   "plist:14"
+  ]
+ },
+ {
+  "slug": "nhmc",
+  "name": "NHMC Group",
+  "type": "client",
+  "logo": "assets/logos/nhmc.png",
+  "url": "https://www.nhmcegypt.com/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.nhmcegypt.com/ (header logo, public page)",
+  "projects": [
+   "plist:17"
+  ]
+ },
+ {
+  "slug": "sdc",
+  "name": "Soudah Development Company (SDC)",
+  "type": "client",
+  "logo": "assets/logos/sdc.png",
+  "url": "https://soudah.sa/",
+  "url_verified": true,
+  "logo_source": "Official site https://soudah.sa/ (media/full-logo-rock.svg, public page)",
+  "projects": [
+   "plist:16"
+  ]
+ },
+ {
+  "slug": "ehcaan",
+  "name": "EHCAAN (Egyptian Holding Company for Airports and Air Navigation)",
+  "type": "client",
+  "logo": "assets/logos/ehcaan.png",
+  "url": "http://ehcaan.com/",
+  "url_verified": true,
+  "logo_source": "Official site http://ehcaan.com/ (images/logo.png)",
+  "projects": [
+   "plist:24"
+  ]
+ },
+ {
+  "slug": "taif-municipality",
+  "name": "Taif Municipality",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:27"
+  ]
+ },
+ {
+  "slug": "jeddah-municipality",
+  "name": "Jeddah Municipality (Amana)",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:29"
+  ]
+ },
+ {
+  "slug": "jsdp",
+  "name": "JSDP (Jeddah Stormwater Drainage Programme)",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:22",
+   "plist:23",
+   "plist:28"
+  ]
+ },
+ {
+  "slug": "kuwait-housing-authority",
+  "name": "Kuwait Housing Authority",
+  "type": "client",
+  "logo": "assets/logos/kuwait-housing-authority.png",
+  "url": "https://www.pahw.gov.kw/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.pahw.gov.kw/ (images/PAHW-Logo.png); Public Authority for Housing Welfare",
+  "projects": [
+   "plist:91",
+   "plist:110"
+  ]
+ },
+ {
+  "slug": "kuwait-real-estate-company",
+  "name": "Kuwait Real Estate Company",
+  "type": "client",
+  "logo": "assets/logos/kuwait-real-estate-company.png",
+  "url": "https://aqarat.com.kw/",
+  "url_verified": true,
+  "logo_source": "Official site https://aqarat.com.kw/ (assets/images/aqarat-logo.svg)",
+  "projects": [
+   "plist:109",
+   "plist:111"
+  ]
+ },
+ {
+  "slug": "misr-hotels-company",
+  "name": "Misr Hotels Company",
+  "type": "client",
+  "logo": "assets/logos/misr-hotels-company.png",
+  "url": "https://www.misrhotels.com.eg/en",
+  "url_verified": true,
+  "logo_source": "Official site https://www.misrhotels.com.eg/en (assets/img/logo/logo-en.png)",
+  "projects": [
+   "plist:94",
+   "plist:95",
+   "plist:96"
+  ]
+ },
+ {
+  "slug": "misr-aswan-tourism",
+  "name": "Misr Aswan for Tourism Development",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:101"
+  ]
+ },
+ {
+  "slug": "ministry-of-culture",
+  "name": "Ministry of Culture (Egypt)",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:64",
+   "plist:73"
+  ]
+ },
+ {
+  "slug": "ministry-of-agriculture",
+  "name": "Ministry of Agriculture (Egypt)",
+  "type": "client",
+  "logo": "assets/logos/ministry-of-agriculture.png",
+  "url": "https://moa.gov.eg/",
+  "url_verified": true,
+  "logo_source": "Official site https://moa.gov.eg/ (wwwroot/images/malr-logo-en.png)",
+  "projects": [
+   "plist:114",
+   "plist:116"
+  ]
+ },
+ {
+  "slug": "ministry-of-finance",
+  "name": "Ministry of Finance (Egypt)",
+  "type": "client",
+  "logo": "assets/logos/ministry-of-finance.png",
+  "url": "https://mof.gov.eg/en",
+  "url_verified": true,
+  "logo_source": "Official site https://mof.gov.eg/ (images/logo.png)",
+  "projects": [
+   "plist:38"
+  ]
+ },
+ {
+  "slug": "cairo-governorate",
+  "name": "Cairo Governorate",
+  "type": "client",
+  "logo": "assets/logos/cairo-governorate.png",
+  "url": "https://www.cairo.gov.eg/",
+  "url_verified": true,
+  "logo_source": "Official portal https://www.cairo.gov.eg/ (images/cairo logo favicon.svg)",
+  "projects": [
+   "plist:112"
+  ]
+ },
+ {
+  "slug": "hepca",
+  "name": "HEPCA",
+  "type": "client",
+  "logo": "assets/logos/hepca.png",
+  "url": "https://www.hepca.org/",
+  "url_verified": true,
+  "logo_source": "Official site https://www.hepca.org/ (Images/main/Logo.svg)",
+  "projects": [
+   "plist:54"
+  ]
+ },
+ {
+  "slug": "suez-company-for-urban-development",
+  "name": "Suez Company for Urban Development",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:79",
+   "plist:80"
+  ]
+ },
+ {
+  "slug": "samala-alam-el-roum",
+  "name": "Samala & Alam El Roum for Urban Development",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:70",
+   "plist:78",
+   "plist:88"
+  ]
+ },
+ {
+  "slug": "samatour",
+  "name": "Samatour",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:72",
+   "plist:81"
+  ]
+ },
+ {
+  "slug": "al-sharq-insurance",
+  "name": "Al Sharq Insurance Company / Al Sharq Company for Development",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:97",
+   "plist:102"
+  ]
+ },
+ {
+  "slug": "capital-group",
+  "name": "Capital Group",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [
+   "plist:71"
+  ]
+ },
+ {
+  "slug": "egyptian-naval-forces",
+  "name": "Egyptian Naval Forces",
+  "type": "client",
+  "logo": "assets/logos/egyptian-naval-forces.png",
+  "url": null,
+  "url_verified": false,
+  "logo_source": "Wikimedia Commons https://commons.wikimedia.org/wiki/File:Egyptian_Naval_Forces_Logo.png (Public domain per Commons metadata)",
+  "projects": [],
+  "projects_other": [
+   "Gargoub New Port City (per PUD site)"
+  ]
+ },
+ {
+  "slug": "acud",
+  "name": "ACUD (Administrative Capital for Urban Development)",
+  "type": "client",
+  "logo": "assets/logos/acud.png",
+  "url": "https://acud.eg/",
+  "url_verified": true,
+  "logo_source": "Official site https://acud.eg/ (header logo assets/ACUD_LOGO_1-recolored.png, 10-years edition, fetched in browser)",
+  "projects": [],
+  "projects_other": [
+   "New Administrative Capital Phases 2-4 (steering role 2025)"
+  ]
+ },
+ {
+  "slug": "state-of-cameroon",
+  "name": "State of Cameroon (MAETUR)",
+  "type": "client",
+  "logo": null,
+  "url": null,
+  "url_verified": false,
+  "logo_source": null,
+  "projects": [],
+  "projects_other": [
+   "Massoumbou-Diwom final vision masterplan, 2025"
+  ]
+ }
+]

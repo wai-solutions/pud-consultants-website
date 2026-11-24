@@ -1,0 +1,1186 @@
+[
+ {
+  "folder": "15. Fanarah",
+  "slug_guess": "fanarah",
+  "items": [
+   {
+    "src": "assets/p/fanarah/01.jpg",
+    "thumb": "assets/p/fanarah/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Fanarah Resort project board: beachfront massing render with the resort rising behind the shoreline"
+   },
+   {
+    "src": "assets/p/fanarah/02.jpg",
+    "thumb": "assets/p/fanarah/02_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Structural master plan board for the Fanarah resort"
+   },
+   {
+    "src": "assets/p/fanarah/03.jpg",
+    "thumb": "assets/p/fanarah/03_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Urban design board for Phase 1 of the Fanarah resort"
+   },
+   {
+    "src": "assets/p/fanarah/04.jpg",
+    "thumb": "assets/p/fanarah/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Massing board with rendered clusters of the resort"
+   },
+   {
+    "src": "assets/p/fanarah/05.jpg",
+    "thumb": "assets/p/fanarah/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Hotels and centre board with plan and reference imagery"
+   },
+   {
+    "src": "assets/p/fanarah/06.jpg",
+    "thumb": "assets/p/fanarah/06_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Urban design board for Neighborhood 1"
+   },
+   {
+    "src": "assets/p/fanarah/07.jpg",
+    "thumb": "assets/p/fanarah/07_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Club house plan and perspectives"
+   },
+   {
+    "src": "assets/p/fanarah/08.jpg",
+    "thumb": "assets/p/fanarah/08_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Villas and chalets: unit plans and elevations"
+   },
+   {
+    "src": "assets/p/fanarah/09.jpg",
+    "thumb": "assets/p/fanarah/09_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Planning studies board with analysis diagrams"
+   },
+   {
+    "src": "assets/p/fanarah/10.jpg",
+    "thumb": "assets/p/fanarah/10_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Urban design board for Neighborhood 2"
+   }
+  ]
+ },
+ {
+  "folder": "7. Heliopark",
+  "slug_guess": "heliopark",
+  "items": [
+   {
+    "src": "assets/p/heliopark/01.jpg",
+    "thumb": "assets/p/heliopark/01_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Aerial render of the Heliopark masterplan"
+   },
+   {
+    "src": "assets/p/heliopark/02.jpg",
+    "thumb": "assets/p/heliopark/02_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Aerial render of villa neighbourhoods and the office district"
+   },
+   {
+    "src": "assets/p/heliopark/03.jpg",
+    "thumb": "assets/p/heliopark/03_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Second aerial view of the Heliopark masterplan"
+   },
+   {
+    "src": "assets/p/heliopark/04.jpg",
+    "thumb": "assets/p/heliopark/04_t.jpg",
+    "w": 1800,
+    "h": 1430,
+    "kind": "render",
+    "note": "Rendered layout of the full masterplan with the surrounding desert and roads"
+   },
+   {
+    "src": "assets/p/heliopark/05.jpg",
+    "thumb": "assets/p/heliopark/05_t.jpg",
+    "w": 1280,
+    "h": 891,
+    "kind": "plan",
+    "note": "Concept masterplan sheet with land-use legend and reference imagery"
+   },
+   {
+    "src": "assets/p/heliopark/06.jpg",
+    "thumb": "assets/p/heliopark/06_t.jpg",
+    "w": 958,
+    "h": 1280,
+    "kind": "plan",
+    "note": "Hand-drawn initial planning sketch of the masterplan"
+   }
+  ]
+ },
+ {
+  "folder": "Maria Heights",
+  "slug_guess": "maria-heights",
+  "items": [
+   {
+    "src": "assets/p/maria-heights/01.jpg",
+    "thumb": "assets/p/maria-heights/01_t.jpg",
+    "w": 1000,
+    "h": 623,
+    "kind": "render",
+    "note": "Rendered view of the resort buildings with red tiled roofs among the hills"
+   },
+   {
+    "src": "assets/p/maria-heights/02.jpg",
+    "thumb": "assets/p/maria-heights/02_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with a hilltop aerial render of the terraced villas"
+   },
+   {
+    "src": "assets/p/maria-heights/03.jpg",
+    "thumb": "assets/p/maria-heights/03_t.jpg",
+    "w": 1000,
+    "h": 639,
+    "kind": "render",
+    "note": "Terraced villa blocks with red tile roofs seen from the access road"
+   },
+   {
+    "src": "assets/p/maria-heights/04.jpg",
+    "thumb": "assets/p/maria-heights/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with the resort plan on a dark background and reference photos"
+   },
+   {
+    "src": "assets/p/maria-heights/05.jpg",
+    "thumb": "assets/p/maria-heights/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with a villa render with a waterfall and unit plans"
+   },
+   {
+    "src": "assets/p/maria-heights/06.jpg",
+    "thumb": "assets/p/maria-heights/06_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with a villa with terrace and pool"
+   },
+   {
+    "src": "assets/p/maria-heights/07.jpg",
+    "thumb": "assets/p/maria-heights/07_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with an aerial render of the terraced housing"
+   },
+   {
+    "src": "assets/p/maria-heights/08.jpg",
+    "thumb": "assets/p/maria-heights/08_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with a sunset aerial of the resort on the hillside"
+   },
+   {
+    "src": "assets/p/maria-heights/09.jpg",
+    "thumb": "assets/p/maria-heights/09_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with the resort masterplan, perspective strip and reference photos"
+   },
+   {
+    "src": "assets/p/maria-heights/10.jpg",
+    "thumb": "assets/p/maria-heights/10_t.jpg",
+    "w": 1800,
+    "h": 630,
+    "kind": "board",
+    "note": "Wide board of the long hillside plan"
+   }
+  ]
+ },
+ {
+  "folder": "New najaf city",
+  "slug_guess": "new-najaf-city",
+  "items": [
+   {
+    "src": "assets/p/new-najaf-city/01.jpg",
+    "thumb": "assets/p/new-najaf-city/01_t.jpg",
+    "w": 1800,
+    "h": 1271,
+    "kind": "render",
+    "note": "Aerial render of the new city's waterfront next to the lake"
+   },
+   {
+    "src": "assets/p/new-najaf-city/02.jpg",
+    "thumb": "assets/p/new-najaf-city/02_t.jpg",
+    "w": 1800,
+    "h": 1271,
+    "kind": "board",
+    "note": "Board with a waterfront skyline render"
+   },
+   {
+    "src": "assets/p/new-najaf-city/03.jpg",
+    "thumb": "assets/p/new-najaf-city/03_t.jpg",
+    "w": 1800,
+    "h": 1271,
+    "kind": "board",
+    "note": "Board with renders of the city on the bay"
+   },
+   {
+    "src": "assets/p/new-najaf-city/04.jpg",
+    "thumb": "assets/p/new-najaf-city/04_t.jpg",
+    "w": 1800,
+    "h": 1271,
+    "kind": "board",
+    "note": "Board with renders of the island and waterfront towers"
+   },
+   {
+    "src": "assets/p/new-najaf-city/05.jpg",
+    "thumb": "assets/p/new-najaf-city/05_t.jpg",
+    "w": 1800,
+    "h": 1271,
+    "kind": "board",
+    "note": "Board with the lake plan and a skyline render"
+   },
+   {
+    "src": "assets/p/new-najaf-city/06.jpg",
+    "thumb": "assets/p/new-najaf-city/06_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Concept masterplan board with the lake at its centre"
+   },
+   {
+    "src": "assets/p/new-najaf-city/07.jpg",
+    "thumb": "assets/p/new-najaf-city/07_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Masterplan board with the landscaped lakefront"
+   },
+   {
+    "src": "assets/p/new-najaf-city/08.jpg",
+    "thumb": "assets/p/new-najaf-city/08_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Detailed plan board of the lakeside neighbourhoods"
+   },
+   {
+    "src": "assets/p/new-najaf-city/09.jpg",
+    "thumb": "assets/p/new-najaf-city/09_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Land-use studies board"
+   },
+   {
+    "src": "assets/p/new-najaf-city/10.jpg",
+    "thumb": "assets/p/new-najaf-city/10_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Site studies board with aerial context images"
+   }
+  ]
+ },
+ {
+  "folder": "City Of knowledge",
+  "slug_guess": "city-of-knowledge",
+  "items": [
+   {
+    "src": "assets/p/city-of-knowledge/01.jpg",
+    "thumb": "assets/p/city-of-knowledge/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Aerial render of the campus city layout"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/02.jpg",
+    "thumb": "assets/p/city-of-knowledge/02_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board of four rendered views of the campus buildings"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/03.jpg",
+    "thumb": "assets/p/city-of-knowledge/03_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board of rendered campus views and the central dome"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/04.jpg",
+    "thumb": "assets/p/city-of-knowledge/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board of rendered campus streets and buildings"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/05.jpg",
+    "thumb": "assets/p/city-of-knowledge/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Board with rendered palm-lined axes and plazas"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/06.jpg",
+    "thumb": "assets/p/city-of-knowledge/06_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Detailed master plan of the central campus"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/07.jpg",
+    "thumb": "assets/p/city-of-knowledge/07_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Master plan board of the whole campus"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/08.jpg",
+    "thumb": "assets/p/city-of-knowledge/08_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Land-use plan board of the campus"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/09.jpg",
+    "thumb": "assets/p/city-of-knowledge/09_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Planning analysis board"
+   },
+   {
+    "src": "assets/p/city-of-knowledge/10.jpg",
+    "thumb": "assets/p/city-of-knowledge/10_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Site analysis board with satellite imagery"
+   }
+  ]
+ },
+ {
+  "folder": "Faculty of Agriculture",
+  "slug_guess": "faculty-of-agriculture",
+  "items": [
+   {
+    "src": "assets/p/faculty-of-agriculture/01.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/01_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Completed building in the Faculty of Agriculture campus"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/02.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/02_t.jpg",
+    "w": 1600,
+    "h": 1200,
+    "kind": "photo",
+    "note": "Front elevation of the completed building"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/03.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/03_t.jpg",
+    "w": 1800,
+    "h": 1201,
+    "kind": "board",
+    "note": "General plan board of the Faculty of Agriculture campus"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/04.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/04_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Garden path leading to the building"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/05.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/05_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Interior hall with arched windows"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/06.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/06_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Covered entrance terrace"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/07.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/07_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Skylight and timber detailing"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/08.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/08_t.jpg",
+    "w": 1007,
+    "h": 755,
+    "kind": "photo",
+    "note": "Interior lounge"
+   },
+   {
+    "src": "assets/p/faculty-of-agriculture/09.jpg",
+    "thumb": "assets/p/faculty-of-agriculture/09_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "photo",
+    "note": "Building during construction"
+   }
+  ]
+ },
+ {
+  "folder": "3. Organ Transplant (with Hill)",
+  "slug_guess": "organ-transplant",
+  "items": [
+   {
+    "src": "assets/p/organ-transplant/01.jpg",
+    "thumb": "assets/p/organ-transplant/01_t.jpg",
+    "w": 1800,
+    "h": 1199,
+    "kind": "board",
+    "note": "Board with the main perspective of the organ transplant centre"
+   },
+   {
+    "src": "assets/p/organ-transplant/02.jpg",
+    "thumb": "assets/p/organ-transplant/02_t.jpg",
+    "w": 1800,
+    "h": 1199,
+    "kind": "board",
+    "note": "Board with perspectives and elevations"
+   },
+   {
+    "src": "assets/p/organ-transplant/03.jpg",
+    "thumb": "assets/p/organ-transplant/03_t.jpg",
+    "w": 1800,
+    "h": 1199,
+    "kind": "board",
+    "note": "Board with floor plans, sections and diagrams"
+   },
+   {
+    "src": "assets/p/organ-transplant/04.jpg",
+    "thumb": "assets/p/organ-transplant/04_t.jpg",
+    "w": 1800,
+    "h": 884,
+    "kind": "render",
+    "note": "Aerial perspective of the building"
+   },
+   {
+    "src": "assets/p/organ-transplant/05.jpg",
+    "thumb": "assets/p/organ-transplant/05_t.jpg",
+    "w": 1800,
+    "h": 716,
+    "kind": "render",
+    "note": "Street-level perspectives of the building"
+   }
+  ]
+ },
+ {
+  "folder": "25. Villas",
+  "slug_guess": "villas",
+  "items": [
+   {
+    "src": "assets/p/villas/01.jpg",
+    "thumb": "assets/p/villas/01_t.jpg",
+    "w": 1154,
+    "h": 800,
+    "kind": "render",
+    "note": "Render of a villa with a stepped arched entrance and timber pergolas"
+   },
+   {
+    "src": "assets/p/villas/02.jpg",
+    "thumb": "assets/p/villas/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "photo",
+    "note": "Villa on site with white walls and blue domes"
+   },
+   {
+    "src": "assets/p/villas/03.jpg",
+    "thumb": "assets/p/villas/03_t.jpg",
+    "w": 1154,
+    "h": 800,
+    "kind": "render",
+    "note": "Render of a villa with a pool and glazed corner"
+   },
+   {
+    "src": "assets/p/villas/04.jpg",
+    "thumb": "assets/p/villas/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Working drawings cover: elevation of a private residence, Cairo-Suez Road"
+   },
+   {
+    "src": "assets/p/villas/05.jpg",
+    "thumb": "assets/p/villas/05_t.jpg",
+    "w": 1698,
+    "h": 1200,
+    "kind": "plan",
+    "note": "Pencil sketch elevation of a villa"
+   },
+   {
+    "src": "assets/p/villas/06.jpg",
+    "thumb": "assets/p/villas/06_t.jpg",
+    "w": 1800,
+    "h": 878,
+    "kind": "plan",
+    "note": "Wide pencil sketch of a villa"
+   },
+   {
+    "src": "assets/p/villas/07.jpg",
+    "thumb": "assets/p/villas/07_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "plan",
+    "note": "Floor plan sheet of a private residence"
+   },
+   {
+    "src": "assets/p/villas/08.jpg",
+    "thumb": "assets/p/villas/08_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "photo",
+    "note": "Villa under construction with domes and scaffolding"
+   },
+   {
+    "src": "assets/p/villas/09.jpg",
+    "thumb": "assets/p/villas/09_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Concrete frame of a villa under construction"
+   },
+   {
+    "src": "assets/p/villas/10.jpg",
+    "thumb": "assets/p/villas/10_t.jpg",
+    "w": 1800,
+    "h": 1272,
+    "kind": "board",
+    "note": "Elevation sheet of a villa in City View Compound"
+   }
+  ]
+ },
+ {
+  "folder": "Rotana offices",
+  "slug_guess": "rotana-offices",
+  "items": [
+   {
+    "src": "assets/p/rotana-offices/01.jpg",
+    "thumb": "assets/p/rotana-offices/01_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Reception hall with the Rotana logo wall and curved desk"
+   },
+   {
+    "src": "assets/p/rotana-offices/02.jpg",
+    "thumb": "assets/p/rotana-offices/02_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Executive lounge with white sofas and a view over the river"
+   },
+   {
+    "src": "assets/p/rotana-offices/03.jpg",
+    "thumb": "assets/p/rotana-offices/03_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Executive office with glass desk and river view"
+   },
+   {
+    "src": "assets/p/rotana-offices/04.jpg",
+    "thumb": "assets/p/rotana-offices/04_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Boardroom with oval table"
+   },
+   {
+    "src": "assets/p/rotana-offices/05.jpg",
+    "thumb": "assets/p/rotana-offices/05_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Glazed corridor along the open-plan offices"
+   },
+   {
+    "src": "assets/p/rotana-offices/06.jpg",
+    "thumb": "assets/p/rotana-offices/06_t.jpg",
+    "w": 1197,
+    "h": 1800,
+    "kind": "photo",
+    "note": "Corridor with coloured light columns"
+   },
+   {
+    "src": "assets/p/rotana-offices/07.jpg",
+    "thumb": "assets/p/rotana-offices/07_t.jpg",
+    "w": 1800,
+    "h": 1197,
+    "kind": "photo",
+    "note": "Open-plan office with workstations"
+   },
+   {
+    "src": "assets/p/rotana-offices/08.jpg",
+    "thumb": "assets/p/rotana-offices/08_t.jpg",
+    "w": 1800,
+    "h": 613,
+    "kind": "photo",
+    "note": "Panoramic view from the offices over the city and river"
+   }
+  ]
+ },
+ {
+  "folder": "Rotana cafe",
+  "slug_guess": "rotana-cafe",
+  "items": [
+   {
+    "src": "assets/p/rotana-cafe/01.jpg",
+    "thumb": "assets/p/rotana-cafe/01_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Circular bar clad in green with steel bands"
+   },
+   {
+    "src": "assets/p/rotana-cafe/02.jpg",
+    "thumb": "assets/p/rotana-cafe/02_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Terrace hall with glass partitions and timber deck"
+   },
+   {
+    "src": "assets/p/rotana-cafe/03.jpg",
+    "thumb": "assets/p/rotana-cafe/03_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Shade sails over the outdoor terrace"
+   },
+   {
+    "src": "assets/p/rotana-cafe/04.jpg",
+    "thumb": "assets/p/rotana-cafe/04_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Timber deck terrace with glass screens"
+   },
+   {
+    "src": "assets/p/rotana-cafe/05.jpg",
+    "thumb": "assets/p/rotana-cafe/05_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Main hall with tables being set up"
+   },
+   {
+    "src": "assets/p/rotana-cafe/06.jpg",
+    "thumb": "assets/p/rotana-cafe/06_t.jpg",
+    "w": 502,
+    "h": 377,
+    "kind": "photo",
+    "note": "Steel columns and green bar element"
+   }
+  ]
+ },
+ {
+  "folder": "Frankfurt",
+  "slug_guess": "frankfurt",
+  "items": [
+   {
+    "src": "assets/p/frankfurt/01.jpg",
+    "thumb": "assets/p/frankfurt/01_t.jpg",
+    "w": 1800,
+    "h": 837,
+    "kind": "render",
+    "note": "Render of the exhibition tent seen from the plaza"
+   },
+   {
+    "src": "assets/p/frankfurt/02.jpg",
+    "thumb": "assets/p/frankfurt/02_t.jpg",
+    "w": 1800,
+    "h": 1201,
+    "kind": "render",
+    "note": "Render of the tent interior with the central pool"
+   },
+   {
+    "src": "assets/p/frankfurt/03.jpg",
+    "thumb": "assets/p/frankfurt/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Render of the gallery interior with visitors"
+   },
+   {
+    "src": "assets/p/frankfurt/04.jpg",
+    "thumb": "assets/p/frankfurt/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Render of the gallery entrance and information desk"
+   },
+   {
+    "src": "assets/p/frankfurt/05.jpg",
+    "thumb": "assets/p/frankfurt/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "plan",
+    "note": "Floor plan of the exhibition galleries"
+   },
+   {
+    "src": "assets/p/frankfurt/06.jpg",
+    "thumb": "assets/p/frankfurt/06_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Book hall with timber shelving, as built"
+   },
+   {
+    "src": "assets/p/frankfurt/07.jpg",
+    "thumb": "assets/p/frankfurt/07_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Art gallery hall with panels, as built"
+   },
+   {
+    "src": "assets/p/frankfurt/08.jpg",
+    "thumb": "assets/p/frankfurt/08_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Opening day crowd in the book hall"
+   }
+  ]
+ },
+ {
+  "folder": "Al Madinah Hotels",
+  "slug_guess": "al-madinah-hotels",
+  "items": [
+   {
+    "src": "assets/p/al-madinah-hotels/01.jpg",
+    "thumb": "assets/p/al-madinah-hotels/01_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel facade with arcaded base"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/02.jpg",
+    "thumb": "assets/p/al-madinah-hotels/02_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel block on the street"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/03.jpg",
+    "thumb": "assets/p/al-madinah-hotels/03_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Arcaded corner entrance"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/04.jpg",
+    "thumb": "assets/p/al-madinah-hotels/04_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Arched arcade at the base of the hotel"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/05.jpg",
+    "thumb": "assets/p/al-madinah-hotels/05_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel under construction with tower crane"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/06.jpg",
+    "thumb": "assets/p/al-madinah-hotels/06_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel facade with pink banding and arcade"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/07.jpg",
+    "thumb": "assets/p/al-madinah-hotels/07_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Facade with banded stone pattern"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/08.jpg",
+    "thumb": "assets/p/al-madinah-hotels/08_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel complex seen from the plaza"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/09.jpg",
+    "thumb": "assets/p/al-madinah-hotels/09_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Hotel block with arcaded base on the street"
+   },
+   {
+    "src": "assets/p/al-madinah-hotels/10.jpg",
+    "thumb": "assets/p/al-madinah-hotels/10_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Tall hotel facade rising above neighbouring blocks"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Fayrouz Tower)",
+  "slug_guess": "fayrouz-tower",
+  "items": [
+   {
+    "src": "assets/p/fayrouz-tower-web/01.jpg",
+    "thumb": "assets/p/fayrouz-tower-web/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Fayrouz Tower presentation board with tower render, base view and interiors"
+   },
+   {
+    "src": "assets/p/fayrouz-tower-web/02.jpg",
+    "thumb": "assets/p/fayrouz-tower-web/02_t.jpg",
+    "w": 1000,
+    "h": 985,
+    "kind": "render",
+    "note": "Render of the glass tower rising into the sky"
+   },
+   {
+    "src": "assets/p/fayrouz-tower-web/03.jpg",
+    "thumb": "assets/p/fayrouz-tower-web/03_t.jpg",
+    "w": 1043,
+    "h": 691,
+    "kind": "render",
+    "note": "Render of the tower base with planted roof terrace and retail entrance"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Aqeelah Oasis)",
+  "slug_guess": "aqeelah-oasis",
+  "items": [
+   {
+    "src": "assets/p/aqeelah-oasis-web/01.jpg",
+    "thumb": "assets/p/aqeelah-oasis-web/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Aqeelah Oasis board with towers and courtyard render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis-web/02.jpg",
+    "thumb": "assets/p/aqeelah-oasis-web/02_t.jpg",
+    "w": 1000,
+    "h": 684,
+    "kind": "render",
+    "note": "Render of arched towers around a pool courtyard"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis-web/03.jpg",
+    "thumb": "assets/p/aqeelah-oasis-web/03_t.jpg",
+    "w": 1000,
+    "h": 802,
+    "kind": "render",
+    "note": "Render of the towers seen from the pool terrace"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis-web/04.jpg",
+    "thumb": "assets/p/aqeelah-oasis-web/04_t.jpg",
+    "w": 1000,
+    "h": 686,
+    "kind": "board",
+    "note": "Interior views of apartments and hotel rooms"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Aqeeq Marina)",
+  "slug_guess": "aqeeq-marina",
+  "items": [
+   {
+    "src": "assets/p/aqeeq-marina/01.jpg",
+    "thumb": "assets/p/aqeeq-marina/01_t.jpg",
+    "w": 1000,
+    "h": 577,
+    "kind": "render",
+    "note": "Render of a marina-front building with sail-shaped canopy"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Olympic Plaza)",
+  "slug_guess": "olympic-plaza",
+  "items": [
+   {
+    "src": "assets/p/olympic-plaza/01.jpg",
+    "thumb": "assets/p/olympic-plaza/01_t.jpg",
+    "w": 1800,
+    "h": 1235,
+    "kind": "board",
+    "note": "Olympic Plaza presentation board with the sculpted tower at dusk"
+   },
+   {
+    "src": "assets/p/olympic-plaza/02.jpg",
+    "thumb": "assets/p/olympic-plaza/02_t.jpg",
+    "w": 1000,
+    "h": 699,
+    "kind": "render",
+    "note": "Render of the sculpted curved-glass tower at night"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Om El Baneen Oasis)",
+  "slug_guess": "om-el-baneen-oasis",
+  "items": [
+   {
+    "src": "assets/p/om-el-baneen-oasis/01.jpg",
+    "thumb": "assets/p/om-el-baneen-oasis/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Om El Baneen Oasis master plan board with landscape views"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Ras El Hekma)",
+  "slug_guess": "ras-el-hekma",
+  "items": [
+   {
+    "src": "assets/p/ras-el-hekma/01.jpg",
+    "thumb": "assets/p/ras-el-hekma/01_t.jpg",
+    "w": 1800,
+    "h": 857,
+    "kind": "board",
+    "note": "Ras El Hekma coastline presentation board with the site plan and reference photos"
+   },
+   {
+    "src": "assets/p/ras-el-hekma/02.jpg",
+    "thumb": "assets/p/ras-el-hekma/02_t.jpg",
+    "w": 1800,
+    "h": 702,
+    "kind": "board",
+    "note": "Site map of the Ras El Hekma coastline"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Alex Gate)",
+  "slug_guess": "alex-gate",
+  "items": [
+   {
+    "src": "assets/p/alex-gate/01.jpg",
+    "thumb": "assets/p/alex-gate/01_t.jpg",
+    "w": 1800,
+    "h": 1040,
+    "kind": "render",
+    "note": "Aerial render of the Alex Gate waterfront development"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Shoura)",
+  "slug_guess": "shoura",
+  "items": [
+   {
+    "src": "assets/p/shoura/01.jpg",
+    "thumb": "assets/p/shoura/01_t.jpg",
+    "w": 1800,
+    "h": 1455,
+    "kind": "render",
+    "note": "Render of a glass-and-stone office building with a circular emblem on the facade"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Marina El Alamein)",
+  "slug_guess": "marina-el-alamein",
+  "items": [
+   {
+    "src": "assets/p/marina-el-alamein-web/01.jpg",
+    "thumb": "assets/p/marina-el-alamein-web/01_t.jpg",
+    "w": 960,
+    "h": 720,
+    "kind": "plan",
+    "note": "Marina Al Alamein strip plan, km 94-100"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Royal Oasis)",
+  "slug_guess": "royal-oasis",
+  "items": [
+   {
+    "src": "assets/p/royal-oasis-web/01.jpg",
+    "thumb": "assets/p/royal-oasis-web/01_t.jpg",
+    "w": 1350,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Royal Oasis layout plan: villas, club house, pools, shopping and hotel"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website (Shaqeeq suburb)",
+  "slug_guess": "shaqeeq",
+  "items": [
+   {
+    "src": "assets/p/sheikh-mohammed-bin-nasser-suburb/01.jpg",
+    "thumb": "assets/p/sheikh-mohammed-bin-nasser-suburb/01_t.jpg",
+    "w": 1800,
+    "h": 1251,
+    "kind": "board",
+    "note": "Plot layout board for the Sheikh Mohammed bin Nasser suburb (file named shaqeeq)"
+   }
+  ]
+ },
+ {
+  "folder": "0. photos 4 website",
+  "slug_guess": "misc-gallery",
+  "items": [
+   {
+    "src": "assets/p/misc-gallery/01.jpg",
+    "thumb": "assets/p/misc-gallery/01_t.jpg",
+    "w": 1300,
+    "h": 919,
+    "kind": "render",
+    "note": "Render of a villa with a pool at dusk"
+   },
+   {
+    "src": "assets/p/misc-gallery/02.jpg",
+    "thumb": "assets/p/misc-gallery/02_t.jpg",
+    "w": 1800,
+    "h": 1291,
+    "kind": "render",
+    "note": "Render of a bank branch with green arched facade"
+   },
+   {
+    "src": "assets/p/misc-gallery/03.jpg",
+    "thumb": "assets/p/misc-gallery/03_t.jpg",
+    "w": 1000,
+    "h": 719,
+    "kind": "render",
+    "note": "Render of a curved glass tower with a sculpted podium"
+   },
+   {
+    "src": "assets/p/misc-gallery/04.jpg",
+    "thumb": "assets/p/misc-gallery/04_t.jpg",
+    "w": 1773,
+    "h": 1320,
+    "kind": "render",
+    "note": "Render of a prayer hall with patterned carpet and ribbed ceiling"
+   },
+   {
+    "src": "assets/p/misc-gallery/05.jpg",
+    "thumb": "assets/p/misc-gallery/05_t.jpg",
+    "w": 1800,
+    "h": 1410,
+    "kind": "render",
+    "note": "Interior render of a lounge with a pool and dolphin features"
+   },
+   {
+    "src": "assets/p/misc-gallery/06.jpg",
+    "thumb": "assets/p/misc-gallery/06_t.jpg",
+    "w": 1800,
+    "h": 1430,
+    "kind": "render",
+    "note": "Aerial render of a leisure complex with red-roofed pavilions"
+   },
+   {
+    "src": "assets/p/misc-gallery/07.jpg",
+    "thumb": "assets/p/misc-gallery/07_t.jpg",
+    "w": 1248,
+    "h": 840,
+    "kind": "render",
+    "note": "Render of a glass and white office building with a courtyard"
+   },
+   {
+    "src": "assets/p/misc-gallery/08.jpg",
+    "thumb": "assets/p/misc-gallery/08_t.jpg",
+    "w": 1800,
+    "h": 1227,
+    "kind": "render",
+    "note": "Render of a banded hotel tower with arched base"
+   },
+   {
+    "src": "assets/p/misc-gallery/09.jpg",
+    "thumb": "assets/p/misc-gallery/09_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Aerial render board of a commercial complex with gardens and water features"
+   },
+   {
+    "src": "assets/p/misc-gallery/10.jpg",
+    "thumb": "assets/p/misc-gallery/10_t.jpg",
+    "w": 1800,
+    "h": 1148,
+    "kind": "board",
+    "note": "Wide coastal strip plan board with a seafront skyline"
+   }
+  ]
+ }
+]
