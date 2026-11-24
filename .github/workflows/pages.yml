@@ -1,0 +1,40 @@
+name: Deploy preview to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # The preview must not compete with www.pudconsultants.com in search:
+      # block crawlers and add a noindex tag to every page of the published copy only.
+      - name: Mark preview as noindex
+        run: |
+          mkdir -p _preview && cp -R site/. _preview/
+          printf 'User-agent: *\nDisallow: /\n' > _preview/robots.txt
+          find _preview -name '*.html' -print0 | xargs -0 sed -i 's#<head>#<head><meta name="robots" content="noindex, nofollow">#'
+          touch _preview/.nojekyll
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _preview
+      - id: deployment
+        uses: actions/deploy-pages@v4
