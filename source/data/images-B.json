@@ -1,2458 +1,2512 @@
 [
-  {
-    "folder": "1. New Capital",
-    "slug_guess": "new-capital",
-    "items": [
-      {
-        "src": "assets/p/new-capital/01.jpg",
-        "thumb": "assets/p/new-capital/01_t.jpg",
-        "w": 1760,
-        "h": 1246,
-        "kind": "render",
-        "note": "New Capital city skyline render at dusk (ACUD advisory deck)"
-      },
-      {
-        "src": "assets/p/new-capital/02.jpg",
-        "thumb": "assets/p/new-capital/02_t.jpg",
-        "w": 1200,
-        "h": 609,
-        "kind": "render",
-        "note": "Night view of the New Capital road corridor"
-      },
-      {
-        "src": "assets/p/new-capital/03.jpg",
-        "thumb": "assets/p/new-capital/03_t.jpg",
-        "w": 884,
-        "h": 1201,
-        "kind": "render",
-        "note": "New Capital park and towers aerial view"
-      },
-      {
-        "src": "assets/p/new-capital/04.jpg",
-        "thumb": "assets/p/new-capital/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Site context map of the New Capital in Greater Cairo"
-      },
-      {
-        "src": "assets/p/new-capital/05.jpg",
-        "thumb": "assets/p/new-capital/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Overview of the New Capital districts"
-      },
-      {
-        "src": "assets/p/new-capital/06.jpg",
-        "thumb": "assets/p/new-capital/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Green network plan of the New Capital"
-      }
-    ]
-  },
-  {
-    "folder": "11. Taj Al RiyadhRiyadh",
-    "slug_guess": "taj-al-riyadh",
-    "items": [
-      {
-        "src": "assets/p/taj-al-riyadh/01.jpg",
-        "thumb": "assets/p/taj-al-riyadh/01_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Cover: Taj Al Riyadh concept master plan model"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/02.jpg",
-        "thumb": "assets/p/taj-al-riyadh/02_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Concept master plan"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/03.jpg",
-        "thumb": "assets/p/taj-al-riyadh/03_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Aerial views of the proposed district"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/04.jpg",
-        "thumb": "assets/p/taj-al-riyadh/04_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Land-use distribution plan"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/05.jpg",
-        "thumb": "assets/p/taj-al-riyadh/05_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Public realm plan with street views"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/06.jpg",
-        "thumb": "assets/p/taj-al-riyadh/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Golf course landscape plan with references"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/07.jpg",
-        "thumb": "assets/p/taj-al-riyadh/07_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Mixed-use centre plan with references"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/08.jpg",
-        "thumb": "assets/p/taj-al-riyadh/08_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Parks and open space plan"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/09.jpg",
-        "thumb": "assets/p/taj-al-riyadh/09_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Pedestrian and cycling network plan"
-      },
-      {
-        "src": "assets/p/taj-al-riyadh/10.jpg",
-        "thumb": "assets/p/taj-al-riyadh/10_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Site analysis and surrounding plans"
-      }
-    ]
-  },
-  {
-    "folder": "13. Al Jawhara Residence",
-    "slug_guess": "al-jawhara-residence",
-    "items": [
-      {
-        "src": "assets/p/al-jawhara-residence/01.jpg",
-        "thumb": "assets/p/al-jawhara-residence/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Residential towers and street render"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/02.jpg",
-        "thumb": "assets/p/al-jawhara-residence/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Residential building render"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/03.jpg",
-        "thumb": "assets/p/al-jawhara-residence/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Residential building render, second view"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/04.jpg",
-        "thumb": "assets/p/al-jawhara-residence/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "General master plan"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/05.jpg",
-        "thumb": "assets/p/al-jawhara-residence/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Master plan with land-use chart"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/06.jpg",
-        "thumb": "assets/p/al-jawhara-residence/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Master plan with residential building types"
-      },
-      {
-        "src": "assets/p/al-jawhara-residence/07.jpg",
-        "thumb": "assets/p/al-jawhara-residence/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Master plan, circulation and plots"
-      }
-    ]
-  },
-  {
-    "folder": "14. Bahrain",
-    "slug_guess": "bahrain-upda",
-    "items": [
-      {
-        "src": "assets/p/bahrain-upda/01.jpg",
-        "thumb": "assets/p/bahrain-upda/01_t.jpg",
-        "w": 989,
-        "h": 1596,
-        "kind": "plan",
-        "note": "Satellite map of Bahrain with numbered upcoming projects (UPDA RFP)"
-      }
-    ]
-  },
-  {
-    "folder": "16. 1 million unit Minya",
-    "slug_guess": "minya-1-million-units",
-    "items": [
-      {
-        "src": "assets/p/minya-1-million-units/01.jpg",
-        "thumb": "assets/p/minya-1-million-units/01_t.jpg",
-        "w": 1800,
-        "h": 1274,
-        "kind": "plan",
-        "note": "Land-use plan for authority approvals (model, Oct 2014)"
-      }
-    ]
-  },
-  {
-    "folder": "17. Katamiya Dunes",
-    "slug_guess": "katamiya-dunes",
-    "items": [
-      {
-        "src": "assets/p/katamiya-dunes/01.jpg",
-        "thumb": "assets/p/katamiya-dunes/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Villa 124 facade render, front elevation"
-      },
-      {
-        "src": "assets/p/katamiya-dunes/02.jpg",
-        "thumb": "assets/p/katamiya-dunes/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Villa 124 facade render, garden elevation"
-      }
-    ]
-  },
-  {
-    "folder": "18. Branding Manual",
-    "slug_guess": "commercial-registry-branding",
-    "items": [
-      {
-        "src": "assets/p/commercial-registry-branding/01.jpg",
-        "thumb": "assets/p/commercial-registry-branding/01_t.jpg",
-        "w": 1161,
-        "h": 590,
-        "kind": "render",
-        "note": "24-hour lobby of a Commercial Registry branch"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/02.jpg",
-        "thumb": "assets/p/commercial-registry-branding/02_t.jpg",
-        "w": 1150,
-        "h": 736,
-        "kind": "render",
-        "note": "Branch interior render, exclusive area"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/03.jpg",
-        "thumb": "assets/p/commercial-registry-branding/03_t.jpg",
-        "w": 1088,
-        "h": 757,
-        "kind": "render",
-        "note": "Branch interior render, waiting and service area"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/04.jpg",
-        "thumb": "assets/p/commercial-registry-branding/04_t.jpg",
-        "w": 1469,
-        "h": 650,
-        "kind": "render",
-        "note": "Branch layout, 3D view of the retail and transaction areas"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/05.jpg",
-        "thumb": "assets/p/commercial-registry-branding/05_t.jpg",
-        "w": 1093,
-        "h": 474,
-        "kind": "render",
-        "note": "Branch cutaway 3D view"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/06.jpg",
-        "thumb": "assets/p/commercial-registry-branding/06_t.jpg",
-        "w": 1216,
-        "h": 468,
-        "kind": "plan",
-        "note": "Branch exterior elevation"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/07.jpg",
-        "thumb": "assets/p/commercial-registry-branding/07_t.jpg",
-        "w": 850,
-        "h": 1041,
-        "kind": "render",
-        "note": "Information kiosk (kit of parts)"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/08.jpg",
-        "thumb": "assets/p/commercial-registry-branding/08_t.jpg",
-        "w": 1227,
-        "h": 852,
-        "kind": "render",
-        "note": "Counters and equipment (kit of parts)"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/09.jpg",
-        "thumb": "assets/p/commercial-registry-branding/09_t.jpg",
-        "w": 1192,
-        "h": 599,
-        "kind": "plan",
-        "note": "Branch floor plan variants"
-      },
-      {
-        "src": "assets/p/commercial-registry-branding/10.jpg",
-        "thumb": "assets/p/commercial-registry-branding/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Commercial Registry offices coverage map"
-      }
-    ]
-  },
-  {
-    "folder": "19. Port Said tunnels",
-    "slug_guess": "port-said-tunnels",
-    "items": [
-      {
-        "src": "assets/p/port-said-tunnels/01.jpg",
-        "thumb": "assets/p/port-said-tunnels/01_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Cover: Construction of Port Said Tunnels"
-      },
-      {
-        "src": "assets/p/port-said-tunnels/02.jpg",
-        "thumb": "assets/p/port-said-tunnels/02_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Tunnel location map"
-      },
-      {
-        "src": "assets/p/port-said-tunnels/03.jpg",
-        "thumb": "assets/p/port-said-tunnels/03_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Tunnels master plan"
-      },
-      {
-        "src": "assets/p/port-said-tunnels/04.jpg",
-        "thumb": "assets/p/port-said-tunnels/04_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Road tunnel longitudinal profile, 3D section"
-      },
-      {
-        "src": "assets/p/port-said-tunnels/05.jpg",
-        "thumb": "assets/p/port-said-tunnels/05_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Tunnel cross section"
-      },
-      {
-        "src": "assets/p/port-said-tunnels/06.jpg",
-        "thumb": "assets/p/port-said-tunnels/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Project objectives and tunnel location"
-      }
-    ]
-  },
-  {
-    "folder": "2. La Vista",
-    "slug_guess": "la-vista",
-    "items": [
-      {
-        "src": "assets/p/la-vista/01.jpg",
-        "thumb": "assets/p/la-vista/01_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "La Vista Town, New Cairo: structure plan options board"
-      },
-      {
-        "src": "assets/p/la-vista/02.jpg",
-        "thumb": "assets/p/la-vista/02_t.jpg",
-        "w": 1800,
-        "h": 1277,
-        "kind": "board",
-        "note": "La Vista Town, New Cairo: structure plan option 3 board"
-      },
-      {
-        "src": "assets/p/la-vista/03.jpg",
-        "thumb": "assets/p/la-vista/03_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Development scenario 3 master plans"
-      },
-      {
-        "src": "assets/p/la-vista/04.jpg",
-        "thumb": "assets/p/la-vista/04_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Development scenario 4 master plan"
-      },
-      {
-        "src": "assets/p/la-vista/05.jpg",
-        "thumb": "assets/p/la-vista/05_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Vision master plan option 1, villas"
-      },
-      {
-        "src": "assets/p/la-vista/06.jpg",
-        "thumb": "assets/p/la-vista/06_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Vision master plan option 2, villas"
-      },
-      {
-        "src": "assets/p/la-vista/07.jpg",
-        "thumb": "assets/p/la-vista/07_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Vision master plan option 1, apartments"
-      },
-      {
-        "src": "assets/p/la-vista/08.jpg",
-        "thumb": "assets/p/la-vista/08_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Vision master plan option 2, apartments"
-      },
-      {
-        "src": "assets/p/la-vista/09.jpg",
-        "thumb": "assets/p/la-vista/09_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Site analysis"
-      },
-      {
-        "src": "assets/p/la-vista/10.jpg",
-        "thumb": "assets/p/la-vista/10_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "photo",
-        "note": "Site photos and context map"
-      }
-    ]
-  },
-  {
-    "folder": "24. Prince Talal",
-    "slug_guess": "prince-talal-majestic-hotel",
-    "items": [
-      {
-        "src": "assets/p/prince-talal-majestic-hotel/01.jpg",
-        "thumb": "assets/p/prince-talal-majestic-hotel/01_t.jpg",
-        "w": 1516,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Site analysis aerial around the project site"
-      },
-      {
-        "src": "assets/p/prince-talal-majestic-hotel/02.jpg",
-        "thumb": "assets/p/prince-talal-majestic-hotel/02_t.jpg",
-        "w": 1472,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Project location map on the Red Sea coast"
-      }
-    ]
-  },
-  {
-    "folder": "26. With AECOM / Cairo Downtown",
-    "slug_guess": "cairo-downtown",
-    "items": [
-      {
-        "src": "assets/p/cairo-downtown/01.jpg",
-        "thumb": "assets/p/cairo-downtown/01_t.jpg",
-        "w": 1425,
-        "h": 1179,
-        "kind": "plan",
-        "note": "Downtown Cairo regeneration: plan of the Nile waterfront area"
-      }
-    ]
-  },
-  {
-    "folder": "26. With AECOM / JSDP",
-    "slug_guess": "jeddah-strategic-development-plan",
-    "items": [
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/01.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Spatial framework plan: 3D view of the city park and town centre"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/02.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Spatial framework plan: 3D view of a town"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/03.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Transect of Town 2/3"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/04.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Spatial framework plan: structure concept"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/05.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Overall structure plan"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/06.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Cover: a visionary approach to the rebirth of Jeddah"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/07.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/07_t.jpg",
-        "w": 1800,
-        "h": 1322,
-        "kind": "photo",
-        "note": "Unplanned settlements: aerial view of dense housing"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/08.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/08_t.jpg",
-        "w": 1800,
-        "h": 1322,
-        "kind": "photo",
-        "note": "Unplanned settlements: clearance works"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/09.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/09_t.jpg",
-        "w": 1800,
-        "h": 1322,
-        "kind": "plan",
-        "note": "Jeddah unplanned settlements locations"
-      },
-      {
-        "src": "assets/p/jeddah-strategic-development-plan/10.jpg",
-        "thumb": "assets/p/jeddah-strategic-development-plan/10_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Al Rabwah pilot: proposed land-use plan"
-      }
-    ]
-  },
-  {
-    "folder": "26. With AECOM / Saudi Railway",
-    "slug_guess": "saudi-railway-land-optimization",
-    "items": [
-      {
-        "src": "assets/p/saudi-railway-land-optimization/01.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Cover: strategic plan for optimization of SRO land and property assets"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/02.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Jeddah activity hub sketch"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/03.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Makkah gateway sketch"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/04.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Jeddah activity hub concept"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/05.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Jeddah station site plan"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/06.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Dammam central and cultural district sketch"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/07.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Riyadh TOD sketch"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/08.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Riyadh North airport city sketch"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/09.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Makkah gateway development concept"
-      },
-      {
-        "src": "assets/p/saudi-railway-land-optimization/10.jpg",
-        "thumb": "assets/p/saudi-railway-land-optimization/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "KSA rail network"
-      }
-    ]
-  },
-  {
-    "folder": "26. With AECOM / Taif Comprehensive Plan",
-    "slug_guess": "taif-development-plan",
-    "items": [
-      {
-        "src": "assets/p/taif-development-plan/01.jpg",
-        "thumb": "assets/p/taif-development-plan/01_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "board",
-        "note": "Cover: Taif Development Plan, December 2012"
-      },
-      {
-        "src": "assets/p/taif-development-plan/02.jpg",
-        "thumb": "assets/p/taif-development-plan/02_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Taif spatial plan"
-      },
-      {
-        "src": "assets/p/taif-development-plan/03.jpg",
-        "thumb": "assets/p/taif-development-plan/03_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Structure plan"
-      },
-      {
-        "src": "assets/p/taif-development-plan/04.jpg",
-        "thumb": "assets/p/taif-development-plan/04_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Strategic framework map"
-      },
-      {
-        "src": "assets/p/taif-development-plan/05.jpg",
-        "thumb": "assets/p/taif-development-plan/05_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Regional analysis map"
-      },
-      {
-        "src": "assets/p/taif-development-plan/06.jpg",
-        "thumb": "assets/p/taif-development-plan/06_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Structure plan, growth boundary"
-      },
-      {
-        "src": "assets/p/taif-development-plan/07.jpg",
-        "thumb": "assets/p/taif-development-plan/07_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Projects and corridors plan"
-      },
-      {
-        "src": "assets/p/taif-development-plan/08.jpg",
-        "thumb": "assets/p/taif-development-plan/08_t.jpg",
-        "w": 1273,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Spatial diagram"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Al Khafji",
-    "slug_guess": "al-khafji",
-    "items": [
-      {
-        "src": "assets/p/al-khafji/01.jpg",
-        "thumb": "assets/p/al-khafji/01_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Aerial view of the Khafji concept master plan"
-      },
-      {
-        "src": "assets/p/al-khafji/02.jpg",
-        "thumb": "assets/p/al-khafji/02_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Aerial views of the waterfront districts"
-      },
-      {
-        "src": "assets/p/al-khafji/03.jpg",
-        "thumb": "assets/p/al-khafji/03_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Old town street render"
-      },
-      {
-        "src": "assets/p/al-khafji/04.jpg",
-        "thumb": "assets/p/al-khafji/04_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Courtyard and market render"
-      },
-      {
-        "src": "assets/p/al-khafji/05.jpg",
-        "thumb": "assets/p/al-khafji/05_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Beach villas render"
-      },
-      {
-        "src": "assets/p/al-khafji/06.jpg",
-        "thumb": "assets/p/al-khafji/06_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Arcade court render"
-      },
-      {
-        "src": "assets/p/al-khafji/07.jpg",
-        "thumb": "assets/p/al-khafji/07_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Heritage street render"
-      },
-      {
-        "src": "assets/p/al-khafji/08.jpg",
-        "thumb": "assets/p/al-khafji/08_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "render",
-        "note": "Garden terrace render"
-      },
-      {
-        "src": "assets/p/al-khafji/09.jpg",
-        "thumb": "assets/p/al-khafji/09_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "plan",
-        "note": "Overall concept master plan"
-      },
-      {
-        "src": "assets/p/al-khafji/10.jpg",
-        "thumb": "assets/p/al-khafji/10_t.jpg",
-        "w": 1800,
-        "h": 1275,
-        "kind": "plan",
-        "note": "Detailed district plan"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Al Soudah",
-    "slug_guess": "al-soudah",
-    "items": [
-      {
-        "src": "assets/p/al-soudah/01.jpg",
-        "thumb": "assets/p/al-soudah/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Cover: Al Soudah Mountain executive presentation"
-      },
-      {
-        "src": "assets/p/al-soudah/02.jpg",
-        "thumb": "assets/p/al-soudah/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Cultural town at golden hour"
-      },
-      {
-        "src": "assets/p/al-soudah/03.jpg",
-        "thumb": "assets/p/al-soudah/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Cultural town activity plaza"
-      },
-      {
-        "src": "assets/p/al-soudah/04.jpg",
-        "thumb": "assets/p/al-soudah/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the mountain town"
-      },
-      {
-        "src": "assets/p/al-soudah/05.jpg",
-        "thumb": "assets/p/al-soudah/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Town centre plaza render"
-      },
-      {
-        "src": "assets/p/al-soudah/06.jpg",
-        "thumb": "assets/p/al-soudah/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Mountain town street render"
-      },
-      {
-        "src": "assets/p/al-soudah/07.jpg",
-        "thumb": "assets/p/al-soudah/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Mountain retreat render"
-      },
-      {
-        "src": "assets/p/al-soudah/08.jpg",
-        "thumb": "assets/p/al-soudah/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Luxury hotel in the mountains"
-      },
-      {
-        "src": "assets/p/al-soudah/09.jpg",
-        "thumb": "assets/p/al-soudah/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Mountain landscape master plan"
-      },
-      {
-        "src": "assets/p/al-soudah/10.jpg",
-        "thumb": "assets/p/al-soudah/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Residential retreat render"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Alamein Riviera",
-    "slug_guess": "alamein-riviera",
-    "items": [
-      {
-        "src": "assets/p/alamein-riviera/01.jpg",
-        "thumb": "assets/p/alamein-riviera/01_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Aerial render of the Alamein Riviera waterfront"
-      },
-      {
-        "src": "assets/p/alamein-riviera/02.jpg",
-        "thumb": "assets/p/alamein-riviera/02_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Aerial render of the lagoon and neighbourhoods"
-      },
-      {
-        "src": "assets/p/alamein-riviera/03.jpg",
-        "thumb": "assets/p/alamein-riviera/03_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Hotel pool render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/04.jpg",
-        "thumb": "assets/p/alamein-riviera/04_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Hotel and lighthouse render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/05.jpg",
-        "thumb": "assets/p/alamein-riviera/05_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Canal-side villas render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/06.jpg",
-        "thumb": "assets/p/alamein-riviera/06_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Marina promenade render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/07.jpg",
-        "thumb": "assets/p/alamein-riviera/07_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Marina town at dusk render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/08.jpg",
-        "thumb": "assets/p/alamein-riviera/08_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Canal community at dusk"
-      },
-      {
-        "src": "assets/p/alamein-riviera/09.jpg",
-        "thumb": "assets/p/alamein-riviera/09_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Golf community render"
-      },
-      {
-        "src": "assets/p/alamein-riviera/10.jpg",
-        "thumb": "assets/p/alamein-riviera/10_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Master plan with land-use table"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Elysium",
-    "slug_guess": "elysium",
-    "items": [
-      {
-        "src": "assets/p/elysium/01.jpg",
-        "thumb": "assets/p/elysium/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the hospital and residential masterplan"
-      },
-      {
-        "src": "assets/p/elysium/02.jpg",
-        "thumb": "assets/p/elysium/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the canal masterplan"
-      },
-      {
-        "src": "assets/p/elysium/03.jpg",
-        "thumb": "assets/p/elysium/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the residential clusters"
-      },
-      {
-        "src": "assets/p/elysium/04.jpg",
-        "thumb": "assets/p/elysium/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial view of the masterplan"
-      },
-      {
-        "src": "assets/p/elysium/05.jpg",
-        "thumb": "assets/p/elysium/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial view of the masterplan, option 2"
-      },
-      {
-        "src": "assets/p/elysium/06.jpg",
-        "thumb": "assets/p/elysium/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial view of the masterplan, west"
-      },
-      {
-        "src": "assets/p/elysium/07.jpg",
-        "thumb": "assets/p/elysium/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Illustrative masterplan"
-      },
-      {
-        "src": "assets/p/elysium/08.jpg",
-        "thumb": "assets/p/elysium/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Masterplan option 2: uses and types"
-      },
-      {
-        "src": "assets/p/elysium/09.jpg",
-        "thumb": "assets/p/elysium/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Site location"
-      },
-      {
-        "src": "assets/p/elysium/10.jpg",
-        "thumb": "assets/p/elysium/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "photo",
-        "note": "Site condition photos"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Lusail",
-    "slug_guess": "lusail",
-    "items": [
-      {
-        "src": "assets/p/lusail/01.jpg",
-        "thumb": "assets/p/lusail/01_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Initial concept plan of the Simaisma beach"
-      },
-      {
-        "src": "assets/p/lusail/02.jpg",
-        "thumb": "assets/p/lusail/02_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Islands 1, 2 and 3 initial sketch master plan"
-      },
-      {
-        "src": "assets/p/lusail/03.jpg",
-        "thumb": "assets/p/lusail/03_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Island 1 luxury island resort"
-      },
-      {
-        "src": "assets/p/lusail/04.jpg",
-        "thumb": "assets/p/lusail/04_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Island 2 luxury palace plots"
-      },
-      {
-        "src": "assets/p/lusail/05.jpg",
-        "thumb": "assets/p/lusail/05_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Island 3 luxury residential plots"
-      },
-      {
-        "src": "assets/p/lusail/06.jpg",
-        "thumb": "assets/p/lusail/06_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Islands 4 to 7 initial sketch master plan"
-      },
-      {
-        "src": "assets/p/lusail/07.jpg",
-        "thumb": "assets/p/lusail/07_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Island 4 premium lifestyle resort"
-      },
-      {
-        "src": "assets/p/lusail/08.jpg",
-        "thumb": "assets/p/lusail/08_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Island 5 lifestyle luxury resort"
-      },
-      {
-        "src": "assets/p/lusail/09.jpg",
-        "thumb": "assets/p/lusail/09_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Fan zone indicative sketch master plan"
-      },
-      {
-        "src": "assets/p/lusail/10.jpg",
-        "thumb": "assets/p/lusail/10_t.jpg",
-        "w": 1800,
-        "h": 1247,
-        "kind": "plan",
-        "note": "Overview of the identified project sites"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Makkah Township",
-    "slug_guess": "makkah-township",
-    "items": [
-      {
-        "src": "assets/p/makkah-township/01.jpg",
-        "thumb": "assets/p/makkah-township/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of Makkah Township"
-      },
-      {
-        "src": "assets/p/makkah-township/02.jpg",
-        "thumb": "assets/p/makkah-township/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Neighbourhood street render"
-      },
-      {
-        "src": "assets/p/makkah-township/03.jpg",
-        "thumb": "assets/p/makkah-township/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Landscape corridor render"
-      },
-      {
-        "src": "assets/p/makkah-township/04.jpg",
-        "thumb": "assets/p/makkah-township/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Park-side street render"
-      },
-      {
-        "src": "assets/p/makkah-township/05.jpg",
-        "thumb": "assets/p/makkah-township/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Covered market street render"
-      },
-      {
-        "src": "assets/p/makkah-township/06.jpg",
-        "thumb": "assets/p/makkah-township/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Waterside park render"
-      },
-      {
-        "src": "assets/p/makkah-township/07.jpg",
-        "thumb": "assets/p/makkah-township/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Apartment street render"
-      },
-      {
-        "src": "assets/p/makkah-township/08.jpg",
-        "thumb": "assets/p/makkah-township/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Open space and skyline render"
-      },
-      {
-        "src": "assets/p/makkah-township/09.jpg",
-        "thumb": "assets/p/makkah-township/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Master plan option 1"
-      },
-      {
-        "src": "assets/p/makkah-township/10.jpg",
-        "thumb": "assets/p/makkah-township/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Pedestrian lane render"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Najran",
-    "slug_guess": "najran-region",
-    "items": [
-      {
-        "src": "assets/p/najran-region/01.jpg",
-        "thumb": "assets/p/najran-region/01_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "board",
-        "note": "Cover: Najran Region"
-      },
-      {
-        "src": "assets/p/najran-region/02.jpg",
-        "thumb": "assets/p/najran-region/02_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "New hybrid streetscape render"
-      },
-      {
-        "src": "assets/p/najran-region/03.jpg",
-        "thumb": "assets/p/najran-region/03_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "New hybrid low-rise example 1"
-      },
-      {
-        "src": "assets/p/najran-region/04.jpg",
-        "thumb": "assets/p/najran-region/04_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "New hybrid mid-rise example 2"
-      },
-      {
-        "src": "assets/p/najran-region/05.jpg",
-        "thumb": "assets/p/najran-region/05_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "New hybrid mid-rise example 3"
-      },
-      {
-        "src": "assets/p/najran-region/06.jpg",
-        "thumb": "assets/p/najran-region/06_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "New hybrid existing improvements"
-      },
-      {
-        "src": "assets/p/najran-region/07.jpg",
-        "thumb": "assets/p/najran-region/07_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "board",
-        "note": "Traditional Najran tower house study"
-      },
-      {
-        "src": "assets/p/najran-region/08.jpg",
-        "thumb": "assets/p/najran-region/08_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "board",
-        "note": "Traditional architectural styles"
-      },
-      {
-        "src": "assets/p/najran-region/09.jpg",
-        "thumb": "assets/p/najran-region/09_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "board",
-        "note": "Regional identities: traditional"
-      },
-      {
-        "src": "assets/p/najran-region/10.jpg",
-        "thumb": "assets/p/najran-region/10_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "photo",
-        "note": "Najran governorates"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Prime Dubai",
-    "slug_guess": "prime-dubai",
-    "items": [
-      {
-        "src": "assets/p/prime-dubai/01.jpg",
-        "thumb": "assets/p/prime-dubai/01_t.jpg",
-        "w": 1800,
-        "h": 1274,
-        "kind": "render",
-        "note": "Aerial render of the Prime Dubai master plan"
-      },
-      {
-        "src": "assets/p/prime-dubai/02.jpg",
-        "thumb": "assets/p/prime-dubai/02_t.jpg",
-        "w": 1800,
-        "h": 1027,
-        "kind": "render",
-        "note": "Tree-lined street render"
-      },
-      {
-        "src": "assets/p/prime-dubai/03.jpg",
-        "thumb": "assets/p/prime-dubai/03_t.jpg",
-        "w": 1800,
-        "h": 1027,
-        "kind": "render",
-        "note": "Residential park render"
-      },
-      {
-        "src": "assets/p/prime-dubai/04.jpg",
-        "thumb": "assets/p/prime-dubai/04_t.jpg",
-        "w": 1800,
-        "h": 1027,
-        "kind": "render",
-        "note": "Garden walk render"
-      },
-      {
-        "src": "assets/p/prime-dubai/05.jpg",
-        "thumb": "assets/p/prime-dubai/05_t.jpg",
-        "w": 1800,
-        "h": 1027,
-        "kind": "render",
-        "note": "Outdoor dining street render"
-      },
-      {
-        "src": "assets/p/prime-dubai/06.jpg",
-        "thumb": "assets/p/prime-dubai/06_t.jpg",
-        "w": 1800,
-        "h": 1028,
-        "kind": "render",
-        "note": "Park path render"
-      },
-      {
-        "src": "assets/p/prime-dubai/07.jpg",
-        "thumb": "assets/p/prime-dubai/07_t.jpg",
-        "w": 1800,
-        "h": 1026,
-        "kind": "render",
-        "note": "Skyline view terrace render"
-      },
-      {
-        "src": "assets/p/prime-dubai/08.jpg",
-        "thumb": "assets/p/prime-dubai/08_t.jpg",
-        "w": 1800,
-        "h": 1027,
-        "kind": "render",
-        "note": "Racecourse grandstand render"
-      },
-      {
-        "src": "assets/p/prime-dubai/09.jpg",
-        "thumb": "assets/p/prime-dubai/09_t.jpg",
-        "w": 1800,
-        "h": 1029,
-        "kind": "plan",
-        "note": "Master plan"
-      },
-      {
-        "src": "assets/p/prime-dubai/10.jpg",
-        "thumb": "assets/p/prime-dubai/10_t.jpg",
-        "w": 1800,
-        "h": 1663,
-        "kind": "plan",
-        "note": "Lake and parks plan"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Ramla",
-    "slug_guess": "ramla",
-    "items": [
-      {
-        "src": "assets/p/ramla/01.jpg",
-        "thumb": "assets/p/ramla/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Bird's-eye render of the Ramla master plan"
-      },
-      {
-        "src": "assets/p/ramla/02.jpg",
-        "thumb": "assets/p/ramla/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Lakeside residence aerial render"
-      },
-      {
-        "src": "assets/p/ramla/03.jpg",
-        "thumb": "assets/p/ramla/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Terrace East aerial render"
-      },
-      {
-        "src": "assets/p/ramla/04.jpg",
-        "thumb": "assets/p/ramla/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Beachfront terrace render"
-      },
-      {
-        "src": "assets/p/ramla/05.jpg",
-        "thumb": "assets/p/ramla/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Beachfront town centre render"
-      },
-      {
-        "src": "assets/p/ramla/06.jpg",
-        "thumb": "assets/p/ramla/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Town centre street render"
-      },
-      {
-        "src": "assets/p/ramla/07.jpg",
-        "thumb": "assets/p/ramla/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Terrace West aerial render"
-      },
-      {
-        "src": "assets/p/ramla/08.jpg",
-        "thumb": "assets/p/ramla/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Park place aerial render"
-      },
-      {
-        "src": "assets/p/ramla/09.jpg",
-        "thumb": "assets/p/ramla/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Illustrative master plan"
-      },
-      {
-        "src": "assets/p/ramla/10.jpg",
-        "thumb": "assets/p/ramla/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "plan",
-        "note": "Lake plan"
-      }
-    ]
-  },
-  {
-    "folder": "27. With WATG / Roshn UGC",
-    "slug_guess": "roshn-ugc",
-    "items": [
-      {
-        "src": "assets/p/roshn-ugc/01.jpg",
-        "thumb": "assets/p/roshn-ugc/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Waterfront district render"
-      },
-      {
-        "src": "assets/p/roshn-ugc/02.jpg",
-        "thumb": "assets/p/roshn-ugc/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the urban growth centre"
-      },
-      {
-        "src": "assets/p/roshn-ugc/03.jpg",
-        "thumb": "assets/p/roshn-ugc/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Night plaza render"
-      },
-      {
-        "src": "assets/p/roshn-ugc/04.jpg",
-        "thumb": "assets/p/roshn-ugc/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render at night"
-      },
-      {
-        "src": "assets/p/roshn-ugc/05.jpg",
-        "thumb": "assets/p/roshn-ugc/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Aerial render of the lagoon"
-      },
-      {
-        "src": "assets/p/roshn-ugc/06.jpg",
-        "thumb": "assets/p/roshn-ugc/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Street render with gardens"
-      },
-      {
-        "src": "assets/p/roshn-ugc/07.jpg",
-        "thumb": "assets/p/roshn-ugc/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Marina and bridge render"
-      },
-      {
-        "src": "assets/p/roshn-ugc/08.jpg",
-        "thumb": "assets/p/roshn-ugc/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "render",
-        "note": "Promenade render"
-      }
-    ]
-  },
-  {
-    "folder": "4. Azha North (with WATG)",
-    "slug_guess": "azha-north",
-    "items": [
-      {
-        "src": "assets/p/azha-north/01.jpg",
-        "thumb": "assets/p/azha-north/01_t.jpg",
-        "w": 1274,
-        "h": 1800,
-        "kind": "plan",
-        "note": "Azha North, Ras El Hekma: concept master plan"
-      }
-    ]
-  },
-  {
-    "folder": "5. Abu Qir",
-    "slug_guess": "abu-qir",
-    "items": [
-      {
-        "src": "assets/p/abu-qir/01.jpg",
-        "thumb": "assets/p/abu-qir/01_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "render",
-        "note": "Cover: Abu Qir city and port extension"
-      },
-      {
-        "src": "assets/p/abu-qir/02.jpg",
-        "thumb": "assets/p/abu-qir/02_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 3"
-      },
-      {
-        "src": "assets/p/abu-qir/03.jpg",
-        "thumb": "assets/p/abu-qir/03_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 4"
-      },
-      {
-        "src": "assets/p/abu-qir/04.jpg",
-        "thumb": "assets/p/abu-qir/04_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 2"
-      },
-      {
-        "src": "assets/p/abu-qir/05.jpg",
-        "thumb": "assets/p/abu-qir/05_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 6"
-      },
-      {
-        "src": "assets/p/abu-qir/06.jpg",
-        "thumb": "assets/p/abu-qir/06_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 7"
-      },
-      {
-        "src": "assets/p/abu-qir/07.jpg",
-        "thumb": "assets/p/abu-qir/07_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 5"
-      },
-      {
-        "src": "assets/p/abu-qir/08.jpg",
-        "thumb": "assets/p/abu-qir/08_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Zoning master plan 1"
-      },
-      {
-        "src": "assets/p/abu-qir/09.jpg",
-        "thumb": "assets/p/abu-qir/09_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Site analysis"
-      },
-      {
-        "src": "assets/p/abu-qir/10.jpg",
-        "thumb": "assets/p/abu-qir/10_t.jpg",
-        "w": 1800,
-        "h": 1013,
-        "kind": "plan",
-        "note": "Site location and connectivity"
-      }
-    ]
-  },
-  {
-    "folder": "6. Gargoub",
-    "slug_guess": "gargoub",
-    "items": [
-      {
-        "src": "assets/p/gargoub/01.jpg",
-        "thumb": "assets/p/gargoub/01_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "render",
-        "note": "Gargoub City aerial master plan render"
-      },
-      {
-        "src": "assets/p/gargoub/02.jpg",
-        "thumb": "assets/p/gargoub/02_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "render",
-        "note": "Waterfront view of the master plan"
-      },
-      {
-        "src": "assets/p/gargoub/03.jpg",
-        "thumb": "assets/p/gargoub/03_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "render",
-        "note": "Aerial render of the residential hills and districts"
-      },
-      {
-        "src": "assets/p/gargoub/04.jpg",
-        "thumb": "assets/p/gargoub/04_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "render",
-        "note": "Cover: Gargoub City aerial render"
-      },
-      {
-        "src": "assets/p/gargoub/05.jpg",
-        "thumb": "assets/p/gargoub/05_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "render",
-        "note": "Beachfront promenade render"
-      },
-      {
-        "src": "assets/p/gargoub/06.jpg",
-        "thumb": "assets/p/gargoub/06_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "plan",
-        "note": "Master plan"
-      },
-      {
-        "src": "assets/p/gargoub/07.jpg",
-        "thumb": "assets/p/gargoub/07_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "plan",
-        "note": "Master plan, project drivers"
-      },
-      {
-        "src": "assets/p/gargoub/08.jpg",
-        "thumb": "assets/p/gargoub/08_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "plan",
-        "note": "Land-use plan"
-      },
-      {
-        "src": "assets/p/gargoub/09.jpg",
-        "thumb": "assets/p/gargoub/09_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "board",
-        "note": "Tourism master plan project drivers"
-      },
-      {
-        "src": "assets/p/gargoub/10.jpg",
-        "thumb": "assets/p/gargoub/10_t.jpg",
-        "w": 1800,
-        "h": 1012,
-        "kind": "photo",
-        "note": "Site photos"
-      }
-    ]
-  },
-  {
-    "folder": "8. Khaybar (with WATG)",
-    "slug_guess": "khaybar",
-    "items": [
-      {
-        "src": "assets/p/khaybar/01.jpg",
-        "thumb": "assets/p/khaybar/01_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Cover: Khaybar Heritage Area master plan development brief"
-      },
-      {
-        "src": "assets/p/khaybar/02.jpg",
-        "thumb": "assets/p/khaybar/02_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "photo",
-        "note": "Khaybar heritage area background"
-      },
-      {
-        "src": "assets/p/khaybar/03.jpg",
-        "thumb": "assets/p/khaybar/03_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "photo",
-        "note": "Aerial view of the old town of Khaybar"
-      },
-      {
-        "src": "assets/p/khaybar/04.jpg",
-        "thumb": "assets/p/khaybar/04_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "The vision: two regions, one journey"
-      },
-      {
-        "src": "assets/p/khaybar/05.jpg",
-        "thumb": "assets/p/khaybar/05_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "photo",
-        "note": "Climate: desert landscape"
-      },
-      {
-        "src": "assets/p/khaybar/06.jpg",
-        "thumb": "assets/p/khaybar/06_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Khaybar historical oasis"
-      },
-      {
-        "src": "assets/p/khaybar/07.jpg",
-        "thumb": "assets/p/khaybar/07_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Khaybar natural area"
-      },
-      {
-        "src": "assets/p/khaybar/08.jpg",
-        "thumb": "assets/p/khaybar/08_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Khaybar suq"
-      },
-      {
-        "src": "assets/p/khaybar/09.jpg",
-        "thumb": "assets/p/khaybar/09_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "board",
-        "note": "Tourism"
-      },
-      {
-        "src": "assets/p/khaybar/10.jpg",
-        "thumb": "assets/p/khaybar/10_t.jpg",
-        "w": 1800,
-        "h": 1273,
-        "kind": "photo",
-        "note": "Purpose: landscape"
-      }
-    ]
-  },
-  {
-    "folder": "9. Jadel Al Dhahran / Dhahran",
-    "slug_guess": "jadel-dhahran",
-    "items": [
-      {
-        "src": "assets/p/jadel-dhahran/01.jpg",
-        "thumb": "assets/p/jadel-dhahran/01_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Perspectives of the concept master plan"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/02.jpg",
-        "thumb": "assets/p/jadel-dhahran/02_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Perspective views and plan"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/03.jpg",
-        "thumb": "assets/p/jadel-dhahran/03_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Concept master plan, King Abdulaziz Road land, Dhahran"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/04.jpg",
-        "thumb": "assets/p/jadel-dhahran/04_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Cover: urban vision, Dhahran investment land"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/05.jpg",
-        "thumb": "assets/p/jadel-dhahran/05_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Hospitality zone with references"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/06.jpg",
-        "thumb": "assets/p/jadel-dhahran/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Residential zone with references"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/07.jpg",
-        "thumb": "assets/p/jadel-dhahran/07_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Roads and parking plan"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/08.jpg",
-        "thumb": "assets/p/jadel-dhahran/08_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Parks and green corridors plan"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/09.jpg",
-        "thumb": "assets/p/jadel-dhahran/09_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Site analysis"
-      },
-      {
-        "src": "assets/p/jadel-dhahran/10.jpg",
-        "thumb": "assets/p/jadel-dhahran/10_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Land-use distribution"
-      }
-    ]
-  },
-  {
-    "folder": "9. Jadel Al Dhahran / Jeddah",
-    "slug_guess": "jadel-jeddah-hamdaniyah",
-    "items": [
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/01.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/01_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Concept master plan 3D view"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/02.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/02_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Perspective views"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/03.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/03_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Concept master plan"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/04.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/04_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "General plan with references"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/05.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/05_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "render",
-        "note": "Cover: urban vision for investment lands, Al Hamdaniyah, Jeddah"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/06.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Site location"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/07.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/07_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Commercial zone plan with references"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/08.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/08_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Parks and green corridors plan"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/09.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/09_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Urban design guidelines, massing"
-      },
-      {
-        "src": "assets/p/jadel-jeddah-hamdaniyah/10.jpg",
-        "thumb": "assets/p/jadel-jeddah-hamdaniyah/10_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Land-use distribution"
-      }
-    ]
-  },
-  {
-    "folder": "Aqeelah Oasis",
-    "slug_guess": "aqeelah-oasis",
-    "items": [
-      {
-        "src": "assets/p/aqeelah-oasis/01.jpg",
-        "thumb": "assets/p/aqeelah-oasis/01_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Aerial render of the residential complex"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/02.jpg",
-        "thumb": "assets/p/aqeelah-oasis/02_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Facade and plaza render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/03.jpg",
-        "thumb": "assets/p/aqeelah-oasis/03_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Residential towers with landscaped lawn"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/04.jpg",
-        "thumb": "assets/p/aqeelah-oasis/04_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Tower elevation render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/05.jpg",
-        "thumb": "assets/p/aqeelah-oasis/05_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Residential towers render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/06.jpg",
-        "thumb": "assets/p/aqeelah-oasis/06_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Courtyard and towers render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/07.jpg",
-        "thumb": "assets/p/aqeelah-oasis/07_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Tower and street render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/08.jpg",
-        "thumb": "assets/p/aqeelah-oasis/08_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "render",
-        "note": "Aerial site render"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/09.jpg",
-        "thumb": "assets/p/aqeelah-oasis/09_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "plan",
-        "note": "Typical plot layouts"
-      },
-      {
-        "src": "assets/p/aqeelah-oasis/10.jpg",
-        "thumb": "assets/p/aqeelah-oasis/10_t.jpg",
-        "w": 1800,
-        "h": 1257,
-        "kind": "board",
-        "note": "Cover collage of towers and interiors"
-      }
-    ]
-  },
-  {
-    "folder": "Frangrance Factory greiss",
-    "slug_guess": "fragrance-factory-greiss",
-    "items": [
-      {
-        "src": "assets/p/fragrance-factory-greiss/01.jpg",
-        "thumb": "assets/p/fragrance-factory-greiss/01_t.jpg",
-        "w": 1600,
-        "h": 1200,
-        "kind": "photo",
-        "note": "Factory building, orange cladding and ducting"
-      },
-      {
-        "src": "assets/p/fragrance-factory-greiss/02.jpg",
-        "thumb": "assets/p/fragrance-factory-greiss/02_t.jpg",
-        "w": 1600,
-        "h": 1200,
-        "kind": "photo",
-        "note": "Factory side street with loading doors"
-      },
-      {
-        "src": "assets/p/fragrance-factory-greiss/03.jpg",
-        "thumb": "assets/p/fragrance-factory-greiss/03_t.jpg",
-        "w": 1600,
-        "h": 1200,
-        "kind": "photo",
-        "note": "Factory facade during construction"
-      },
-      {
-        "src": "assets/p/fragrance-factory-greiss/04.jpg",
-        "thumb": "assets/p/fragrance-factory-greiss/04_t.jpg",
-        "w": 1600,
-        "h": 1200,
-        "kind": "photo",
-        "note": "Factory frontage and fence during construction"
-      }
-    ]
-  },
-  {
-    "folder": "Green Egypt Packhouse",
-    "slug_guess": "green-egypt-packhouse",
-    "items": [
-      {
-        "src": "assets/p/green-egypt-packhouse/01.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/01_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse main building and loading bay"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/02.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/02_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Stone entrance pavilion"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/03.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/03_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Stone gate arch"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/04.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/04_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Entrance gate and arch"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/05.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/05_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse with new landscaping"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/06.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/06_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Approach path to the packhouse"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/07.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/07_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse facade with flags"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/08.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/08_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse grounds"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/09.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/09_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse among palms"
-      },
-      {
-        "src": "assets/p/green-egypt-packhouse/10.jpg",
-        "thumb": "assets/p/green-egypt-packhouse/10_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Packhouse loading entrance"
-      }
-    ]
-  },
-  {
-    "folder": "Hilton Dahab",
-    "slug_guess": "hilton-dahab",
-    "items": [
-      {
-        "src": "assets/p/hilton-dahab/01.jpg",
-        "thumb": "assets/p/hilton-dahab/01_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Resort pool and gardens"
-      },
-      {
-        "src": "assets/p/hilton-dahab/02.jpg",
-        "thumb": "assets/p/hilton-dahab/02_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Resort building with timber staircase"
-      },
-      {
-        "src": "assets/p/hilton-dahab/03.jpg",
-        "thumb": "assets/p/hilton-dahab/03_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Lagoon pool"
-      },
-      {
-        "src": "assets/p/hilton-dahab/04.jpg",
-        "thumb": "assets/p/hilton-dahab/04_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Pool and courtyard"
-      },
-      {
-        "src": "assets/p/hilton-dahab/05.jpg",
-        "thumb": "assets/p/hilton-dahab/05_t.jpg",
-        "w": 1280,
-        "h": 960,
-        "kind": "photo",
-        "note": "Gardens and white buildings"
-      }
-    ]
-  },
-  {
-    "folder": "fayrouz tower",
-    "slug_guess": "fayrouz-tower",
-    "items": [
-      {
-        "src": "assets/p/fayrouz-tower/01.jpg",
-        "thumb": "assets/p/fayrouz-tower/01_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Perspectives of the tower (drawing no. 10)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/02.jpg",
-        "thumb": "assets/p/fayrouz-tower/02_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Tower renders and aerial shot (drawing no. 11)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/03.jpg",
-        "thumb": "assets/p/fayrouz-tower/03_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Tower elevation renders (drawing no. 12)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/04.jpg",
-        "thumb": "assets/p/fayrouz-tower/04_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Site layout (drawing no. 1)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/05.jpg",
-        "thumb": "assets/p/fayrouz-tower/05_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Circulation and advertisement studies (drawing no. 2)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/06.jpg",
-        "thumb": "assets/p/fayrouz-tower/06_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Ground floor plan (drawing no. 5)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/07.jpg",
-        "thumb": "assets/p/fayrouz-tower/07_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Roof garden and cafeteria plan (drawing no. 8)"
-      },
-      {
-        "src": "assets/p/fayrouz-tower/08.jpg",
-        "thumb": "assets/p/fayrouz-tower/08_t.jpg",
-        "w": 1800,
-        "h": 1260,
-        "kind": "board",
-        "note": "Typical floor plan (drawing no. 9)"
-      }
-    ]
-  },
-  {
-    "folder": "royal oasis",
-    "slug_guess": "royal-oasis",
-    "items": [
-      {
-        "src": "assets/p/royal-oasis/01.jpg",
-        "thumb": "assets/p/royal-oasis/01_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Urban design master plan"
-      },
-      {
-        "src": "assets/p/royal-oasis/02.jpg",
-        "thumb": "assets/p/royal-oasis/02_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Salma plan and elevation"
-      },
-      {
-        "src": "assets/p/royal-oasis/03.jpg",
-        "thumb": "assets/p/royal-oasis/03_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Karima plan and elevation"
-      },
-      {
-        "src": "assets/p/royal-oasis/04.jpg",
-        "thumb": "assets/p/royal-oasis/04_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Nour plan and elevation"
-      },
-      {
-        "src": "assets/p/royal-oasis/05.jpg",
-        "thumb": "assets/p/royal-oasis/05_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Design programme and land use"
-      },
-      {
-        "src": "assets/p/royal-oasis/06.jpg",
-        "thumb": "assets/p/royal-oasis/06_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Location of the project"
-      },
-      {
-        "src": "assets/p/royal-oasis/07.jpg",
-        "thumb": "assets/p/royal-oasis/07_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "plan",
-        "note": "Regional approach"
-      },
-      {
-        "src": "assets/p/royal-oasis/08.jpg",
-        "thumb": "assets/p/royal-oasis/08_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Salma floor plans"
-      },
-      {
-        "src": "assets/p/royal-oasis/09.jpg",
-        "thumb": "assets/p/royal-oasis/09_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Karima floor plans"
-      },
-      {
-        "src": "assets/p/royal-oasis/10.jpg",
-        "thumb": "assets/p/royal-oasis/10_t.jpg",
-        "w": 1800,
-        "h": 1350,
-        "kind": "board",
-        "note": "Villa Nour floor plans"
-      }
-    ]
-  }
+ {
+  "folder": "1. New Capital",
+  "slug_guess": "new-capital",
+  "items": [
+   {
+    "src": "assets/p/new-capital/01.jpg",
+    "thumb": "assets/p/new-capital/01_t.jpg",
+    "w": 1760,
+    "h": 1246,
+    "kind": "render",
+    "note": "New Capital city skyline render at dusk (ACUD advisory deck)"
+   },
+   {
+    "src": "assets/p/new-capital/02.jpg",
+    "thumb": "assets/p/new-capital/02_t.jpg",
+    "w": 1200,
+    "h": 609,
+    "kind": "render",
+    "note": "Night view of the New Capital road corridor"
+   },
+   {
+    "src": "assets/p/new-capital/03.jpg",
+    "thumb": "assets/p/new-capital/03_t.jpg",
+    "w": 884,
+    "h": 1201,
+    "kind": "render",
+    "note": "New Capital park and towers aerial view"
+   },
+   {
+    "src": "assets/p/new-capital/04.jpg",
+    "thumb": "assets/p/new-capital/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Site context map of the New Capital in Greater Cairo"
+   },
+   {
+    "src": "assets/p/new-capital/05.jpg",
+    "thumb": "assets/p/new-capital/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Overview of the New Capital districts"
+   },
+   {
+    "src": "assets/p/new-capital/06.jpg",
+    "thumb": "assets/p/new-capital/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Green network plan of the New Capital"
+   }
+  ]
+ },
+ {
+  "folder": "11. Taj Al RiyadhRiyadh",
+  "slug_guess": "taj-al-riyadh",
+  "items": [
+   {
+    "src": "assets/p/taj-al-riyadh/01.jpg",
+    "thumb": "assets/p/taj-al-riyadh/01_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Cover: Taj Al Riyadh concept master plan model"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/02.jpg",
+    "thumb": "assets/p/taj-al-riyadh/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Concept master plan"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/03.jpg",
+    "thumb": "assets/p/taj-al-riyadh/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Aerial views of the proposed district"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/04.jpg",
+    "thumb": "assets/p/taj-al-riyadh/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Land-use distribution plan"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/05.jpg",
+    "thumb": "assets/p/taj-al-riyadh/05_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Public realm plan with street views"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/06.jpg",
+    "thumb": "assets/p/taj-al-riyadh/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Golf course landscape plan with references"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/07.jpg",
+    "thumb": "assets/p/taj-al-riyadh/07_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Mixed-use centre plan with references"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/08.jpg",
+    "thumb": "assets/p/taj-al-riyadh/08_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Parks and open space plan"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/09.jpg",
+    "thumb": "assets/p/taj-al-riyadh/09_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Pedestrian and cycling network plan"
+   },
+   {
+    "src": "assets/p/taj-al-riyadh/10.jpg",
+    "thumb": "assets/p/taj-al-riyadh/10_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Site analysis and surrounding plans"
+   }
+  ]
+ },
+ {
+  "folder": "13. Al Jawhara Residence",
+  "slug_guess": "al-jawhara-residence",
+  "items": [
+   {
+    "src": "assets/p/al-jawhara-residence/01.jpg",
+    "thumb": "assets/p/al-jawhara-residence/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Residential towers and street render"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/02.jpg",
+    "thumb": "assets/p/al-jawhara-residence/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Residential building render"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/03.jpg",
+    "thumb": "assets/p/al-jawhara-residence/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Residential building render, second view"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/04.jpg",
+    "thumb": "assets/p/al-jawhara-residence/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "General master plan"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/05.jpg",
+    "thumb": "assets/p/al-jawhara-residence/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Master plan with land-use chart"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/06.jpg",
+    "thumb": "assets/p/al-jawhara-residence/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Master plan with residential building types"
+   },
+   {
+    "src": "assets/p/al-jawhara-residence/07.jpg",
+    "thumb": "assets/p/al-jawhara-residence/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Master plan, circulation and plots"
+   }
+  ]
+ },
+ {
+  "folder": "14. Bahrain",
+  "slug_guess": "bahrain-upda",
+  "items": [
+   {
+    "src": "assets/p/bahrain-upda/01.jpg",
+    "thumb": "assets/p/bahrain-upda/01_t.jpg",
+    "w": 989,
+    "h": 1596,
+    "kind": "plan",
+    "note": "Satellite map of Bahrain with numbered upcoming projects (UPDA RFP)"
+   }
+  ]
+ },
+ {
+  "folder": "16. 1 million unit Minya",
+  "slug_guess": "minya-1-million-units",
+  "items": [
+   {
+    "src": "assets/p/minya-1-million-units/01.jpg",
+    "thumb": "assets/p/minya-1-million-units/01_t.jpg",
+    "w": 1800,
+    "h": 1274,
+    "kind": "plan",
+    "note": "Land-use plan for authority approvals (model, Oct 2014)"
+   }
+  ]
+ },
+ {
+  "folder": "17. Katamiya Dunes",
+  "slug_guess": "katamiya-dunes",
+  "items": [
+   {
+    "src": "assets/p/katamiya-dunes/01.jpg",
+    "thumb": "assets/p/katamiya-dunes/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Villa 124 facade render, front elevation"
+   },
+   {
+    "src": "assets/p/katamiya-dunes/02.jpg",
+    "thumb": "assets/p/katamiya-dunes/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Villa 124 facade render, garden elevation"
+   }
+  ]
+ },
+ {
+  "folder": "18. Branding Manual",
+  "slug_guess": "commercial-registry-branding",
+  "items": [
+   {
+    "src": "assets/p/commercial-registry-branding/01.jpg",
+    "thumb": "assets/p/commercial-registry-branding/01_t.jpg",
+    "w": 1161,
+    "h": 590,
+    "kind": "render",
+    "note": "24-hour lobby of a Commercial Registry branch"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/02.jpg",
+    "thumb": "assets/p/commercial-registry-branding/02_t.jpg",
+    "w": 1150,
+    "h": 736,
+    "kind": "render",
+    "note": "Branch interior render, exclusive area"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/03.jpg",
+    "thumb": "assets/p/commercial-registry-branding/03_t.jpg",
+    "w": 1088,
+    "h": 757,
+    "kind": "render",
+    "note": "Branch interior render, waiting and service area"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/04.jpg",
+    "thumb": "assets/p/commercial-registry-branding/04_t.jpg",
+    "w": 1469,
+    "h": 650,
+    "kind": "render",
+    "note": "Branch layout, 3D view of the retail and transaction areas"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/05.jpg",
+    "thumb": "assets/p/commercial-registry-branding/05_t.jpg",
+    "w": 1093,
+    "h": 474,
+    "kind": "render",
+    "note": "Branch cutaway 3D view"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/06.jpg",
+    "thumb": "assets/p/commercial-registry-branding/06_t.jpg",
+    "w": 1216,
+    "h": 468,
+    "kind": "plan",
+    "note": "Branch exterior elevation"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/07.jpg",
+    "thumb": "assets/p/commercial-registry-branding/07_t.jpg",
+    "w": 850,
+    "h": 1041,
+    "kind": "render",
+    "note": "Information kiosk (kit of parts)"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/08.jpg",
+    "thumb": "assets/p/commercial-registry-branding/08_t.jpg",
+    "w": 1227,
+    "h": 852,
+    "kind": "render",
+    "note": "Counters and equipment (kit of parts)"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/09.jpg",
+    "thumb": "assets/p/commercial-registry-branding/09_t.jpg",
+    "w": 1192,
+    "h": 599,
+    "kind": "plan",
+    "note": "Branch floor plan variants"
+   },
+   {
+    "src": "assets/p/commercial-registry-branding/10.jpg",
+    "thumb": "assets/p/commercial-registry-branding/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Commercial Registry offices coverage map"
+   }
+  ]
+ },
+ {
+  "folder": "19. Port Said tunnels",
+  "slug_guess": "port-said-tunnels",
+  "items": [
+   {
+    "src": "assets/p/port-said-tunnels/01.jpg",
+    "thumb": "assets/p/port-said-tunnels/01_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Cover: Construction of Port Said Tunnels"
+   },
+   {
+    "src": "assets/p/port-said-tunnels/02.jpg",
+    "thumb": "assets/p/port-said-tunnels/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Tunnel location map"
+   },
+   {
+    "src": "assets/p/port-said-tunnels/03.jpg",
+    "thumb": "assets/p/port-said-tunnels/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Tunnels master plan"
+   },
+   {
+    "src": "assets/p/port-said-tunnels/04.jpg",
+    "thumb": "assets/p/port-said-tunnels/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Road tunnel longitudinal profile, 3D section"
+   },
+   {
+    "src": "assets/p/port-said-tunnels/05.jpg",
+    "thumb": "assets/p/port-said-tunnels/05_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Tunnel cross section"
+   },
+   {
+    "src": "assets/p/port-said-tunnels/06.jpg",
+    "thumb": "assets/p/port-said-tunnels/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Project objectives and tunnel location"
+   }
+  ]
+ },
+ {
+  "folder": "2. La Vista",
+  "slug_guess": "la-vista",
+  "items": [
+   {
+    "src": "assets/p/la-vista/01.jpg",
+    "thumb": "assets/p/la-vista/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "La Vista Town, New Cairo: structure plan options board"
+   },
+   {
+    "src": "assets/p/la-vista/02.jpg",
+    "thumb": "assets/p/la-vista/02_t.jpg",
+    "w": 1800,
+    "h": 1277,
+    "kind": "board",
+    "note": "La Vista Town, New Cairo: structure plan option 3 board"
+   },
+   {
+    "src": "assets/p/la-vista/03.jpg",
+    "thumb": "assets/p/la-vista/03_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Development scenario 3 master plans"
+   },
+   {
+    "src": "assets/p/la-vista/04.jpg",
+    "thumb": "assets/p/la-vista/04_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Development scenario 4 master plan"
+   },
+   {
+    "src": "assets/p/la-vista/05.jpg",
+    "thumb": "assets/p/la-vista/05_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Vision master plan option 1, villas"
+   },
+   {
+    "src": "assets/p/la-vista/06.jpg",
+    "thumb": "assets/p/la-vista/06_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Vision master plan option 2, villas"
+   },
+   {
+    "src": "assets/p/la-vista/07.jpg",
+    "thumb": "assets/p/la-vista/07_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Vision master plan option 1, apartments"
+   },
+   {
+    "src": "assets/p/la-vista/08.jpg",
+    "thumb": "assets/p/la-vista/08_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Vision master plan option 2, apartments"
+   },
+   {
+    "src": "assets/p/la-vista/09.jpg",
+    "thumb": "assets/p/la-vista/09_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Site analysis"
+   },
+   {
+    "src": "assets/p/la-vista/10.jpg",
+    "thumb": "assets/p/la-vista/10_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "photo",
+    "note": "Site photos and context map"
+   }
+  ]
+ },
+ {
+  "folder": "24. Prince Talal",
+  "slug_guess": "prince-talal-majestic-hotel",
+  "items": [
+   {
+    "src": "assets/p/prince-talal-majestic-hotel/01.jpg",
+    "thumb": "assets/p/prince-talal-majestic-hotel/01_t.jpg",
+    "w": 1516,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Site analysis aerial around the project site"
+   },
+   {
+    "src": "assets/p/prince-talal-majestic-hotel/02.jpg",
+    "thumb": "assets/p/prince-talal-majestic-hotel/02_t.jpg",
+    "w": 1472,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Project location map on the Red Sea coast"
+   }
+  ]
+ },
+ {
+  "folder": "26. With AECOM / Cairo Downtown",
+  "slug_guess": "cairo-downtown",
+  "items": [
+   {
+    "src": "assets/p/cairo-downtown/01.jpg",
+    "thumb": "assets/p/cairo-downtown/01_t.jpg",
+    "w": 1425,
+    "h": 1179,
+    "kind": "plan",
+    "note": "Downtown Cairo regeneration: plan of the Nile waterfront area"
+   }
+  ]
+ },
+ {
+  "folder": "26. With AECOM / JSDP",
+  "slug_guess": "jeddah-strategic-development-plan",
+  "items": [
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/01.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Spatial framework plan: 3D view of the city park and town centre"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/02.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Spatial framework plan: 3D view of a town"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/03.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Transect of Town 2/3"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/04.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Spatial framework plan: structure concept"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/05.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Overall structure plan"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/06.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Cover: a visionary approach to the rebirth of Jeddah"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/07.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/07_t.jpg",
+    "w": 1800,
+    "h": 1322,
+    "kind": "photo",
+    "note": "Unplanned settlements: aerial view of dense housing"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/08.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/08_t.jpg",
+    "w": 1800,
+    "h": 1322,
+    "kind": "photo",
+    "note": "Unplanned settlements: clearance works"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/09.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/09_t.jpg",
+    "w": 1800,
+    "h": 1322,
+    "kind": "plan",
+    "note": "Jeddah unplanned settlements locations"
+   },
+   {
+    "src": "assets/p/jeddah-strategic-development-plan/10.jpg",
+    "thumb": "assets/p/jeddah-strategic-development-plan/10_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Al Rabwah pilot: proposed land-use plan"
+   }
+  ]
+ },
+ {
+  "folder": "26. With AECOM / Saudi Railway",
+  "slug_guess": "saudi-railway-land-optimization",
+  "items": [
+   {
+    "src": "assets/p/saudi-railway-land-optimization/01.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Cover: strategic plan for optimization of SRO land and property assets"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/02.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Jeddah activity hub sketch"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/03.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Makkah gateway sketch"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/04.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Jeddah activity hub concept"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/05.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Jeddah station site plan"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/06.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Dammam central and cultural district sketch"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/07.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Riyadh TOD sketch"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/08.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Riyadh North airport city sketch"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/09.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Makkah gateway development concept"
+   },
+   {
+    "src": "assets/p/saudi-railway-land-optimization/10.jpg",
+    "thumb": "assets/p/saudi-railway-land-optimization/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "KSA rail network"
+   }
+  ]
+ },
+ {
+  "folder": "26. With AECOM / Taif Comprehensive Plan",
+  "slug_guess": "taif-development-plan",
+  "items": [
+   {
+    "src": "assets/p/taif-development-plan/01.jpg",
+    "thumb": "assets/p/taif-development-plan/01_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "board",
+    "note": "Cover: Taif Development Plan, December 2012"
+   },
+   {
+    "src": "assets/p/taif-development-plan/02.jpg",
+    "thumb": "assets/p/taif-development-plan/02_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Taif spatial plan"
+   },
+   {
+    "src": "assets/p/taif-development-plan/03.jpg",
+    "thumb": "assets/p/taif-development-plan/03_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Structure plan"
+   },
+   {
+    "src": "assets/p/taif-development-plan/04.jpg",
+    "thumb": "assets/p/taif-development-plan/04_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Strategic framework map"
+   },
+   {
+    "src": "assets/p/taif-development-plan/05.jpg",
+    "thumb": "assets/p/taif-development-plan/05_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Regional analysis map"
+   },
+   {
+    "src": "assets/p/taif-development-plan/06.jpg",
+    "thumb": "assets/p/taif-development-plan/06_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Structure plan, growth boundary"
+   },
+   {
+    "src": "assets/p/taif-development-plan/07.jpg",
+    "thumb": "assets/p/taif-development-plan/07_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Projects and corridors plan"
+   },
+   {
+    "src": "assets/p/taif-development-plan/08.jpg",
+    "thumb": "assets/p/taif-development-plan/08_t.jpg",
+    "w": 1273,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Spatial diagram"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Al Khafji",
+  "slug_guess": "al-khafji",
+  "items": [
+   {
+    "src": "assets/p/al-khafji/01.jpg",
+    "thumb": "assets/p/al-khafji/01_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Aerial view of the Khafji concept master plan"
+   },
+   {
+    "src": "assets/p/al-khafji/02.jpg",
+    "thumb": "assets/p/al-khafji/02_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Aerial views of the waterfront districts"
+   },
+   {
+    "src": "assets/p/al-khafji/03.jpg",
+    "thumb": "assets/p/al-khafji/03_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Old town street render"
+   },
+   {
+    "src": "assets/p/al-khafji/04.jpg",
+    "thumb": "assets/p/al-khafji/04_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Courtyard and market render"
+   },
+   {
+    "src": "assets/p/al-khafji/05.jpg",
+    "thumb": "assets/p/al-khafji/05_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Beach villas render"
+   },
+   {
+    "src": "assets/p/al-khafji/06.jpg",
+    "thumb": "assets/p/al-khafji/06_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Arcade court render"
+   },
+   {
+    "src": "assets/p/al-khafji/07.jpg",
+    "thumb": "assets/p/al-khafji/07_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Heritage street render"
+   },
+   {
+    "src": "assets/p/al-khafji/08.jpg",
+    "thumb": "assets/p/al-khafji/08_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "render",
+    "note": "Garden terrace render"
+   },
+   {
+    "src": "assets/p/al-khafji/09.jpg",
+    "thumb": "assets/p/al-khafji/09_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "plan",
+    "note": "Overall concept master plan"
+   },
+   {
+    "src": "assets/p/al-khafji/10.jpg",
+    "thumb": "assets/p/al-khafji/10_t.jpg",
+    "w": 1800,
+    "h": 1275,
+    "kind": "plan",
+    "note": "Detailed district plan"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Al Soudah",
+  "slug_guess": "al-soudah",
+  "items": [
+   {
+    "src": "assets/p/al-soudah/01.jpg",
+    "thumb": "assets/p/al-soudah/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Cover: Al Soudah Mountain executive presentation"
+   },
+   {
+    "src": "assets/p/al-soudah/02.jpg",
+    "thumb": "assets/p/al-soudah/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Cultural town at golden hour"
+   },
+   {
+    "src": "assets/p/al-soudah/03.jpg",
+    "thumb": "assets/p/al-soudah/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Cultural town activity plaza"
+   },
+   {
+    "src": "assets/p/al-soudah/04.jpg",
+    "thumb": "assets/p/al-soudah/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the mountain town"
+   },
+   {
+    "src": "assets/p/al-soudah/05.jpg",
+    "thumb": "assets/p/al-soudah/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Town centre plaza render"
+   },
+   {
+    "src": "assets/p/al-soudah/06.jpg",
+    "thumb": "assets/p/al-soudah/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Mountain town street render"
+   },
+   {
+    "src": "assets/p/al-soudah/07.jpg",
+    "thumb": "assets/p/al-soudah/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Mountain retreat render"
+   },
+   {
+    "src": "assets/p/al-soudah/08.jpg",
+    "thumb": "assets/p/al-soudah/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Luxury hotel in the mountains"
+   },
+   {
+    "src": "assets/p/al-soudah/09.jpg",
+    "thumb": "assets/p/al-soudah/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Mountain landscape master plan"
+   },
+   {
+    "src": "assets/p/al-soudah/10.jpg",
+    "thumb": "assets/p/al-soudah/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Residential retreat render"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Alamein Riviera",
+  "slug_guess": "alamein-riviera",
+  "items": [
+   {
+    "src": "assets/p/alamein-riviera/01.jpg",
+    "thumb": "assets/p/alamein-riviera/01_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Aerial render of the Alamein Riviera waterfront"
+   },
+   {
+    "src": "assets/p/alamein-riviera/02.jpg",
+    "thumb": "assets/p/alamein-riviera/02_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Aerial render of the lagoon and neighbourhoods"
+   },
+   {
+    "src": "assets/p/alamein-riviera/03.jpg",
+    "thumb": "assets/p/alamein-riviera/03_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Hotel pool render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/04.jpg",
+    "thumb": "assets/p/alamein-riviera/04_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Hotel and lighthouse render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/05.jpg",
+    "thumb": "assets/p/alamein-riviera/05_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Canal-side villas render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/06.jpg",
+    "thumb": "assets/p/alamein-riviera/06_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Marina promenade render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/07.jpg",
+    "thumb": "assets/p/alamein-riviera/07_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Marina town at dusk render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/08.jpg",
+    "thumb": "assets/p/alamein-riviera/08_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Canal community at dusk"
+   },
+   {
+    "src": "assets/p/alamein-riviera/09.jpg",
+    "thumb": "assets/p/alamein-riviera/09_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Golf community render"
+   },
+   {
+    "src": "assets/p/alamein-riviera/10.jpg",
+    "thumb": "assets/p/alamein-riviera/10_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Master plan with land-use table"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Elysium",
+  "slug_guess": "elysium",
+  "items": [
+   {
+    "src": "assets/p/elysium/01.jpg",
+    "thumb": "assets/p/elysium/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the hospital and residential masterplan"
+   },
+   {
+    "src": "assets/p/elysium/02.jpg",
+    "thumb": "assets/p/elysium/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the canal masterplan"
+   },
+   {
+    "src": "assets/p/elysium/03.jpg",
+    "thumb": "assets/p/elysium/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the residential clusters"
+   },
+   {
+    "src": "assets/p/elysium/04.jpg",
+    "thumb": "assets/p/elysium/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial view of the masterplan"
+   },
+   {
+    "src": "assets/p/elysium/05.jpg",
+    "thumb": "assets/p/elysium/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial view of the masterplan, option 2"
+   },
+   {
+    "src": "assets/p/elysium/06.jpg",
+    "thumb": "assets/p/elysium/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial view of the masterplan, west"
+   },
+   {
+    "src": "assets/p/elysium/07.jpg",
+    "thumb": "assets/p/elysium/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Illustrative masterplan"
+   },
+   {
+    "src": "assets/p/elysium/08.jpg",
+    "thumb": "assets/p/elysium/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Masterplan option 2: uses and types"
+   },
+   {
+    "src": "assets/p/elysium/09.jpg",
+    "thumb": "assets/p/elysium/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Site location"
+   },
+   {
+    "src": "assets/p/elysium/10.jpg",
+    "thumb": "assets/p/elysium/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "photo",
+    "note": "Site condition photos"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Lusail",
+  "slug_guess": "lusail",
+  "items": [
+   {
+    "src": "assets/p/lusail/01.jpg",
+    "thumb": "assets/p/lusail/01_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Initial concept plan of the Simaisma beach"
+   },
+   {
+    "src": "assets/p/lusail/02.jpg",
+    "thumb": "assets/p/lusail/02_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Islands 1, 2 and 3 initial sketch master plan"
+   },
+   {
+    "src": "assets/p/lusail/03.jpg",
+    "thumb": "assets/p/lusail/03_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Island 1 luxury island resort"
+   },
+   {
+    "src": "assets/p/lusail/04.jpg",
+    "thumb": "assets/p/lusail/04_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Island 2 luxury palace plots"
+   },
+   {
+    "src": "assets/p/lusail/05.jpg",
+    "thumb": "assets/p/lusail/05_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Island 3 luxury residential plots"
+   },
+   {
+    "src": "assets/p/lusail/06.jpg",
+    "thumb": "assets/p/lusail/06_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Islands 4 to 7 initial sketch master plan"
+   },
+   {
+    "src": "assets/p/lusail/07.jpg",
+    "thumb": "assets/p/lusail/07_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Island 4 premium lifestyle resort"
+   },
+   {
+    "src": "assets/p/lusail/08.jpg",
+    "thumb": "assets/p/lusail/08_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Island 5 lifestyle luxury resort"
+   },
+   {
+    "src": "assets/p/lusail/09.jpg",
+    "thumb": "assets/p/lusail/09_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Fan zone indicative sketch master plan"
+   },
+   {
+    "src": "assets/p/lusail/10.jpg",
+    "thumb": "assets/p/lusail/10_t.jpg",
+    "w": 1800,
+    "h": 1247,
+    "kind": "plan",
+    "note": "Overview of the identified project sites"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Makkah Township",
+  "slug_guess": "makkah-township",
+  "items": [
+   {
+    "src": "assets/p/makkah-township/01.jpg",
+    "thumb": "assets/p/makkah-township/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of Makkah Township"
+   },
+   {
+    "src": "assets/p/makkah-township/02.jpg",
+    "thumb": "assets/p/makkah-township/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Neighbourhood street render"
+   },
+   {
+    "src": "assets/p/makkah-township/03.jpg",
+    "thumb": "assets/p/makkah-township/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Landscape corridor render"
+   },
+   {
+    "src": "assets/p/makkah-township/04.jpg",
+    "thumb": "assets/p/makkah-township/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Park-side street render"
+   },
+   {
+    "src": "assets/p/makkah-township/05.jpg",
+    "thumb": "assets/p/makkah-township/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Covered market street render"
+   },
+   {
+    "src": "assets/p/makkah-township/06.jpg",
+    "thumb": "assets/p/makkah-township/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Waterside park render"
+   },
+   {
+    "src": "assets/p/makkah-township/07.jpg",
+    "thumb": "assets/p/makkah-township/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Apartment street render"
+   },
+   {
+    "src": "assets/p/makkah-township/08.jpg",
+    "thumb": "assets/p/makkah-township/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Open space and skyline render"
+   },
+   {
+    "src": "assets/p/makkah-township/09.jpg",
+    "thumb": "assets/p/makkah-township/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Master plan option 1"
+   },
+   {
+    "src": "assets/p/makkah-township/10.jpg",
+    "thumb": "assets/p/makkah-township/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Pedestrian lane render"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Najran",
+  "slug_guess": "najran-region",
+  "items": [
+   {
+    "src": "assets/p/najran-region/01.jpg",
+    "thumb": "assets/p/najran-region/01_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "board",
+    "note": "Cover: Najran Region"
+   },
+   {
+    "src": "assets/p/najran-region/02.jpg",
+    "thumb": "assets/p/najran-region/02_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "New hybrid streetscape render"
+   },
+   {
+    "src": "assets/p/najran-region/03.jpg",
+    "thumb": "assets/p/najran-region/03_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "New hybrid low-rise example 1"
+   },
+   {
+    "src": "assets/p/najran-region/04.jpg",
+    "thumb": "assets/p/najran-region/04_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "New hybrid mid-rise example 2"
+   },
+   {
+    "src": "assets/p/najran-region/05.jpg",
+    "thumb": "assets/p/najran-region/05_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "New hybrid mid-rise example 3"
+   },
+   {
+    "src": "assets/p/najran-region/06.jpg",
+    "thumb": "assets/p/najran-region/06_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "New hybrid existing improvements"
+   },
+   {
+    "src": "assets/p/najran-region/07.jpg",
+    "thumb": "assets/p/najran-region/07_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "board",
+    "note": "Traditional Najran tower house study"
+   },
+   {
+    "src": "assets/p/najran-region/08.jpg",
+    "thumb": "assets/p/najran-region/08_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "board",
+    "note": "Traditional architectural styles"
+   },
+   {
+    "src": "assets/p/najran-region/09.jpg",
+    "thumb": "assets/p/najran-region/09_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "board",
+    "note": "Regional identities: traditional"
+   },
+   {
+    "src": "assets/p/najran-region/10.jpg",
+    "thumb": "assets/p/najran-region/10_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "photo",
+    "note": "Najran governorates"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Prime Dubai",
+  "slug_guess": "prime-dubai",
+  "items": [
+   {
+    "src": "assets/p/prime-dubai/01.jpg",
+    "thumb": "assets/p/prime-dubai/01_t.jpg",
+    "w": 1800,
+    "h": 1274,
+    "kind": "render",
+    "note": "Aerial render of the Prime Dubai master plan"
+   },
+   {
+    "src": "assets/p/prime-dubai/02.jpg",
+    "thumb": "assets/p/prime-dubai/02_t.jpg",
+    "w": 1800,
+    "h": 1027,
+    "kind": "render",
+    "note": "Tree-lined street render"
+   },
+   {
+    "src": "assets/p/prime-dubai/03.jpg",
+    "thumb": "assets/p/prime-dubai/03_t.jpg",
+    "w": 1800,
+    "h": 1027,
+    "kind": "render",
+    "note": "Residential park render"
+   },
+   {
+    "src": "assets/p/prime-dubai/04.jpg",
+    "thumb": "assets/p/prime-dubai/04_t.jpg",
+    "w": 1800,
+    "h": 1027,
+    "kind": "render",
+    "note": "Garden walk render"
+   },
+   {
+    "src": "assets/p/prime-dubai/05.jpg",
+    "thumb": "assets/p/prime-dubai/05_t.jpg",
+    "w": 1800,
+    "h": 1027,
+    "kind": "render",
+    "note": "Outdoor dining street render"
+   },
+   {
+    "src": "assets/p/prime-dubai/06.jpg",
+    "thumb": "assets/p/prime-dubai/06_t.jpg",
+    "w": 1800,
+    "h": 1028,
+    "kind": "render",
+    "note": "Park path render"
+   },
+   {
+    "src": "assets/p/prime-dubai/07.jpg",
+    "thumb": "assets/p/prime-dubai/07_t.jpg",
+    "w": 1800,
+    "h": 1026,
+    "kind": "render",
+    "note": "Skyline view terrace render"
+   },
+   {
+    "src": "assets/p/prime-dubai/08.jpg",
+    "thumb": "assets/p/prime-dubai/08_t.jpg",
+    "w": 1800,
+    "h": 1027,
+    "kind": "render",
+    "note": "Racecourse grandstand render"
+   },
+   {
+    "src": "assets/p/prime-dubai/09.jpg",
+    "thumb": "assets/p/prime-dubai/09_t.jpg",
+    "w": 1800,
+    "h": 1029,
+    "kind": "plan",
+    "note": "Master plan"
+   },
+   {
+    "src": "assets/p/prime-dubai/10.jpg",
+    "thumb": "assets/p/prime-dubai/10_t.jpg",
+    "w": 1800,
+    "h": 1663,
+    "kind": "plan",
+    "note": "Lake and parks plan"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Ramla",
+  "slug_guess": "ramla",
+  "items": [
+   {
+    "src": "assets/p/ramla/01.jpg",
+    "thumb": "assets/p/ramla/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Bird's-eye render of the Ramla master plan"
+   },
+   {
+    "src": "assets/p/ramla/02.jpg",
+    "thumb": "assets/p/ramla/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Lakeside residence aerial render"
+   },
+   {
+    "src": "assets/p/ramla/03.jpg",
+    "thumb": "assets/p/ramla/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Terrace East aerial render"
+   },
+   {
+    "src": "assets/p/ramla/04.jpg",
+    "thumb": "assets/p/ramla/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Beachfront terrace render"
+   },
+   {
+    "src": "assets/p/ramla/05.jpg",
+    "thumb": "assets/p/ramla/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Beachfront town centre render"
+   },
+   {
+    "src": "assets/p/ramla/06.jpg",
+    "thumb": "assets/p/ramla/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Town centre street render"
+   },
+   {
+    "src": "assets/p/ramla/07.jpg",
+    "thumb": "assets/p/ramla/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Terrace West aerial render"
+   },
+   {
+    "src": "assets/p/ramla/08.jpg",
+    "thumb": "assets/p/ramla/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Park place aerial render"
+   },
+   {
+    "src": "assets/p/ramla/09.jpg",
+    "thumb": "assets/p/ramla/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Illustrative master plan"
+   },
+   {
+    "src": "assets/p/ramla/10.jpg",
+    "thumb": "assets/p/ramla/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "plan",
+    "note": "Lake plan"
+   }
+  ]
+ },
+ {
+  "folder": "27. With WATG / Roshn UGC",
+  "slug_guess": "roshn-ugc",
+  "items": [
+   {
+    "src": "assets/p/roshn-ugc/01.jpg",
+    "thumb": "assets/p/roshn-ugc/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Waterfront district render"
+   },
+   {
+    "src": "assets/p/roshn-ugc/02.jpg",
+    "thumb": "assets/p/roshn-ugc/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the urban growth centre"
+   },
+   {
+    "src": "assets/p/roshn-ugc/03.jpg",
+    "thumb": "assets/p/roshn-ugc/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Night plaza render"
+   },
+   {
+    "src": "assets/p/roshn-ugc/04.jpg",
+    "thumb": "assets/p/roshn-ugc/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render at night"
+   },
+   {
+    "src": "assets/p/roshn-ugc/05.jpg",
+    "thumb": "assets/p/roshn-ugc/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Aerial render of the lagoon"
+   },
+   {
+    "src": "assets/p/roshn-ugc/06.jpg",
+    "thumb": "assets/p/roshn-ugc/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Street render with gardens"
+   },
+   {
+    "src": "assets/p/roshn-ugc/07.jpg",
+    "thumb": "assets/p/roshn-ugc/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Marina and bridge render"
+   },
+   {
+    "src": "assets/p/roshn-ugc/08.jpg",
+    "thumb": "assets/p/roshn-ugc/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "render",
+    "note": "Promenade render"
+   }
+  ]
+ },
+ {
+  "folder": "4. Azha North (with WATG)",
+  "slug_guess": "azha-north",
+  "items": [
+   {
+    "src": "assets/p/azha-north/01.jpg",
+    "thumb": "assets/p/azha-north/01_t.jpg",
+    "w": 1274,
+    "h": 1800,
+    "kind": "plan",
+    "note": "Azha North, Ras El Hekma: concept master plan"
+   }
+  ]
+ },
+ {
+  "folder": "5. Abu Qir",
+  "slug_guess": "abu-qir",
+  "items": [
+   {
+    "src": "assets/p/abu-qir/01.jpg",
+    "thumb": "assets/p/abu-qir/01_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "render",
+    "note": "Cover: Abu Qir city and port extension"
+   },
+   {
+    "src": "assets/p/abu-qir/02.jpg",
+    "thumb": "assets/p/abu-qir/02_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 3"
+   },
+   {
+    "src": "assets/p/abu-qir/03.jpg",
+    "thumb": "assets/p/abu-qir/03_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 4"
+   },
+   {
+    "src": "assets/p/abu-qir/04.jpg",
+    "thumb": "assets/p/abu-qir/04_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 2"
+   },
+   {
+    "src": "assets/p/abu-qir/05.jpg",
+    "thumb": "assets/p/abu-qir/05_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 6"
+   },
+   {
+    "src": "assets/p/abu-qir/06.jpg",
+    "thumb": "assets/p/abu-qir/06_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 7"
+   },
+   {
+    "src": "assets/p/abu-qir/07.jpg",
+    "thumb": "assets/p/abu-qir/07_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 5"
+   },
+   {
+    "src": "assets/p/abu-qir/08.jpg",
+    "thumb": "assets/p/abu-qir/08_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Zoning master plan 1"
+   },
+   {
+    "src": "assets/p/abu-qir/09.jpg",
+    "thumb": "assets/p/abu-qir/09_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Site analysis"
+   },
+   {
+    "src": "assets/p/abu-qir/10.jpg",
+    "thumb": "assets/p/abu-qir/10_t.jpg",
+    "w": 1800,
+    "h": 1013,
+    "kind": "plan",
+    "note": "Site location and connectivity"
+   }
+  ]
+ },
+ {
+  "folder": "6. Gargoub",
+  "slug_guess": "gargoub",
+  "items": [
+   {
+    "src": "assets/p/gargoub/01.jpg",
+    "thumb": "assets/p/gargoub/01_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Gargoub City aerial master plan render"
+   },
+   {
+    "src": "assets/p/gargoub/02.jpg",
+    "thumb": "assets/p/gargoub/02_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Waterfront view of the master plan"
+   },
+   {
+    "src": "assets/p/gargoub/03.jpg",
+    "thumb": "assets/p/gargoub/03_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Aerial render of the residential hills and districts"
+   },
+   {
+    "src": "assets/p/gargoub/04.jpg",
+    "thumb": "assets/p/gargoub/04_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Cover: Gargoub City aerial render"
+   },
+   {
+    "src": "assets/p/gargoub/05.jpg",
+    "thumb": "assets/p/gargoub/05_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "render",
+    "note": "Beachfront promenade render"
+   },
+   {
+    "src": "assets/p/gargoub/06.jpg",
+    "thumb": "assets/p/gargoub/06_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "plan",
+    "note": "Master plan"
+   },
+   {
+    "src": "assets/p/gargoub/07.jpg",
+    "thumb": "assets/p/gargoub/07_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "plan",
+    "note": "Master plan, project drivers"
+   },
+   {
+    "src": "assets/p/gargoub/08.jpg",
+    "thumb": "assets/p/gargoub/08_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "plan",
+    "note": "Land-use plan"
+   },
+   {
+    "src": "assets/p/gargoub/09.jpg",
+    "thumb": "assets/p/gargoub/09_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "board",
+    "note": "Tourism master plan project drivers"
+   },
+   {
+    "src": "assets/p/gargoub/10.jpg",
+    "thumb": "assets/p/gargoub/10_t.jpg",
+    "w": 1800,
+    "h": 1012,
+    "kind": "photo",
+    "note": "Site photos"
+   }
+  ]
+ },
+ {
+  "folder": "8. Khaybar (with WATG)",
+  "slug_guess": "khaybar",
+  "items": [
+   {
+    "src": "assets/p/khaybar/01.jpg",
+    "thumb": "assets/p/khaybar/01_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Cover: Khaybar Heritage Area master plan development brief"
+   },
+   {
+    "src": "assets/p/khaybar/02.jpg",
+    "thumb": "assets/p/khaybar/02_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "photo",
+    "note": "Khaybar heritage area background"
+   },
+   {
+    "src": "assets/p/khaybar/03.jpg",
+    "thumb": "assets/p/khaybar/03_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "photo",
+    "note": "Aerial view of the old town of Khaybar"
+   },
+   {
+    "src": "assets/p/khaybar/04.jpg",
+    "thumb": "assets/p/khaybar/04_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "The vision: two regions, one journey"
+   },
+   {
+    "src": "assets/p/khaybar/05.jpg",
+    "thumb": "assets/p/khaybar/05_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "photo",
+    "note": "Climate: desert landscape"
+   },
+   {
+    "src": "assets/p/khaybar/06.jpg",
+    "thumb": "assets/p/khaybar/06_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Khaybar historical oasis"
+   },
+   {
+    "src": "assets/p/khaybar/07.jpg",
+    "thumb": "assets/p/khaybar/07_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Khaybar natural area"
+   },
+   {
+    "src": "assets/p/khaybar/08.jpg",
+    "thumb": "assets/p/khaybar/08_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Khaybar suq"
+   },
+   {
+    "src": "assets/p/khaybar/09.jpg",
+    "thumb": "assets/p/khaybar/09_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "board",
+    "note": "Tourism"
+   },
+   {
+    "src": "assets/p/khaybar/10.jpg",
+    "thumb": "assets/p/khaybar/10_t.jpg",
+    "w": 1800,
+    "h": 1273,
+    "kind": "photo",
+    "note": "Purpose: landscape"
+   }
+  ]
+ },
+ {
+  "folder": "9. Jadel Al Dhahran / Dhahran",
+  "slug_guess": "jadel-dhahran",
+  "items": [
+   {
+    "src": "assets/p/jadel-dhahran/01.jpg",
+    "thumb": "assets/p/jadel-dhahran/01_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Perspectives of the concept master plan"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/02.jpg",
+    "thumb": "assets/p/jadel-dhahran/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Perspective views and plan"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/03.jpg",
+    "thumb": "assets/p/jadel-dhahran/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Concept master plan, King Abdulaziz Road land, Dhahran"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/04.jpg",
+    "thumb": "assets/p/jadel-dhahran/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Cover: urban vision, Dhahran investment land"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/05.jpg",
+    "thumb": "assets/p/jadel-dhahran/05_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Hospitality zone with references"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/06.jpg",
+    "thumb": "assets/p/jadel-dhahran/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Residential zone with references"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/07.jpg",
+    "thumb": "assets/p/jadel-dhahran/07_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Roads and parking plan"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/08.jpg",
+    "thumb": "assets/p/jadel-dhahran/08_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Parks and green corridors plan"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/09.jpg",
+    "thumb": "assets/p/jadel-dhahran/09_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Site analysis"
+   },
+   {
+    "src": "assets/p/jadel-dhahran/10.jpg",
+    "thumb": "assets/p/jadel-dhahran/10_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Land-use distribution"
+   }
+  ]
+ },
+ {
+  "folder": "9. Jadel Al Dhahran / Jeddah",
+  "slug_guess": "jadel-jeddah-hamdaniyah",
+  "items": [
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/01.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/01_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Concept master plan 3D view"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/02.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Perspective views"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/03.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Concept master plan"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/04.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "General plan with references"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/05.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/05_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "render",
+    "note": "Cover: urban vision for investment lands, Al Hamdaniyah, Jeddah"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/06.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Site location"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/07.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/07_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Commercial zone plan with references"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/08.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/08_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Parks and green corridors plan"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/09.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/09_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Urban design guidelines, massing"
+   },
+   {
+    "src": "assets/p/jadel-jeddah-hamdaniyah/10.jpg",
+    "thumb": "assets/p/jadel-jeddah-hamdaniyah/10_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Land-use distribution"
+   }
+  ]
+ },
+ {
+  "folder": "Aqeelah Oasis",
+  "slug_guess": "aqeelah-oasis",
+  "items": [
+   {
+    "src": "assets/p/aqeelah-oasis/01.jpg",
+    "thumb": "assets/p/aqeelah-oasis/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Aerial render of the residential complex"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/02.jpg",
+    "thumb": "assets/p/aqeelah-oasis/02_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Facade and plaza render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/03.jpg",
+    "thumb": "assets/p/aqeelah-oasis/03_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Residential towers with landscaped lawn"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/04.jpg",
+    "thumb": "assets/p/aqeelah-oasis/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Tower elevation render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/05.jpg",
+    "thumb": "assets/p/aqeelah-oasis/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Residential towers render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/06.jpg",
+    "thumb": "assets/p/aqeelah-oasis/06_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Courtyard and towers render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/07.jpg",
+    "thumb": "assets/p/aqeelah-oasis/07_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Tower and street render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/08.jpg",
+    "thumb": "assets/p/aqeelah-oasis/08_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "render",
+    "note": "Aerial site render"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/09.jpg",
+    "thumb": "assets/p/aqeelah-oasis/09_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "plan",
+    "note": "Typical plot layouts"
+   },
+   {
+    "src": "assets/p/aqeelah-oasis/10.jpg",
+    "thumb": "assets/p/aqeelah-oasis/10_t.jpg",
+    "w": 1800,
+    "h": 1257,
+    "kind": "board",
+    "note": "Cover collage of towers and interiors"
+   }
+  ]
+ },
+ {
+  "folder": "Frangrance Factory greiss",
+  "slug_guess": "fragrance-factory-greiss",
+  "items": [
+   {
+    "src": "assets/p/fragrance-factory-greiss/01.jpg",
+    "thumb": "assets/p/fragrance-factory-greiss/01_t.jpg",
+    "w": 1600,
+    "h": 1200,
+    "kind": "photo",
+    "note": "Factory building, orange cladding and ducting"
+   },
+   {
+    "src": "assets/p/fragrance-factory-greiss/02.jpg",
+    "thumb": "assets/p/fragrance-factory-greiss/02_t.jpg",
+    "w": 1600,
+    "h": 1200,
+    "kind": "photo",
+    "note": "Factory side street with loading doors"
+   },
+   {
+    "src": "assets/p/fragrance-factory-greiss/03.jpg",
+    "thumb": "assets/p/fragrance-factory-greiss/03_t.jpg",
+    "w": 1600,
+    "h": 1200,
+    "kind": "photo",
+    "note": "Factory facade during construction"
+   },
+   {
+    "src": "assets/p/fragrance-factory-greiss/04.jpg",
+    "thumb": "assets/p/fragrance-factory-greiss/04_t.jpg",
+    "w": 1600,
+    "h": 1200,
+    "kind": "photo",
+    "note": "Factory frontage and fence during construction"
+   }
+  ]
+ },
+ {
+  "folder": "Green Egypt Packhouse",
+  "slug_guess": "green-egypt-packhouse",
+  "items": [
+   {
+    "src": "assets/p/green-egypt-packhouse/01.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/01_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse main building and loading bay"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/02.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/02_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Stone entrance pavilion"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/03.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/03_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Stone gate arch"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/04.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/04_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Entrance gate and arch"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/05.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/05_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse with new landscaping"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/06.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/06_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Approach path to the packhouse"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/07.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/07_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse facade with flags"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/08.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/08_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse grounds"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/09.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/09_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse among palms"
+   },
+   {
+    "src": "assets/p/green-egypt-packhouse/10.jpg",
+    "thumb": "assets/p/green-egypt-packhouse/10_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Packhouse loading entrance"
+   }
+  ]
+ },
+ {
+  "folder": "Hilton Dahab",
+  "slug_guess": "hilton-dahab",
+  "items": [
+   {
+    "src": "assets/p/hilton-dahab/01.jpg",
+    "thumb": "assets/p/hilton-dahab/01_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Resort pool and gardens"
+   },
+   {
+    "src": "assets/p/hilton-dahab/02.jpg",
+    "thumb": "assets/p/hilton-dahab/02_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Resort building with timber staircase"
+   },
+   {
+    "src": "assets/p/hilton-dahab/03.jpg",
+    "thumb": "assets/p/hilton-dahab/03_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Lagoon pool"
+   },
+   {
+    "src": "assets/p/hilton-dahab/04.jpg",
+    "thumb": "assets/p/hilton-dahab/04_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Pool and courtyard"
+   },
+   {
+    "src": "assets/p/hilton-dahab/05.jpg",
+    "thumb": "assets/p/hilton-dahab/05_t.jpg",
+    "w": 1280,
+    "h": 960,
+    "kind": "photo",
+    "note": "Gardens and white buildings"
+   }
+  ]
+ },
+ {
+  "folder": "fayrouz tower",
+  "slug_guess": "fayrouz-tower",
+  "items": [
+   {
+    "src": "assets/p/fayrouz-tower/01.jpg",
+    "thumb": "assets/p/fayrouz-tower/01_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Perspectives of the tower (drawing no. 10)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/02.jpg",
+    "thumb": "assets/p/fayrouz-tower/02_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Tower renders and aerial shot (drawing no. 11)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/03.jpg",
+    "thumb": "assets/p/fayrouz-tower/03_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Tower elevation renders (drawing no. 12)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/04.jpg",
+    "thumb": "assets/p/fayrouz-tower/04_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Site layout (drawing no. 1)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/05.jpg",
+    "thumb": "assets/p/fayrouz-tower/05_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Circulation and advertisement studies (drawing no. 2)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/06.jpg",
+    "thumb": "assets/p/fayrouz-tower/06_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Ground floor plan (drawing no. 5)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/07.jpg",
+    "thumb": "assets/p/fayrouz-tower/07_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Roof garden and cafeteria plan (drawing no. 8)"
+   },
+   {
+    "src": "assets/p/fayrouz-tower/08.jpg",
+    "thumb": "assets/p/fayrouz-tower/08_t.jpg",
+    "w": 1800,
+    "h": 1260,
+    "kind": "board",
+    "note": "Typical floor plan (drawing no. 9)"
+   }
+  ]
+ },
+ {
+  "folder": "royal oasis",
+  "slug_guess": "royal-oasis",
+  "items": [
+   {
+    "src": "assets/p/royal-oasis/01.jpg",
+    "thumb": "assets/p/royal-oasis/01_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Urban design master plan"
+   },
+   {
+    "src": "assets/p/royal-oasis/02.jpg",
+    "thumb": "assets/p/royal-oasis/02_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Salma plan and elevation"
+   },
+   {
+    "src": "assets/p/royal-oasis/03.jpg",
+    "thumb": "assets/p/royal-oasis/03_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Karima plan and elevation"
+   },
+   {
+    "src": "assets/p/royal-oasis/04.jpg",
+    "thumb": "assets/p/royal-oasis/04_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Nour plan and elevation"
+   },
+   {
+    "src": "assets/p/royal-oasis/05.jpg",
+    "thumb": "assets/p/royal-oasis/05_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Design programme and land use"
+   },
+   {
+    "src": "assets/p/royal-oasis/06.jpg",
+    "thumb": "assets/p/royal-oasis/06_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Location of the project"
+   },
+   {
+    "src": "assets/p/royal-oasis/07.jpg",
+    "thumb": "assets/p/royal-oasis/07_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "plan",
+    "note": "Regional approach"
+   },
+   {
+    "src": "assets/p/royal-oasis/08.jpg",
+    "thumb": "assets/p/royal-oasis/08_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Salma floor plans"
+   },
+   {
+    "src": "assets/p/royal-oasis/09.jpg",
+    "thumb": "assets/p/royal-oasis/09_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Karima floor plans"
+   },
+   {
+    "src": "assets/p/royal-oasis/10.jpg",
+    "thumb": "assets/p/royal-oasis/10_t.jpg",
+    "w": 1800,
+    "h": 1350,
+    "kind": "board",
+    "note": "Villa Nour floor plans"
+   }
+  ]
+ },
+ {
+  "folder": "Golden Gate (Redcon)",
+  "slug_guess": "golden-gate",
+  "items": [
+   {
+    "src": "assets/p/golden-gate/01.jpg",
+    "thumb": "assets/p/golden-gate/01_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Golden Gate central plaza with sculptural canopies, office buildings and terraced gardens, New Cairo"
+   },
+   {
+    "src": "assets/p/golden-gate/02.jpg",
+    "thumb": "assets/p/golden-gate/02_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Retail street with café terraces under glass office buildings, Golden Gate, New Cairo"
+   },
+   {
+    "src": "assets/p/golden-gate/03.jpg",
+    "thumb": "assets/p/golden-gate/03_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Entrance steps and landscaped terraces leading into Golden Gate, New Cairo"
+   },
+   {
+    "src": "assets/p/golden-gate/04.jpg",
+    "thumb": "assets/p/golden-gate/04_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Tree-lined pedestrian street between shops and offices, Golden Gate, New Cairo"
+   },
+   {
+    "src": "assets/p/golden-gate/05.jpg",
+    "thumb": "assets/p/golden-gate/05_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Night view of the dining street under a coloured light canopy, Golden Gate, New Cairo"
+   },
+   {
+    "src": "assets/p/golden-gate/06.jpg",
+    "thumb": "assets/p/golden-gate/06_t.jpg",
+    "w": 1800,
+    "h": 900,
+    "kind": "render",
+    "note": "Water courts and a glass bridge at dusk, Golden Gate, New Cairo"
+   }
+  ]
+ }
 ]
