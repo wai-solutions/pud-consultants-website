@@ -13,7 +13,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape')nav.classList.remove('open')}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px 15% 0px'});
 $$('[data-r]').forEach(el=>{const d=parseFloat(el.dataset.r);if(d&&d!==1)el.style.transitionDelay=Math.min(d,.2)/2+'s';io.observe(el)});
 // never leave content hidden: anything already scrolled past is shown at once
-let rq=0;addEventListener('scroll',()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const h=innerHeight;$$('[data-r]:not(.in)').forEach(el=>{if(el.getBoundingClientRect().top<h){el.classList.add('in');io.unobserve(el)}})})},{passive:true});
+{let pend=[...document.querySelectorAll('[data-r]')],t=0;const chk=()=>{t=0;const h=innerHeight;pend=pend.filter(el=>{if(el.classList.contains('in'))return false;if(el.getBoundingClientRect().top<h){el.classList.add('in');io.unobserve(el);return false}return true})};addEventListener('scroll',()=>{if(!t&&pend.length)t=setTimeout(chk,180)},{passive:true})}
 
 function hasGL(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
 const GL=hasGL()&&!reduce;
@@ -214,3 +214,8 @@ addEventListener('load',()=>ScrollTrigger.refresh());
     try{await send({Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')});f.reset();note.textContent='';f.hidden=true;done.querySelector('p').textContent=THANKS;done.hidden=false}
     catch(err){note.textContent=failMsg(err)}finally{sb.disabled=false}});
 })();
+
+(()=>{const m=document.querySelector('meta[name=pud-build]');if(!m||location.protocol==='file:')return;
+  const base=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
+  fetch(base+'build.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.text():'').then(b=>{b=b.trim();if(!b||b===m.content)return;
+    let k='pudReload:'+b;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){return}location.reload()}).catch(()=>{})})();

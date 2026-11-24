@@ -204,7 +204,7 @@ def page(path, title, body, desc='', active='', schema=None, og_img=None, data=N
     robots = ('<meta name="robots" content="noindex,follow">' if noindex else '') if MODE == 'prod' else '<meta name="robots" content="noindex,nofollow,noarchive">'
     dat = ('<script>window.__PROJECTS=%s;window.__MILESTONES=%s</script>' % (J(data), J(ms or []))) if data is not None else ''
     sch = ld(*(schema or []))
-    return ('<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    return ('<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="pud-build" content="__B__">'
             '<title>%s</title><meta name="description" content="%s">%s<link rel="canonical" href="%s"><link rel="alternate" hreflang="en" href="%s"><link rel="alternate" hreflang="x-default" href="%s">'
             '<meta name="theme-color" content="#000000"><meta property="og:type" content="website"><meta property="og:site_name" content="PUD Consultants"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s"><meta property="og:image" content="%s"><meta property="og:locale" content="en_US">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="%s"><meta name="twitter:description" content="%s"><meta name="twitter:image" content="%s">'
@@ -291,7 +291,7 @@ def with_img_first(ps): return sorted(ps, key=lambda p: (not p.get('featured'), 
 # ---------- pages ----------
 def founder_block(reel_first=True):
     tabs = ''.join('<button aria-pressed="%s" data-src="assets/founder/%s.mp4" data-poster="assets/founder/%s.jpg">%s</button>' % ('true' if i == 0 else 'false', k, k, lab) for i, (k, lab) in enumerate([('draw', 'Drawing'), ('point', 'The plan'), ('stand', 'The city model'), ('award', 'Recognition')]))
-    return '<div class="reel" data-r><video muted loop playsinline preload="metadata" src="assets/founder/draw.mp4" poster="assets/founder/draw.jpg" aria-label="Illustrative recreation of Prof. Dr. Abdallah Attia at work"></video><div class="tabs">%s</div></div>' % tabs
+    return '<div class="reel" data-r><video muted loop playsinline preload="none" src="assets/founder/draw.mp4" poster="assets/founder/draw.jpg" aria-label="Illustrative recreation of Prof. Dr. Abdallah Attia at work"></video><div class="tabs">%s</div></div>' % tabs
 
 # ---------- immersive home sections (v6) ----------
 SVC_MEDIA = {
@@ -803,7 +803,7 @@ def main():
     shutil.copytree('fonts', SITE + '/fonts', dirs_exist_ok=True)
     shutil.copy('data/countries.geojson', SITE + '/data/countries.geojson')
     paths = []
-    def W(n, c): open(SITE + '/' + n, 'w', encoding='utf-8').write(eco(n, c).replace(' &ndash; ', ', ').replace(' – ', ', ').replace(' — ', ', ').replace('—', ', ')); paths.append(n)
+    def W(n, c): c = c.replace('<img ', '<img decoding="async" '); open(SITE + '/' + n, 'w', encoding='utf-8').write(eco(n, c).replace(' &ndash; ', ', ').replace(' – ', ', ').replace(' — ', ', ').replace('—', ', ')); paths.append(n)
     W('index.html', home()); W('60-years.html', story()); W('people.html', people()); W('projects.html', projects_page()); W('partners.html', partners_page()); W('contact.html', contact_page())
     W('amr-attia.html', amr_page()); W('services.html', services_page()); W('insights.html', insights_page()); W('faq.html', faq_page()); os.makedirs(SITE + '/destinations', exist_ok=True); W('destinations/red-sea.html', red_sea_page())
     for s in SERVICES: W('services/%s.html' % s['slug'], service_page(s))
@@ -822,6 +822,12 @@ def postprocess():
     import glob
     import hashlib
     V = hashlib.md5((open('src/style.css').read() + open('src/app.js').read()).encode()).hexdigest()[:8]
+    import time as _t
+    B = hashlib.md5((V + open(SITE + '/index.html', encoding='utf-8').read()).encode()).hexdigest()[:10]
+    open(SITE + '/build.txt', 'w').write(B)
+    for f in glob.glob(SITE + '/**/*.html', recursive=True):
+        t = open(f, encoding='utf-8').read()
+        if '__B__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__B__', B))
     for f in glob.glob(SITE + '/**/*.html', recursive=True):
         t = open(f, encoding='utf-8').read()
         if '__V__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__V__', V))
