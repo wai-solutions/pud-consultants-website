@@ -71,7 +71,7 @@ const state={q:'',country:'All',cat:'All',region:'All',svc:'All',era:'All',year:
 const eraOk=y=>state.era==='All'||(state.era==='pre'?y<2000:(y>=+state.era&&y<+state.era+10));
 const regOk=c=>state.region==='All'||(state.region==='Intl'?(c!=='Egypt'&&c!=='Saudi Arabia'):c===state.region);
 function pass(p){return (state.country==='All'||p.country===state.country)&&(state.cat==='All'||p.category.includes(state.cat))&&regOk(p.country)&&(state.svc==='All'||(p.svc||[]).includes(state.svc))&&eraOk(p.year_start)&&(!state.q||(p.name+' '+p.city+' '+p.client+' '+p.country).toLowerCase().includes(state.q))}
-function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct)ct.textContent=n+' project'+(n===1?'':'s')}
+function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct){const T=+ct.dataset.total||DATA.length;ct.innerHTML=n>=T?'<b>'+T+'</b> projects':'<b>'+n+'</b> of '+T+' projects'}}
 function count(){return DATA.filter(p=>pass(p)&&p.year_start<=state.year).length}
 function applyMap(){atlas&&atlas.setFilter(pass);atlas&&atlas.setYear(state.year);const y=$('.atlas .yr');if(y)y.textContent=state.year;const n=$('.atlas .n');if(n)n.textContent=count()+' projects'}
 function applyAll(){applyMap();applyGrid()}
@@ -231,3 +231,8 @@ addEventListener('load',()=>ScrollTrigger.refresh());
   let rq=0;const upd=()=>{rq=0;if(!mq.matches)return;const h=innerHeight;vis.forEach(c=>{const r=c.getBoundingClientRect();const off=(r.top+r.height/2-h/2)/h;const im=c.querySelector('img');
     if(im)im.style.transform='translate3d(0,'+(off*-9).toFixed(2)+'%,0) scale(1.22)'})};
   addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();})();
+
+// filter panel opens from 'Filter by'
+(()=>{const t=$('.fb-t'),g=$('#fbarG');if(!t||!g)return;const set=o=>{t.setAttribute('aria-expanded',String(o));g.hidden=!o};
+  t.addEventListener('click',()=>set(g.hidden));
+  $$('.ex-i').forEach(b=>b.addEventListener('click',()=>set(true)));})();

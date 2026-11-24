@@ -1048,3 +1048,15 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 @media(max-width:900px){.ex-head{grid-template-columns:1fr}.ex-list{grid-template-columns:1fr 1fr}.fbar-g{grid-template-columns:1fr}.fbar-top{flex-wrap:wrap}.fbar-top .search{margin-left:0;max-width:none;flex:1 1 100%;order:3}}
 @media(max-width:560px){.ex-list{grid-template-columns:1fr}}
 .ex-head>.kicker{align-self:start;margin-top:14px}
+/* expertise in the site's own type; filter panel collapsible */
+.ex-head .h-l{max-width:20ch}
+.ex-i{font-family:var(--serif)!important;font-weight:300!important;font-size:clamp(26px,2.4vw,38px)!important;line-height:1.05;color:#7a7a7a}
+.ex-i sup{font-family:var(--sans);font-size:13px;color:var(--mute);margin-left:6px;vertical-align:top;position:relative;top:4px}
+.ex-i:hover{color:#ffffff}.ex-i[aria-pressed=true]{color:var(--red)}
+.ex-list{gap:18px 40px}
+.fb-t{cursor:pointer;padding:6px 0}
+.fb-c{width:9px;height:9px;border-right:1.6px solid #ffffff;border-bottom:1.6px solid #ffffff;transform:rotate(45deg);margin:-4px 0 0 4px;transition:transform .3s}
+.fb-t[aria-expanded=true] .fb-c{transform:rotate(-135deg);margin-top:4px}
+.fbar-g[hidden]{display:none}
+.fbar-top .count{font-size:15px;color:#bdbdbd}.fbar-top .count b{color:#ffffff;font-weight:600}
+.fbar-top .search{margin-left:auto}

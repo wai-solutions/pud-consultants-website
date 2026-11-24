@@ -556,13 +556,13 @@ def expertise_filters():
     types = pill('svc', 'All', 'All types', True) + ''.join(pill('svc', x['slug'], x['name']) for x in SERVICES)
     era = pill('era', 'All', 'All years', True) + pill('era', '2020', '2020s') + pill('era', '2010', '2010s') + pill('era', '2000', '2000s') + pill('era', 'pre', 'Before 2000')
     return ('</div></section><section class="sec exf" id="expertise"><div class="wrap"><div class="ex-head"><p class="kicker mono">Expertise</p><div>'
-            '<h2 class="ex-h">Every place has its own rhythm. Every challenge its own context.</h2>'
+            '<h2 class="h-l">Every place has its own rhythm. <em>Every challenge its own context.</em></h2>'
             '<p class="p-l" style="margin-top:18px">Our work crosses planning, design and heritage, and each project brings together the best-fit minds from PUD\'s network of planners, architects, economists and specialists.</p>'
             '<div class="ex-list" role="group" aria-label="Expertise">%s</div></div></div></div>'
-            '<div class="fbar"><div class="wrap fbar-top"><span class="fb-t"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg>Filter by</span>'
-            '<input class="search" type="search" placeholder="Search projects, cities, clients" aria-label="Search projects"><span class="count"></span></div>'
-            '<div class="wrap fbar-g"><div role="group" aria-label="Region"><h4>Region</h4>%s</div><div role="group" aria-label="Project type"><h4>Project type</h4>%s</div><div role="group" aria-label="Era"><h4>Era</h4>%s</div></div></div>'
-            '<div class="wrap" style="padding-top:34px">') % (big, region, types, era)
+            '<div class="fbar"><div class="wrap fbar-top"><button type="button" class="fb-t" aria-expanded="false" aria-controls="fbarG"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4"/></svg>Filter by<i class="fb-c" aria-hidden="true"></i></button>'
+            '<input class="search" type="search" placeholder="Search projects, cities, clients" aria-label="Search projects"><span class="count" data-total="%d"><b>%d</b> projects</span></div>'
+            '<div class="wrap fbar-g" id="fbarG" hidden><div role="group" aria-label="Region"><h4>Region</h4>%s</div><div role="group" aria-label="Project type"><h4>Project type</h4>%s</div><div role="group" aria-label="Era"><h4>Era</h4>%s</div></div></div>'
+            '<div class="wrap" style="padding-top:34px">') % (big, len(PROJ), len(PROJ), region, types, era)
 
 def svc_of(p):
     return [x['slug'] for x in SERVICES if any(c in x['cats'] for c in p.get('category', [])) or p['slug'] in x['extra']]
@@ -583,8 +583,7 @@ def projects_page():
         '<div class="cardsel"><img alt=""><div><h3 class="h-m"></h3><p class="note" style="font-size:14px"></p></div><a class="btn ghost" href="#">Open project</a></div>'
         + expertise_filters() +
         '<div class="pgrid">%s</div>'
-        '<h2 class="h-m" style="margin-top:70px">Browse by country</h2><div class="cnrow">%s</div><h2 class="h-m" id="cities" style="margin-top:50px">Browse by city and region</h2><div class="chiplist">%s</div>'
-        '<p class="note" style="margin-top:26px">The map shows the Middle East at city-level positions. Projects in Germany, Cameroon and The Gambia appear in the list only.</p></div></section>') % (grid, ccs, cities) + chapter(3)
+        '</div></section>') % grid + chapter(3)
     return page('projects.html', 'Urban Planning Projects in Egypt, Saudi Arabia and Beyond | PUD', body,
                 'Explore %d PUD projects on an interactive map: urban plans, master plans, destinations and buildings in Egypt, Saudi Arabia and the wider region.' % len(PROJ), 'projects.html',
                 schema=[crumbs([('Home', ''), ('Projects', 'projects.html')]), {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD Consultants projects', 'numberOfItems': len(PROJ), 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/projects/' + PROJ[j]['slug'] + '.html', 'name': PROJ[j]['name']} for i, j in enumerate(order[:60])]}], data=data, ms=MILESTONES)
