@@ -852,7 +852,7 @@ def about_page():
                 schema=[about, dict(ORG, **{'@context': 'https://schema.org'}), il, faq_ld(qa), crumbs([('Home', ''), ('About', 'about.html')])], og_img=hi)
 
 def sustainability_page():
-    R = ''; hi = hero_img('heliopark-concept-masterplan')
+    R = ''; hi = 'assets/story/gp-4-people.jpg'
     five = ''
     for i, (th, h, t, slug, cap) in enumerate(SUS_FIVE):
         im = SUS_IMG.get(slug) or hero_img(slug)
@@ -879,7 +879,7 @@ def sustainability_page():
             '<section class="sec ctaband"><div class="wrap duo"><div><p class="kicker mono">For clients</p><h2 class="h-m">Need help developing your SDGs strategy?</h2><p style="margin-top:20px"><a class="btn red" href="contact.html">Contact one of our experts</a></p></div>'
             '<div><p class="kicker mono">For partners</p><h2 class="h-m">Making progress together.</h2><p style="margin-top:20px"><a class="btn ghost" href="partners.html#network">Become one of our partners</a></p></div></div></section>') % (
         E(SUS_LEDE),
-        ('<section class="wrap"><a class="figure wide" href="projects/heliopark-concept-masterplan.html"><img src="%s" alt="Heliopark, New Cairo" fetchpriority="high"%s><span class="mono">Heliopark · New Cairo &rarr;</span></a></section>' % (hi, wh(hi))) if hi else '',
+        ('<section class="wrap"><a class="figure wide" href="projects/green-pearl-prime-dubai-competition.html"><img src="%s" alt="Families walking and cycling along a green stream walk, Green Pearl, Dubai" fetchpriority="high"%s style="object-position:50%% 60%%"><span class="mono">Green Pearl · Dubai &rarr;</span></a></section>' % (hi, wh(hi))) if hi else '',
         ''.join('<p class="p-l">%s</p>' % E(t) for t in SUS_COMMIT), numbered(SUS_FOUR, 'nlist four'), five, wh('assets/story/sustain-alamein-riviera.jpg'), lens, sdg, projs, faq_html(SUS_FAQ))
     wp = {'@context': 'https://schema.org', '@type': 'WebPage', 'url': BASE + '/sustainability.html', 'name': 'Sustainability commitments and SDGs', 'description': SUS_LEDE, 'about': [{'@id': BASE + '/#org'}, {'@type': 'Thing', 'name': 'Sustainable development'}] + [{'@type': 'Thing', 'name': 'SDG %d: %s' % (n, g)} for n, g, u, p in SDGS], 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
     return page('sustainability.html', 'Sustainability Commitments and UN SDGs | PUD Consultants', body,
