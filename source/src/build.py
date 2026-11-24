@@ -240,10 +240,12 @@ def footer(R):
     top = sorted([d for d in PLACES.values() if len(d['projects']) >= 3], key=lambda d: -len(d['projects']))[:10]
     ct = ''.join('<a href="%scities/%s.html">%s</a>' % (R, d['slug'], E(d['name'])) for d in top) + '<a href="%sprojects.html#cities">All cities</a>' % R
     off = ''.join('<p><b style="color:#fff;font-weight:600">%s</b><br>%s<br><a href="tel:%s" style="display:inline">%s</a></p>' % (E(a), E(b), re.sub(r'[^+0-9]', '', c), E(c)) for a, b, c in OFFICES)
-    return ('<footer><div class="wrap"><div class="cols"><div><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>SINCE 1966</small></span></a>'
-            '<p style="margin-top:16px;max-width:30ch;color:#9a9a9a">Leadership · Harmony · Clarity. Shaping sustainable cities since 1966, from Cairo, Riyadh and Dubai.</p></div>'
-            '<div><h4>Services</h4>%s</div><div><h4>Countries</h4>%s<h4 style="margin-top:22px">Resources</h4><a href="%sfaq.html">FAQ</a><a href="%sinsights.html">Insights</a></div><div><h4>Cities</h4>%s</div><div><h4>Offices</h4>%s</div></div>'
-            '<div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>Client and partner logos belong to their owners.</span></div></div></footer>') % (R, R, sv, cn, R, R, ct, off)
+    return ('<footer class="f2"><div class="wrap"><div class="f2-top"><div class="f2-brand"><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>SINCE 1966</small></span></a>'
+            '<p>Shaping sustainable cities since 1966.</p></div>'
+            '<nav class="f2-nav" aria-label="Footer"><a href="%sprojects.html">Projects</a><a href="%sservices.html">Services</a><a href="%s60-years.html">60 years</a><a href="%speople.html">People</a><a href="%spartners.html">Partners</a><a href="%sinsights.html">Insights</a><a href="%sfaq.html">FAQ</a></nav>'
+            '<div class="f2-cta"><a class="btn red" href="%scontact.html">Talk to us</a></div></div>'
+            '<div class="f2-off"><a href="tel:+201001981111"><b>Cairo</b>+20 100 198 1111</a><a href="tel:+966540398178"><b>Riyadh</b>+966 540 39 8178</a><a href="tel:+971509298178"><b>Dubai</b>+971 509 29 8178</a><a class="f2-all" href="%scontact.html">All five offices &rarr;</a></div>'
+            '<div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>Client and partner logos belong to their owners.</span></div></div></footer>') % ((R,) * 11)
 
 def card(p, R, i=None, tag=None, cls=''):
     t = thumb(p['slug']); url = '%sprojects/%s.html' % (R, p['slug'])
@@ -393,7 +395,8 @@ SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade
            ('Environment', 'Working with nature, not against it: responsible land use and green building standards.'),
            ('Planet', 'Resilient regions for a changing climate, planned for compact, low-carbon growth.')]
 def sustain_section():
-    items = ''.join('<li><span class="n mono">%02d</span><b>%s</b><span class="t">%s</span></li>' % (i + 1, E(a), E(b)) for i, (a, b) in enumerate(SUSTAIN))
+    IC = {'People': '<circle cx="12" cy="7" r="3.2"/><path d="M5.5 20c.6-3.8 3.2-6 6.5-6s5.9 2.2 6.5 6"/>', 'Society': '<circle cx="7" cy="8.5" r="2.4"/><circle cx="17" cy="8.5" r="2.4"/><circle cx="12" cy="6.5" r="2.6"/><path d="M2.5 19c.4-2.8 2.2-4.4 4.5-4.4M21.5 19c-.4-2.8-2.2-4.4-4.5-4.4M7.2 20c.5-3.4 2.4-5.4 4.8-5.4s4.3 2 4.8 5.4"/>', 'Culture': '<path d="M3 9.5 12 4l9 5.5M4.5 9.5h15M6 9.5v8M10 9.5v8M14 9.5v8M18 9.5v8M3.5 20.5h17M4.5 17.5h15"/>', 'Environment': '<path d="M5 19c0-8 5.5-13.5 15-14-.3 9.5-6 15-14 15"/><path d="M5 19c3-4.5 6.5-7.5 10-9.5"/>', 'Planet': '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.3 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.3-3.8-8.5S9.4 5.9 12 3.5z"/>'}
+    items = ''.join('<li><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg><b>%s</b><span class="t">%s</span></li>' % (IC.get(a, ''), E(a), E(b)) for a, b in SUSTAIN)
     return ('<section class="sec sustain2"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r><span>Sustainability and responsibility</span></p>'
             '<p class="ap-lead" data-r="0.1">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards. <a href="services/environment-and-sustainability.html">Our commitment</a></p></div>'
             '<a class="ap-img" href="projects/heliopark-concept-masterplan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/p/heliopark/02.jpg" alt="Heliopark, New Cairo" loading="lazy"></span><span class="ap-cap mono">Heliopark · New Cairo</span></a>'
@@ -401,8 +404,8 @@ def sustain_section():
 
 def legacy_section():
     return ('<section class="legacy"><div class="big" aria-hidden="true" data-px="0.25">60</div><div class="wrap">'
-            '<p class="kicker mono" data-r>1966 to 2026 · The legacy continues</p><h2 class="h-xl" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h2>'
-            '<p class="tri" data-r="0.2"><span>Vision.</span> <span>Experience.</span> <span>Building for a better future.</span></p>'
+            '<p class="kicker mono" data-r>1966 to 2026</p><h2 class="h-xl" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h2>'
+            '<p class="legacy-line" data-r="0.2">The legacy continues.</p>'
             '<p class="row" data-r="0.3"><a class="btn red" href="contact.html">Talk to us</a> <a class="btn ghost" href="60-years.html">Read the story</a></p></div></section>')
 
 
@@ -443,23 +446,27 @@ def home():
     bento = ''.join(card(p, '', tag=p['cat1'], cls='b%d' % (i + 1)) for i, p in enumerate(feat))
     featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">From regional visions to city-making&hellip; <em>to the Holy Sites.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
     cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b></a>' % (cslug(c), E(c)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
-    teaser = ('<section class="sec mapteaser"><div class="wrap grid2"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">From Egypt <em>to global destinations.</em></h2><p class="p-l" style="margin:18px 0 26px" data-r="0.2">From Alex to Aswan along the Mediterranean, the Red Sea and the Nile, across the Red Sea to Jeddah, AlUla and the Holy Sites, and on to Kuwait, Iraq, Syria, the UAE and Cameroon. Watch the practice spread from Cairo; every pin opens a project with its client, partners and facts.</p><p data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div>'
-              '<a class="mapimg" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy"><span class="mpin" style="left:44.2%%;top:33%%"><i></i><b>Palestine</b></span><span class="medge" style="left:27%%;top:5%%">&uarr; Germany</span><span class="medge" style="left:3%%;top:47%%">&larr; Gambia</span></a></div>'
-              '<div class="wrap"><div class="cnrow">%s</div></div></section>') % cn_cards
+    PIN = '<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19 12 31 12 31s10.5-12 10.5-19.6C22.5 5.6 18 1 12 1z"/><circle cx="12" cy="11.5" r="4.2"/></svg>'
+    def mpin(x, y, name, side=''):
+        return '<span class="mpin2 %s" style="left:%s%%;top:%s%%">%s<b>%s</b></span>' % (side, x, y, PIN, name)
+    pins = mpin(44.8, 33.5, 'Palestine') + mpin(33, 6, 'Germany', 'r') + mpin(3, 63, 'Gambia', 'r')
+    teaser = ('<section class="sec mapteaser"><div class="wrap"><div class="grid2 mt-head"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">From Egypt <em>to global destinations.</em></h2></div>'
+              '<div><p class="p-l" data-r="0.2">From Alex to Aswan along the Mediterranean, the Red Sea and the Nile, across the Red Sea to Jeddah, AlUla and the Holy Sites, and on to Kuwait, Iraq, Syria, Palestine, the UAE, Cameroon, Gambia and Germany. Every pin opens a project with its client, partners and facts.</p><p style="margin-top:24px" data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div></div>'
+              '<a class="mapimg big" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy">%s</a></div></section>') % pins
     def lrow(L): return ''.join('<span class="lg"><img src="%s" alt="%s" loading="lazy"></span>' % (p['logo'], E(p['name'])) for p in L)
     cl = [p for p in strip if p.get('type') == 'client']; pt = [p for p in strip if p.get('type') != 'client']
     pl = ('<div class="lrow"><p class="mono lt">Our trusted clients</p><div class="lmq"><div class="ltr">%s%s</div></div></div>'
           '<div class="lrow rev"><p class="mono lt">Partners &amp; collaborations</p><div class="lmq"><div class="ltr">%s%s</div></div></div>') % (lrow(cl), lrow(cl), lrow(pt), lrow(pt))
-    partners = ('<section class="sec paper"><div class="wrap"><p class="kicker mono" data-r>Clients &amp; partners</p><h2 class="h-l" data-r="0.1">Trusted by clients. <em>Built with partners.</em></h2><p class="p-l" style="margin-top:18px;max-width:58ch" data-r="0.15">100+ clients and 90+ collaborations across six decades, from ministries and royal commissions to the world\'s leading design firms.</p><div class="logos2" data-r="0.2">%s</div><p style="margin-top:28px"><a class="btn dark" href="partners.html">All clients and partners</a></p></div></section>') % pl if pl else ''
+    partners = ('<section class="sec partners-dk"><div class="wrap"><p class="kicker mono" data-r>Clients &amp; partners</p><h2 class="h-l" data-r="0.1">Trusted by clients. <em>Built with partners.</em></h2><p class="p-l" style="margin-top:18px;max-width:58ch" data-r="0.15">100+ clients and 90+ collaborations across six decades, from ministries and royal commissions to the world\'s leading design firms.</p><div class="logos2" data-r="0.2">%s</div><p style="margin-top:28px"><a class="btn ghost" href="partners.html">All clients and partners</a></p></div></section>') % pl if pl else ''
     fq = '<section class="sec"><div class="wrap">%s<p style="margin-top:24px"><a class="btn ghost" href="faq.html">More questions</a></p></div></section>' % faq_html(FAQ[:5])
     amr_card = ('<section class="sec amrcard"><div class="wrap"><div class="grid2 amrg"><div data-r>%s</div><div><p class="kicker" data-r>The new chapter</p><h2 class="h-l" data-r="0.1">Prof. Dr. Amr Attia</h2><p class="p-l" style="margin-top:18px" data-r="0.2">%s</p>%s'
         '<p style="margin-top:8px" data-r="0.3"><a class="btn red" href="amr-attia.html">Read his profile</a></p></div></div>'
         '<h3 class="h-m" style="margin-top:56px" data-r>Selected work</h3><div class="pgrid amrwork" data-r="0.1">%s</div></div></section>') % (amr_photo(), E(AMR_HEADLINE), stat_tiles(AMR_TILES), amr_work('', 3))
     film = ''
-    body = welcome_strip() + hero_html + marq + featsec + services_immersive() + depth_story() + approach_section() + decades_section() + founder_section() + leader_section() + culture_section() + teaser + sustain_section() + partners + legacy_section() + fq + chapter(0) + film
+    body = welcome_strip() + hero_html + marq + featsec + services_immersive() + depth_story() + approach_section() + decades_section() + founder_section() + leader_section() + culture_section() + teaser + sustain_section() + partners + legacy_section()  + film
     return page('index.html', 'PUD Consultants | Urban Planning & Master Planning since 1966', body,
                 'PUD Consultants plans cities, destinations and campuses. Founded in Cairo in 1966, with work across the region. Offices in Cairo, Riyadh and Dubai.', 'index.html',
-                schema=[dict(ORG, **{'@context': 'https://schema.org'}), WEB, faq_ld(FAQ[:5])])
+                schema=[dict(ORG, **{'@context': 'https://schema.org'}), WEB])
 
 def story():
     body = '<section class="page-h"><div class="wrap"><p class="kicker mono">1966 to 2026</p><h1 class="h-xl" style="max-width:16ch">Every legacy begins <em>with a vision.</em></h1><p class="lede">Two generations, six decades and one belief: planning should serve people, land and history.</p></div></section>'

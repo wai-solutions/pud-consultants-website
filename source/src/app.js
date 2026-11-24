@@ -171,3 +171,46 @@ addEventListener('load',()=>ScrollTrigger.refresh());
       ds.forEach((d,i)=>d.classList.toggle('on',i===best));kids.forEach((k,i)=>k.classList.toggle('in-v',i===best))};
     r.addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()});
 })();
+
+/* floating chat: same as the PUD 60-year site; enquiries go through FormSubmit to the same inbox */
+(()=>{const R=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
+  const w=document.createElement('div');w.className='pchat';w.innerHTML=`
+  <button class="pc-btn" type="button" aria-label="Chat with PUD" aria-expanded="false" aria-controls="pcPanel">
+    <svg class="pc-i1" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
+    <svg class="pc-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <section class="pc-panel" id="pcPanel" role="dialog" aria-label="Send PUD a message" hidden>
+    <header class="pc-h"><img src="${R}assets/logo-mark.png" alt=""><div><b>PUD Consultants</b><span>We usually reply within 48 hours</span></div></header>
+    <div class="pc-body">
+      <div class="pc-msg">Hello 👋 How can we help? Leave your details and our team will get back to you.</div>
+      <form class="pc-form" novalidate>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="pc-hp" aria-hidden="true">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone <em>(optional)</em><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Topic<select name="topic"><option>New project</option><option>Strategic advisory</option><option>Partnership</option><option>Careers</option><option>Media</option><option>Other</option></select></label>
+        <label>Message<textarea name="message" rows="3" required></textarea></label>
+        <button class="pc-send" type="submit">Send message <svg viewBox="0 0 16 10" width="16" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"/></svg></button>
+        <p class="pc-note" aria-live="polite"></p>
+      </form>
+      <div class="pc-done" hidden><div class="pc-tick">✓</div><p></p><button type="button" class="pc-again">Send another message</button></div>
+    </div>
+  </section>`;
+  document.body.appendChild(w);
+  const q=s=>w.querySelector(s);const btn=q('.pc-btn'),panel=q('.pc-panel'),f=q('.pc-form'),note=q('.pc-note'),done=q('.pc-done');
+  const MAIL_TO='0da4bada9ef65bbe295f6ada2514de50',MAIL_CC='m.sawaf@risepersonal.com';
+  const THANKS='Thank you for contacting us. Our team will respond and get back to you within 48 hours.';
+  const okEmail=v=>/^\S+@\S+\.\S+$/.test(v.trim());
+  const failMsg=err=>/activ/i.test(err&&err.message||'')?'Almost ready: this form is waiting for a one-time activation by the site owner. Please try again shortly, or call +20 2 2414 7537.':'Sorry, your message could not be sent. Please try again or call +20 2 2414 7537.';
+  const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'—'));fd.append('Source','Website chat (pud-consultants-website) · '+location.href);
+    fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+' — '+(d.Name||''));fd.append('_cc',MAIL_CC);fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
+    const r=await fetch('https://formsubmit.co/ajax/'+MAIL_TO,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
+  const setOpen=o=>{w.classList.toggle('open',o);panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o&&done.hidden)setTimeout(()=>f.elements.name.focus(),60)};
+  btn.addEventListener('click',()=>setOpen(panel.hidden));
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setOpen(false)});
+  q('.pc-again').addEventListener('click',()=>{done.hidden=true;f.hidden=false;f.elements.name.focus()});
+  f.addEventListener('submit',async e=>{e.preventDefault();if(f._honey.value)return;const v=n=>f.elements[n].value.trim();
+    if(!v('name')||!okEmail(v('email'))||!v('message')){note.textContent='Please add your name, a valid email and a message.';return}
+    const sb=q('.pc-send');sb.disabled=true;note.textContent='Sending…';
+    try{await send({Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')});f.reset();note.textContent='';f.hidden=true;done.querySelector('p').textContent=THANKS;done.hidden=false}
+    catch(err){note.textContent=failMsg(err)}finally{sb.disabled=false}});
+})();
