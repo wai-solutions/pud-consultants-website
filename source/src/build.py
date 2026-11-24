@@ -219,6 +219,7 @@ ECO_SLUG = re.compile(r'(services|insights|destinations)/[^"]*(sustainab|environ
 ECO_WORDS = re.compile(r"\b(sustainab\w*|environmental|environment(?! and sustainability)|eco-?tourism|green infrastructure|low-carbon|climate[- ]resilien\w*|nature reserve)\b", re.I)
 _SKIP = re.compile(r'(<head>.*?</head>|<script\b.*?</script>|<style\b.*?</style>|<svg\b.*?</svg>|<[^>]+>)', re.S)
 def eco(path, html_):
+    return html_  # sustainability green styling removed (Nov 2026)
     if ECO_SLUG.search(path):
         html_ = html_.replace('<body class="', '<body class="eco-page ', 1)
     def mark(tag):
@@ -799,7 +800,7 @@ def sitemap(paths):
 
 # ---------- v7: About, Sustainability and the expert network ----------
 from copy4 import *
-SUS_IMG = {'khaybar-heritage-area-master-plan': 'assets/story/about-khaybar.jpg', 'kidana-al-khaif': 'assets/story/sus-kidana-al-khaif.jpg', 'sharaan-nature-reserve-master-plan': 'assets/story/sus-sharaan.jpg', 'north-coast-regional-vision-fuka-matrouh': 'assets/story/sus-nw-coast-regional-vision.jpg'}
+SUS_IMG = {'alula-strategic-framework-plan': 'assets/story/sus-alula-framework.jpg', 'khaybar-heritage-area-master-plan': 'assets/story/about-khaybar.jpg', 'kidana-al-khaif': 'assets/story/sus-kidana-al-khaif.jpg', 'sharaan-nature-reserve-master-plan': 'assets/story/sus-sharaan.jpg', 'north-coast-regional-vision-fuka-matrouh': 'assets/story/sus-nw-coast-regional-vision.jpg'}
 _WH = {}
 def wh(src):
     """width/height attributes for a local image, so the browser reserves space (no layout shift)."""
@@ -859,7 +860,11 @@ def sustainability_page():
                  '<a class="figure" href="projects/%s.html"><img src="%s" alt="%s" loading="lazy"%s><span class="mono">%s &rarr;</span></a></article>') % (' flip' if i % 2 else '', i + 1, E(th), E(h), E(t), slug, im, E(cap.replace(' · ', ', ')), wh(im), E(cap))
     sdg = ''.join('<li><span class="sdg-n">%d</span><b>%s</b><span class="un">%s</span><span class="pud"><em class="mono">PUD</em> %s</span></li>' % (n, E(g), E(u), E(p)) for n, g, u, p in SDGS)
     lens = ''.join('<li>%s</li>' % E(x) for x in SUS_LENS)
-    projs = ''.join(card(BYSLUG[s], R) for s in SUS_PROJECTS if s in BYSLUG)
+    def scard(slug):
+        p = BYSLUG[slug]; im = SUS_IMG.get(slug) or hero_img(slug)
+        if not im: return card(p, R)
+        return '<a class="pcard" href="projects/%s.html"><img src="%s" alt="%s, %s" loading="lazy"%s><span class="t"><b>%s</b><span>%s</span></span></a>' % (slug, im, E(p['name']), E(p.get('city') or p['country']), wh(im), E(p['name']), E(' · '.join(x for x in (p.get('city') or p['country'], str(p['year'])) if x)))
+    projs = ''.join(scard(s) for s in SUS_PROJECTS if s in BYSLUG)
     body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Sustainability</p><h1 class="h-xl" style="max-width:17ch">Sustainable commitments for a <em>vibrant urban future.</em></h1><p class="lede" style="max-width:52ch">%s</p></div></section>'
             '%s'
             '<section class="sec" style="padding-top:40px"><div class="wrap"><p class="kicker mono">Our commitment</p><p class="statement">Sustainability is at the core of everything we do.</p><div class="cols2" style="margin-top:26px">%s</div>'
@@ -879,7 +884,7 @@ def sustainability_page():
     wp = {'@context': 'https://schema.org', '@type': 'WebPage', 'url': BASE + '/sustainability.html', 'name': 'Sustainability commitments and SDGs', 'description': SUS_LEDE, 'about': [{'@id': BASE + '/#org'}, {'@type': 'Thing', 'name': 'Sustainable development'}] + [{'@type': 'Thing', 'name': 'SDG %d: %s' % (n, g)} for n, g, u, p in SDGS], 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
     return page('sustainability.html', 'Sustainability Commitments and UN SDGs | PUD Consultants', body,
                 'PUD Consultants\' sustainability commitments: people, society, culture, environment and planet, aligned with UN SDGs 7, 8, 9, 11, 12, 13 and 17.', 'sustainability.html',
-                schema=[wp, faq_ld(SUS_FAQ), crumbs([('Home', ''), ('Sustainability', 'sustainability.html')])], og_img=hi, body_cls='eco-page')
+                schema=[wp, faq_ld(SUS_FAQ), crumbs([('Home', ''), ('Sustainability', 'sustainability.html')])], og_img=hi)
 
 def network_sections():
     team = ''.join('<li><img src="%s" alt="%s" loading="lazy"%s><b>%s</b><span>%s</span><em class="mono">%s years of experience</em></li>' % (src, E(n), wh(src), E(n), E(r), y) for n, r, y, src in STAFF)
