@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Copy and sourced beats for the PUD 60-years site. Every beat comes from deliverables/pud-story/STORY-BIBLE-FINAL.md (public-YES rows)."""
 
-TAGLINE = "Creating spaces that interact with people."
+TAGLINE = "Shaping sustainable cities since 1966."
 H1 = "60 years of helping people live a better life."
 
 DECADES = [
@@ -83,10 +83,10 @@ OFFICES = [('Cairo, Sheikh Zayed','Polygon Building 8, Office 208, SODIC, Beverl
            ('Dubai, Palm Jumeirah','Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE','+971 509 29 8178')]
 
 STEPS = [
- ('01','It starts as a line on paper.','Every city we have planned began as a drawing, years before anyone moved in.'),
- ('02','The line becomes a street.','Then a block, a square, a neighbourhood. Scale changes, the care does not.'),
- ('03','Every detail changes a life on the ground.','A school within walking distance. A shaded street. A park where children play.'),
- ('04','So we plan for people first.','Spaces that interact with the people who use them. For sixty years.'),
+ ('01','Every legacy begins with a vision.','Every city we have planned began as a line on paper, years before anyone moved in.'),
+ ('02','The line becomes a street.','Then a block, a square, a neighbourhood. The scale changes; the care does not.'),
+ ('03','Every detail changes a life on the ground.','A school within walking distance. A shaded street. A square where communities gather.'),
+ ('04','Designed around people.','Planning that serves people, land and history. For sixty years, and the next sixty.'),
 ]
 
 FAV = {'tut-amon-village-hotel-and-resort','hilton-dahab-village-hotel','marina-el-alamein'}
@@ -97,15 +97,15 @@ OVERRIDE = {
 }
 
 SVC_CARD = {
- 'urban-and-regional-planning': 'Regional plans and city strategies that guide growth.',
- 'master-planning-and-urban-design': 'Districts, destinations and new cities, planned from the street up.',
- 'sustainable-tourism-planning': 'Coasts, resorts and heritage destinations that keep what visitors come for.',
- 'cultural-heritage-planning': 'New development that continues the story of a place.',
- 'architecture-and-interior-design': 'Hotels, campuses, offices and homes shaped by their setting.',
- 'landscape-planning-and-design': 'Parks, waterfronts and open spaces that people use.',
- 'environment-and-sustainability': 'Low-carbon, climate-resilient planning and green infrastructure.',
- 'infrastructure-and-mobility-planning': 'Streets, tunnels, drainage and rail planned with the city.',
- 'development-consultancy-and-strategic-advisory': 'Feasibility, steering committees and economics for large programmes.',
+ 'urban-and-regional-planning': 'Resilient regions and vibrant cities, aligned with national visions.',
+ 'master-planning-and-urban-design': 'Mixed-use destinations and smart districts, planned from the street up.',
+ 'sustainable-tourism-planning': 'Coastal and heritage destinations that keep what visitors come for.',
+ 'cultural-heritage-planning': 'Heritage as a living foundation, carried forward in every plan.',
+ 'architecture-and-interior-design': 'Context-driven architecture that fuses aesthetics, function and experience.',
+ 'landscape-planning-and-design': 'Parks, waterfronts and open spaces where communities gather.',
+ 'environment-and-sustainability': 'Working with nature, not against it: low-carbon, resilient planning.',
+ 'infrastructure-and-mobility-planning': 'Mobility and networks planned with the city, not through it.',
+ 'development-consultancy-and-strategic-advisory': 'Vision linked to feasibility, investment and delivery.',
 }
 MILESTONES = [
  dict(y=1966, t='PUD is founded in Cairo by Prof. Dr. Abdallah Attia.', view='egypt', hold=4200),

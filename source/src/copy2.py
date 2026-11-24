@@ -4,17 +4,17 @@ import content, seo
 
 # ---- decades (home timeline and 60-years page)
 def _set(i, **kw): content.DECADES[i].update(kw)
-_set(0, title='A professor opens a practice',
-     text='Prof. Dr. Abdallah Attia founds PUD in Cairo in 1966. A university commission and a bus terminal come first, then governorate plans and, by 1973, a competition win in Kuwait.')
-_set(1, title='The coast',
-     text='PUD plans tourism development along Egypt\'s North West Coast and designs Tut Amun on Lake Nasser. Marina El Alamein breaks ground in 1985.')
-_set(2, title='Marina El Alamein takes shape',
+_set(0, title='Every legacy begins with a vision',
+     text='Prof. Dr. Abdallah Attia founds PUD in Cairo in 1966, with a belief that planning should serve people, land and history. A university commission and a bus terminal come first, then governorate plans and, by 1973, a competition win in Kuwait.')
+_set(1, title='The coast takes shape',
+     text='PUD plans tourism development along Egypt\'s North West Coast and designs Tut Amun on Lake Nasser, Egypt\'s first tourist village. Marina El Alamein breaks ground in 1985.')
+_set(2, title='A landmark on the Mediterranean',
      text='Marina El Alamein grows through three phases and wins the State Encouragement Prize in Architecture in 1990. Amr Attia joins in 1991, the year Hilton Dahab is designed.')
-_set(3, title='A second generation',
+_set(3, title='The new chapter',
      text='Marina Matrouh, Latakia, Sheikh Zayed City and Historic Cairo. Amr Attia completes his PhD at UCL, serves on the technical committee of the Grand Egyptian Museum competition and becomes CEO in 2005.')
-_set(4, title='Cities, campuses and green design',
+_set(4, title='Global minds. One mission.',
      text='New cities and campuses in Iraq, Syria and Egypt, strategic plans for Tanta and Mansoura, then Jeddah and Taif with AECOM Arabia. A marine field station on the Red Sea and the Green Star Hotels programme with GIZ put sustainability into the portfolio.')
-_set(5, title='Destinations at national scale',
+_set(5, title='From city frameworks to the Holy Sites',
      text='PUD Saudi opens in Riyadh in 2018. The work reaches AlUla, Khaybar, Makkah, the Pyramids Plateau and the next phases of Egypt\'s New Administrative Capital.')
 # strip internal wording from beats
 for d in content.DECADES:
@@ -28,7 +28,7 @@ content.FOUNDER_FACTS[:] = [
  ('1987', 'Chairs the Urban Planning Department at Ain Shams University until 1992.'),
  ('1990', 'State Encouragement Prize in Architecture for Marina El Alamein.'),
 ]
-FOUNDER_LEAD = 'He planned much of Egypt\'s North West Coast, taught a generation of planners and architects, and founded the practice that turns sixty in 2026.'
+FOUNDER_LEAD = 'A visionary in shaping the urban fabric of the region. He founded PUD on the synergy between people and their natural and cultural environments, planned much of Egypt\'s North West Coast and taught a generation of planners and architects.'
 FOUNDER_BIO = ('Prof. Dr. Abdallah Attia trained in Alexandria and Zurich and founded PUD in Cairo in 1966 on one idea: planning and architecture should answer the place, not repeat a formula. '
                'He planned much of Egypt\'s North West Coast, led Marina El Alamein from master plan to site supervision, and designed Tut Amun on Lake Nasser and Hilton Dahab on the Gulf of Aqaba. '
                'Marina El Alamein won the State Encouragement Prize in Architecture in 1990. He taught as Professor of Architecture and chaired the Urban Planning Department at Ain Shams University.')
@@ -60,7 +60,7 @@ seo.FAQ[1] = ('Who is PUD Consultants?', 'PUD Consultants (Planning & Urban Deve
 seo.FAQ[4] = ('Who founded PUD and who leads it now?', 'Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University and an Eisenhower Fellow (2007).')
 
 # ---- Amr Attia highlights and page copy
-AMR_HEADLINE = 'He plans destinations from the Pyramids Plateau to Makkah, and teaches the planners who come next.'
+AMR_HEADLINE = 'A great leader builds beyond today. He carries PUD into its next chapter, from the Pyramids Plateau to Makkah, and teaches the planners who come next.'
 AMR_PARAS = [
  'Prof. Dr. Amr Attia leads PUD Consultants. He joined the practice in 1991, became CEO in 2005 and co-founded PUD Saudi in Riyadh in 2018. His work includes planning frameworks for Jeddah, AlUla, the holy sites of Makkah and Egypt\'s New Administrative Capital, and the Giza Pyramids tourism master plan, where he guided the local Egyptology and heritage experts working with WATG.',
  'He is Professor of Urban Planning at Ain Shams University and holds a PhD from UCL on tourism policy on Egypt\'s North West Coast. He was selected as an Eisenhower Fellow in 2007, spent 2011 to 2020 at AECOM Arabia, rising to Principal Director, and was Vice President at WATG from 2020 to 2023.',
