@@ -422,7 +422,7 @@ def home():
     hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Dr. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
         '<div class="wrap in"><p class="kicker mono" data-r>1966 to 2026 · 60 years · Cairo · Riyadh · Dubai</p>'
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h1>'
-        '<p class="lede" data-r="0.2">A multidisciplinary planning and design practice, shaping cities, destinations and sacred landscapes from Alex to Aswan, and across the region. The legacy continues; the future begins.</p>'
+        '<p class="lede" data-r="0.2">A multidisciplinary planning and design practice, shaping cities, destinations and sacred landscapes. The legacy continues; the future begins.</p>'
         '<div class="row" data-r="0.3"><a class="btn red" href="projects.html">Explore the work</a><a class="btn ghost" href="projects.html#atlas">Play the 60-year map</a></div>'
         '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>+%d</b><span class="mono">Countries</span></div>'
         '<div class="stat"><b>+%d</b><span class="mono">Projects</span></div><div class="stat"><b>5</b><span class="mono">Offices: Cairo, Riyadh, Dubai</span></div></div></div>'
