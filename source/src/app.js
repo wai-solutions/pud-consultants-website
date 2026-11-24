@@ -128,10 +128,14 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 (()=>{const sx=$('.svx');if(!sx)return;const rows=$$('.svx-list li',sx),figs=$$('.svx-frame figure',sx),frame=$('.svx-frame',sx),desk=matchMedia('(min-width:901px)');
   let act=0;const set=i=>{if(i===act)return;act=i;rows.forEach((r,k)=>r.classList.toggle('on',k===i));figs.forEach((f,k)=>f.classList.toggle('on',k===i))};
   rows.forEach((r,i)=>{r.addEventListener('mouseenter',()=>desk.matches&&set(i));r.querySelector('a').addEventListener('focus',()=>set(i))});
-  let rq=0;const onScroll=()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const mid=innerHeight*.5;let best=0,bd=1e9;
-    rows.forEach((r,i)=>{const b=r.getBoundingClientRect();const d=Math.abs(b.top+b.height/2-mid);if(d<bd){bd=d;best=i}
+  const list=$('.svx-list',sx);if(list)list.classList.add('scrolly');
+  let rq=0;const onScroll=()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const mid=innerHeight*(desk.matches?.5:.46);let best=0,bd=1e9;
+    rows.forEach((r,i)=>{const b=r.getBoundingClientRect();const c=b.top+b.height/2-mid,d=Math.abs(c);if(d<bd){bd=d;best=i}
+      // focus 1 at the reading line, fading to 0 about a third of a screen away; dir -1..1 drives the thumbnail drift
+      const f=Math.max(0,1-d/(innerHeight*.34));r.style.setProperty('--f',f.toFixed(3));r.style.setProperty('--dir',Math.max(-1,Math.min(1,c/(innerHeight*.5))).toFixed(3));
       if(!desk.matches&&b.top<innerHeight*.85&&b.bottom>0)r.classList.add('in-v')});
-    if(desk.matches)set(best);const b=sx.getBoundingClientRect();frame.style.setProperty('--sp',Math.max(0,Math.min(1,-b.top/(b.height-innerHeight))).toFixed(3))})};
+    const lb=list&&list.getBoundingClientRect();if(lb)list.style.setProperty('--lp',Math.max(0,Math.min(1,(mid-lb.top)/lb.height)).toFixed(3));
+    set(best);const b=sx.getBoundingClientRect();frame.style.setProperty('--sp',Math.max(0,Math.min(1,-b.top/(b.height-innerHeight))).toFixed(3))})};
   addEventListener('scroll',onScroll,{passive:true});onScroll();
   if(!reduce)frame.parentElement.addEventListener('mousemove',e=>{const b=frame.getBoundingClientRect();const x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;frame.style.transform='rotateY('+(x*6).toFixed(2)+'deg) rotateX('+(-y*5).toFixed(2)+'deg)'});
   frame.parentElement.addEventListener('mouseleave',()=>{frame.style.transform=''});
