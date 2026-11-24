@@ -317,7 +317,7 @@ def services_immersive():
             '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
 
-STORY = [('makkah-1-vision', 'The Makkah Township vision master plan, drawn across the valley'),
+STORY = [('cmc-1-vision', 'Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon'),
          ('makkah-2-street', 'A residential street in Makkah Township'),
          ('makkah-3-detail', 'A children\'s play area in a Makkah Township neighbourhood'),
          ('makkah-4-people', 'Wadi Park, Makkah Township, with families walking toward the mosque')]

@@ -978,3 +978,5 @@ footer.f3 .f3-g>div:not(.f3-brand) a:hover{color:#ffffff}
 footer.f3 .fine{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:var(--mute);font-size:12.5px}
 @media(max-width:1100px){.f3-g{grid-template-columns:1fr 1fr 1fr}.f3-brand{grid-column:1/-1}}
 @media(max-width:600px){.f3-g{grid-template-columns:1fr 1fr;gap:26px 20px}.f3-sv{grid-column:1/-1}footer.f3{padding-bottom:96px}}
+.depth .shot[data-i="0"] img{object-position:50% 50%}
+.depth .shot[data-i="0"] img{object-position:50% 12%;transform-origin:50% 40%}@media(max-width:800px){.depth .shot[data-i="0"] img{object-position:42% 30%}}
