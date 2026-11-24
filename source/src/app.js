@@ -5,6 +5,14 @@ const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelecto
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.documentElement.classList.remove('no-js');
 
+// deferred images: load only when they come near the screen (also sideways in rails and marquees)
+(()=>{const go=im=>{if(!im.dataset.src)return;if(im.dataset.srcset){im.srcset=im.dataset.srcset;im.removeAttribute('data-srcset')}im.src=im.dataset.src;im.removeAttribute('data-src')};
+  if(!('IntersectionObserver' in window)){document.querySelectorAll('img[data-src]').forEach(go);return}
+  const W='figure,a,button,.shot,.dz-bg,.ap,li,.t',seen=new WeakSet();
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);e.target.querySelectorAll?(e.target.matches('img')?go(e.target):e.target.querySelectorAll('img[data-src]').forEach(go)):0}}),{rootMargin:'700px 100% 700px 100%'});
+  const scan=root=>{(root.matches&&root.matches('img[data-src]')?[root]:[...(root.querySelectorAll?root.querySelectorAll('img[data-src]'):[])]).forEach(im=>{const w=im.closest(W)||im;if(!seen.has(w)){seen.add(w);io.observe(w)}})};
+  scan(document);new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>n.nodeType===1&&scan(n)))).observe(document.body,{childList:true,subtree:true});})();
+
 const nav=$('.nav');const onS=()=>nav.classList.toggle('solid',scrollY>40);onS();addEventListener('scroll',onS,{passive:true});
 $('.burger')?.addEventListener('click',()=>{nav.classList.toggle('open');$('.burger').setAttribute('aria-expanded',nav.classList.contains('open'))});
 $$('.nav li a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));

@@ -421,7 +421,7 @@ def legacy_section():
 
 def home():
     strip = [p for p in PART if has_logo(p)]
-    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" height="40" fetchpriority="low"></span>' % (p['logo'], E(p['name'])) for p in strip)
+    tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" height="40" fetchpriority="low"%s></span>' % (p['logo'], E(p['name']), '' if i < 14 else ' loading="lazy"') for i, p in enumerate(strip))
     hero_html = ('<section class="hero" id="top"><img class="poster" fetchpriority="high" src="assets/founder/hero.jpg" alt="Prof. Dr. Abdallah Attia drawing a plan, then Marina El Alamein and the Pyramids"><video autoplay muted loop playsinline preload="auto" poster="assets/founder/hero.jpg" aria-hidden="true"><source src="assets/founder/hero-m.mp4" type="video/mp4" media="(max-width:700px)"><source src="assets/founder/hero.mp4" type="video/mp4"></video>'
         '<div class="wrap in"><p class="kicker mono" data-r>1966 to 2026 · 60 years · Cairo · Riyadh · Dubai</p>'
         '<h1 class="h-xl hero-h" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h1>'
@@ -1004,6 +1004,15 @@ def postprocess():
             if os.path.isfile(f) and os.path.relpath(f, SITE) not in text:
                 os.remove(f); removed += 1
     print('removed unreferenced files:', removed)
+    # 2b. home page: below-the-fold images wait until they are near the screen (app.js loads them)
+    hp = SITE + '/index.html'; t = open(hp, encoding='utf-8').read()
+    def _defer(m):
+        tag = m.group(0)
+        if 'data-src=' in tag or 'fetchpriority="high"' in tag: return tag
+        tag = re.sub(r'\ssrcset="', ' data-srcset="', tag)
+        return re.sub(r'\ssrc="', ' data-src="', tag, count=1)
+    t2 = re.sub(r'<img [^>]*loading="lazy"[^>]*>', _defer, t)
+    open(hp, 'w', encoding='utf-8').write(t2)
     # 3. prod hosting files
     if MODE == 'prod':
         # GitHub Pages has no server redirects: old Wix addresses and short aliases get a small page that forwards
