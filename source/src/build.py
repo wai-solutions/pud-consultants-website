@@ -285,6 +285,124 @@ def founder_block(reel_first=True):
     tabs = ''.join('<button aria-pressed="%s" data-src="assets/founder/%s.mp4" data-poster="assets/founder/%s.jpg">%s</button>' % ('true' if i == 0 else 'false', k, k, lab) for i, (k, lab) in enumerate([('draw', 'Drawing'), ('point', 'The plan'), ('stand', 'The city model'), ('award', 'Recognition')]))
     return '<div class="reel" data-r><video muted loop playsinline preload="metadata" src="assets/founder/draw.mp4" poster="assets/founder/draw.jpg" aria-label="Illustrative recreation of Prof. Dr. Abdallah Attia at work"></video><div class="tabs">%s</div></div>' % tabs
 
+# ---------- immersive home sections (v6) ----------
+SVC_MEDIA = {
+ 'urban-and-regional-planning': ('assets/p/new-capital/01.jpg', 'new-administrative-capital-phases-2-4', 'New Administrative Capital, Phases 2 to 4'),
+ 'master-planning-and-urban-design': ('assets/stills/sumoublvd-egypt.jpg', 'somou-boulevard-new-cairo', 'Sumou Boulevard, New Cairo'),
+ 'sustainable-tourism-planning': ('assets/stills/marina-al-alamein-egypt.jpg', 'marina-el-alamein', 'Marina El Alamein, North Coast'),
+ 'cultural-heritage-planning': ('assets/stills/pyramids-plateau-egypt.jpg', 'pyramids-plateau-destination-master-plan', 'Pyramids Plateau Destination, Giza'),
+ 'architecture-and-interior-design': ('assets/stills/fawaz-al-hokair-estate-ksa.jpg', 'fawaz-alhokair-estate-riyadh', 'Fawaz Alhokair Estate, Riyadh'),
+ 'landscape-planning-and-design': ('assets/stills/jabal-thabeer-ksa.jpg', 'jabal-thabeer-park', 'Jabal Thabeer Park, Mina, Makkah'),
+ 'environment-and-sustainability': ('assets/stills/al-alamein-reveira-egypt.jpg', 'alamein-riviera-vision-master-plan', 'Alamein Riviera, North Coast'),
+ 'infrastructure-and-mobility-planning': ('assets/stills/al-ula-county-infrastructure.jpg', 'alula-county-infrastructure-master-plan', 'AlUla County Infrastructure Master Plan'),
+ 'development-consultancy-and-strategic-advisory': ('assets/stills/al-mashaaer-al-mugaddassah-ksa.jpg', 'al-mashaaer-al-mugaddassah-master-plan', 'Al Mashaaer Al Mugaddassah, Makkah'),
+}
+
+def services_immersive():
+    media, rows = '', ''
+    for i, s in enumerate(SERVICES):
+        img, slug, cap = SVC_MEDIA.get(s['slug'], ('assets/stills/cairo-media-city-egypt.jpg', '', ''))
+        media += '<figure data-i="%d"%s><img src="%s" alt="%s" loading="lazy"><figcaption class="mono">%s</figcaption></figure>' % (i, ' class="on"' if i == 0 else '', img, E(cap), E(cap))
+        rows += ('<li data-i="%d"%s><a href="services/%s.html"><img class="mbg" src="%s" alt="" loading="lazy"><span class="n mono">%02d</span><b>%s</b><span class="d">%s</span><i aria-hidden="true">&rarr;</i></a></li>'
+                 % (i, ' class="on"' if i == 0 else '', s['slug'], img, i + 1, E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))))
+    return ('<section class="svx" id="expertise"><div class="wrap svx-head"><div><p class="kicker mono" data-r>Our expertise</p><h2 class="h-l" data-r="0.1">Every place has <em>its own rhythm.</em></h2></div>'
+            '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
+            '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
+
+def depth_story():
+    frames = ['assets/seq/cmc/%02d.webp' % k for k in range(1, 50)]
+    frames_m = ['assets/seq/cmc-m/%02d.webp' % k for k in range(1, 50)]
+    steps = ''.join('<div class="step"><span class="n mono">%s</span><h2>%s</h2><p>%s</p></div>' % (a, E(b), E(c)) for a, b, c in STEPS)
+    return ('<section class="stage depth" aria-label="Into a PUD plan: Cairo Media City, Giza" data-frames="%s" data-frames-m="%s"><div class="pin">'
+            '<div class="cam"><img class="poster" src="assets/stills/cairo-media-city-egypt.jpg" alt="Cairo Media City vision concept master plan at night, with the Pyramids of Giza on the horizon" loading="lazy"><canvas aria-hidden="true"></canvas></div>'
+            '<div class="vig"></div><div class="steps">%s</div>'
+            '<a class="projtag" href="projects/cairo-media-city.html"><span class="mono">The project</span><b>Cairo Media City</b><small>Vision concept master plan · Giza, Egypt</small><i aria-hidden="true">&rarr;</i></a>'
+            '<div class="bar" aria-hidden="true"><i></i></div><p class="hint mono">Scroll</p></div></section>') % (','.join(frames), ','.join(frames_m), steps)
+
+APPROACH = [
+ ('Listen', 'Every project starts by listening: to the land, its history and the people who will live, work, pray and visit there.', 'assets/people/giza-framework-1.jpg'),
+ ('Curate', 'Then we curate the best-fit minds (planners, architects, economists and global experts) around one shared mission.', 'assets/people/giza-decision-framework.jpg'),
+ ('Shape', 'We decode land and cultural narratives into plans that tell a story, honour the place and stay ready for the future.', 'assets/stills/azha-ras-al-hekma-egypt.jpg'),
+ ('Deliver', 'From visionary master planning to precise execution, transferring knowledge and building capabilities along the way.', 'assets/stills/jorhum-ksa.jpg'),
+]
+def approach_section():
+    panels = ''.join('<button class="ap%s" type="button" aria-expanded="%s"><img src="%s" alt="" loading="lazy"><span class="n mono">%02d</span><b>%s</b><span class="t">%s</span></button>'
+                     % (' on' if i == 0 else '', 'true' if i == 0 else 'false', img, i + 1, E(h), E(t)) for i, (h, t, img) in enumerate(APPROACH))
+    return ('<section class="sec approach"><div class="wrap"><div class="grid2"><div><p class="kicker mono" data-r>Our approach</p><h2 class="h-l" data-r="0.1">We don\'t believe in <em>one-size-fits-all.</em></h2></div>'
+            '<p class="p-l" data-r="0.2">Every place has its own rhythm, and every challenge its own context. So each project brings together its own team, its own questions and its own answers, around a shared mission.</p></div>'
+            '<div class="aps" data-r="0.2">%s</div></div></section>') % panels
+
+DEC_BG = {'1966': ('assets/founder/draw.jpg', 'Prof. Dr. Abdallah Attia at work. Illustrative recreation.'),
+          '1976': ('assets/stills/tut-amoun-village-2.jpg', 'Tut Amun Village, Lake Nasser, Aswan'),
+          '1986': ('assets/stills/marina-al-alamein-egypt.jpg', 'Marina El Alamein, North Coast'),
+          '1996': ('assets/p/al-madinah-hotels/01.jpg', 'Hotels and residential complexes, Al Madinah, 1998'),
+          '2006': ('assets/p/maria-heights/01.jpg', 'Maria Heights Tourist Complex, Homs, 2008'),
+          '2016': ('assets/stills/pyramids-plateau-egypt.jpg', 'Pyramids Plateau Destination, Giza')}
+def decades_section():
+    bgs, panels, rail = '', '', ''
+    for i, d in enumerate(DECADES):
+        img, cap = DEC_BG.get(d['yr'], ('assets/stills/cairo-media-city-egypt.jpg', ''))
+        on = ' on' if i == 0 else ''
+        bgs += '<figure class="dz-bg%s" data-i="%d"><img src="%s" alt="" loading="lazy"><figcaption class="mono">%s</figcaption></figure>' % (on, i, img, E(cap))
+        th = ''.join('<a href="projects/%s.html"><img src="%s" alt="" loading="lazy"><span>%s</span></a>' % (p['slug'], thumb(p['slug']), E(p['name'])) for p in decade_projects(d))
+        bl = ''.join('<li><b>%s</b>%s</li>' % (a, E(t)) for a, t in d['beats'][:3])
+        panels += ('<article class="dz-p%s" data-i="%d"><p class="mono dz-range">%s to %s</p><h3>%s</h3><p class="dz-t">%s</p><ul>%s</ul><div class="th">%s</div></article>'
+                   % (on, i, d['yr'], d['to'], E(d['title']), E(d['text']), bl, th))
+        rail += '<button type="button" data-i="%d"%s><span>%s</span></button>' % (i, ' aria-current="true"' if i == 0 else '', d['yr'])
+    return ('<section class="decades" id="story" style="--n:%d"><div class="dz-pin">%s<div class="dz-shade"></div>'
+            '<div class="wrap dz-head"><p class="kicker mono">The journey</p><h2 class="h-l">Six decades. <em>One legacy.</em></h2></div>'
+            '<div class="dz-year" aria-hidden="true"><span>%s</span></div><div class="wrap dz-panels">%s</div>'
+            '<nav class="dz-rail" aria-label="Decades">%s<i class="dz-fill"></i></nav>'
+            '<a class="dz-more btn ghost" href="60-years.html">Read the full story</a></div></section>') % (
+                len(DECADES), bgs, DECADES[0]['yr'], panels, rail)
+
+FOUNDER_PROSE = [
+ 'Prof. Dr. Abdallah Attia trained as an architect in Alexandria and completed his doctorate in architecture and planning at ETH Zurich, then founded PUD in Cairo in 1966 on a conviction that still guides the practice: planning and architecture should answer the place, never repeat a formula.',
+ 'His work gave shape to Egypt\'s North West Coast. He led Marina El Alamein from master plan to site supervision, recognised with the State Encouragement Prize in Architecture in 1990, and designed Tut Amun on Lake Nasser and Hilton Dahab on the Gulf of Aqaba. As Professor of Architecture and head of the Urban Planning Department at Ain Shams University, he shaped a generation of the region\'s planners and architects.',
+]
+AMR_PROSE = [
+ 'Prof. Dr. Amr Attia joined PUD in 1991 and has led it as CEO since 2005, carrying his father\'s vision into a new chapter of regional scale and international collaboration. In 2018 he co-founded PUD Saudi in Riyadh.',
+ 'His work spans planning frameworks for Jeddah, AlUla and the Holy Sites of Makkah, the next phases of Egypt\'s New Administrative Capital and the Giza Pyramids destination plan. Professor of Urban Planning at Ain Shams University, a UCL doctorate and an Eisenhower Fellow, he has held senior roles at AECOM Arabia and WATG, and chairs the board of SHARE Egypt 2026.',
+]
+def founder_section():
+    paras = ''.join('<p class="prose" data-r="0.2">%s</p>' % E(p) for p in FOUNDER_PROSE)
+    return ('<section class="sec founder" id="founder"><div class="wrap"><div class="grid2">%s'
+            '<div><p class="kicker mono" data-r>The founder · 1966</p><h2 class="h-l" data-r="0.1">Prof. Dr. Abdallah <em>Attia</em></h2><p class="pull" data-r="0.15">Every legacy begins with a vision.</p>%s'
+            '<p class="note">The footage here is an illustrative recreation made for the 60-year celebration. It is not archive film.</p><p style="margin-top:22px"><a class="btn ghost" href="people.html">Read his story</a></p></div></div></div></section>') % (founder_block(), paras)
+
+def leader_section():
+    paras = ''.join('<p class="prose" data-r="0.2">%s</p>' % E(p) for p in AMR_PROSE)
+    return ('<section class="sec amrcard"><div class="wrap"><div class="grid2 amrg"><div data-r data-px="-0.06">%s</div><div><p class="kicker" data-r>The new chapter</p><h2 class="h-l" data-r="0.1">Prof. Dr. Amr <em>Attia</em></h2>'
+            '<p class="pull" data-r="0.15">A great leader builds beyond today.</p>%s<p style="margin-top:26px" data-r="0.3"><a class="btn red" href="amr-attia.html">Read his profile</a></p></div></div></div></section>') % (amr_photo(), paras)
+
+VALUES = [('Integrity', 'An ethical approach behind every relationship and every decision.'), ('Sustainability', 'Environmental, social and cultural harmony in every project.'),
+          ('Innovation', 'Creativity and new tools for future-ready places.'), ('Excellence', 'The highest standards of quality and safety.')]
+def culture_section():
+    words = 'We don\'t just gather experts. We orchestrate brilliance.'.split(' ')
+    q = ' '.join('<span>%s</span>' % E(w) for w in words)
+    vals = ''.join('<li><b>%s</b><span>%s</span></li>' % (E(a), E(b)) for a, b in VALUES)
+    return ('<section class="sec culture"><div class="wrap"><p class="kicker mono" data-r>Our culture</p><blockquote class="cq"><p>%s</p><footer class="mono">Prof. Dr. Amr Attia, CEO</footer></blockquote>'
+            '<p class="trio mono" data-r>Leadership · Harmony · Clarity</p><ul class="vals" data-r="0.1">%s</ul><p style="margin-top:34px"><a class="btn ghost" href="people.html">Meet our people</a></p></div></section>') % (q, vals)
+
+SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade, walkability and public space.'),
+           ('Society', 'Inclusive, affordable and connected neighbourhoods that give every generation a place to belong.'),
+           ('Culture', 'Heritage as a living foundation, so new development deepens a place\'s character.'),
+           ('Environment', 'Working with nature, not against it: responsible land use and green building standards.'),
+           ('Planet', 'Resilient regions for a changing climate, planned for compact, low-carbon growth.')]
+def sustain_section():
+    items = ''.join('<li data-r="%.2f"><span class="n mono">%02d</span><b>%s</b><span>%s</span></li>' % (0.05 * i, i + 1, E(a), E(b)) for i, (a, b) in enumerate(SUSTAIN))
+    return ('<section class="sustain"><div class="sbg" data-px="0.18"><img src="assets/p/heliopark/01.jpg" alt="" loading="lazy"></div><div class="wrap">'
+            '<p class="kicker mono" data-r>Sustainability and responsibility</p><h2 class="h-l" data-r="0.1">Designing with purpose. <em>Building for tomorrow.</em></h2>'
+            '<p class="p-l lead" data-r="0.15">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards.</p>'
+            '<ol class="five">%s</ol><p style="margin-top:30px"><a class="btn ghost" href="services/environment-and-sustainability.html">Our commitment</a></p><p class="scap mono">Heliopark, New Cairo</p></div></section>') % items
+
+def legacy_section():
+    return ('<section class="legacy"><div class="big" aria-hidden="true" data-px="0.25">60</div><div class="wrap">'
+            '<p class="kicker mono" data-r>1966 to 2026 · The legacy continues</p><h2 class="h-xl" data-r="0.1">60 years of shaping <em>sustainable cities.</em></h2>'
+            '<p class="tri" data-r="0.2"><span>Vision.</span> <span>Experience.</span> <span>Building for a better future.</span></p>'
+            '<p class="row" data-r="0.3"><a class="btn red" href="contact.html">Talk to us</a> <a class="btn ghost" href="60-years.html">Read the story</a></p></div></section>')
+
+
 def home():
     strip = [p for p in PART if has_logo(p)]
     tiles = ''.join('<span class="t"><img src="%s" alt="%s logo" loading="lazy"></span>' % (p['logo'], E(p['name'])) for p in strip)
@@ -320,9 +438,9 @@ def home():
     nac = BYSLUG.get('new-administrative-capital-phases-2-4')
     if nac and nac not in feat and thumb(nac['slug']): feat.insert(1, nac)  # Egypt's New Administrative Capital, always in Selected work
     bento = ''.join(card(p, '', tag=p['cat1'], cls='b%d' % (i + 1)) for i, p in enumerate(feat))
-    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">Breadth, <em>with depth.</em></h2><p class="p-l" style="margin:18px 0 8px;max-width:58ch" data-r="0.15">From regional visions to city-making, from coastal destinations to the Holy Sites.</p><div class="bento">%s</div></div></section>') % bento if bento else ''
+    featsec = ('<section class="sec" style="background:var(--ink)"><div class="wrap"><p class="kicker mono" data-r>Selected work</p><h2 class="h-l" data-r="0.1">From regional visions to city-making&hellip; <em>to the Holy Sites.</em></h2><div class="bento">%s</div></div></section>') % bento if bento else ''
     cn_cards = ''.join('<a href="countries/%s.html"><b>%s</b><span>%d projects</span></a>' % (cslug(c), E(c), len(ps)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))[:6])
-    teaser = ('<section class="sec mapteaser"><div class="wrap grid2"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">From Alex to Aswan. <em>Then across the Red Sea.</em></h2><p class="p-l" style="margin:18px 0 26px" data-r="0.2">From the Mediterranean to the Nile Valley, from Jeddah to the Holy Sites, and on to Kuwait, Iraq, Syria and Cameroon. Watch the practice spread from Cairo; every pin opens a project with its client, partners and facts.</p><p data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div>'
+    teaser = ('<section class="sec mapteaser"><div class="wrap grid2"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">From Egypt <em>to global destinations.</em></h2><p class="p-l" style="margin:18px 0 26px" data-r="0.2">From Alex to Aswan along the Mediterranean, the Red Sea and the Nile, across the Red Sea to Jeddah, AlUla and the Holy Sites, and on to Kuwait, Iraq, Syria, the UAE and Cameroon. Watch the practice spread from Cairo; every pin opens a project with its client, partners and facts.</p><p data-r="0.3"><a class="btn red" href="projects.html">Open the map</a></p></div>'
               '<a class="mapimg" href="projects.html" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Glowing map of the Middle East with PUD project locations" loading="lazy"></a></div>'
               '<div class="wrap"><div class="cnrow">%s</div></div></section>') % cn_cards
     pl = ''.join('<a href="partners.html"><img src="%s" alt="%s logo" loading="lazy"></a>' % (p['logo'], E(p['name'])) for p in strip[:18])
@@ -332,7 +450,7 @@ def home():
         '<p style="margin-top:8px" data-r="0.3"><a class="btn red" href="amr-attia.html">Read his profile</a></p></div></div>'
         '<h3 class="h-m" style="margin-top:56px" data-r>Selected work</h3><div class="pgrid amrwork" data-r="0.1">%s</div></div></section>') % (amr_photo(), E(AMR_HEADLINE), stat_tiles(AMR_TILES), amr_work('', 3))
     film = ''
-    body = welcome_strip() + hero_html + marq + featsec + intro + stage + tl + founder + amr_card + teaser + partners + cta('', 'Talk to us', 'Every place has a story. Let\'s shape its next chapter.') + fq + chapter(0) + film
+    body = welcome_strip() + hero_html + marq + featsec + services_immersive() + depth_story() + approach_section() + decades_section() + founder_section() + leader_section() + culture_section() + teaser + sustain_section() + partners + legacy_section() + fq + chapter(0) + film
     return page('index.html', 'PUD Consultants | Urban Planning & Master Planning since 1966', body,
                 'PUD Consultants plans cities, destinations and campuses. Founded in Cairo in 1966, with work across the region. Offices in Cairo, Riyadh and Dubai.', 'index.html',
                 schema=[dict(ORG, **{'@context': 'https://schema.org'}), WEB, faq_ld(FAQ[:5])])

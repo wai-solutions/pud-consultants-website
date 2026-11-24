@@ -22,14 +22,27 @@ if(!GL)document.documentElement.classList.add('nowebgl');
 const hv=$('.hero video');
 if(hv){if(reduce){hv.pause();hv.removeAttribute('autoplay')}else{new IntersectionObserver(es=>{es[0].isIntersecting?hv.play().catch(()=>{}):hv.pause()}).observe(hv)}}
 
-const stage=$('.stage');
-if(stage&&GL){
-  const st={p:0};const steps=$$('.step',stage);const bar=$('.bar i',stage);
-  import('./paper.js').then(m=>m.paperScene($('canvas',stage),st));
-  ScrollTrigger.create({trigger:stage,start:'top top',end:'bottom bottom',scrub:true,onUpdate:s=>{st.p=s.progress;bar.style.height=(s.progress*100)+'%';stage.querySelector('.pin').style.setProperty('--end',Math.max(0,Math.min(1,(s.progress-.88)/.12)));
-    const idx=Math.min(steps.length-1,Math.floor(s.progress*steps.length*.999));steps.forEach((el,i)=>el.classList.toggle('on',i===idx))}});
-  steps[0].classList.add('on');
-}else if(stage){$$('.step',stage).forEach(e=>e.classList.add('on'))}
+const stage=$('.stage.depth');
+if(stage&&!reduce){
+  const steps=$$('.step',stage),bar=$('.bar i',stage),pin=$('.pin',stage),cam=$('.cam',stage),cv=$('canvas',stage),ctx=cv.getContext('2d');
+  const small=matchMedia('(max-width:800px)').matches;const list=(small?stage.dataset.framesM:stage.dataset.frames).split(',');
+  const imgs=new Array(list.length);let loaded=0,cur=-1,want=0;
+  const size=()=>{const d=Math.min(devicePixelRatio||1,2);cv.width=cv.clientWidth*d;cv.height=cv.clientHeight*d;cur=-1;draw()};
+  function nearest(k){for(let o=0;o<list.length;o++){if(imgs[k-o]&&imgs[k-o].complete&&imgs[k-o].naturalWidth)return imgs[k-o];if(imgs[k+o]&&imgs[k+o].complete&&imgs[k+o].naturalWidth)return imgs[k+o]}return null}
+  function draw(){const im=nearest(want);if(!im||!cv.width)return;const k=want;if(k===cur)return;cur=k;
+    const cw=cv.width,ch=cv.height,r=Math.max(cw/im.naturalWidth,ch/im.naturalHeight),w=im.naturalWidth*r,h=im.naturalHeight*r;ctx.drawImage(im,(cw-w)/2,(ch-h)/2,w,h)}
+  let started=false;const load=()=>{if(started)return;started=true;
+    const order=[0,list.length-1,...[...Array(list.length).keys()].filter(k=>k&&k<list.length-1)];
+    order.forEach(k=>{const im=new Image();im.decoding='async';im.onload=()=>{loaded++;if(k===0||loaded>3){stage.classList.add('ready');size()}cur=-1;draw()};im.src=list[k];imgs[k]=im})};
+  new IntersectionObserver(es=>{if(es[0].isIntersecting)load()},{rootMargin:'120% 0px'}).observe(stage);
+  addEventListener('resize',size);
+  ScrollTrigger.create({trigger:stage,start:'top top',end:'bottom bottom',scrub:true,onUpdate:s=>{const p=s.progress;bar.style.height=(p*100)+'%';
+    pin.style.setProperty('--end',Math.max(0,Math.min(1,(p-.84)/.12)));
+    want=Math.min(list.length-1,Math.round(p*(list.length-1)));draw();
+    const e=p*p*(3-2*p);cam.style.setProperty('--z',(1+e*.9).toFixed(4));
+    const idx=Math.min(steps.length-1,Math.floor(p*steps.length*.999));steps.forEach((el,i)=>el.classList.toggle('on',i===idx&&p<.86))}});
+  cam.style.setProperty('--fx','55%');cam.style.setProperty('--fy','38%');steps[0].classList.add('on');
+}else if(stage){stage.classList.add('static');$$('.step',stage).forEach(e=>e.classList.add('on'))}
 
 const tlo=$('.tl-outer');
 if(tlo){
@@ -117,3 +130,44 @@ addEventListener('load',()=>ScrollTrigger.refresh());
  lb.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...lb.querySelectorAll('button')];const i=f.indexOf(document.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()});})();
 
 (()=>{const w=document.querySelector('.welcome'),nav=document.querySelector('.nav');if(!w||!nav)return;const set=()=>{nav.style.top=Math.max(0,w.offsetHeight-scrollY)+'px'};set();addEventListener('scroll',set,{passive:true});addEventListener('resize',set)})();
+
+/* ===== v6 immersive home ===== */
+// services: active row follows scroll and hover; image frame tilts with the mouse
+(()=>{const sx=$('.svx');if(!sx)return;const rows=$$('.svx-list li',sx),figs=$$('.svx-frame figure',sx),frame=$('.svx-frame',sx),desk=matchMedia('(min-width:901px)');
+  let act=0;const set=i=>{if(i===act)return;act=i;rows.forEach((r,k)=>r.classList.toggle('on',k===i));figs.forEach((f,k)=>f.classList.toggle('on',k===i))};
+  rows.forEach((r,i)=>{r.addEventListener('mouseenter',()=>desk.matches&&set(i));r.querySelector('a').addEventListener('focus',()=>set(i))});
+  let rq=0;const onScroll=()=>{if(rq)return;rq=requestAnimationFrame(()=>{rq=0;const mid=innerHeight*.5;let best=0,bd=1e9;
+    rows.forEach((r,i)=>{const b=r.getBoundingClientRect();const d=Math.abs(b.top+b.height/2-mid);if(d<bd){bd=d;best=i}
+      if(!desk.matches&&b.top<innerHeight*.85&&b.bottom>0)r.classList.add('in-v')});
+    if(desk.matches)set(best);const b=sx.getBoundingClientRect();frame.style.setProperty('--sp',Math.max(0,Math.min(1,-b.top/(b.height-innerHeight))).toFixed(3))})};
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  if(!reduce)frame.parentElement.addEventListener('mousemove',e=>{const b=frame.getBoundingClientRect();const x=(e.clientX-b.left)/b.width-.5,y=(e.clientY-b.top)/b.height-.5;frame.style.transform='rotateY('+(x*6).toFixed(2)+'deg) rotateX('+(-y*5).toFixed(2)+'deg)'});
+  frame.parentElement.addEventListener('mouseleave',()=>{frame.style.transform=''});
+  // the media column is aria-hidden; keep it pointer-active for the tilt
+  frame.parentElement.style.pointerEvents='auto';})();
+
+// approach: expanding panels
+(()=>{const ps=$$('.aps .ap');if(!ps.length)return;const set=b=>ps.forEach(p=>{const on=p===b;p.classList.toggle('on',on);p.setAttribute('aria-expanded',on)});
+  ps.forEach(p=>{p.addEventListener('click',()=>set(p));p.addEventListener('mouseenter',()=>matchMedia('(min-width:901px)').matches&&set(p));p.addEventListener('focus',()=>set(p))})})();
+
+// six decades: pinned, scroll-driven chapters with parallax, rail navigation and mouse drift
+(()=>{const dz=$('.decades');if(!dz)return;const n=+getComputedStyle(dz).getPropertyValue('--n')||6;
+  if(reduce){dz.classList.add('static');return}
+  const bgs=$$('.dz-bg',dz),ps=$$('.dz-p',dz),btns=$$('.dz-rail button',dz),yr=$('.dz-year span',dz),pin=$('.dz-pin',dz),rail=$('.dz-rail',dz);let act=-1;
+  const go=i=>{if(i===act)return;act=i;bgs.forEach((b,k)=>b.classList.toggle('on',k===i));ps.forEach((p,k)=>p.classList.toggle('on',k===i));
+    btns.forEach((b,k)=>k===i?b.setAttribute('aria-current','true'):b.removeAttribute('aria-current'));yr.textContent=btns[i].textContent.trim()};
+  let rq=0;const upd=()=>{rq=0;const b=dz.getBoundingClientRect(),total=dz.offsetHeight-innerHeight;const p=Math.max(0,Math.min(.9999,-b.top/total));
+    const f=p*n,i=Math.floor(f),lp=f-i;go(i);pin.style.setProperty('--lp',lp.toFixed(3));rail.style.setProperty('--gp',p.toFixed(4))};
+  addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd();
+  btns.forEach((b,i)=>b.addEventListener('click',()=>{const top=dz.getBoundingClientRect().top+scrollY;const total=dz.offsetHeight-innerHeight;scrollTo({top:top+total*(i+.15)/n,behavior:'smooth'})}));
+  pin.addEventListener('mousemove',e=>{pin.style.setProperty('--mx',(e.clientX/innerWidth-.5).toFixed(3));pin.style.setProperty('--my',(e.clientY/innerHeight-.5).toFixed(3))});})();
+
+// culture: the quote lights up word by word as it scrolls into view
+(()=>{const ws=$$('.cq p span');if(!ws.length)return;if(reduce){ws.forEach(w=>w.classList.add('lit'));return}
+  const q=$('.cq');let rq=0;const upd=()=>{rq=0;const b=q.getBoundingClientRect();const p=Math.max(0,Math.min(1,(innerHeight*.85-b.top)/(innerHeight*.6)));const k=Math.round(p*ws.length);ws.forEach((w,i)=>w.classList.toggle('lit',i<k))};
+  addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});upd()})();
+
+// generic parallax: data-px is the speed relative to scroll
+(()=>{const els=$$('[data-px]');if(!els.length||reduce)return;let rq=0;
+  const upd=()=>{rq=0;const h=innerHeight;els.forEach(el=>{const b=el.parentElement.getBoundingClientRect();if(b.bottom<-200||b.top>h+200)return;const c=b.top+b.height/2-h/2;el.style.translate='0 '+(c*-parseFloat(el.dataset.px)).toFixed(1)+'px'})};
+  addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()})();
