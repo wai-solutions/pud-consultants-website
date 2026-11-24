@@ -509,8 +509,8 @@ footer a{padding:7px 0;display:inline-block}
 @media(max-width:1180px){.nav:not(.open) ul{visibility:hidden}.nav.open ul{visibility:visible}}
 /* CTA, welcome strip, contact */
 .btn.red{background:#BD2C12}
-.welcome{background:#0f2430;border-bottom:1px solid rgba(98,224,232,.35);color:#e6f6f8;text-align:center;padding:10px var(--gut);font-size:15px;position:relative;z-index:60}
-.welcome a{color:#fff;border-bottom:1px solid #62E0E8;margin-left:8px;font-weight:600}
+.welcome{background:var(--red);border-bottom:1px solid var(--red2);color:#fff;text-align:center;padding:10px var(--gut);font-size:15px;position:relative;z-index:60}
+.welcome a{color:#fff;border-bottom:1px solid #fff;margin-left:8px;font-weight:600}
 .offices .call{display:inline-flex;align-items:center;gap:8px;margin-top:12px}
 .photo-strip{margin-top:60px;border-radius:var(--r);overflow:hidden;aspect-ratio:21/9}.photo-strip img{width:100%;height:100%;object-fit:cover}
 @media(max-width:700px){.photo-strip{aspect-ratio:4/3}}
