@@ -582,3 +582,9 @@ footer a.eco-link{color:#fff}footer a.eco-link::before{content:"";display:inline
 .mono,.brand small,footer h4,.pcard .tag,.gal .lbl,.favtag,.role,.dec .yr small,.dec li b,.facts li b{font-family:var(--mono);font-weight:500}
 body{font-weight:400}.p-l{font-weight:300}
 b,strong{font-weight:700}
+/* sustainability marker: solid green behind the word on dark sections, green text on light ones, none in big titles */
+.eco{background:var(--green);color:#fff;padding:.02em .22em;border-radius:3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.h-xl .eco,.h-l .eco,.h-m .eco,.stage .step h2 .eco,.dec h3 .eco{background:none;color:inherit;padding:0}
+.sec.paper .eco,.tl-wrap .eco,.pl .eco,.sec.paper .svc .eco,.tiles .eco{background:none;color:var(--green);font-weight:600;padding:0}
+.sec.paper .h-l .eco,.tl-wrap .h-l .eco{color:var(--green)}
+a.chip .eco,.chip .eco,.btn .eco,.welcome .eco,.pcard .eco,.crumb .eco,footer .eco,title .eco{background:none;color:inherit;padding:0}
