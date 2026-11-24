@@ -129,7 +129,7 @@ addEventListener('load',()=>ScrollTrigger.refresh());
  new MutationObserver(()=>{if(lb.classList.contains('on')){last=document.activeElement;(lb.querySelector('.x')||lb).focus()}else if(last){last.focus();last=null}}).observe(lb,{attributes:true,attributeFilter:['class']});
  lb.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...lb.querySelectorAll('button')];const i=f.indexOf(document.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()});})();
 
-(()=>{const w=document.querySelector('.welcome'),nav=document.querySelector('.nav');if(!w||!nav)return;const set=()=>{nav.style.top=Math.max(0,w.offsetHeight-scrollY)+'px'};set();addEventListener('scroll',set,{passive:true});addEventListener('resize',set)})();
+(()=>{const w=document.querySelector('.welcome'),nav=document.querySelector('.nav');if(!w||!nav)return;let h=w.offsetHeight,last=-1,q=0;const set=()=>{q=0;const y=Math.max(0,h-scrollY);if(y!==last){last=y;nav.style.transform=y?'translate3d(0,'+y+'px,0)':''}};set();addEventListener('scroll',()=>{if(!q){q=1;requestAnimationFrame(set)}},{passive:true});addEventListener('resize',()=>{h=w.offsetHeight;set()})})();
 
 /* ===== v6 immersive home ===== */
 // services: active row follows scroll and hover; image frame tilts with the mouse

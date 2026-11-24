@@ -1,0 +1,42 @@
+# Netlify. Cloudflare Pages ignores the domain rules; do apex to www with a Cloudflare Redirect Rule instead.
+https://pudconsultants.com/*  https://www.pudconsultants.com/:splat  301!
+http://pudconsultants.com/*   https://www.pudconsultants.com/:splat  301!
+http://www.pudconsultants.com/* https://www.pudconsultants.com/:splat 301!
+# Friendly aliases (optional)
+/index.html  /  301
+/contact     /contact.html  301
+/projects    /projects.html 301
+/services.html  /about.html  301
+/services    /about.html    301
+/about       /about.html    301
+/sustainability /sustainability.html 301
+/people      /people.html   301
+/partners    /partners.html 301
+/insights    /insights.html 301
+/faq         /faq.html      301
+/60-years    /60-years.html 301
+# 404.html at the root is served automatically for unknown paths on Netlify and Cloudflare Pages.
+# Services merged into the six profile services (Nov 2026)
+/services/sustainable-tourism-planning.html   /services/master-planning-and-urban-design.html   301
+/services/landscape-planning-and-design.html  /services/master-planning-and-urban-design.html   301
+/services/infrastructure-and-mobility-planning.html /services/urban-and-regional-planning.html  301
+# Old Wix site paths
+/expertise  /about.html  301
+/leadership  /people.html  301
+/ecosystem  /partners.html  301
+/sdgalignment  /sustainability.html  301
+/urban-regional-planning  /services/urban-and-regional-planning.html  301
+/master-planning  /services/master-planning-and-urban-design.html  301
+/architecture-interiors  /services/architecture-and-interior-design.html  301
+/collaborations  /partners.html  301
+/master-planning/heliopark%2C-new-cairo%2C-egypt  /projects/heliopark-concept-masterplan.html  301
+/master-planning/knowledge-city%2C-nagaf%2C-iraq  /projects/city-of-knowledge-university-of-islamic-sciences-najaf.html  301
+/master-planning/al-alamein-rivera%2C-north-coast%2C-egypt  /projects/alamein-riviera-vision-master-plan.html  301
+/collaborations/al-alamein-rivera%2C-north-coast%2C-egypt  /projects/alamein-riviera-vision-master-plan.html  301
+/architecture-interiors/al-jawhara-residence%2C-jeddah%2C-ksa  /projects/al-jawhara-residence.html  301
+/architecture-interiors/tahran-laleh-hotel%2C-tahran%2C-iran  /projects/tehran-laleh-hotel.html  301
+/urban-regional-planning/northwest-coast-regional-plan%2C-egypt  /projects/north-coast-regional-vision-fuka-matrouh.html  301
+/urban-regional-planning/maria-heights%2C-homs%2C-syria  /projects/maria-heights-tourist-complex-homs.html  301
+/collaborations/khaybar-heritage-area%2C-alula%2C-ksa  /projects/khaybar-heritage-area-master-plan.html  301
+/collaborations/sharaan-nature-reserve%2C-alula%2C-ksa  /projects/sharaan-nature-reserve-master-plan.html  301
+/collaborations/gargoub-new-port-city%2C-matrouh%2C-egypt  /projects/gargoub-new-port-city.html  301
