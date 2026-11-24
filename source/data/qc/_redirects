@@ -6,7 +6,10 @@ http://www.pudconsultants.com/* https://www.pudconsultants.com/:splat 301!
 /index.html  /  301
 /contact     /contact.html  301
 /projects    /projects.html 301
-/services    /services.html 301
+/services.html  /about.html  301
+/services    /about.html    301
+/about       /about.html    301
+/sustainability /sustainability.html 301
 /people      /people.html   301
 /partners    /partners.html 301
 /insights    /insights.html 301

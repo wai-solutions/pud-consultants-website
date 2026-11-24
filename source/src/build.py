@@ -174,7 +174,7 @@ def crumbs(items):
 def faq_ld(qa): return {'@context': 'https://schema.org', '@type': 'FAQPage', 'mainEntity': [{'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in qa]}
 ORG = {'@type': ['Organization', 'ProfessionalService'], '@id': BASE + '/#org', 'name': 'PUD Consultants', 'alternateName': ['PUD', 'Planning & Urban Development Consultants'], 'url': BASE + '/', 'logo': BASE + '/assets/logo-mark.png', 'foundingDate': '1966',
        'description': 'PUD Consultants is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966, with offices in Cairo, Riyadh and Dubai.', 'legalName': 'Planning & Urban Development Consultants', 'disambiguatingDescription': 'Urban planning and architecture consultancy in Cairo. Not a planned unit development or public utility district, which share the acronym PUD.', 'foundingLocation': {'@type': 'Place', 'name': 'Cairo, Egypt'},
-       'founder': {'@id': BASE + '/people.html#abdallah-attia'}, 'employee': {'@id': BASE + '/amr-attia.html#amr-attia'}, 'sameAs': ['https://share-architects.com/office/pud-consultants/'],
+       'founder': {'@id': BASE + '/people.html#abdallah-attia'}, 'employee': {'@id': BASE + '/amr-attia.html#amr-attia'}, 'sameAs': ['https://www.linkedin.com/company/pud-consultants', 'https://share-architects.com/office/pud-consultants/'], 'slogan': '60 Years of Shaping Sustainable Cities', 'award': 'International Star for Leadership in Quality, Paris 2010',
        'areaServed': ['Egypt', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Iraq', 'Middle East and North Africa'],
        'knowsAbout': ['Urban planning', 'Regional planning', 'Master planning', 'Urban design', 'Sustainable tourism', 'Cultural heritage planning', 'Landscape design', 'Architecture', 'Sustainable development'],
        'location': [
@@ -186,9 +186,9 @@ ORG = {'@type': ['Organization', 'ProfessionalService'], '@id': BASE + '/#org', 
 WEB = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#site', 'url': BASE + '/', 'name': 'PUD Consultants', 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
 
 AMR = load('data/amr.public.json', {})
-NAV = [('projects.html', 'Projects'), ('services.html', 'Services'), ('60-years.html', '60 years'), ('people.html', 'People'), ('partners.html', 'Partners'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
+NAV = [('about.html', 'About'), ('projects.html', 'Projects'), ('60-years.html', '60 years'), ('people.html', 'People'), ('partners.html', 'Partners'), ('sustainability.html', 'Sustainability'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
 CHAPTERS = [('index.html', 'Home', 'Back to the start'), ('60-years.html', 'The 60-year story', 'Six decades of work'), ('people.html', 'The people', 'The founder and the practice'), ('projects.html', 'The work', 'Every project on one map'),
-            ('services.html', 'What we do', 'Planning, design and advice'), ('partners.html', 'Who we plan with', 'Clients and partners'), ('contact.html', 'Talk to us', 'Five offices')]
+            ('about.html', 'Who we are', 'About, expertise and values'), ('partners.html', 'Who we plan with', 'Clients and partners'), ('contact.html', 'Talk to us', 'Five offices')]
 
 def fit(*c):
     for t in c:
@@ -215,7 +215,7 @@ def page(path, title, body, desc='', active='', schema=None, og_img=None, data=N
         E(title), E(d), robots, url, url, url, E(title), E(d), url, og, E(title), E(d), og, R, R, R, sch, head_extra, body_cls, R, R, lis, R, body, footer(R), dat, R)
 
 # ---- v6: green #003737 touches for sustainability mentions and topics ----
-ECO_SLUG = re.compile(r'(services|insights|destinations)/[^"]*(sustainab|environment|red-sea)')
+ECO_SLUG = re.compile(r'(services|insights|destinations)/[^"]*(sustainab|environment|red-sea)|^(\.\./)?sustainability\.html')
 ECO_WORDS = re.compile(r"\b(sustainab\w*|environmental|environment(?! and sustainability)|eco-?tourism|green infrastructure|low-carbon|climate[- ]resilien\w*|nature reserve)\b", re.I)
 _SKIP = re.compile(r'(<head>.*?</head>|<script\b.*?</script>|<style\b.*?</style>|<svg\b.*?</svg>|<[^>]+>)', re.S)
 def eco(path, html_):
@@ -245,11 +245,11 @@ def footer(R):
             '<div class="f3-brand"><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DEVELOPMENT</small></span></a>'
             '<p>Leadership · Harmony · Clarity. Shaping sustainable cities since 1966.</p>'
             '<div class="f3-soc"><a href="https://www.linkedin.com/company/pud-consultants" target="_blank" rel="noopener" aria-label="PUD Consultants on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg></a><a class="btn red" href="%scontact.html">Talk to us</a></div></div>'
-            '<div><h5>Work</h5><a href="%sprojects.html">Projects</a><a href="%sprojects.html#atlas">The 60-year map</a><a href="%sservices.html">Services</a><a href="%sinsights.html">Insights</a></div>'
+            '<div><h5>Work</h5><a href="%sprojects.html">Projects</a><a href="%sprojects.html#atlas">The 60-year map</a><a href="%sabout.html#expertise">Expertise</a><a href="%sinsights.html">Insights</a></div>'
             '<div class="f3-sv"><h5>Services</h5>%s</div>'
-            '<div><h5>Company</h5><a href="%s60-years.html">60 Years</a><a href="%speople.html">People</a><a href="%samr-attia.html">Prof. Dr. Amr Attia</a><a href="%spartners.html">Clients &amp; partners</a></div>'
+            '<div><h5>Company</h5><a href="%sabout.html">About</a><a href="%ssustainability.html">Sustainability</a><a href="%s60-years.html">60 Years</a><a href="%speople.html">People</a><a href="%samr-attia.html">Prof. Dr. Amr Attia</a><a href="%spartners.html">Clients &amp; partners</a></div>'
             '<div><h5>Connect</h5><a href="%scontact.html">Contact</a><a href="%sfaq.html">FAQ</a><a href="tel:+201001981111">Cairo +20 100 198 1111</a><a href="tel:+966540398178">Riyadh +966 540 39 8178</a><a href="tel:+971509298178">Dubai +971 509 29 8178</a></div>'
-            '</div><div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>60 Years of Shaping Sustainable Cities · 1966 to 2026</span></div></div></footer>') % (R, R, R, R, R, R, R, SV, R, R, R, R, R, R)
+            '</div><div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>60 Years of Shaping Sustainable Cities · 1966 to 2026</span></div></div></footer>') % (R, R, R, R, R, R, R, SV, R, R, R, R, R, R, R, R)
 
 def card(p, R, i=None, tag=None, cls=''):
     t = thumb(p['slug']); url = '%sprojects/%s.html' % (R, p['slug'])
@@ -339,7 +339,7 @@ APPROACH = [
 ]
 def approach_section():
     return ('<section class="sec approach"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r>Our approach</p>'
-            '<p class="ap-lead" data-r="0.1">We don\'t believe in one-size-fits-all. Every project starts by listening, then curates the best-fit minds (planners, architects, economists and global experts) around a shared mission. <a href="services.html">Explore our expertise</a></p></div>'
+            '<p class="ap-lead" data-r="0.1">We don\'t believe in one-size-fits-all. Every project starts by listening, then curates the best-fit minds (planners, architects, economists and global experts) around a shared mission. <a href="about.html#expertise">Explore our expertise</a></p></div>'
             '<a class="ap-img" href="projects/ramla-concept-master-plan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/story/approach-ramla.jpg" alt="Beachfront town centre, Ramla, North Coast" loading="lazy"></span><span class="ap-cap mono">Ramla Beachfront Town Centre · North Coast, Egypt</span></a></div></section>')
 
 DEC_BG = {'1966': ('assets/founder/draw.jpg', 'Prof. Dr. Abdallah Attia at work. Illustrative recreation.'),
@@ -403,7 +403,7 @@ def sustain_section():
     IC = {'People': '<circle cx="12" cy="7" r="3.2"/><path d="M5.5 20c.6-3.8 3.2-6 6.5-6s5.9 2.2 6.5 6"/>', 'Society': '<circle cx="7" cy="8.5" r="2.4"/><circle cx="17" cy="8.5" r="2.4"/><circle cx="12" cy="6.5" r="2.6"/><path d="M2.5 19c.4-2.8 2.2-4.4 4.5-4.4M21.5 19c-.4-2.8-2.2-4.4-4.5-4.4M7.2 20c.5-3.4 2.4-5.4 4.8-5.4s4.3 2 4.8 5.4"/>', 'Culture': '<path d="M3 9.5 12 4l9 5.5M4.5 9.5h15M6 9.5v8M10 9.5v8M14 9.5v8M18 9.5v8M3.5 20.5h17M4.5 17.5h15"/>', 'Environment': '<path d="M5 19c0-8 5.5-13.5 15-14-.3 9.5-6 15-14 15"/><path d="M5 19c3-4.5 6.5-7.5 10-9.5"/>', 'Planet': '<circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.3 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.3-3.8-8.5S9.4 5.9 12 3.5z"/>'}
     items = ''.join('<li><svg viewBox="0 0 24 24" aria-hidden="true">%s</svg><b>%s</b><span class="t">%s</span></li>' % (IC.get(a, ''), E(a), E(b)) for a, b in SUSTAIN)
     return ('<section class="sec sustain2"><div class="wrap"><div class="ap-txt"><p class="kicker mono" data-r><span>Sustainability and responsibility</span></p>'
-            '<p class="ap-lead" data-r="0.1">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards. <a href="services/environment-and-sustainability.html">Our commitment</a></p></div>'
+            '<p class="ap-lead" data-r="0.1">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards. <a href="sustainability.html">Our commitment</a></p></div>'
             '<a class="ap-img" href="projects/alamein-riviera-vision-master-plan.html" data-r="0.15"><span class="ap-par" data-px="0.08"><img src="assets/story/sustain-alamein-riviera.jpg" alt="Homes around a planted lagoon at dusk, Alamein Riviera" loading="lazy" style="object-position:50%% 65%%"></span><span class="ap-cap mono">Alamein Riviera · North Coast, Egypt</span></a>'
             '<ol class="five2" data-r="0.1">%s</ol></div></section>') % items
 
@@ -595,10 +595,10 @@ def partners_page():
         names = sorted(p['name'] for p in PART if p.get('type') == typ and not has_logo(p) and not re.match(r'(Dr\.?|Eng\.?|Arch\.?|Prof\.?|Fawaz)\b', p['name']))
         more = ('<p class="note" style="color:var(--mute-d);margin-top:18px"><b>Also worked with:</b> %s.</p>' % E(', '.join(names))) if names else ''
         return '<h2 class="h-m" style="margin-top:50px">%s</h2><div class="pl">%s</div>%s' % (t, items, more)
-    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Partners and clients</p><h1 class="h-xl" style="max-width:15ch">Trusted by clients. <em>Built with partners.</em></h1><p class="lede">National authorities, royal commissions, developers and universities commission our work. International firms such as WATG and AECOM plan alongside us.</p></div></section>'
-            '<section class="sec paper" style="padding-top:60px"><div class="wrap">%s%s</div></section>') % (sect('Partners', 'partner'), sect('Clients', 'client')) + chapter(5)
-    return page('partners.html', 'Clients and Partners: WATG, AECOM, NUCA, AlUla | PUD Consultants', body, 'WATG, AECOM, NUCA, the Royal Commission for AlUla, Saudi Aramco, universities and developers: the clients and partners PUD Consultants plans with.', 'partners.html',
-                schema=[crumbs([('Home', ''), ('Partners', 'partners.html')])])
+    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Partners and clients</p><h1 class="h-xl" style="max-width:15ch">Trusted by clients. <em>Built with partners.</em></h1><p class="lede">National authorities, royal commissions, developers and universities commission our work. International firms such as WATG and AECOM plan alongside us, with a curated network of strategic partners and specialists.</p></div></section>' + network_sections() +
+            ('<section class="sec paper" id="clients" style="padding-top:60px"><div class="wrap"><p class="kicker mono">Clients and partner firms</p><h2 class="h-l">100+ clients. <em>90+ collaborations.</em></h2>%s%s</div></section>') % (sect('Partners', 'partner'), sect('Clients', 'client'))) + chapter(5)
+    return page('partners.html', 'Partners, Experts and Clients: WATG, AECOM, AlUla | PUD', body, 'PUD Consultants\' key staff, strategic partners and international expert network, and the clients and firms it plans with: WATG, AECOM, NUCA, the Royal Commission for AlUla and more.', 'partners.html',
+                schema=[network_schema(), crumbs([('Home', ''), ('Partners', 'partners.html')])])
 
 def map_block(R=''):
     pin = '<svg viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C6 1 1.5 5.6 1.5 11.4 1.5 19 12 31 12 31s10.5-12 10.5-19.6C22.5 5.6 18 1 12 1z"/><circle cx="12" cy="11.5" r="4.2"/></svg>'
@@ -618,8 +618,8 @@ def red_sea_page():
     qa = [('Does PUD plan Red Sea destinations?', 'Yes. PUD has worked on Port Ghalib and the Abo Dabbab marine field station at Marsa Alam, Hurghada, Ain El Sokhna and the Red Sea sub-regional plan for Yanbu, Umluj, Al Wajh and Duba in Saudi Arabia, and on the Green Star Hotels initiative with GIZ.')]
     body = ('<section class="page-h"><div class="wrap"><p class="crumb"><a href="../services/master-planning-and-urban-design.html">Urban design and master planning</a></p><h1 class="h-xl" style="max-width:18ch">Planning Red Sea destinations.</h1><p class="lede" style="max-width:56ch">PUD Consultants has planned Red Sea destinations in Egypt and Saudi Arabia: Port Ghalib and Abo Dabbab at Marsa Alam, Hurghada, Ain El Sokhna, the Green Star Hotels initiative and the sub-regional plan for Yanbu, Umluj, Al Wajh and Duba.</p></div></section>'
             '<section class="sec" style="padding-top:30px"><div class="wrap"><div class="pgrid">%s</div>%s</div></section>') % (''.join(card(p, R) for p in ps), faq_html(qa)) + cta(R)
-    return page('destinations/red-sea.html', 'Sustainable Tourism Planning on the Red Sea | PUD Consultants', body, 'Red Sea destination planning by PUD Consultants: Port Ghalib, Abo Dabbab, Hurghada, Ain El Sokhna and the Yanbu to Duba sub-regional plan.', 'services.html',
-                schema=[faq_ld(qa), crumbs([('Home', ''), ('Services', 'services.html'), ('Red Sea destinations', 'destinations/red-sea.html')])], og_img=hero_img(ps[0]['slug']) if ps else None)
+    return page('destinations/red-sea.html', 'Sustainable Tourism Planning on the Red Sea | PUD Consultants', body, 'Red Sea destination planning by PUD Consultants: Port Ghalib, Abo Dabbab, Hurghada, Ain El Sokhna and the Yanbu to Duba sub-regional plan.', 'about.html',
+                schema=[faq_ld(qa), crumbs([('Home', ''), ('About', 'about.html'), ('Red Sea destinations', 'destinations/red-sea.html')])], og_img=hero_img(ps[0]['slug']) if ps else None)
 
 def faq_page():
     body = '<section class="page-h"><div class="wrap"><p class="kicker mono">FAQ</p><h1 class="h-xl" style="max-width:16ch">Questions about <em>PUD.</em></h1></div></section><section class="sec" style="padding-top:20px"><div class="wrap">%s</div></section>' % faq_html(FAQ, 'Frequently asked questions') + cta('')
@@ -639,13 +639,6 @@ def article_page(a):
     art = {'@context': 'https://schema.org', '@type': 'Article', 'headline': a['h1'], 'description': a['desc'], 'datePublished': '2026-11-24', 'dateModified': TODAY, 'author': {'@id': BASE + '/#org'}, 'publisher': {'@id': BASE + '/#org'}, 'mainEntityOfPage': BASE + '/insights/' + a['slug'] + '.html', 'inLanguage': 'en'}
     return page('insights/%s.html' % a['slug'], a.get('title') or fit('%s | PUD Consultants' % a['h1'], '%s | PUD' % a['h1']), body, a['desc'], 'insights.html', schema=[art, faq_ld([(a['q'], a['lead'])] + a['faq']), crumbs([('Home', ''), ('Insights', 'insights.html'), (a['h1'], 'insights/%s.html' % a['slug'])])])
 
-def services_page():
-    gr = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 110))) for s in SERVICES)
-    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Services</p><h1 class="h-xl" style="max-width:16ch">From visionary master plans <em>to precise execution.</em></h1><p class="lede" style="max-width:46ch">Six services, one integrated practice: planning and city making, urban design and master planning, architecture, sustainability, heritage and strategic advice.</p></div></section>'
-            '<section class="sec" style="padding-top:20px"><div class="wrap"><div class="svcgrid">%s</div><h2 class="h-m" style="margin-top:70px">How we work</h2><p class="p-l" style="margin-top:12px">We start by listening: stakeholder engagement and a close reading of the place. Then we assemble the team each project needs from our network of planners, architects, designers, sustainability experts, economists and social scientists. Six principles guide every project: insight-driven planning, scenario-based thinking, collaborative co-creation, legacy-oriented design, agile project structuring and integrated sustainability.</p></div></section>') % gr + chapter(4)
-    return page('services.html', 'Urban Planning and Master Planning Services | PUD Consultants', body, 'Six services from PUD Consultants: urban and regional planning and city making, urban design and master planning, architecture, sustainable development, cultural heritage and strategic advisory.', 'services.html',
-                schema=[crumbs([('Home', ''), ('Services', 'services.html')]), {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD services', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/services/' + s['slug'] + '.html', 'name': s['name']} for i, s in enumerate(SERVICES)]}])
-
 def service_page(s):
     R = '../'
     sel = [p for p in PROJ if any(c in p.get('category', []) for c in s['cats'])]
@@ -655,12 +648,12 @@ def service_page(s):
     for p in sel: cds[p['country']] = cds.get(p['country'], 0) + 1
     chips = ''.join('<a class="chip" href="../countries/%s.html">%s <small>%d</small></a>' % (cslug(c), E(c), n) for c, n in sorted(cds.items(), key=lambda kv: -kv[1]))
     pts = ''.join('<li>%s</li>' % E(x) for x in s['points'])
-    body = ('<section class="page-h"><div class="wrap"><p class="crumb mono"><a href="../services.html">Services</a></p><h1 class="h-xl" style="max-width:18ch;font-size:clamp(38px,6vw,92px)">%s</h1><p class="lede" style="max-width:50ch">%s</p></div></section>'
+    body = ('<section class="page-h"><div class="wrap"><p class="crumb mono"><a href="../about.html#expertise">Expertise</a></p><h1 class="h-xl" style="max-width:18ch;font-size:clamp(38px,6vw,92px)">%s</h1><p class="lede" style="max-width:50ch">%s</p></div></section>'
             '<section class="sec" style="padding-top:30px"><div class="wrap"><div class="body"><div class="stack">%s</div><div><h2 class="h-m">What this covers</h2><ul class="ticks">%s</ul></div></div>'
             '<h2 class="h-m" style="margin-top:70px">Selected projects</h2><div class="pgrid">%s</div><p class="note" style="margin-top:14px">%d projects. Where we apply it:</p><div class="chiplist">%s</div>%s</div></section>') % (
         E(s['h1']), E(s['lead']), ''.join('<p class="p-l">%s</p>' % E(t) for t in s['body']), pts, ''.join(card(p, R) for p in sel[:12]), len(sel), chips, faq_html(s['faq'])) + cta(R)
     sv = {'@context': 'https://schema.org', '@type': 'Service', 'name': s['name'], 'serviceType': s['name'], 'description': s['lead'], 'provider': {'@id': BASE + '/#org'}, 'areaServed': ['Egypt', 'Saudi Arabia', 'Middle East']}
-    return page('services/%s.html' % s['slug'], fit('%s | PUD Consultants' % s['h1'], '%s | PUD' % s['h1']), body, s['lead'], 'services.html', schema=[sv, faq_ld(s['faq']), crumbs([('Home', ''), ('Services', 'services.html'), (s['name'], 'services/%s.html' % s['slug'])])], og_img=(hero_img(sel[0]['slug']) if sel else None))
+    return page('services/%s.html' % s['slug'], fit('%s | PUD Consultants' % s['h1'], '%s | PUD' % s['h1']), body, s['lead'], 'about.html', schema=[sv, faq_ld(s['faq']), crumbs([('Home', ''), ('About', 'about.html'), (s['name'], 'services/%s.html' % s['slug'])])], og_img=(hero_img(sel[0]['slug']) if sel else None))
 
 def place_intro(name, country, ps):
     y0, y1 = years(ps); cats = sorted({c for p in ps for c in p.get('category', [])})
@@ -788,7 +781,7 @@ def llms():
          '- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah)',
          '- Work: %d documented projects in %d countries, mostly Egypt and Saudi Arabia' % (len(PROJ), len(COUNTRIES)),
          '- Partners include WATG, AECOM Arabia, Gillespies, Systematica, Dar Al-Handasah', '',
-         '## Key pages', '- [Home](%s/)' % BASE, '- [60 years](%s/60-years.html)' % BASE, '- [Projects](%s/projects.html)' % BASE, '- [Services](%s/services.html)' % BASE, '- [People](%s/people.html)' % BASE, '- [Amr Attia](%s/amr-attia.html)' % BASE, '- [Partners](%s/partners.html)' % BASE, '- [FAQ](%s/faq.html)' % BASE, '- [Contact](%s/contact.html)' % BASE, '', '## Services']
+         '## Key pages', '- [Home](%s/)' % BASE, '- [60 years](%s/60-years.html)' % BASE, '- [Projects](%s/projects.html)' % BASE, '- [About](%s/about.html)' % BASE, '- [Sustainability](%s/sustainability.html)' % BASE, '- [People](%s/people.html)' % BASE, '- [Amr Attia](%s/amr-attia.html)' % BASE, '- [Partners](%s/partners.html)' % BASE, '- [FAQ](%s/faq.html)' % BASE, '- [Contact](%s/contact.html)' % BASE, '', '## Services']
     L += ['- [%s](%s/services/%s.html): %s' % (s['name'], BASE, s['slug'], s['lead']) for s in SERVICES]
     L += ['', '## Guides'] + ['- [%s](%s/insights/%s.html): %s' % (a['h1'], BASE, a['slug'], a['lead']) for a in ARTICLES]
     L += ['', '## Countries'] + ['- [%s](%s/countries/%s.html): %d projects' % (c, BASE, cslug(c), len(ps)) for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))]
@@ -803,6 +796,114 @@ def llms_full():
     return '\n'.join(L) + '\n'
 def sitemap(paths):
     return '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>' % ''.join('<url><loc>%s/%s</loc><lastmod>%s</lastmod></url>' % (BASE, '' if p == 'index.html' else p, TODAY) for p in paths)
+
+# ---------- v7: About, Sustainability and the expert network ----------
+from copy4 import *
+SUS_IMG = {'khaybar-heritage-area-master-plan': 'assets/story/about-khaybar.jpg', 'kidana-al-khaif': 'assets/story/sus-kidana-al-khaif.jpg', 'sharaan-nature-reserve-master-plan': 'assets/story/sus-sharaan.jpg', 'north-coast-regional-vision-fuka-matrouh': 'assets/story/sus-nw-coast-regional-vision.jpg'}
+_WH = {}
+def wh(src):
+    """width/height attributes for a local image, so the browser reserves space (no layout shift)."""
+    if src not in _WH:
+        try:
+            from PIL import Image
+            with Image.open(os.path.join(ROOT, src)) as im: _WH[src] = ' width="%d" height="%d"' % im.size
+        except Exception: _WH[src] = ''
+    return _WH[src]
+def initials(n): return ''.join(w[0] for w in re.sub(r'^(Prof\.|Dr\.|Eng\.|Arch\.)\s*', '', re.sub(r'^(Prof\.|Dr\.|Eng\.|Arch\.)\s*', '', n)).split()[:2])
+def numbered(items, cls='nlist'):
+    return '<ol class="%s">%s</ol>' % (cls, ''.join('<li><span class="n mono">%02d</span><b>%s</b><span>%s</span></li>' % (i + 1, E(a), E(b)) for i, (a, b) in enumerate(items)))
+
+def about_page():
+    hero = 'khaybar-heritage-area-master-plan'; hi = 'assets/story/about-khaybar.jpg'
+    gr = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 110))) for s in SERVICES)
+    gr += '<a class="svc" href="partners.html#network"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (E(ABOUT_ORCHESTRATION[0]), E(ABOUT_ORCHESTRATION[1]))
+    countries = [c for c, ps in sorted(COUNTRIES.items(), key=lambda kv: -len(kv[1]))]
+    qa = [('What is PUD Consultants?', 'PUD (Planning & Urban Development) Consultants is a multidisciplinary planning and design consultancy founded in Cairo in 1966 by Prof. Abdallah Abdel Aziz Attia. It shapes sustainable cities, tourism destinations, heritage areas and sacred landscapes across Egypt, Saudi Arabia, the UAE and beyond.'),
+          ('Who leads PUD Consultants today?', 'PUD is led by Prof. Dr. Amr A. Attia, CEO and Principal, Professor of Architecture and Urban Planning at Ain Shams University, an Eisenhower Fellow (2007) and former Vice President of Strategic Development at WATG and Principal Director at AECOM.'),
+          ('What services does PUD offer?', 'PUD offers %s, and assembles bespoke advisory groups of international experts for each project.' % (', '.join(s['name'].lower() for s in SERVICES[:-1]) + ' and ' + SERVICES[-1]['name'].lower())),
+          ('Where does PUD work?', 'PUD\'s record documents %d projects in %d countries: %s. Its offices are in Cairo (Egypt), Riyadh (Saudi Arabia) and Dubai (UAE).' % (len(PROJ), len(countries), ', '.join(countries[:-1]) + ' and ' + countries[-1])),
+          ('What are some of PUD\'s notable projects?', 'Highlights include the Pyramids Plateau destination master plan (with WATG), Al Mashaaer Al Mugaddassah in Makkah, Alamein Riviera, Sumou Boulevard, Cairo Media City, strategic advisory for the New Administrative Capital, the Khaybar Heritage Area and AlUla framework plans, and Jazan Economic City.'),
+          ('How does PUD approach sustainability?', 'Sustainability is at the core of every PUD project, through environmental responsibility, social inclusion, cultural heritage preservation and green building standards. PUD\'s work aligns with UN Sustainable Development Goals 7, 8, 9, 11, 12, 13 and 17.'),
+          ('Does PUD work with international firms?', 'Yes. PUD regularly collaborates with leading global firms including WATG, AECOM, SOM, BuroHappold, HOK, Hill International and Giugiaro, combining international expertise with deep local knowledge, alongside 100+ clients and 90+ collaborations over six decades.'),
+          ('How can I contact PUD Consultants?', 'Call Cairo on +20 2 2414 7537 or +20 100 198 1111, Riyadh on +966 540 39 8178 or Dubai on +971 509 29 8178, or use the enquiry form on the contact page.')]
+    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">About PUD</p><h1 class="h-xl" style="max-width:16ch">Planning &amp; Urban Development <em>since 1966.</em></h1><p class="lede" style="max-width:50ch">%s</p></div></section>'
+            '%s'
+            '<section class="sec" style="padding-top:40px"><div class="wrap"><p class="kicker mono">Our purpose</p><p class="statement">%s</p>'
+            '<h2 class="h-m" style="margin-top:80px">Who we are</h2><div class="cols2" style="margin-top:22px">%s</div>'
+            '<div class="duo"><div><p class="kicker mono">Mission</p><p class="p-l">%s</p></div><div><p class="kicker mono">Vision</p><p class="p-l">%s</p></div></div>'
+            '<h2 class="h-m" style="margin-top:80px">Core values</h2>%s</div></section>'
+            '<section class="sec paper" id="expertise"><div class="wrap"><p class="kicker mono">Expertise</p><h2 class="h-l" style="max-width:18ch">From visionary master plans <em>to precise execution.</em></h2><p class="p-l" style="margin-top:18px">Six services, one integrated practice, and a global network of experts orchestrated around each project.</p><div class="svcgrid">%s</div></div></section>'
+            '<section class="sec" id="approach"><div class="wrap"><p class="kicker mono">Approach</p><h2 class="h-l" style="max-width:20ch">Tailored thinking. Integrated delivery. <em>Lasting impact.</em></h2><p class="p-l" style="margin-top:18px">%s</p>%s</div></section>'
+            '<section class="sec paper" id="sustainability"><div class="wrap grid2x"><div><p class="kicker mono">Sustainability</p><h2 class="h-l">Designing with purpose. <em>Building for tomorrow.</em></h2><p class="p-l" style="margin-top:18px">Sustainability is not just a guideline, it is a lens of transformation. From mega cities to sacred landscapes, our goal is simple: to leave a positive legacy.</p>%s<p style="margin-top:28px"><a class="btn dark" href="sustainability.html">Our sustainability commitments</a></p></div>'
+            '<a class="figure" href="projects/sharaan-nature-reserve-master-plan.html"><img src="%s" alt="Sharaan Nature Reserve master plan, AlUla" loading="lazy"%s><span class="mono">Sharaan Nature Reserve · AlUla</span></a></div></section>'
+            '<section class="sec" id="awards"><div class="wrap"><p class="kicker mono">Awards</p><h2 class="h-l" style="max-width:20ch">%s</h2><p class="p-l" style="margin-top:18px">%s</p>'
+            '<div style="margin-top:80px">%s</div></div></section>') % (
+        E(ABOUT_LEAD),
+        ('<section class="wrap"><a class="figure wide" href="projects/%s.html"><img src="%s" alt="Khaybar Heritage Area master plan, AlUla" fetchpriority="high"%s><span class="mono">Khaybar Heritage Area master plan · AlUla &rarr;</span></a></section>' % (hero, hi, wh(hi))) if hi else '',
+        E(ABOUT_PURPOSE), ''.join('<p class="p-l">%s</p>' % E(t) for t in ABOUT_WHO), E(ABOUT_MISSION), E(ABOUT_VISION), numbered(ABOUT_VALUES, 'nlist four'),
+        gr, E(ABOUT_APPROACH_LEAD), numbered(ABOUT_APPROACH, 'nlist three'),
+        numbered([(a, b) for a, b in SUS_FOUR], 'nlist two'), SUS_IMG['sharaan-nature-reserve-master-plan'], wh(SUS_IMG['sharaan-nature-reserve-master-plan']),
+        E(ABOUT_AWARDS[0]), E(ABOUT_AWARDS[1]), faq_html(qa, 'Frequently asked questions')) + chapter(4)
+    about = {'@context': 'https://schema.org', '@type': 'AboutPage', 'url': BASE + '/about.html', 'name': 'About PUD Consultants', 'description': ABOUT_LEAD, 'mainEntity': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
+    il = {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD services', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'url': BASE + '/services/' + s['slug'] + '.html', 'name': s['name']} for i, s in enumerate(SERVICES)]}
+    return page('about.html', 'About PUD Consultants: Urban Planning since 1966 | PUD', body,
+                'PUD Consultants, founded in Cairo in 1966: our purpose, mission, values, six services, approach, sustainability and awards. Offices in Cairo, Riyadh and Dubai.', 'about.html',
+                schema=[about, dict(ORG, **{'@context': 'https://schema.org'}), il, faq_ld(qa), crumbs([('Home', ''), ('About', 'about.html')])], og_img=hi)
+
+def sustainability_page():
+    R = ''; hi = hero_img('heliopark-concept-masterplan')
+    five = ''
+    for i, (th, h, t, slug, cap) in enumerate(SUS_FIVE):
+        im = SUS_IMG.get(slug) or hero_img(slug)
+        five += ('<article class="resp%s"><div class="resp-t"><p class="n mono">%02d · %s</p><h3 class="h-m">%s</h3><p class="p-l">%s</p></div>'
+                 '<a class="figure" href="projects/%s.html"><img src="%s" alt="%s" loading="lazy"%s><span class="mono">%s &rarr;</span></a></article>') % (' flip' if i % 2 else '', i + 1, E(th), E(h), E(t), slug, im, E(cap.replace(' · ', ', ')), wh(im), E(cap))
+    sdg = ''.join('<li><span class="sdg-n">%d</span><b>%s</b><span class="un">%s</span><span class="pud"><em class="mono">PUD</em> %s</span></li>' % (n, E(g), E(u), E(p)) for n, g, u, p in SDGS)
+    lens = ''.join('<li>%s</li>' % E(x) for x in SUS_LENS)
+    projs = ''.join(card(BYSLUG[s], R) for s in SUS_PROJECTS if s in BYSLUG)
+    body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">Sustainability</p><h1 class="h-xl" style="max-width:17ch">Sustainable commitments for a <em>vibrant urban future.</em></h1><p class="lede" style="max-width:52ch">%s</p></div></section>'
+            '%s'
+            '<section class="sec" style="padding-top:40px"><div class="wrap"><p class="kicker mono">Our commitment</p><p class="statement">Sustainability is at the core of everything we do.</p><div class="cols2" style="margin-top:26px">%s</div>'
+            '<h2 class="h-l" style="margin-top:90px;max-width:18ch">Designing with purpose. <em>Building for tomorrow.</em></h2><p class="p-l" style="margin-top:14px">We are committed to:</p>%s</div></section>'
+            '<section class="sec paper"><div class="wrap"><p class="kicker mono">Five responsibilities, one approach</p><h2 class="h-l" style="max-width:20ch">People, society, culture, environment <em>and planet.</em></h2>%s</div></section>'
+            '<section class="sec interlude-s"><img src="assets/story/sustain-alamein-riviera.jpg" alt="Homes around a planted lagoon at dusk, Alamein Riviera" loading="lazy"%s><div class="wrap"><p class="h-l">Where sustainability shapes place, purpose and people.</p><a class="mono" href="projects/alamein-riviera-vision-master-plan.html">Alamein Riviera · North Coast, Egypt &rarr;</a></div></section>'
+            '<section class="sec"><div class="wrap"><p class="kicker mono">Designing resilient futures</p><h2 class="h-l" style="max-width:18ch">Not just a guideline: <em>a lens of transformation.</em></h2><p class="p-l" style="margin-top:18px">From mega cities to sacred landscapes, we weave resilience into every layer of planning.</p><ul class="lens">%s</ul><p class="p-l" style="margin-top:26px">Every decision we make is designed to serve the future. That is how we build legacy, rooted in sustainability.</p></div></section>'
+            '<section class="sec paper" id="sdgs"><div class="wrap"><p class="kicker mono">Goals we support</p><h2 class="h-l">Leave no place behind.</h2><p class="p-l" style="margin-top:18px">Our work is aligned with the UN Sustainable Development Goals, contributing most directly to seven of the seventeen.</p><ol class="sdgs">%s</ol></div></section>'
+            '<section class="sec"><div class="wrap"><p class="kicker mono">Sustainability in practice</p><h2 class="h-l">Selected projects</h2><div class="pgrid" style="margin-top:30px">%s</div>'
+            '<p style="margin-top:24px"><a class="btn ghost" href="projects.html">All projects</a> <a class="btn ghost" href="services/environment-and-sustainability.html">Environmentally sustainable development</a></p>'
+            '<div style="margin-top:80px">%s</div></div></section>'
+            '<section class="sec ctaband"><div class="wrap duo"><div><p class="kicker mono">For clients</p><h2 class="h-m">Need help developing your SDGs strategy?</h2><p style="margin-top:20px"><a class="btn red" href="contact.html">Contact one of our experts</a></p></div>'
+            '<div><p class="kicker mono">For partners</p><h2 class="h-m">Making progress together.</h2><p style="margin-top:20px"><a class="btn ghost" href="partners.html#network">Become one of our partners</a></p></div></div></section>') % (
+        E(SUS_LEDE),
+        ('<section class="wrap"><a class="figure wide" href="projects/heliopark-concept-masterplan.html"><img src="%s" alt="Heliopark, New Cairo" fetchpriority="high"%s><span class="mono">Heliopark · New Cairo &rarr;</span></a></section>' % (hi, wh(hi))) if hi else '',
+        ''.join('<p class="p-l">%s</p>' % E(t) for t in SUS_COMMIT), numbered(SUS_FOUR, 'nlist four'), five, wh('assets/story/sustain-alamein-riviera.jpg'), lens, sdg, projs, faq_html(SUS_FAQ))
+    wp = {'@context': 'https://schema.org', '@type': 'WebPage', 'url': BASE + '/sustainability.html', 'name': 'Sustainability commitments and SDGs', 'description': SUS_LEDE, 'about': [{'@id': BASE + '/#org'}, {'@type': 'Thing', 'name': 'Sustainable development'}] + [{'@type': 'Thing', 'name': 'SDG %d: %s' % (n, g)} for n, g, u, p in SDGS], 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
+    return page('sustainability.html', 'Sustainability Commitments and UN SDGs | PUD Consultants', body,
+                'PUD Consultants\' sustainability commitments: people, society, culture, environment and planet, aligned with UN SDGs 7, 8, 9, 11, 12, 13 and 17.', 'sustainability.html',
+                schema=[wp, faq_ld(SUS_FAQ), crumbs([('Home', ''), ('Sustainability', 'sustainability.html')])], og_img=hi, body_cls='eco-page')
+
+def network_sections():
+    team = ''.join('<li><img src="%s" alt="%s" loading="lazy"%s><b>%s</b><span>%s</span><em class="mono">%s years of experience</em></li>' % (src, E(n), wh(src), E(n), E(r), y) for n, r, y, src in STAFF)
+    def xp(name, role, creds): return '<li><span class="xp-i" aria-hidden="true">%s</span><b>%s</b><em class="mono">%s</em><ul>%s</ul></li>' % (E(initials(name)), E(name), E(role), ''.join('<li>%s</li>' % E(c) for c in creds))
+    strat = ''.join(xp(n, 'Strategic partner', c) for n, c in STRATEGIC)
+    spec = ''.join(xp(n, r, c) for n, r, c in SPECIALISTS)
+    net = ''.join('<li><b>%s</b><span>%s</span></li>' % (E(n), E(r)) for n, r in NETWORK)
+    tags = ''.join('<span class="chip">%s</span>' % E(t) for t in STRATEGY_TAGS)
+    return ('<section class="sec" style="padding-top:30px"><div class="wrap grid2x"><div><p class="kicker mono">Stronger together</p><h2 class="h-l">An ecosystem of <em>partners and experts.</em></h2><p class="p-l" style="margin-top:18px">%s</p><blockquote class="pull">&ldquo;%s&rdquo;</blockquote></div>'
+            '<figure class="figure"><img src="assets/people/team-gem.jpg" alt="The PUD team at the Grand Egyptian Museum, Giza" loading="lazy"%s><figcaption class="mono">The team at the Grand Egyptian Museum · Giza</figcaption></figure></div></section>'
+            '<section class="sec paper" id="team"><div class="wrap"><p class="kicker mono">Key staff</p><h2 class="h-l">The permanent core.</h2><p class="p-l" style="margin-top:18px">The team driving PUD\'s long-term vision, ensuring continuity, strategic leadership and quality from advisory orchestration to delivery.</p><ul class="team">%s</ul></div></section>'
+            '<section class="sec" id="strategic-partners"><div class="wrap"><p class="kicker mono">Strategic partners</p><h2 class="h-l">Finance, engineering, law <em>and sustainability.</em></h2><ul class="xps">%s</ul>'
+            '<p class="kicker mono" style="margin-top:90px">Our experts</p><h2 class="h-l">Specialists we call on</h2><ul class="xps">%s</ul></div></section>'
+            '<section class="sec paper" id="network"><div class="wrap"><p class="kicker mono">The curated expert ensemble</p><h2 class="h-l" style="max-width:20ch">Matching minds to missions, <em>and context to calibre.</em></h2>%s'
+            '<h3 class="h-m" style="margin-top:80px">Experts who have served on PUD-led panels</h3><ul class="netlist">%s</ul></div></section>'
+            '<section class="sec"><div class="wrap"><p class="kicker mono"><span>Our strategy for a sustainable future</span></p><h2 class="h-l">People-driven. <em>Extraordinary results.</em></h2><p class="p-l" style="margin-top:18px">%s</p><div class="chiplist" style="margin-top:22px">%s</div><p style="margin-top:28px"><a class="btn red" href="contact.html">Join our community</a></p></div></section>') % (
+        E(NET_INTRO), E(NET_QUOTE), wh('assets/people/team-gem.jpg'), team, strat, spec, numbered(ENSEMBLE, 'nlist three'), net, E(STRATEGY), tags)
+
+def network_schema():
+    org = {'@id': BASE + '/#org'}
+    people = [{'@type': 'Person', 'name': n, 'jobTitle': r, 'worksFor': org, 'image': BASE + '/' + src} for n, r, y, src in STAFF]
+    people += [{'@type': 'Person', 'name': n, 'jobTitle': 'Strategic partner, PUD Consultants', 'description': '; '.join(c)} for n, c in STRATEGIC if n not in [s[0].split('. ', 1)[-1] for s in STAFF] and n not in [s[0] for s in STAFF]]
+    people += [{'@type': 'Person', 'name': n, 'jobTitle': r, 'description': '; '.join(c)} for n, r, c in SPECIALISTS]
+    return {'@context': 'https://schema.org', '@type': 'ItemList', 'name': 'PUD Consultants: key staff, strategic partners and specialists', 'itemListElement': [{'@type': 'ListItem', 'position': i + 1, 'item': p} for i, p in enumerate(people)]}
 
 def og_image():
     from PIL import Image, ImageDraw, ImageFont
@@ -829,7 +930,7 @@ def main():
     paths = []
     def W(n, c): c = c.replace('<img ', '<img decoding="async" '); open(SITE + '/' + n, 'w', encoding='utf-8').write(eco(n, c).replace(' &ndash; ', ', ').replace(' – ', ', ').replace(' — ', ', ').replace('—', ', ')); paths.append(n)
     W('index.html', home()); W('60-years.html', story()); W('people.html', people()); W('projects.html', projects_page()); W('partners.html', partners_page()); W('contact.html', contact_page())
-    W('amr-attia.html', amr_page()); W('services.html', services_page()); W('insights.html', insights_page()); W('faq.html', faq_page()); os.makedirs(SITE + '/destinations', exist_ok=True); W('destinations/red-sea.html', red_sea_page())
+    W('amr-attia.html', amr_page()); W('about.html', about_page()); W('sustainability.html', sustainability_page()); W('services.html', '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="%s/about.html"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=about.html#expertise"></head><body><a href="about.html#expertise">Our services are now on the About page.</a></body></html>' % BASE); W('insights.html', insights_page()); W('faq.html', faq_page()); os.makedirs(SITE + '/destinations', exist_ok=True); W('destinations/red-sea.html', red_sea_page())
     for s in SERVICES: W('services/%s.html' % s['slug'], service_page(s))
     for old, new in RETIRED.items():
         W('services/%s.html' % old, '<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Moved</title><link rel="canonical" href="%s/services/%s.html"><meta name="robots" content="noindex"><meta http-equiv="refresh" content="0; url=%s.html"></head><body><a href="%s.html">This service is now part of another page.</a></body></html>' % (BASE, new, new, new))
@@ -838,7 +939,7 @@ def main():
     for d in PLACES.values(): W('cities/%s.html' % d['slug'], city_page(d))
     for c, ps in COUNTRIES.items(): W('countries/%s.html' % cslug(c), country_page(c, ps))
     skip = {'cities/%s.html' % s for s in NOINDEX_CITIES if s in PLACES and len(PLACES[s]['projects']) < 2}
-    skip |= {'services/%s.html' % o for o in RETIRED}
+    skip |= {'services/%s.html' % o for o in RETIRED} | {'services.html'}
     open(SITE + '/sitemap.xml', 'w').write(sitemap([x for x in paths if x not in skip])); open(SITE + '/llms.txt', 'w').write(llms()); open(SITE + '/llms-full.txt', 'w').write(llms_full().replace(' – ', ', '))
     open(SITE + '/robots.txt', 'w').write(('User-agent: *\nAllow: /\n\nUser-agent: GPTBot\nAllow: /\nUser-agent: OAI-SearchBot\nAllow: /\nUser-agent: ChatGPT-User\nAllow: /\nUser-agent: PerplexityBot\nAllow: /\nUser-agent: Google-Extended\nAllow: /\nUser-agent: ClaudeBot\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % BASE) if MODE == 'prod' else 'User-agent: *\nDisallow: /\n')
     print('MODE', MODE, 'pages', len(paths), 'projects', len(PROJ), 'places', len(PLACES), 'countries', len(COUNTRIES), 'logos', sum(1 for p in PART if has_logo(p)))

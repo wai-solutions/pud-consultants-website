@@ -1,8 +1,8 @@
 # Old Wix site paths
-/expertise  /services.html  301
+/expertise  /about.html  301
 /leadership  /people.html  301
-/ecosystem  /people.html  301
-/sdgalignment  /services/environment-and-sustainability.html  301
+/ecosystem  /partners.html  301
+/sdgalignment  /sustainability.html  301
 /urban-regional-planning  /services/urban-and-regional-planning.html  301
 /master-planning  /services/master-planning-and-urban-design.html  301
 /architecture-interiors  /services/architecture-and-interior-design.html  301
