@@ -240,12 +240,16 @@ def footer(R):
     top = sorted([d for d in PLACES.values() if len(d['projects']) >= 3], key=lambda d: -len(d['projects']))[:10]
     ct = ''.join('<a href="%scities/%s.html">%s</a>' % (R, d['slug'], E(d['name'])) for d in top) + '<a href="%sprojects.html#cities">All cities</a>' % R
     off = ''.join('<p><b style="color:#fff;font-weight:600">%s</b><br>%s<br><a href="tel:%s" style="display:inline">%s</a></p>' % (E(a), E(b), re.sub(r'[^+0-9]', '', c), E(c)) for a, b, c in OFFICES)
-    return ('<footer class="f2"><div class="wrap"><div class="f2-top"><div class="f2-brand"><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>SINCE 1966</small></span></a>'
-            '<p>Shaping sustainable cities since 1966.</p></div>'
-            '<nav class="f2-nav" aria-label="Footer"><a href="%sprojects.html">Projects</a><a href="%sservices.html">Services</a><a href="%s60-years.html">60 years</a><a href="%speople.html">People</a><a href="%spartners.html">Partners</a><a href="%sinsights.html">Insights</a><a href="%sfaq.html">FAQ</a></nav>'
-            '<div class="f2-cta"><a class="btn red" href="%scontact.html">Talk to us</a></div></div>'
-            '<div class="f2-off"><a href="tel:+201001981111"><b>Cairo</b>+20 100 198 1111</a><a href="tel:+966540398178"><b>Riyadh</b>+966 540 39 8178</a><a href="tel:+971509298178"><b>Dubai</b>+971 509 29 8178</a><a class="f2-all" href="%scontact.html">All five offices &rarr;</a></div>'
-            '<div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>Client and partner logos belong to their owners.</span></div></div></footer>') % ((R,) * 11)
+    SV = ''.join('<a href="%sservices/%s.html">%s</a>' % (R, x['slug'], E(x['name'])) for x in SERVICES)
+    return ('<footer class="f3"><div class="wrap"><div class="f3-g">'
+            '<div class="f3-brand"><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DEVELOPMENT</small></span></a>'
+            '<p>Leadership · Harmony · Clarity. Shaping sustainable cities since 1966.</p>'
+            '<div class="f3-soc"><a href="https://www.linkedin.com/company/pud-consultants" target="_blank" rel="noopener" aria-label="PUD Consultants on LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.6 8.65 21 11.2 21 14.5V21h-4v-5.8c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.52-2.25 3.1V21H9z"/></svg></a><a class="btn red" href="%scontact.html">Talk to us</a></div></div>'
+            '<div><h5>Work</h5><a href="%sprojects.html">Projects</a><a href="%sprojects.html#atlas">The 60-year map</a><a href="%sservices.html">Services</a><a href="%sinsights.html">Insights</a></div>'
+            '<div class="f3-sv"><h5>Services</h5>%s</div>'
+            '<div><h5>Company</h5><a href="%s60-years.html">60 Years</a><a href="%speople.html">People</a><a href="%samr-attia.html">Prof. Dr. Amr Attia</a><a href="%spartners.html">Clients &amp; partners</a></div>'
+            '<div><h5>Connect</h5><a href="%scontact.html">Contact</a><a href="%sfaq.html">FAQ</a><a href="tel:+201001981111">Cairo +20 100 198 1111</a><a href="tel:+966540398178">Riyadh +966 540 39 8178</a><a href="tel:+971509298178">Dubai +971 509 29 8178</a></div>'
+            '</div><div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>60 Years of Shaping Sustainable Cities · 1966 to 2026</span></div></div></footer>') % (R, R, R, R, R, R, R, SV, R, R, R, R, R, R)
 
 def card(p, R, i=None, tag=None, cls=''):
     t = thumb(p['slug']); url = '%sprojects/%s.html' % (R, p['slug'])
