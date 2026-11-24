@@ -41,7 +41,7 @@ if(stage&&!reduce){
     want=Math.min(list.length-1,Math.round(p*(list.length-1)));draw();
     const e=p*p*(3-2*p);cam.style.setProperty('--z',(1+e*.9).toFixed(4));
     const idx=Math.min(steps.length-1,Math.floor(p*steps.length*.999));steps.forEach((el,i)=>el.classList.toggle('on',i===idx&&p<.86))}});
-  cam.style.setProperty('--fx','55%');cam.style.setProperty('--fy','38%');steps[0].classList.add('on');
+  cam.style.setProperty('--fx',matchMedia('(max-width:800px)').matches?'46%':'55%');cam.style.setProperty('--fy','38%');steps[0].classList.add('on');
 }else if(stage){stage.classList.add('static');$$('.step',stage).forEach(e=>e.classList.add('on'))}
 
 const tlo=$('.tl-outer');
@@ -171,3 +171,14 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 (()=>{const els=$$('[data-px]');if(!els.length||reduce)return;let rq=0;
   const upd=()=>{rq=0;const h=innerHeight;els.forEach(el=>{const b=el.parentElement.getBoundingClientRect();if(b.bottom<-200||b.top>h+200)return;const c=b.top+b.height/2-h/2;el.style.translate='0 '+(c*-parseFloat(el.dataset.px)).toFixed(1)+'px'})};
   addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()})();
+
+// small screens: turn card rows into swipe rails with dots and image parallax
+(()=>{const mq=matchMedia('(max-width:800px)');if(!mq.matches)return;
+  const rails=[$('.bento'),$('.svx-list'),$('.aps'),$('.five')].filter(Boolean);
+  rails.forEach(r=>{r.classList.add('swipe');const kids=[...r.children];const dots=document.createElement('div');dots.className='swipe-dots';dots.setAttribute('aria-hidden','true');
+    dots.innerHTML=kids.map(()=>'<i></i>').join('');r.after(dots);const ds=[...dots.children];
+    let rq=0;const upd=()=>{rq=0;const W=r.clientWidth;let best=0,bd=1e9;
+      kids.forEach((k,i)=>{const b=k.getBoundingClientRect();const off=(b.left+b.width/2-W/2)/W;k.style.setProperty('--sx',Math.max(-1,Math.min(1,off)).toFixed(3));const d=Math.abs(off);if(d<bd){bd=d;best=i}});
+      ds.forEach((d,i)=>d.classList.toggle('on',i===best));kids.forEach((k,i)=>k.classList.toggle('in-v',i===best))};
+    r.addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()});
+  const st=$('.stage.depth .cam');if(st){st.style.setProperty('--fx','46%')}})();

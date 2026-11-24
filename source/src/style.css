@@ -724,3 +724,63 @@ b,strong{font-weight:700}
 
 .stage.static .cam{position:absolute;inset:0;z-index:-1;opacity:.45}.stage.static{isolation:isolate;overflow:hidden}.stage.static .projtag{position:relative;right:auto;bottom:auto;margin:0 var(--gut);opacity:1;transform:none;display:inline-grid}.stage.static .bar,.stage.static .hint{display:none}
 .no-js .stage .projtag{position:relative;opacity:1}
+
+/* ===== v6.1 small screens ===== */
+.kicker .eco{margin-right:.32em}
+.swipe-dots{display:none}
+@media(max-width:800px){
+ .swipe{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:12px;margin-left:calc(var(--gut) * -1);margin-right:calc(var(--gut) * -1);padding:0 var(--gut);scroll-padding:0 var(--gut);overscroll-behavior-x:contain}
+ .swipe::-webkit-scrollbar{display:none}
+ .swipe>*{flex:0 0 82vw;scroll-snap-align:start;min-width:0}
+ .swipe-dots{display:flex;gap:6px;margin-top:16px;align-items:center}
+ .swipe-dots i{width:6px;height:6px;border-radius:99px;background:rgba(255,255,255,.28);transition:width .35s,background .35s}
+ .swipe-dots i.on{width:22px;background:var(--red)}
+ .sec.paper .swipe-dots i{background:rgba(0,0,0,.2)}.sec.paper .swipe-dots i.on{background:var(--red)}
+ .swipe-hint{display:inline-flex!important}
+
+ /* selected work: big swipe cards */
+ .bento.swipe{grid-auto-rows:auto;margin-top:28px}
+ .bento.swipe>*{height:112vw;max-height:540px;grid-column:auto!important;grid-row:auto!important}
+ .bento.swipe .pcard img{transform:translateX(calc(var(--sx,0) * 14%)) scale(1.18);transition:none}
+
+ /* services: swipe cards with parallax */
+ .svx-list.swipe{gap:12px}
+ .svx-list.swipe li{margin:0}
+ .svx-list.swipe a{min-height:118vw;max-height:560px;height:118vw;padding:24px;align-content:end;grid-template-columns:1fr 24px}
+ .svx-list.swipe .n{grid-column:1;margin-bottom:6px}
+ .svx-list.swipe b{grid-column:1;font-size:36px;line-height:1.02}
+ .svx-list.swipe .d{grid-column:1;font-size:16px}
+ .svx-list.swipe i{grid-column:2;grid-row:2}
+ .svx-list.swipe .mbg{transform:translateX(calc(var(--sx,0) * 16%)) scale(1.22);transition:none}
+
+ /* approach: all panels open, swipe */
+ .aps.swipe{height:auto;flex-direction:row}
+ .aps.swipe .ap{flex:0 0 80vw;min-height:112vw;max-height:540px}
+ .aps.swipe .ap img{filter:none;transform:translateX(calc(var(--sx,0) * 14%)) scale(1.2);transition:none}
+ .aps.swipe .ap .t{max-height:none;opacity:1;margin-top:12px}
+
+ /* sustainability: swipe */
+ .five.swipe>*{flex-basis:74vw}
+ .five.swipe li:hover{transform:none}
+
+ /* depth story: legible text over the render */
+ .depth .vig{background:linear-gradient(rgba(0,0,0,.35),transparent 30%,rgba(0,0,0,.55) 58%,rgba(0,0,0,.94) 88%)}
+ .depth .step{bottom:22vh}.depth .step h2{font-size:38px}.depth .step p{color:#e6e6e6}
+ .depth .bar{right:14px;height:120px}
+ .projtag{left:var(--gut);right:var(--gut);max-width:none;bottom:5vh}
+
+ /* six decades */
+ .dz-head .h-l{font-size:34px;text-shadow:0 2px 20px rgba(0,0,0,.8)}
+ .dz-p h3{font-size:32px}.dz-t{font-size:15.5px;line-height:1.6}
+ .dz-rail{bottom:30px}.dz-panels{bottom:86px}
+
+ /* people */
+ .amrphoto img{max-height:64vh}
+ .founder .grid2,.amrg{gap:30px}
+ .pull{font-size:26px}
+
+ /* closing */
+ .legacy .big{font-size:88vw;right:-8vw;opacity:.45}
+ .legacy .tri{font-size:24px}
+ .cq p{font-size:15vw}
+}

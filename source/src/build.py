@@ -392,7 +392,7 @@ SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade
 def sustain_section():
     items = ''.join('<li data-r="%.2f"><span class="n mono">%02d</span><b>%s</b><span>%s</span></li>' % (0.05 * i, i + 1, E(a), E(b)) for i, (a, b) in enumerate(SUSTAIN))
     return ('<section class="sustain"><div class="sbg" data-px="0.18"><img src="assets/p/heliopark/01.jpg" alt="" loading="lazy"></div><div class="wrap">'
-            '<p class="kicker mono" data-r>Sustainability and responsibility</p><h2 class="h-l" data-r="0.1">Designing with purpose. <em>Building for tomorrow.</em></h2>'
+            '<p class="kicker mono" data-r><span>Sustainability and responsibility</span></p><h2 class="h-l" data-r="0.1">Designing with purpose. <em>Building for tomorrow.</em></h2>'
             '<p class="p-l lead" data-r="0.15">From mega cities to sacred landscapes, sustainability is a lens of transformation: responsible land use, social inclusion, cultural continuity and green building standards.</p>'
             '<ol class="five">%s</ol><p style="margin-top:30px"><a class="btn ghost" href="services/environment-and-sustainability.html">Our commitment</a></p><p class="scap mono">Heliopark, New Cairo</p></div></section>') % items
 
