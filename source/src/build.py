@@ -641,7 +641,7 @@ def article_page(a):
     rel = ''.join('<a class="svc" href="../services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 90))) for s in SERVICES if s['slug'] in a['related'])
     body = ('<article><section class="page-h"><div class="wrap narrow"><p class="crumb mono"><a href="../insights.html">Insights</a></p><h1 class="h-xl" style="max-width:20ch;font-size:clamp(38px,5.6vw,84px)">%s</h1><p class="lede" style="max-width:48ch">%s</p></div></section>'
             '<section class="sec" style="padding-top:30px"><div class="wrap narrow">%s%s<h2 class="h-m" style="margin-top:50px">How PUD can help</h2><div class="svcgrid" style="margin-top:18px">%s</div></div></section></article>') % (E(a['h1']), E(a['lead']), secs, faq_html(a['faq'], 'Related question'), rel) + cta(R)
-    art = {'@context': 'https://schema.org', '@type': 'Article', 'headline': a['h1'], 'description': a['desc'], 'datePublished': '2026-11-24', 'dateModified': TODAY, 'author': {'@id': BASE + '/#org'}, 'publisher': {'@id': BASE + '/#org'}, 'mainEntityOfPage': BASE + '/insights/' + a['slug'] + '.html', 'inLanguage': 'en'}
+    art = {'@context': 'https://schema.org', '@type': 'Article', 'headline': a['h1'], 'description': a['desc'], 'datePublished': '2026-11-24', 'dateModified': (LASTMOD.get('insights/%s.html' % a['slug']) or [0, '2026-11-24'])[1], 'author': {'@id': BASE + '/#org'}, 'publisher': {'@id': BASE + '/#org'}, 'mainEntityOfPage': BASE + '/insights/' + a['slug'] + '.html', 'inLanguage': 'en'}
     return page('insights/%s.html' % a['slug'], a.get('title') or fit('%s | PUD Consultants' % a['h1'], '%s | PUD' % a['h1']), body, a['desc'], 'insights.html', schema=[art, faq_ld([(a['q'], a['lead'])] + a['faq']), crumbs([('Home', ''), ('Insights', 'insights.html'), (a['h1'], 'insights/%s.html' % a['slug'])])])
 
 def service_page(s):
@@ -799,8 +799,24 @@ def llms_full():
     for p in sorted(PROJ, key=lambda p: -(p.get('year_start') or 0)):
         L.append('- [%s](%s/projects/%s.html), %s | %s%s | %s' % (p['name'], BASE, p['slug'], ', '.join(x for x in (p.get('city'), p['country']) if x), p['year'] + ' | ' if p['year'] else '', ('client: ' + p['client'] + ' | ') if p.get('client') else '', clip(p.get('summary') or '', 200)))
     return '\n'.join(L) + '\n'
+LASTMOD_FILE = os.path.join(ROOT, 'data', 'lastmod.json')
+LASTMOD = load('data/lastmod.json', {})
+def page_dates(paths):
+    """lastmod per page: the date its content last changed (build tokens ignored), kept in data/lastmod.json"""
+    import hashlib
+    changed = False
+    for p in paths:
+        try: t = open(SITE + '/' + p, encoding='utf-8').read()
+        except Exception: continue
+        t = re.sub(r'__[BV]__|\?v=[0-9a-f]{8}', '', t)
+        h = hashlib.md5(t.encode()).hexdigest()[:12]
+        old = LASTMOD.get(p)
+        if not old or old[0] != h:
+            LASTMOD[p] = [h, TODAY]; changed = True
+    if changed and MODE == 'prod': open(LASTMOD_FILE, 'w').write(json.dumps(LASTMOD, indent=0, sort_keys=True))
 def sitemap(paths):
-    return '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>' % ''.join('<url><loc>%s/%s</loc><lastmod>%s</lastmod></url>' % (BASE, '' if p == 'index.html' else p, TODAY) for p in paths)
+    page_dates(paths)
+    return '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">%s</urlset>' % ''.join('<url><loc>%s/%s</loc><lastmod>%s</lastmod></url>' % (BASE, '' if p == 'index.html' else p, (LASTMOD.get(p) or [0, TODAY])[1]) for p in paths)
 
 # ---------- v7: About, Sustainability and the expert network ----------
 from copy4 import *
