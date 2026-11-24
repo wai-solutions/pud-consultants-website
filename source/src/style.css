@@ -1116,7 +1116,7 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 .svx-list.scrolly::after{content:"";position:absolute;left:-18px;top:0;width:2px;height:calc(var(--lp,0) * 100%);background:var(--red);transition:height .15s linear}
 .svx-list.scrolly li{opacity:calc(.32 + .68 * var(--f,1));transition:opacity .25s linear}
 .svx-list.scrolly li.on{opacity:1}
-.svx .svx-list.scrolly .mbg{transform:translateY(calc(var(--dir,0) * -6px)) scale(calc(.86 + .18 * var(--f,1)))!important;filter:grayscale(calc(1 - var(--f,1)));transition:transform .2s linear,filter .3s linear}
+.svx .svx-list.scrolly .mbg{transform:translateY(calc(var(--dir,0) * -6px)) scale(calc(.86 + .18 * var(--f,1)))!important;transition:transform .2s linear,filter .3s linear}
 .svx .svx-list.scrolly b{transform:translateX(calc(var(--f,0) * 8px))!important;transition:transform .2s linear,color .35s}
 .svx .svx-list.scrolly li:not(.on) b{color:#9a9a9a}
 .svx .svx-list.scrolly li.on b{color:#ffffff}
@@ -1211,3 +1211,4 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 .hero .cap{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0 0 0 0)!important;white-space:nowrap!important;border:0!important}
 /* expertise: no side bars; the active row is shown by brightness and tint only */
 .svx-list.scrolly::before,.svx-list.scrolly::after,.svx .svx-list.scrolly a::after{display:none!important;content:none!important}
+.svx .svx-list.scrolly li:not(.on) .mbg{filter:grayscale(.85) brightness(.85)}.svx .svx-list .mbg{opacity:1!important;visibility:visible!important;background:#1a1a1a}

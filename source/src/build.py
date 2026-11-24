@@ -313,8 +313,9 @@ def services_immersive():
     for i, s in enumerate(SERVICES):
         img, slug, cap = SVC_MEDIA.get(s['slug'], ('assets/stills/cairo-media-city-egypt.jpg', '', ''))
         media += '<figure data-i="%d"%s><img src="%s" alt="%s" loading="lazy"><figcaption class="mono">%s</figcaption></figure>' % (i, ' class="on"' if i == 0 else '', img, E(cap), E(cap))
-        rows += ('<li data-i="%d"%s><a href="services/%s.html"><img class="mbg" src="%s" alt="" loading="lazy"><span class="n mono">%02d</span><b>%s</b><span class="d">%s</span><i aria-hidden="true">&rarr;</i></a></li>'
-                 % (i, ' class="on"' if i == 0 else '', s['slug'], img, i + 1, E(s['name']), LEAD_HTML.get(s['slug']) or E(s['lead'])))
+        th = 'assets/thumbs/svx-%s.jpg' % s['slug'] if ex('assets/thumbs/svx-%s.jpg' % s['slug']) else img
+        rows += ('<li data-i="%d"%s><a href="services/%s.html"><img class="mbg" src="%s" alt="" width="96" height="96"><span class="n mono">%02d</span><b>%s</b><span class="d">%s</span><i aria-hidden="true">&rarr;</i></a></li>'
+                 % (i, ' class="on"' if i == 0 else '', s['slug'], th, i + 1, E(s['name']), LEAD_HTML.get(s['slug']) or E(s['lead'])))
     return ('<section class="svx" id="expertise"><div class="wrap svx-head"><div><p class="kicker mono" data-r>Our expertise</p><h2 class="h-l" data-r="0.1">Every place has <em>its own rhythm.</em></h2></div>'
             '<div class="stack" data-r="0.2"><p class="p-l">PUD (Planning &amp; Urban Development Consultants) is a multidisciplinary planning and design practice, founded in Cairo in 1966 by Prof. Dr. Abdallah Attia and led today by Prof. Dr. Amr Attia. We lead urban and tourism transformation, decoding land and cultural narratives to shape resilient communities, iconic destinations and sacred landscapes, from visionary master planning to precise execution.</p></div></div>'
             '<div class="wrap svx-body"><ol class="svx-list">%s</ol><div class="svx-media" aria-hidden="true"><div class="svx-frame">%s</div></div></div></section>') % (rows, media)
