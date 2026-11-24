@@ -206,10 +206,10 @@ def page(path, title, body, desc='', active='', schema=None, og_img=None, data=N
             '<title>%s</title><meta name="description" content="%s">%s<link rel="canonical" href="%s"><link rel="alternate" hreflang="en" href="%s"><link rel="alternate" hreflang="x-default" href="%s">'
             '<meta name="theme-color" content="#000000"><meta property="og:type" content="website"><meta property="og:site_name" content="PUD Consultants"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s"><meta property="og:image" content="%s"><meta property="og:locale" content="en_US">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="%s"><meta name="twitter:description" content="%s"><meta name="twitter:image" content="%s">'
-            '<link rel="icon" href="%sassets/logo-mark.png"><link rel="preload" href="%sfonts/antonio-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="%scss/style.css">%s%s</head>'
+            '<link rel="icon" href="%sassets/logo-mark.png"><link rel="preload" href="%sfonts/antonio-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="%scss/style.css?v=__V__">%s%s</head>'
             '<body class="%s"><a class="skip" href="#main">Skip to content</a><header class="nav"><div class="wrap in"><a class="brand" href="%sindex.html" aria-label="PUD Consultants, home"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DEVELOPMENT</small></span></a>'
             '<nav aria-label="Main"><ul>%s</ul></nav><a class="btn red film" href="%scontact.html">Talk to us</a><button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></div></header>'
-            '<main id="main">%s</main>%s%s<script type="module" src="%sjs/app.js"></script></body></html>') % (
+            '<main id="main">%s</main>%s%s<script type="module" src="%sjs/app.js?v=__V__"></script></body></html>') % (
         E(title), E(d), robots, url, url, url, E(title), E(d), url, og, E(title), E(d), og, R, R, R, sch, head_extra, body_cls, R, R, lis, R, body, footer(R), dat, R)
 
 # ---- v6: green #003737 touches for sustainability mentions and topics ----
@@ -797,6 +797,11 @@ def main():
     print('MODE', MODE, 'pages', len(paths), 'projects', len(PROJ), 'places', len(PLACES), 'countries', len(COUNTRIES), 'logos', sum(1 for p in PART if has_logo(p)))
 def postprocess():
     import glob
+    import hashlib
+    V = hashlib.md5((open('src/style.css').read() + open('src/app.js').read()).encode()).hexdigest()[:8]
+    for f in glob.glob(SITE + '/**/*.html', recursive=True):
+        t = open(f, encoding='utf-8').read()
+        if '__V__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__V__', V))
     # 1. root links to ./ instead of index.html
     for f in glob.glob(SITE + '/**/*.html', recursive=True):
         t = open(f, encoding='utf-8').read()
