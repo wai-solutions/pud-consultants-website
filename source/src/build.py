@@ -140,7 +140,7 @@ import zlib, math, random as _rnd
 def plan_svg(slug, cats=None, w=400, h=300):
     r = _rnd.Random(zlib.crc32(slug.encode())); cats = cats or []
     style = r.choice(['grid', 'radial', 'organic', 'grid']); out = []
-    S = 'stroke="#62E0E8" stroke-opacity=".38" fill="none" stroke-width="1"'
+    S = 'stroke="#ffffff" stroke-opacity=".38" fill="none" stroke-width="1"'
     if style == 'grid':
         a = r.uniform(-.35, .35); n = r.randint(5, 8); m = r.randint(4, 6)
         for i in range(-2, n + 3):
@@ -149,20 +149,20 @@ def plan_svg(slug, cats=None, w=400, h=300):
             y = h * (j / m); out.append('<line x1="-60" y1="%.1f" x2="%d" y2="%.1f" %s transform="rotate(%.1f %d %d)"/>' % (y, w + 60, y, S, a * 57, w // 2, h // 2))
         for _ in range(r.randint(9, 16)):
             x, y = r.uniform(30, w - 60), r.uniform(25, h - 50); ww, hh = r.uniform(14, 44), r.uniform(10, 32)
-            out.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="#62E0E8" fill-opacity=".07" stroke="#62E0E8" stroke-opacity=".5" stroke-width=".8" transform="rotate(%.1f %d %d)"/>' % (x, y, ww, hh, a * 57, w // 2, h // 2))
+            out.append('<rect x="%.1f" y="%.1f" width="%.1f" height="%.1f" fill="#ffffff" fill-opacity=".07" stroke="#ffffff" stroke-opacity=".5" stroke-width=".8" transform="rotate(%.1f %d %d)"/>' % (x, y, ww, hh, a * 57, w // 2, h // 2))
     elif style == 'radial':
         cx, cy = r.uniform(.35, .65) * w, r.uniform(.35, .65) * h
         for k in range(1, r.randint(4, 6)): out.append('<circle cx="%.1f" cy="%.1f" r="%d" %s/>' % (cx, cy, k * r.randint(26, 36), S))
         for k in range(r.randint(8, 14)):
             t = k * 2 * math.pi / 12 + r.uniform(0, .2); out.append('<line x1="%.1f" y1="%.1f" x2="%.1f" y2="%.1f" %s/>' % (cx, cy, cx + 400 * math.cos(t), cy + 400 * math.sin(t), S))
-        out.append('<circle cx="%.1f" cy="%.1f" r="5" fill="#EE4223"/>' % (cx, cy))
+        out.append('<circle cx="%.1f" cy="%.1f" r="5" fill="#EF4223"/>' % (cx, cy))
     else:
         for k in range(r.randint(6, 9)):
             y0 = r.uniform(0, h); d = 'M-10 %.1f C %.1f %.1f, %.1f %.1f, %d %.1f' % (y0, w * .3, y0 + r.uniform(-90, 90), w * .65, y0 + r.uniform(-90, 90), w + 10, y0 + r.uniform(-60, 60)); out.append('<path d="%s" %s/>' % (d, S))
-        for _ in range(r.randint(10, 18)): out.append('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="#62E0E8" fill-opacity=".14"/>' % (r.uniform(10, w - 10), r.uniform(10, h - 10), r.uniform(3, 10)))
+        for _ in range(r.randint(10, 18)): out.append('<circle cx="%.1f" cy="%.1f" r="%.1f" fill="#ffffff" fill-opacity=".14"/>' % (r.uniform(10, w - 10), r.uniform(10, h - 10), r.uniform(3, 10)))
     if any(c in cats for c in ('Tourism', 'Hospitality')):
-        y = h * r.uniform(.68, .82); out.append('<path d="M-10 %.1f Q %.1f %.1f %.1f %.1f T %d %.1f V %d H -10Z" fill="#62E0E8" fill-opacity=".1" stroke="#62E0E8" stroke-opacity=".6"/>' % (y, w * .25, y - 30, w * .5, y, w + 10, y - 8, h + 10))
-    for _ in range(2): out.append('<circle cx="%.1f" cy="%.1f" r="3.4" fill="#EE4223"/>' % (r.uniform(40, w - 40), r.uniform(30, h - 70)))
+        y = h * r.uniform(.68, .82); out.append('<path d="M-10 %.1f Q %.1f %.1f %.1f %.1f T %d %.1f V %d H -10Z" fill="#ffffff" fill-opacity=".1" stroke="#ffffff" stroke-opacity=".6"/>' % (y, w * .25, y - 30, w * .5, y, w + 10, y - 8, h + 10))
+    for _ in range(2): out.append('<circle cx="%.1f" cy="%.1f" r="3.4" fill="#EF4223"/>' % (r.uniform(40, w - 40), r.uniform(30, h - 70)))
     return '<svg class="planart" viewBox="0 0 %d %d" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">%s</svg>' % (w, h, ''.join(out))
 
 # ---------- html helpers ----------
@@ -175,9 +175,13 @@ ORG = {'@type': ['Organization', 'ProfessionalService'], '@id': BASE + '/#org', 
        'founder': {'@id': BASE + '/people.html#abdallah-attia'}, 'employee': {'@id': BASE + '/amr-attia.html#amr-attia'}, 'sameAs': ['https://share-architects.com/office/pud-consultants/'],
        'areaServed': ['Egypt', 'Saudi Arabia', 'United Arab Emirates', 'Kuwait', 'Iraq', 'Middle East and North Africa'],
        'knowsAbout': ['Urban planning', 'Regional planning', 'Master planning', 'Urban design', 'Sustainable tourism', 'Cultural heritage planning', 'Landscape design', 'Architecture', 'Sustainable development'],
-       'location': [{'@type': 'Place', 'name': 'PUD Cairo', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Polygon Building 8, Office 208, SODIC, Beverly Hills', 'addressLocality': 'Sheikh Zayed City', 'addressCountry': 'EG'}, 'telephone': '+20 100 198 1111'},
-                    {'@type': 'Place', 'name': 'PUD Riyadh', 'address': {'@type': 'PostalAddress', 'streetAddress': '8620 Ibn Mousa Street, Diplomatic Quarter', 'addressLocality': 'Riyadh', 'postalCode': '2513', 'addressCountry': 'SA'}, 'telephone': '+966 540 39 8178'},
-                    {'@type': 'Place', 'name': 'PUD Dubai', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Office G03, Jabal Ali Industrial First', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 52 2510 777'}]}
+       'location': [
+                    {'@type': 'Place', 'name': 'PUD Cairo (Sheikh Zayed)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Polygon Building 8, Office 208, SODIC, Beverly Hills', 'addressLocality': 'Sheikh Zayed City', 'postalCode': '12588', 'addressCountry': 'EG'}, 'telephone': '+20 100 198 1111'},
+                    {'@type': 'Place', 'name': 'PUD Cairo (Heliopolis)', 'address': {'@type': 'PostalAddress', 'streetAddress': '115 El Thawra Street, 5th Floor, Heliopolis', 'addressLocality': 'Cairo', 'postalCode': '11757', 'addressCountry': 'EG'}, 'telephone': '+20 2 2414 7537'},
+                    {'@type': 'Place', 'name': 'PUD Riyadh (Diplomatic Quarter)', 'address': {'@type': 'PostalAddress', 'streetAddress': '8620 Ibn Mousa Street, Diplomatic Quarter', 'addressLocality': 'Riyadh', 'postalCode': '2513', 'addressCountry': 'SA'}, 'telephone': '+966 540 39 8178'},
+                    {'@type': 'Place', 'name': 'PUD Riyadh (Al Nakheel)', 'address': {'@type': 'PostalAddress', 'streetAddress': '7064 Salem bin Maaqil Street, Al Nakheel District', 'addressLocality': 'Riyadh', 'postalCode': '12393', 'addressCountry': 'SA'}, 'telephone': '800 111 0893'},
+                    {'@type': 'Place', 'name': 'PUD Dubai (Palm Jumeirah)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Shoreline 12, Al Anbara, PH 06, Palm Jumeirah', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 509 29 8178'},
+                    {'@type': 'Place', 'name': 'PUD Dubai (Jabal Ali)', 'address': {'@type': 'PostalAddress', 'streetAddress': 'Office G03, Jabal Ali Industrial First', 'addressLocality': 'Dubai', 'addressCountry': 'AE'}, 'telephone': '+971 52 2510 777'}]}
 WEB = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#site', 'url': BASE + '/', 'name': 'PUD Consultants', 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
 
 AMR = load('data/amr.public.json', {})
@@ -201,13 +205,33 @@ def page(path, title, body, desc='', active='', schema=None, og_img=None, data=N
     sch = ld(*(schema or []))
     return ('<!doctype html><html lang="en" class="no-js"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>%s</title><meta name="description" content="%s">%s<link rel="canonical" href="%s"><link rel="alternate" hreflang="en" href="%s"><link rel="alternate" hreflang="x-default" href="%s">'
-            '<meta name="theme-color" content="#0A0D12"><meta property="og:type" content="website"><meta property="og:site_name" content="PUD Consultants"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s"><meta property="og:image" content="%s"><meta property="og:locale" content="en_US">'
+            '<meta name="theme-color" content="#000000"><meta property="og:type" content="website"><meta property="og:site_name" content="PUD Consultants"><meta property="og:title" content="%s"><meta property="og:description" content="%s"><meta property="og:url" content="%s"><meta property="og:image" content="%s"><meta property="og:locale" content="en_US">'
             '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="%s"><meta name="twitter:description" content="%s"><meta name="twitter:image" content="%s">'
-            '<link rel="icon" href="%sassets/logo-mark.png"><link rel="preload" href="%sfonts/InstrumentSerif-normal-400-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="%scss/style.css">%s%s</head>'
+            '<link rel="icon" href="%sassets/logo-mark.png"><link rel="preload" href="%sfonts/antonio-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="%scss/style.css">%s%s</head>'
             '<body class="%s"><a class="skip" href="#main">Skip to content</a><header class="nav"><div class="wrap in"><a class="brand" href="%sindex.html" aria-label="PUD Consultants, home"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>PLANNING &amp; URBAN DESIGN</small></span></a>'
             '<nav aria-label="Main"><ul>%s</ul></nav><a class="btn red film" href="%scontact.html">Talk to us</a><button class="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></div></header>'
             '<main id="main">%s</main>%s%s<script type="module" src="%sjs/app.js"></script></body></html>') % (
         E(title), E(d), robots, url, url, url, E(title), E(d), url, og, E(title), E(d), og, R, R, R, sch, head_extra, body_cls, R, R, lis, R, body, footer(R), dat, R)
+
+# ---- v6: green #003737 touches for sustainability mentions and topics ----
+ECO_SLUG = re.compile(r'(services|insights|destinations)/[^"]*(sustainab|environment|red-sea)')
+ECO_WORDS = re.compile(r"\b(sustainab\w*|environmental|environment(?! and sustainability)|eco-?tourism|green infrastructure|low-carbon|climate[- ]resilien\w*|nature reserve)\b", re.I)
+_SKIP = re.compile(r'(<head>.*?</head>|<script\b.*?</script>|<style\b.*?</style>|<svg\b.*?</svg>|<[^>]+>)', re.S)
+def eco(path, html_):
+    if ECO_SLUG.search(path):
+        html_ = html_.replace('<body class="', '<body class="eco-page ', 1)
+    def mark(tag):
+        if tag.startswith('<a ') and ECO_SLUG.search(re.search(r'href="([^"]*)"', tag).group(1) if 'href="' in tag else ''):
+            if 'class="svc' in tag: return tag.replace('class="svc', 'class="svc eco-card', 1)
+            if 'class="chip' in tag: return tag.replace('class="chip', 'class="chip eco-chip', 1)
+            if 'class=' not in tag: return tag.replace('<a ', '<a class="eco-link" ', 1)
+        return tag
+    out = []
+    for part in _SKIP.split(html_):
+        if not part: continue
+        if part.startswith('<'): out.append(mark(part))
+        else: out.append(ECO_WORDS.sub(lambda m: '<span class="eco">%s</span>' % m.group(0), part))
+    return ''.join(out)
 
 def footer(R):
     sv = ''.join('<a href="%sservices/%s.html">%s</a>' % (R, s['slug'], E(s['name'])) for s in SERVICES)
@@ -216,7 +240,7 @@ def footer(R):
     ct = ''.join('<a href="%scities/%s.html">%s</a>' % (R, d['slug'], E(d['name'])) for d in top) + '<a href="%sprojects.html#cities">All cities</a>' % R
     off = ''.join('<p><b style="color:#fff;font-weight:600">%s</b><br>%s<br><a href="tel:%s" style="display:inline">%s</a></p>' % (E(a), E(b), re.sub(r'[^+0-9]', '', c), E(c)) for a, b, c in OFFICES)
     return ('<footer><div class="wrap"><div class="cols"><div><a class="brand" href="%sindex.html"><img src="%sassets/logo-mark.png" alt="PUD Consultants logo" width="25" height="40"><span><b>PUD Consultants</b><small>SINCE 1966</small></span></a>'
-            '<p style="margin-top:16px;max-width:30ch;color:#8d96a3">Creating spaces that interact with people. Urban planning and master planning consultants since 1966, in Cairo, Riyadh and Dubai.</p></div>'
+            '<p style="margin-top:16px;max-width:30ch;color:#9a9a9a">Creating spaces that interact with people. Urban planning and master planning consultants since 1966, in Cairo, Riyadh and Dubai.</p></div>'
             '<div><h4>Services</h4>%s</div><div><h4>Countries</h4>%s<h4 style="margin-top:22px">Resources</h4><a href="%sfaq.html">FAQ</a><a href="%sinsights.html">Insights</a></div><div><h4>Cities</h4>%s</div><div><h4>Offices</h4>%s</div></div>'
             '<div class="fine"><span>&copy; 2026 PUD Consultants. All rights reserved.</span><span>Client and partner logos belong to their owners.</span></div></div></footer>') % (R, R, sv, cn, R, R, ct, off)
 
@@ -575,7 +599,7 @@ def project_page(p):
     role = ''
     sumtxt = p.get('summary') or ''
     body = ('<article><section class="ph-hero%s">%s%s<div class="wrap in"><nav class="crumb mono" aria-label="Breadcrumb"><a href="%sprojects.html">Projects</a> / <a href="%scountries/%s.html">%s</a> / %s</nav>%s<h1 class="h-xl%s" style="max-width:18ch;font-size:clamp(40px,6.4vw,100px)">%s</h1><p class="lede" style="margin-top:6px">%s · %s</p><div class="tags">%s</div></div></section>'
-            '<section class="sec" style="padding-top:20px"><div class="wrap"><div class="meta">%s</div><div class="body" style="margin-top:50px"><div><p class="p-l" style="font-size:clamp(19px,1.8vw,24px);color:#e6e9ee">%s</p>%s%s<div class="chiplist" style="margin-top:22px">%s</div></div>'
+            '<section class="sec" style="padding-top:20px"><div class="wrap"><div class="meta">%s</div><div class="body" style="margin-top:50px"><div><p class="p-l" style="font-size:clamp(19px,1.8vw,24px);color:#f3f3f3">%s</p>%s%s<div class="chiplist" style="margin-top:22px">%s</div></div>'
             '<div><h2 class="mono" style="color:var(--mute);font-weight:400">Partners</h2><div class="prt">%s</div><h2 class="mono" style="color:var(--mute);font-weight:400;margin-top:30px">Client</h2><div class="prt">%s</div>%s</div></div>'
             '%s%s<div class="pn"><a href="%sprojects/%s.html" rel="prev"><span class="mono" style="color:var(--mute)">Previous project</span><b>%s</b></a><a href="%sprojects/%s.html" rel="next"><span class="mono" style="color:var(--mute)">Next project</span><b>%s</b></a></div><p style="margin-top:34px;text-align:center"><a class="btn ghost" href="%sprojects.html#atlas">Back to the map</a></p></div></section>' + cta(R) + '</article>'
             '<div class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button class="x" aria-label="Close">&times;</button><button class="p" aria-label="Previous">&lsaquo;</button><img alt=""><button class="n" aria-label="Next">&rsaquo;</button></div>') % (
@@ -598,7 +622,7 @@ def llms():
          '- Founded: 1966, Cairo, Egypt',
          '- Founder: Prof. Dr. Abdallah Abdel Aziz Attia, architect and professor',
          '- Leader: Prof. Dr. Amr A. Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt',
-         '- Offices: Cairo (Sheikh Zayed City), Riyadh (Diplomatic Quarter), Dubai (Jabal Ali)',
+         '- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah and Jabal Ali)',
          '- Work: %d documented projects in %d countries, mostly Egypt and Saudi Arabia' % (len(PROJ), len(COUNTRIES)),
          '- Partners include WATG, AECOM Arabia, Gillespies, Systematica, Dar Al-Handasah', '',
          '## Key pages', '- [Home](%s/)' % BASE, '- [60 years](%s/60-years.html)' % BASE, '- [Projects](%s/projects.html)' % BASE, '- [Services](%s/services.html)' % BASE, '- [People](%s/people.html)' % BASE, '- [Amr Attia](%s/amr-attia.html)' % BASE, '- [Partners](%s/partners.html)' % BASE, '- [FAQ](%s/faq.html)' % BASE, '- [Contact](%s/contact.html)' % BASE, '', '## Services']
@@ -625,25 +649,22 @@ def og_image():
     im = Image.alpha_composite(im.convert('RGBA'), ov); d = ImageDraw.Draw(im)
     try: f1 = ImageFont.truetype('/System/Library/Fonts/Supplemental/Georgia.ttf', 66); f2 = ImageFont.truetype('/System/Library/Fonts/Avenir Next.ttc', 26, index=2)
     except Exception: f1 = f2 = ImageFont.load_default()
-    d.text((60, 400), '60 years of helping people', font=f1, fill=(255, 255, 255)); d.text((60, 480), 'live a better life.', font=f1, fill=(255, 106, 77))
+    d.text((60, 400), '60 years of helping people', font=f1, fill=(255, 255, 255)); d.text((60, 480), 'live a better life.', font=f1, fill=(239, 66, 35))
     d.text((60, 575), 'PUD CONSULTANTS  ·  URBAN PLANNING SINCE 1966', font=f2, fill=(220, 224, 230))
     lg = Image.open('assets/logo-mark.png').convert('RGBA'); lg.thumbnail((110, 180)); im.alpha_composite(lg, (1200 - 60 - lg.width, 40))
     im.convert('RGB').save('assets/og.jpg', quality=84)
 
 def main():
     for sub in ('projects', 'css', 'js', 'data', 'services', 'insights', 'cities', 'countries'): os.makedirs(SITE + '/' + sub, exist_ok=True)
-    og_image()
+    if os.environ.get('OG'): og_image()  # needs macOS fonts; og.jpg is kept as committed
     css = open('src/fonts.css').read() if ex('src/fonts.css') else ''
-    css = re.sub(r"@font-face\{font-family:'Inter Tight';font-style:normal;font-weight:(?:300|500|600|700);[^\n]*\n", '', css)
-    css = css.replace("font-weight:400;font-display:swap;src:url(../fonts/InterTight", "font-weight:300 700;font-display:swap;src:url(../fonts/InterTight")
-    css = css.replace("font-family:'JetBrains Mono';font-style:normal;font-weight:500", "font-family:'JetBrains Mono';font-style:normal;font-weight:400 500", 1)
     open(SITE + '/css/style.css', 'w').write(css + open('src/style.css').read())
     if os.path.exists(SITE + '/assets'): shutil.rmtree(SITE + '/assets')
     shutil.copytree('assets', SITE + '/assets', ignore=shutil.ignore_patterns('video'))
     shutil.copytree('fonts', SITE + '/fonts', dirs_exist_ok=True)
     shutil.copy('data/countries.geojson', SITE + '/data/countries.geojson')
     paths = []
-    def W(n, c): open(SITE + '/' + n, 'w', encoding='utf-8').write(c.replace(' &ndash; ', ', ').replace(' – ', ', ').replace(' — ', ', ').replace('—', ', ')); paths.append(n)
+    def W(n, c): open(SITE + '/' + n, 'w', encoding='utf-8').write(eco(n, c).replace(' &ndash; ', ', ').replace(' – ', ', ').replace(' — ', ', ').replace('—', ', ')); paths.append(n)
     W('index.html', home()); W('60-years.html', story()); W('people.html', people()); W('projects.html', projects_page()); W('partners.html', partners_page()); W('contact.html', contact_page())
     W('amr-attia.html', amr_page()); W('services.html', services_page()); W('insights.html', insights_page()); W('faq.html', faq_page()); os.makedirs(SITE + '/destinations', exist_ok=True); W('destinations/red-sea.html', red_sea_page())
     for s in SERVICES: W('services/%s.html' % s['slug'], service_page(s))

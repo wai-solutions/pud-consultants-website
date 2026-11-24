@@ -1,8 +1,8 @@
-// Atlas: 60 years of projects on a region map. Pins grow in by year; colour ramps from heritage gold to future cyan.
+// Atlas: 60 years of projects on a region map. Pins grow in by year; colour ramps from grey (oldest) through white to brand orange (newest).
 import * as THREE from 'three';
 
 const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
-const RAMP=[[1964,0xD9A441],[1985,0xEE4223],[2005,0x8B5CF6],[2026,0x62E0E8]];
+const RAMP=[[1964,0x6b6b6b],[1990,0xbdbdbd],[2010,0xffffff],[2026,0xEF4223]];
 function colorFor(y){let i=0;while(i<RAMP.length-2&&y>RAMP[i+1][0])i++;const a=RAMP[i],b=RAMP[i+1];const t=clamp((y-a[0])/(b[0]-a[0]));return new THREE.Color(a[1]).lerp(new THREE.Color(b[1]),t)}
 export {colorFor};
 
@@ -17,8 +17,8 @@ export function atlasScene(box,geo,projects,api){
   const cam=new THREE.PerspectiveCamera(32,1,.1,400);
   // land
   const land=new THREE.Group();scene.add(land);
-  const fillMat=new THREE.MeshBasicMaterial({color:0x182230,transparent:true,opacity:.9,side:THREE.DoubleSide});
-  const lineMat=new THREE.LineBasicMaterial({color:0x62e0e8,transparent:true,opacity:.38});
+  const fillMat=new THREE.MeshBasicMaterial({color:0x141414,transparent:true,opacity:.9,side:THREE.DoubleSide});
+  const lineMat=new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.22});
   const ring2shape=r=>{const s=new THREE.Shape();r.forEach((c,i)=>{const x=X(c[0]),z=Z(c[1]);i?s.lineTo(x,-z):s.moveTo(x,-z)});return s};
   const inWin=r=>r.some(c=>c[0]>LON0-4&&c[0]<LON1+4&&c[1]>LAT0-4&&c[1]<LAT1+4);
   geo.features.forEach(f=>{const g=f.geometry;if(!g)return;const polys=g.type==='Polygon'?[g.coordinates]:g.coordinates;

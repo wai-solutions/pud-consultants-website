@@ -6,7 +6,7 @@
 - Founded: 1966, Cairo, Egypt
 - Founder: Prof. Dr. Abdallah Abdel Aziz Attia, architect and professor
 - Leader: Prof. Dr. Amr A. Attia, Professor of Urban Planning at Ain Shams University, Eisenhower Fellow (Egypt 2007), Board Chairman of SHARE Egypt
-- Offices: Cairo (Sheikh Zayed City), Riyadh (Diplomatic Quarter), Dubai (Jabal Ali)
+- Offices: Cairo (Sheikh Zayed City and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel), Dubai (Palm Jumeirah and Jabal Ali)
 - Work: 192 documented projects in 11 countries, mostly Egypt and Saudi Arabia
 - Partners include WATG, AECOM Arabia, Gillespies, Systematica, Dar Al-Handasah
 
@@ -65,9 +65,12 @@
 - [Marina El Alamein](https://www.pudconsultants.com/projects/marina-el-alamein.html): Master planning, detailed design and site supervision for the 2,000 hectare Marina El Alamein tourist centre on Egypt's North Coast, for NUCA.
 
 ## Offices
-- Riyadh: 8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia, +966 540 39 8178
-- Cairo: Polygon Building 8, Office 208, SODIC, Beverly Hills, Sheikh Zayed City, Egypt, +20 100 198 1111
-- Dubai: Office G03, Jabal Ali Industrial First, Dubai, UAE, +971 52 2510 777
+- Cairo, Sheikh Zayed: Polygon Building 8, Office 208, SODIC, Beverly Hills, Sheikh Zayed City 12588, Egypt, +20 100 198 1111
+- Cairo, Heliopolis: 115 El Thawra Street, 5th Floor, Heliopolis, Cairo 11757, Egypt, +20 2 2414 7537
+- Riyadh, Diplomatic Quarter: 8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia, +966 540 39 8178
+- Riyadh, Al Nakheel: 7064 Salem bin Maaqil Street, Al Nakheel District, 4092 Riyadh 12393, Saudi Arabia, 800 111 0893
+- Dubai, Palm Jumeirah: Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE, +971 509 29 8178
+- Dubai, Jabal Ali: Office G03, Jabal Ali Industrial First, Dubai, UAE, +971 52 2510 777
 
 ## Optional
 - [Full project list](https://www.pudconsultants.com/llms-full.txt)

@@ -9,8 +9,8 @@ export function paperScene(canvas,state){
   const R=rng(60);
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'high-performance'});
   renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,1.75));
-  renderer.setClearColor(0x0a0d12,1);
-  const scene=new THREE.Scene(); scene.fog=new THREE.FogExp2(0x0a0d12,.034);
+  renderer.setClearColor(0x000000,1);
+  const scene=new THREE.Scene(); scene.fog=new THREE.FogExp2(0x000000,.034);
   const cam=new THREE.PerspectiveCamera(34,1,.1,200);
 
   // plan: cells of a grid with a boulevard and a waterfront edge
@@ -43,24 +43,24 @@ export function paperScene(canvas,state){
   const axes=[]; for(let k=-8;k<=8;k++){ if(k%2==0){pos.push(-8.4,0,k*S*.5-.5, 8.4,0,k*S*.5-.5)} }
   pos.push(0,0,-8.4, 0,0,8.4);
   const lineGeo=new THREE.BufferGeometry(); lineGeo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
-  const lines=new THREE.LineSegments(lineGeo,new THREE.LineBasicMaterial({color:0x62e0e8,transparent:true,opacity:.85}));
+  const lines=new THREE.LineSegments(lineGeo,new THREE.LineBasicMaterial({color:0xEF4223,transparent:true,opacity:.85}));
   scene.add(lines);
   const segPerBlock=8; // vertices per block rect
   const blockVerts=blocks.length*8;
 
   // ground
   const gc=document.createElement('canvas');gc.width=gc.height=512;const g=gc.getContext('2d');
-  const grd=g.createRadialGradient(256,256,0,256,256,256);grd.addColorStop(0,'#1b2431');grd.addColorStop(.6,'#10161f');grd.addColorStop(1,'#0a0d12');g.fillStyle=grd;g.fillRect(0,0,512,512);
+  const grd=g.createRadialGradient(256,256,0,256,256,256);grd.addColorStop(0,'#1a1a1a');grd.addColorStop(.6,'#0d0d0d');grd.addColorStop(1,'#000000');g.fillStyle=grd;g.fillRect(0,0,512,512);
   g.strokeStyle='rgba(98,224,232,.07)';g.lineWidth=1;for(let i=0;i<=32;i++){g.beginPath();g.moveTo(i*16,0);g.lineTo(i*16,512);g.stroke();g.beginPath();g.moveTo(0,i*16);g.lineTo(512,i*16);g.stroke()}
   const ground=new THREE.Mesh(new THREE.CircleGeometry(16,64),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(gc)}));ground.rotation.x=-Math.PI/2;ground.position.y=-.01;scene.add(ground);
 
   // sea to the north-coast side
-  const sc=document.createElement('canvas');sc.width=64;sc.height=256;const sx=sc.getContext('2d');const sg=sx.createLinearGradient(0,0,0,256);sg.addColorStop(0,'#16475a');sg.addColorStop(.25,'#0c2a38');sg.addColorStop(1,'#0a0d12');sx.fillStyle=sg;sx.fillRect(0,0,64,256);
+  const sc=document.createElement('canvas');sc.width=64;sc.height=256;const sx=sc.getContext('2d');const sg=sx.createLinearGradient(0,0,0,256);sg.addColorStop(0,'#2b2b2b');sg.addColorStop(.25,'#141414');sg.addColorStop(1,'#000000');sx.fillStyle=sg;sx.fillRect(0,0,64,256);
   const sea=new THREE.Mesh(new THREE.PlaneGeometry(40,12),new THREE.MeshBasicMaterial({map:new THREE.CanvasTexture(sc),fog:true}));sea.rotation.x=-Math.PI/2;sea.position.set(0,.0,12.9);scene.add(sea);
-  scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-12,.01,6.9),new THREE.Vector3(-4,.01,7.1),new THREE.Vector3(2,.01,6.8),new THREE.Vector3(12,.01,7.0)]),new THREE.LineBasicMaterial({color:0x62e0e8,transparent:true,opacity:.7})));
+  scene.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-12,.01,6.9),new THREE.Vector3(-4,.01,7.1),new THREE.Vector3(2,.01,6.8),new THREE.Vector3(12,.01,7.0)]),new THREE.LineBasicMaterial({color:0xffffff,transparent:true,opacity:.6})));
   // buildings (instanced)
   const geo=new THREE.BoxGeometry(1,1,1);geo.translate(0,.5,0);
-  const cols=[];const cA=new THREE.Color(0x3a3228),cB=new THREE.Color(0xf3ecdf);
+  const cols=[];const cA=new THREE.Color(0x2e2e2e),cB=new THREE.Color(0xf3f3f3);
   const c=geo.attributes.position;for(let i=0;i<c.count;i++){const y=c.getY(i);const t=Math.pow(y,.8);cols.push(...new THREE.Color().lerpColors(cA,cB,.25+.75*t).toArray())}
   geo.setAttribute('color',new THREE.Float32BufferAttribute(cols,3));
   const mat=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.78,metalness:.05});
@@ -72,11 +72,11 @@ export function paperScene(canvas,state){
      .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\n float lit=step(.62,hh(floor(vec2((vW.x+vW.z)*6.0,vW.y*6.0))+floor(vW.xz)));totalEmissiveRadiance+=vec3(1.0,.62,.28)*win*sd*lit*uGlow*.9;');};
   const mesh=new THREE.InstancedMesh(geo,mat,blocks.length);mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);scene.add(mesh);
   const ic=new THREE.Color();
-  blocks.forEach((b,i)=>{ if(b.landmark)ic.setHex(0xee4223); else if(b.park)ic.setHex(0x4d8a5a); else ic.setHex(0xffffff).lerp(new THREE.Color(0xd9c9a8),R()*.6); mesh.setColorAt(i,ic) });
+  blocks.forEach((b,i)=>{ if(b.landmark)ic.setHex(0xEF4223); else if(b.park)ic.setHex(0x003737); else ic.setHex(0xffffff).lerp(new THREE.Color(0xd6d6d6),R()*.6); mesh.setColorAt(i,ic) });
   mesh.instanceColor.needsUpdate=true;
-  scene.add(new THREE.HemisphereLight(0xfff1dc,0x1a2230,1.15));
-  const sun=new THREE.DirectionalLight(0xffe6c4,2.2);sun.position.set(-6,9,5);scene.add(sun);
-  const rim=new THREE.DirectionalLight(0x62e0e8,.9);rim.position.set(7,3,-6);scene.add(rim);
+  scene.add(new THREE.HemisphereLight(0xffffff,0x1a1a1a,1.15));
+  const sun=new THREE.DirectionalLight(0xffffff,2.2);sun.position.set(-6,9,5);scene.add(sun);
+  const rim=new THREE.DirectionalLight(0xEF4223,.6);rim.position.set(7,3,-6);scene.add(rim);
 
   // people: points walking the streets
   const P=260,pp=new Float32Array(P*3),pv=[];

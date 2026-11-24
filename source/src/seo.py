@@ -133,9 +133,9 @@ FAQ = [
  ('Does PUD work with international firms?','Yes. PUD has collaborated with WATG on more than 30 projects and has worked with AECOM Arabia, Hill International, Gillespies, Systematica, HOK, Buro Happold, SHAKER Group, Dar Al-Handasah and others.'),
  ('Who are PUD\'s clients?','Clients include national authorities such as the New Urban Communities Authority (NUCA), the Ministry of Municipal and Rural Affairs and Housing, the Royal Commission for AlUla and the Royal Commission for Makkah City and Holy Sites, as well as private developers and universities.'),
  ('Does PUD plan sustainable cities?','Yes. PUD designed the Abo Dabbab marine field station on the Red Sea, worked on the Green Star Hotels initiative with GIZ and contributed as sustainability expert to WATG\'s Sharaan Nature Reserve master plan in AlUla.'),
- ('Where are PUD\'s offices?','Riyadh (Diplomatic Quarter), Cairo (Beverly Hills, Sheikh Zayed City) and Dubai (Jabal Ali). Full addresses and phone numbers are on the contact page.'),
+ ('Where are PUD\'s offices?','Cairo (Beverly Hills in Sheikh Zayed City, and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel) and Dubai (Palm Jumeirah and Jabal Ali). Full addresses and phone numbers are on the contact page.'),
  ('Does PUD work on heritage sites?','Yes. PUD is the cultural-heritage specialist on the WATG team for the Giza Pyramids Plateau destination plan and prepared the development brief for the Khaybar heritage area master plan.'),
- ('How can I contact PUD?','Call the office closest to your site: Cairo on +20 100 198 1111, Riyadh on +966 540 39 8178 or Dubai on +971 52 2510 777.'),
+ ('How can I contact PUD?','Call the office closest to your site: Cairo on +20 100 198 1111 or +20 2 2414 7537, Riyadh on +966 540 39 8178 or 800 111 0893, or Dubai on +971 509 29 8178 or +971 52 2510 777.'),
 ]
 
 # explicit place aliases: city string -> [(place name, country, kind)]; kind 'city' or 'region'

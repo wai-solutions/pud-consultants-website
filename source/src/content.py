@@ -76,9 +76,12 @@ AMR_FACTS = [
  ('2016','Professor of Urban Planning, Ain Shams University.'),
 ]
 
-OFFICES = [('Riyadh','8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia','+966 540 39 8178'),
-           ('Cairo','Polygon Building 8, Office 208, SODIC, Beverly Hills, Sheikh Zayed City, Egypt','+20 100 198 1111'),
-           ('Dubai','Office G03, Jabal Ali Industrial First, Dubai, UAE','+971 52 2510 777')]
+OFFICES = [('Cairo, Sheikh Zayed','Polygon Building 8, Office 208, SODIC, Beverly Hills, Sheikh Zayed City 12588, Egypt','+20 100 198 1111'),
+           ('Cairo, Heliopolis','115 El Thawra Street, 5th Floor, Heliopolis, Cairo 11757, Egypt','+20 2 2414 7537'),
+           ('Riyadh, Diplomatic Quarter','8620 Ibn Mousa Street, 3372 Diplomatic Quarter, Riyadh 2513, Saudi Arabia','+966 540 39 8178'),
+           ('Riyadh, Al Nakheel','7064 Salem bin Maaqil Street, Al Nakheel District, 4092 Riyadh 12393, Saudi Arabia','800 111 0893'),
+           ('Dubai, Palm Jumeirah','Shoreline 12, Al Anbara, PH 06, Palm Jumeirah, Dubai, UAE','+971 509 29 8178'),
+           ('Dubai, Jabal Ali','Office G03, Jabal Ali Industrial First, Dubai, UAE','+971 52 2510 777')]
 
 STEPS = [
  ('01','It starts as a line on paper.','Every city we have planned began as a drawing, years before anyone moved in.'),
