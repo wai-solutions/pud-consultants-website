@@ -324,7 +324,7 @@ const FORM_TO='inas.bakeer@wai-s.com';
     var m = document.querySelector('meta[name="pud-build"]');
     if (!m || !window.fetch || location.protocol === 'file:') return;
     var cur = m.content, key = 'pud-fresh:' + location.pathname;
-    fetch(location.pathname, { cache: 'no-store', credentials: 'same-origin' })
+    fetch(location.pathname + '?fresh=' + Date.now(), { cache: 'no-store', credentials: 'same-origin' })
       .then(function (r) { return r.ok ? r.text() : ''; })
       .then(function (t) {
         var x = /name="pud-build" content="([^"]+)"/.exec(t);

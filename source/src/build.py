@@ -1276,7 +1276,7 @@ def postprocess():
     if os.path.exists(SITE + '/build.txt'): os.remove(SITE + '/build.txt')  # SC-013: no longer published
     for f in glob.glob(SITE + '/**/*.html', recursive=True):
         t = open(f, encoding='utf-8').read()
-        if '__B__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__B__', B))
+        if '__B__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__B__', hashlib.md5((V + t).encode()).hexdigest()[:10]))  # per-page, so any content change is detected
     for f in glob.glob(SITE + '/**/*.html', recursive=True):
         t = open(f, encoding='utf-8').read()
         if '__V__' in t: open(f, 'w', encoding='utf-8').write(t.replace('__V__', V))
