@@ -57,7 +57,7 @@ SDGS = [
     (11, 'Sustainable cities and communities', 'Make cities and human settlements inclusive, safe, resilient and sustainable.', 'Our core work for sixty years.'),
     (17, 'Partnerships for the goals', 'Strengthen the means of implementation and revitalise the Global Partnership for Sustainable Development.', 'Projects planned with partners such as WATG, AECOM and GIZ.'),
 ]
-SUS_PROJECTS = ['alula-strategic-framework-plan', 'abo-dabbab-marine-field-station', 'north-coast-regional-vision-fuka-matrouh', 'sharaan-nature-reserve-master-plan']
+SUS_PROJECTS = ['alula-strategic-framework-plan', 'khaybar-heritage-area-master-plan', 'north-coast-regional-vision-fuka-matrouh', 'sharaan-nature-reserve-master-plan']
 SUS_FAQ = [
     ('How does PUD Consultants approach sustainability?', 'Sustainability is part of how PUD plans, through four commitments: environmental responsibility, social inclusion, cultural heritage preservation and green building standards. PUD applies them across five responsibilities: people, society, culture, the environment and the planet.'),
     ('Which UN Sustainable Development Goals does PUD\'s work support?', 'PUD\'s work contributes most directly to four of the seventeen goals: SDG 8 (decent work and economic growth), 9 (industry, innovation and infrastructure), 11 (sustainable cities and communities) and 17 (partnerships for the goals).'),

@@ -313,3 +313,7 @@ const FORM_TO='inas.bakeer@wai-s.com';
   // keyboard: focusing a card scrolls the page to it
   cards.forEach((c,i)=>c.addEventListener('focus',()=>{const top=sec.getBoundingClientRect().top+scrollY;const x=c.offsetLeft-(innerWidth-c.offsetWidth)/2;scrollTo({top:top+Math.max(0,Math.min(dist,x)),behavior:'smooth'})}));
 })();
+
+// insights: tap a decade bar to read its count
+(()=>{const bs=$$('.ibar');const out=$('.ibar-out');if(!bs.length)return;bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(out)out.textContent=b.dataset.d+': '+b.dataset.n+' projects'}));
+  const last=bs[bs.length-1];last.click()})();
