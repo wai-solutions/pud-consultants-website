@@ -262,7 +262,10 @@ const FORM_TO='inas.bakeer@wai-s.com';
   const okEmail=v=>/^\S+@\S+\.\S+$/.test(v.trim());
   // if the relay fails for any reason, the visitor's message is not lost: offer it as a prefilled email
   const mailto=d=>'mailto:'+MAIL+'?subject='+encodeURIComponent('Website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''))+'&body='+encodeURIComponent((d.Message||'')+'\n\n'+(d.Name||'')+(d.Phone?'\n'+d.Phone:''));
-  const fail=d=>{note.innerHTML='Sorry, the form could not send your message. <a href="'+mailto(d).replace(/"/g,'&quot;')+'">Send it by email instead</a> or call +20 2 2414 7537.'};
+  // If the relay is unavailable, visitors see no error: their email app opens with the message ready to send.
+  const fail=d=>{const u=mailto(d);f.hidden=true;done.querySelector('.pc-tick').textContent='✉';
+    done.querySelector('p').innerHTML='Almost done. Your email app is opening with your message ready: press Send. If it does not open, <a href="'+u.replace(/"/g,'&quot;')+'">tap here</a> or write to <a href="mailto:'+MAIL+'">'+MAIL+'</a>.';
+    done.hidden=false;note.textContent='';setTimeout(()=>{location.href=u},300)};
   const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'-'));fd.append('Source','Website form · '+location.href);
     fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''));fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
     const r=await fetch('https://formsubmit.co/ajax/'+FORM_TO,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
@@ -275,7 +278,7 @@ const FORM_TO='inas.bakeer@wai-s.com';
   f.addEventListener('submit',async e=>{e.preventDefault();if(f._honey.value)return;const v=n=>f.elements[n].value.trim();
     if(!v('name')||!okEmail(v('email'))||!v('message')){note.textContent='Please add your name, a valid email and a message.';return}
     const sb=q('.pc-send');sb.disabled=true;note.textContent='Sending…';const d={Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')};
-    try{await send(d);f.reset();note.textContent='';f.hidden=true;done.querySelector('p').textContent=THANKS;done.hidden=false}
+    try{await send(d);f.reset();note.textContent='';f.hidden=true;done.querySelector('.pc-tick').textContent='✓';done.querySelector('p').textContent=THANKS;done.hidden=false}
     catch(err){fail(d)}finally{sb.disabled=false}});
 })();
 
