@@ -231,6 +231,8 @@ addEventListener('load',()=>ScrollTrigger.refresh());
 /* floating chat: enquiries go through FormSubmit to the PUD office inbox (info@pudconsultants.com).
    Copies to other people are set up as forwarding on that mailbox, never in this public file. */
 const MAIL='info@pudconsultants.com';
+// FormSubmit endpoint: after activation, replace this address with the alias string from FormSubmit's confirmation email
+const FORM_TO='inas.bakeer@wai-s.com';
 (()=>{const R=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
   const w=document.createElement('div');w.className='pchat';w.innerHTML=`
   <button class="pc-btn" type="button" aria-label="Write to PUD" aria-expanded="false" aria-controls="pcPanel">
@@ -263,7 +265,7 @@ const MAIL='info@pudconsultants.com';
   const fail=d=>{note.innerHTML='Sorry, the form could not send your message. <a href="'+mailto(d).replace(/"/g,'&quot;')+'">Send it by email instead</a> or call +20 2 2414 7537.'};
   const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'-'));fd.append('Source','Website form · '+location.href);
     fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''));fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
-    const r=await fetch('https://formsubmit.co/ajax/'+MAIL,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
+    const r=await fetch('https://formsubmit.co/ajax/'+FORM_TO,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
   const setOpen=o=>{w.classList.toggle('open',o);panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o&&done.hidden)setTimeout(()=>f.elements.name.focus(),60);if(!o)btn.focus()};
   btn.addEventListener('click',()=>setOpen(panel.hidden));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setOpen(false)});
