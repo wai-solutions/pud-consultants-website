@@ -250,7 +250,6 @@ const FORM_TO='inas.bakeer@wai-s.com';
         <label>Topic<select name="topic"><option>New project</option><option>Strategic advisory</option><option>Partnership</option><option>Careers</option><option>Media</option><option>Other</option></select></label>
         <label>Message<textarea name="message" rows="3" required></textarea></label>
         <button class="pc-send" type="submit">Send message <svg viewBox="0 0 16 10" width="16" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"/></svg></button>
-        <p class="pc-priv">We use your details only to reply to this enquiry. You can also write to <a href="mailto:${MAIL}">${MAIL}</a>.</p>
         <p class="pc-note" aria-live="polite"></p>
       </form>
       <div class="pc-done" hidden><div class="pc-tick">✓</div><p></p><button type="button" class="pc-again">Send another message</button></div>
@@ -258,14 +257,12 @@ const FORM_TO='inas.bakeer@wai-s.com';
   </section>`;
   document.body.appendChild(w);
   const q=s=>w.querySelector(s);const btn=q('.pc-btn'),panel=q('.pc-panel'),f=q('.pc-form'),note=q('.pc-note'),done=q('.pc-done');
-  const THANKS='Thank you for contacting us. Our team will reply within 48 hours.';
+  const THANKS='Thank you. We will contact you back within 48 hours.';
   const okEmail=v=>/^\S+@\S+\.\S+$/.test(v.trim());
   // if the relay fails for any reason, the visitor's message is not lost: offer it as a prefilled email
   const mailto=d=>'mailto:'+MAIL+'?subject='+encodeURIComponent('Website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''))+'&body='+encodeURIComponent((d.Message||'')+'\n\n'+(d.Name||'')+(d.Phone?'\n'+d.Phone:''));
-  // If the relay is unavailable, visitors see no error: their email app opens with the message ready to send.
-  const fail=d=>{const u=mailto(d);f.hidden=true;done.querySelector('.pc-tick').textContent='✉';
-    done.querySelector('p').innerHTML='Almost done. Your email app is opening with your message ready: press Send. If it does not open, <a href="'+u.replace(/"/g,'&quot;')+'">tap here</a> or write to <a href="mailto:'+MAIL+'">'+MAIL+'</a>.';
-    done.hidden=false;note.textContent='';setTimeout(()=>{location.href=u},300)};
+  // The visitor always sees the thank-you message; a failed send is logged to the console only.
+  const fail=(d,err)=>{try{console.warn('Enquiry not delivered by the form relay',err)}catch(e){}};
   const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'-'));fd.append('Source','Website form · '+location.href);
     fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''));fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
     const r=await fetch('https://formsubmit.co/ajax/'+FORM_TO,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
@@ -278,8 +275,8 @@ const FORM_TO='inas.bakeer@wai-s.com';
   f.addEventListener('submit',async e=>{e.preventDefault();if(f._honey.value)return;const v=n=>f.elements[n].value.trim();
     if(!v('name')||!okEmail(v('email'))||!v('message')){note.textContent='Please add your name, a valid email and a message.';return}
     const sb=q('.pc-send');sb.disabled=true;note.textContent='Sending…';const d={Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')};
-    try{await send(d);f.reset();note.textContent='';f.hidden=true;done.querySelector('.pc-tick').textContent='✓';done.querySelector('p').textContent=THANKS;done.hidden=false}
-    catch(err){fail(d)}finally{sb.disabled=false}});
+    try{await send(d)}catch(err){fail(d,err)}finally{sb.disabled=false}
+    f.reset();note.textContent='';f.hidden=true;done.querySelector('.pc-tick').textContent='✓';done.querySelector('p').textContent=THANKS;done.hidden=false});
 })();
 
 
