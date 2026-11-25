@@ -4,18 +4,18 @@ import content, seo
 
 # ---- decades (home timeline and 60-years page)
 def _set(i, **kw): content.DECADES[i].update(kw)
-_set(0, title='Every legacy begins with a vision',
-     text='Prof. Dr. Abdallah Attia founds PUD in Cairo in 1966, with a belief that planning should serve people, land and history. A university commission and a bus terminal come first, then governorate plans and, by 1973, a competition win in Kuwait.')
+_set(0, title='The first commissions',
+     text='Prof. Dr. Abdallah Attia founds PUD in Cairo in 1966. A university commission and a bus terminal come first, then governorate plans and, by 1973, a competition win in Kuwait.')
 _set(1, title='The coast takes shape',
-     text='PUD plans tourism development along Egypt\'s North West Coast and designs Tut Amun on Lake Nasser, Egypt\'s first tourist village. Marina El Alamein breaks ground in 1985.')
+     text='PUD plans tourism development along Egypt\'s North West Coast and designs Tut Amun on Lake Nasser, which PUD describes as Egypt\'s first tourist village. Marina El Alamein breaks ground in 1985.')
 _set(2, title='A landmark on the Mediterranean',
-     text='Marina El Alamein grows through three phases and wins the State Encouragement Prize in Architecture in 1990. Amr Attia joins in 1991, the year Hilton Dahab is designed.')
+     text='Marina El Alamein grows through three phases and wins the State Encouragement Prize in Architecture in 1990. Amr Attia joins in 1991, and Hilton Dahab on the Gulf of Aqaba is built in the mid-1990s.')
 _set(3, title='The new chapter',
      text='Marina Matrouh, Latakia, Sheikh Zayed City and Historic Cairo. Amr Attia completes his PhD at UCL, serves on the technical committee of the Grand Egyptian Museum competition and becomes CEO in 2005.')
-_set(4, title='Global minds. One mission.',
+_set(4, title='New cities, new partners',
      text='New cities and campuses in Iraq, Syria and Egypt, strategic plans for Tanta and Mansoura, then Jeddah and Taif with AECOM Arabia. A marine field station on the Red Sea and the Green Star Hotels programme with GIZ put sustainability into the portfolio.')
 _set(5, title='From city frameworks to the Holy Sites',
-     text='PUD Saudi opens in Riyadh in 2018. The work reaches AlUla, Khaybar, Makkah, the Pyramids Plateau and the next phases of Egypt\'s New Administrative Capital.')
+     text='Prof. Dr. Amr Attia co-founds PUD Saudi in Riyadh in 2018. The work reaches AlUla, Khaybar, Makkah, the Pyramids Plateau and the next phases of Egypt\'s New Administrative Capital.')
 # strip internal wording from beats
 for d in content.DECADES:
     d['beats'] = [(y, t.replace(' (PUD record)', '')) for y, t in d['beats']]
@@ -28,10 +28,9 @@ content.FOUNDER_FACTS[:] = [
  ('1987', 'Chairs the Urban Planning Department at Ain Shams University until 1992.'),
  ('1990', 'State Encouragement Prize in Architecture for Marina El Alamein.'),
 ]
-FOUNDER_LEAD = 'A visionary in shaping the urban fabric of the region. He founded PUD on the synergy between people and their natural and cultural environments, planned much of Egypt\'s North West Coast and taught a generation of planners and architects.'
-FOUNDER_BIO = ('Prof. Dr. Abdallah Attia trained in Alexandria and Zurich and founded PUD in Cairo in 1966 on one idea: planning and architecture should answer the place, not repeat a formula. '
-               'He planned much of Egypt\'s North West Coast, led Marina El Alamein from master plan to site supervision, and designed Tut Amun on Lake Nasser and Hilton Dahab on the Gulf of Aqaba. '
-               'Marina El Alamein won the State Encouragement Prize in Architecture in 1990. He taught as Professor of Architecture and chaired the Urban Planning Department at Ain Shams University.')
+FOUNDER_LEAD = 'Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in Cairo in 1966. He trained as an architect in Alexandria and took his doctorate at ETH Zurich.'
+FOUNDER_BIO = ('His best-known work sits in places with strong natural conditions: Marina El Alamein on the Mediterranean, Tut Amun on Lake Nasser, Hilton Dahab under the Sinai mountains. '
+               'Marina El Alamein won the State Encouragement Prize in Architecture in 1990. He prepared tourism and structure plans for Egypt\'s North West Coast, and as Professor of Architecture and head of the Urban Planning Department at Ain Shams University he taught a generation of planners and architects.')
 
 # ---- services: sharper leads
 _LEADS = {
@@ -56,22 +55,22 @@ for s in seo.SERVICES:
     if s['slug'] in _BODY0: s['body'][0] = _BODY0[s['slug']]
 
 # ---- FAQ openers
-seo.FAQ[1] = ('Who is PUD Consultants?', 'PUD Consultants (Planning & Urban Development Consultants) plans cities, regions and destinations, and designs the buildings and landscapes inside them. Prof. Dr. Abdallah Attia founded the practice in Cairo in 1966, and Prof. Dr. Amr Attia leads it today from offices in Cairo, Riyadh and Dubai.')
-seo.FAQ[4] = ('Who founded PUD and who leads it now?', 'Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University and an Eisenhower Fellow (2007).')
+seo.FAQ[1] = ('Who is PUD Consultants?', 'PUD plans cities, regions and destinations and designs the buildings and landscapes inside them. Prof. Dr. Abdallah Attia founded it in Cairo in 1966. His son, Prof. Dr. Amr Attia, joined in 1991 and leads it today, from offices in Cairo, Riyadh and Dubai. He is also Professor of Urban Planning at Ain Shams University and an Eisenhower Fellow (2007).')
+del seo.FAQ[4]  # CT-045: one question, one answer
 
 # ---- Amr Attia highlights and page copy
-AMR_HEADLINE = 'A great leader builds beyond today. He carries PUD into its next chapter, from the Pyramids Plateau to Makkah, and teaches the planners who come next.'
+AMR_HEADLINE = 'He has planned for tourism, heritage and growth on the same land for more than thirty years, from Egypt\'s North West Coast to the holy sites of Makkah, and he teaches the planners who come next.'
 AMR_PARAS = [
- 'Prof. Dr. Amr Attia leads PUD Consultants. He joined the practice in 1991, became CEO in 2005 and co-founded PUD Saudi in Riyadh in 2018. His work includes planning frameworks for Jeddah, AlUla, the holy sites of Makkah and Egypt\'s New Administrative Capital, and the Giza Pyramids tourism master plan, where he guided the local Egyptology and heritage experts working with WATG.',
+ 'Prof. Dr. Amr Attia leads PUD Consultants, the practice his father founded. He joined in 1991, was Vice President and CEO from 2005 to 2011, and co-founded PUD Saudi in Riyadh in 2018. His work includes planning frameworks for Jeddah, AlUla, the holy sites of Makkah and Egypt\'s New Administrative Capital and, as PUD\'s lead on the Giza Pyramids tourism master plan, he guided the local Egyptologists and heritage architect working with WATG, who led the plan.',
  'He is Professor of Urban Planning at Ain Shams University and holds a PhD from UCL on tourism policy on Egypt\'s North West Coast. He was selected as an Eisenhower Fellow in 2007, spent 2011 to 2020 at AECOM Arabia, rising to Principal Director, and was Vice President at WATG from 2020 to 2023.',
- 'He spoke at SHARE Romania in Bucharest in 2025 and SHARE Georgia in Tbilisi in September 2026. He speaks at SHARE Kazakhstan in Almaty on 24 and 25 November 2026, and he is Board Chairman of SHARE Egypt, the first SHARE forum in Africa, at the Grand Egyptian Museum on 13 and 14 December 2026.',
+ 'He spoke at SHARE Romania in Bucharest in 2025 and SHARE Georgia in Tbilisi in September 2026. He took part in SHARE Kazakhstan in Almaty on 24 and 25 November 2026, and he is Board Chairman of SHARE Egypt, the first SHARE forum in Africa, at the Grand Egyptian Museum on 13 and 14 December 2026.',
 ]
 AMR_TILES = [('2007', 'Eisenhower Fellow'), ('1991', 'Joined PUD'), ('2016', 'Professor of Urban Planning, Ain Shams University'), ('2026', 'Board Chairman, SHARE Egypt')]
 AMR_PRIZES = ['Nasser Memorial Civic Centre, Egypt', 'Planning of Luxor City and its Region, Egypt', 'Al-Ashish Urbanized Communities, Kuwait', 'Tut Amun Village Hotel, Aswan, Egypt']
 AMR_SPOTLIGHT = [
  dict(img='assets/people/share-egypt-committee.jpg', t='SHARE Egypt 2026 organising committee', d='Board Chairman of SHARE Egypt. The forum brings SHARE Architects to Africa for the first time.', url='https://share-architects.com/share-architects-expands-to-africa-share-egypt-2026-announced/'),
  dict(img='assets/people/share-egypt-forum.jpg', t='SHARE Egypt 2026, Grand Egyptian Museum', d='International Forum for Architecture and Urbanism, Cairo, 13 and 14 December 2026.', url='https://shareegypt2026forum.sched.com'),
- dict(img='assets/people/share-kazakhstan-speakers.jpg', t='SHARE Kazakhstan 2026, Almaty', d='Guest speaker. Master Debate on high-rise buildings in Almaty on 24 November, and the session Good Living and Working on 25 November.', url='https://sharekazakshtan2026forum.sched.com/speaker/amr.attia'),
+ dict(img='assets/people/share-kazakhstan-speakers.jpg', t='SHARE Kazakhstan 2026, Almaty', d='Panellist, Master Debate on high-rise buildings in Almaty (24 November), and speaker on Day 2 of SHARE Kazakhstan 2026 (25 November, InterContinental Almaty).', url='https://sharekazakshtan2026forum.sched.com/speaker/amr.attia'),
  dict(img='assets/people/share-egypt-gem.jpg', t='SHARE Architects enters Africa', d='Announcement of the first SHARE forum on the continent, inside the Grand Egyptian Museum.', url='https://share-architects.com'),
 ]
 AMR_GIZA = [
@@ -83,7 +82,7 @@ AMR_WORK = ['pyramids-plateau-destination-master-plan', 'new-administrative-capi
 
 # project summaries sharpened with public SHARE sources
 OVERRIDE2 = {
- 'golden-gate-new-cairo': dict(name='Golden Gate, New Cairo', client='Redcon Properties', category=['Mixed use', 'Masterplan'], role='Master planning, with WATG', summary='Golden Gate is a mixed-use business and retail district in New Cairo for Redcon Properties: 29 commercial and administrative buildings on about 160,000 m\u00b2, with some 250,000 m\u00b2 of built-up area. Shops, caf\u00e9s and restaurants line its pedestrian streets and plazas at ground level, under offices with green roofs, and its main frontage faces South 90 Street. PUD worked on the master plan with WATG. Five of its buildings hold an EDGE Advanced preliminary certificate, with savings of up to 53% in energy and 44% in water against conventional buildings.'),
- 'somou-boulevard-new-cairo': dict(summary='Sumou Boulevard is a mixed-use development at the gate of Mostakbal City in New Cairo, for Paragon-Adeer. It is built around a 2 km pedestrian boulevard with workspaces and leisure for young professionals. PUD supplied the subject-matter-expert group advising the steering committee that reviews the design, and supported consultant selection.'),
+ 'golden-gate-new-cairo': dict(name='Golden Gate, New Cairo', client='Redcon Properties', category=['Mixed use', 'Masterplan'], role='Master planning, with WATG', summary='Golden Gate is a mixed-use business and retail district in New Cairo for Redcon Properties: 29 commercial and administrative buildings on about 160,000 m\u00b2, with some 250,000 m\u00b2 of built-up area. Shops, caf\u00e9s and restaurants line its pedestrian streets and plazas at ground level, under offices with green roofs, and its main frontage faces South 90 Street. PUD worked on the master plan with WATG. '),
+ 'somou-boulevard-new-cairo': dict(summary='Somou Boulevard is a mixed-use development at the gate of Mostakbal City in New Cairo, for Paragon-Adeer, built around a 2 km pedestrian boulevard. PUD supplied the subject-matter-expert group advising the steering committee that reviews the design, and supported consultant selection.'),
  'new-administrative-capital-phases-2-4': dict(summary='Egypt\'s New Administrative Capital is planned for 6.5 million residents across 220,000 feddan. PUD says it led the international Steering Committee advising ACUD on the strategic master plan for Phases 2 to 4, the 180,000 feddan beyond Phase 1, with Dar Al-Handasah as lead designer. The plan ties urban growth to ecological systems and revises the city\'s economic and development strategy.'),
 }

@@ -21,7 +21,7 @@ http://www.pudconsultants.com/* https://www.pudconsultants.com/:splat 301!
 /services/landscape-planning-and-design.html  /services/master-planning-and-urban-design.html   301
 /services/infrastructure-and-mobility-planning.html /services/urban-and-regional-planning.html  301
 # Old Wix site paths
-/expertise  /about.html  301
+/expertise  /about.html#expertise  301
 /leadership  /people.html  301
 /ecosystem  /partners.html  301
 /sdgalignment  /sustainability.html  301
@@ -40,3 +40,12 @@ http://www.pudconsultants.com/* https://www.pudconsultants.com/:splat 301!
 /collaborations/khaybar-heritage-area%2C-alula%2C-ksa  /projects/khaybar-heritage-area-master-plan.html  301
 /collaborations/sharaan-nature-reserve%2C-alula%2C-ksa  /projects/sharaan-nature-reserve-master-plan.html  301
 /collaborations/gargoub-new-port-city%2C-matrouh%2C-egypt  /projects/gargoub-new-port-city.html  301
+# Common guesses (UX-009)
+/about-us  /about.html  301
+/contact-us  /contact.html  301
+/home  /  301
+/team  /people.html  301
+/blog  /insights.html  301
+/news  /insights.html  301
+/careers  /contact.html  301
+/our-projects  /projects.html  301

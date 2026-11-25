@@ -24,9 +24,9 @@
  ],
  "roles": [
   {
-   "years": "1991 to 2011, and since 2020",
+   "years": "1991 to 2011, and again today",
    "text": "Joined PUD Consultants in 1991 as planner and urban designer; Vice President and CEO from 2005 to 2011; leads the practice again today.",
-   "source": "CPAS biography 2012; Romania_Arch_Forum_Presentation.txt (Principal, PUD Consultants); company-profile-2026-text.txt p.5; https://www.pudconsultants.com/ecosystem"
+   "source": "CPAS biography 2012; SHARE Romania 2025 speaker profile"
   },
   {
    "years": "1991 to present",
@@ -134,7 +134,7 @@
    "date": "November 2025 (to confirm exact date)",
    "status": "held",
    "event": "Salon Al-Shams special session, Ain Shams University Faculty of Engineering: panel \"Tourism Master Plan at the Giza Pyramids\"",
-   "role": "panelist",
+   "role": "panellist",
    "topic": "Transforming a World Wonder: A Master Plan Framework for the Giza Pyramids",
    "place": "Faculty of Engineering, Ain Shams University, Cairo",
    "source_url": "https://eng.asu.edu.eg/public/2790454",
@@ -178,7 +178,7 @@
    "date": "18 October 2009",
    "status": "held",
    "event": "U.S. Department of State (Bureau of International Information Programs) virtual panel \"Architectural Design and International Collaboration in Virtual Worlds\"",
-   "role": "panelist",
+   "role": "panellist",
    "topic": "Architectural collaboration across borders in Second Life",
    "place": "Held online in Second Life (Annenberg Island)",
    "source_url": "https://archvirtual.com/2009/10/13/the-united-states-department-of-state-to-host-panel-discussion-architectural-design-and-international-collaboration-in-virtual-worlds/",
@@ -198,9 +198,9 @@
   {
    "year": "2026",
    "date": "24 and 25 November 2026",
-   "status": "upcoming",
-   "event": "SHARE Kazakhstan 2026: Master Debate, High-Rise Buildings in Almaty, and the session Good Living and Working",
-   "role": "panelist",
+   "status": "",
+   "event": "SHARE Kazakhstan 2026: panellist, Master Debate on high-rise buildings in Almaty (24 November), and speaker on Day 2 (25 November, InterContinental Almaty)",
+   "role": "panellist",
    "topic": "",
    "place": "Almaty, Kazakhstan",
    "source_url": "https://sharekazakshtan2026forum.sched.com/speaker/amr.attia"
@@ -209,7 +209,7 @@
    "year": "2026",
    "date": "22 September 2026",
    "status": "held",
-   "event": "SHARE Georgia 2026: Keynote Plenary Session, and the talk \"Making a New Capital City Work\" on Egypt's New Administrative Capital and Sumou Boulevard",
+   "event": "SHARE Georgia 2026: Keynote Plenary Session, and the talk \"Making a New Capital City Work\" on Egypt's New Administrative Capital and Somou Boulevard",
    "role": "speaker",
    "topic": "",
    "place": "Pullman Tbilisi Axis Towers, Tbilisi, Georgia",
@@ -334,7 +334,7 @@
   {
    "year": "",
    "text": "Part of the team that won first prize in the international competition to design the Arab World Participation Galleries at the 56th Frankfurt Book Fair.",
-   "source": "deliverables/pud-resources/ebrd_amr.txt (his CV text)",
+   "source": "EBRD curriculum vitae",
    "rating": "A-self"
   }
  ],

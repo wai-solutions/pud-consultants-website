@@ -479,19 +479,19 @@
  },
  {
   "folder": "24. Prince Talal",
-  "slug_guess": "prince-talal-majestic-hotel",
+  "slug_guess": "private-waterfront-hurghada",
   "items": [
    {
-    "src": "assets/p/prince-talal-majestic-hotel/01.jpg",
-    "thumb": "assets/p/prince-talal-majestic-hotel/01_t.jpg",
+    "src": "assets/p/private-waterfront-hurghada/01.jpg",
+    "thumb": "assets/p/private-waterfront-hurghada/01_t.jpg",
     "w": 1516,
     "h": 1800,
     "kind": "plan",
     "note": "Site analysis aerial around the project site"
    },
    {
-    "src": "assets/p/prince-talal-majestic-hotel/02.jpg",
-    "thumb": "assets/p/prince-talal-majestic-hotel/02_t.jpg",
+    "src": "assets/p/private-waterfront-hurghada/02.jpg",
+    "thumb": "assets/p/private-waterfront-hurghada/02_t.jpg",
     "w": 1472,
     "h": 1800,
     "kind": "plan",
@@ -2532,7 +2532,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / kidana-al-khaif",
+  "folder": "PUD archive / kidana-al-khaif",
   "slug_guess": "x-kidana-al-khaif",
   "items": [
    {
@@ -2586,7 +2586,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / muzdalifah-park",
+  "folder": "PUD archive / muzdalifah-park",
   "slug_guess": "x-muzdalifah-park",
   "items": [
    {
@@ -2600,7 +2600,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / majar-al-kabsh-pre-concept-design",
+  "folder": "PUD archive / majar-al-kabsh-pre-concept-design",
   "slug_guess": "x-majar-al-kabsh-pre-concept-design",
   "items": [
    {
@@ -2646,7 +2646,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / al-rabita-pre-concept-design-competition",
+  "folder": "PUD archive / al-rabita-pre-concept-design-competition",
   "slug_guess": "x-al-rabita-pre-concept-design-competition",
   "items": [
    {
@@ -2660,7 +2660,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / massoumbou-diwom-vision-master-plan",
+  "folder": "PUD archive / massoumbou-diwom-vision-master-plan",
   "slug_guess": "x-massoumbou-diwom-vision-master-plan",
   "items": [
    {
@@ -2674,7 +2674,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / yuwdda-sub-regional-plan",
+  "folder": "PUD archive / yuwdda-sub-regional-plan",
   "slug_guess": "x-yuwdda-sub-regional-plan",
   "items": [
    {
@@ -2696,7 +2696,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / riyadh-plan-stakeholder-engagement-plan",
+  "folder": "PUD archive / riyadh-plan-stakeholder-engagement-plan",
   "slug_guess": "x-riyadh-plan-stakeholder-engagement-plan",
   "items": [
    {
@@ -2710,7 +2710,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / north-coast-regional-vision-fuka-matrouh",
+  "folder": "PUD archive / north-coast-regional-vision-fuka-matrouh",
   "slug_guess": "x-north-coast-regional-vision-fuka-matrouh",
   "items": [
    {
@@ -2724,7 +2724,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / port-ghalib-master-plan",
+  "folder": "PUD archive / port-ghalib-master-plan",
   "slug_guess": "x-port-ghalib-master-plan",
   "items": [
    {
@@ -2738,7 +2738,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / neom-hospital-landscape-conceptual-masterplan",
+  "folder": "PUD archive / neom-hospital-landscape-conceptual-masterplan",
   "slug_guess": "x-neom-hospital-landscape-conceptual-masterplan",
   "items": [
    {
@@ -2752,7 +2752,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / sharaan-nature-reserve-master-plan",
+  "folder": "PUD archive / sharaan-nature-reserve-master-plan",
   "slug_guess": "x-sharaan-nature-reserve-master-plan",
   "items": [
    {
@@ -2766,7 +2766,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / alula-strategic-framework-plan",
+  "folder": "PUD archive / alula-strategic-framework-plan",
   "slug_guess": "x-alula-strategic-framework-plan",
   "items": [
    {
@@ -2780,7 +2780,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / jazan-city-primary-downstream-industries",
+  "folder": "PUD archive / jazan-city-primary-downstream-industries",
   "slug_guess": "x-jazan-city-primary-downstream-industries",
   "items": [
    {
@@ -2794,7 +2794,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / pyramisa-apartment-hotel-hurghada",
+  "folder": "PUD archive / pyramisa-apartment-hotel-hurghada",
   "slug_guess": "x-pyramisa-apartment-hotel-hurghada",
   "items": [
    {
@@ -2808,7 +2808,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-matrouh",
+  "folder": "PUD archive / marina-matrouh",
   "slug_guess": "x-marina-matrouh",
   "items": [
    {
@@ -2822,7 +2822,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-latakia-tourist-complex",
+  "folder": "PUD archive / marina-latakia-tourist-complex",
   "slug_guess": "x-marina-latakia-tourist-complex",
   "items": [
    {
@@ -2836,7 +2836,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marakia-tourist-village",
+  "folder": "PUD archive / marakia-tourist-village",
   "slug_guess": "x-marakia-tourist-village",
   "items": [
    {
@@ -2850,12 +2850,12 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / fawaz-alhokair-bvlgari-mansion-dubai",
-  "slug_guess": "x-fawaz-alhokair-bvlgari-mansion-dubai",
+  "folder": "PUD archive / fawaz-alhokair-beachfront-residence-dubai",
+  "slug_guess": "x-fawaz-alhokair-beachfront-residence-dubai",
   "items": [
    {
-    "src": "assets/p/x-fawaz-alhokair-bvlgari-mansion-dubai/01.jpg",
-    "thumb": "assets/p/x-fawaz-alhokair-bvlgari-mansion-dubai/01_t.jpg",
+    "src": "assets/p/x-fawaz-alhokair-beachfront-residence-dubai/01.jpg",
+    "thumb": "assets/p/x-fawaz-alhokair-beachfront-residence-dubai/01_t.jpg",
     "w": 1800,
     "h": 1349,
     "kind": "render",
@@ -2864,7 +2864,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / fawaz-alhokair-diriyah-farm-and-compound",
+  "folder": "PUD archive / fawaz-alhokair-diriyah-farm-and-compound",
   "slug_guess": "x-fawaz-alhokair-diriyah-farm-and-compound",
   "items": [
    {
@@ -2878,7 +2878,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / north-west-coast-structure-plan",
+  "folder": "PUD archive / north-west-coast-structure-plan",
   "slug_guess": "x-north-west-coast-structure-plan",
   "items": [
    {
@@ -2900,7 +2900,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / north-west-coast-tourism-development-planning",
+  "folder": "PUD archive / north-west-coast-tourism-development-planning",
   "slug_guess": "x-north-west-coast-tourism-development-planning",
   "items": [
    {
@@ -2922,7 +2922,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-matrouh-phase-2",
+  "folder": "PUD archive / marina-matrouh-phase-2",
   "slug_guess": "x-marina-matrouh-phase-2",
   "items": [
    {
@@ -2944,7 +2944,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-matrouh-phase-3",
+  "folder": "PUD archive / marina-matrouh-phase-3",
   "slug_guess": "x-marina-matrouh-phase-3",
   "items": [
    {
@@ -2958,7 +2958,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-el-alamein-concept-master-plan",
+  "folder": "PUD archive / marina-el-alamein-concept-master-plan",
   "slug_guess": "x-marina-el-alamein-concept-master-plan",
   "items": [
    {
@@ -2988,7 +2988,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / sukhna-heights-tourist-resort",
+  "folder": "PUD archive / sukhna-heights-tourist-resort",
   "slug_guess": "x-sukhna-heights-tourist-resort",
   "items": [
    {
@@ -3002,7 +3002,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / marina-latakia-master-plan-and-detailed-design",
+  "folder": "PUD archive / marina-latakia-master-plan-and-detailed-design",
   "slug_guess": "x-marina-latakia-master-plan-and-detailed-design",
   "items": [
    {
@@ -3016,7 +3016,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / dream-beach-resort-gambia",
+  "folder": "PUD archive / dream-beach-resort-gambia",
   "slug_guess": "x-dream-beach-resort-gambia",
   "items": [
    {
@@ -3030,7 +3030,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / ain-el-sokhna-tourist-center",
+  "folder": "PUD archive / ain-el-sokhna-tourist-center",
   "slug_guess": "x-ain-el-sokhna-tourist-center",
   "items": [
    {
@@ -3052,7 +3052,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / investors-tourism-village-new-damietta",
+  "folder": "PUD archive / investors-tourism-village-new-damietta",
   "slug_guess": "x-investors-tourism-village-new-damietta",
   "items": [
    {
@@ -3074,7 +3074,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / palm-beach-resort-landscape-riyadh",
+  "folder": "PUD archive / palm-beach-resort-landscape-riyadh",
   "slug_guess": "x-palm-beach-resort-landscape-riyadh",
   "items": [
    {
@@ -3088,7 +3088,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / jeddah-regional-strategic-and-local-plans",
+  "folder": "PUD archive / jeddah-regional-strategic-and-local-plans",
   "slug_guess": "x-jeddah-regional-strategic-and-local-plans",
   "items": [
    {
@@ -3102,7 +3102,7 @@
   ]
  },
  {
-  "folder": "Company Profile 2026 / jazan-economic-city",
+  "folder": "PUD archive / jazan-economic-city",
   "slug_guess": "x-jazan-economic-city",
   "items": [
    {

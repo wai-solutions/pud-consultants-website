@@ -14,9 +14,13 @@ document.documentElement.classList.remove('no-js');
   scan(document);new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>n.nodeType===1&&scan(n)))).observe(document.body,{childList:true,subtree:true});})();
 
 const nav=$('.nav');const onS=()=>nav.classList.toggle('solid',scrollY>40);onS();addEventListener('scroll',onS,{passive:true});
-$('.burger')?.addEventListener('click',()=>{nav.classList.toggle('open');$('.burger').setAttribute('aria-expanded',nav.classList.contains('open'))});
-$$('.nav li a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
-addEventListener('keydown',e=>{if(e.key==='Escape')nav.classList.remove('open')});
+// menu: one state function; focus moves into the list on open and back to the button on close
+const burger=$('.burger');
+const setMenu=(o,focusBtn)=>{nav.classList.toggle('open',o);burger&&burger.setAttribute('aria-expanded',o?'true':'false');if(o){const a=$('.nav li a');if(a){const f=()=>a.focus({preventScroll:true});setTimeout(f,60);setTimeout(()=>{if(document.activeElement!==a)f()},380)}}else if(focusBtn&&burger)burger.focus()};
+burger?.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
+$$('.nav li a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open'))setMenu(false,true)});
+document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!e.target.closest('.nav'))setMenu(false)});
 
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:0,rootMargin:'0px 0px 15% 0px'});
 $$('[data-r]').forEach(el=>{const d=parseFloat(el.dataset.r);if(d&&d!==1)el.style.transitionDelay=Math.min(d,.2)/2+'s';io.observe(el)});
@@ -28,7 +32,17 @@ const GL=hasGL()&&!reduce;
 if(!GL)document.documentElement.classList.add('nowebgl');
 
 const hv=$('.hero video');
-if(hv){if(reduce){hv.pause();hv.removeAttribute('autoplay')}else{new IntersectionObserver(es=>{es[0].isIntersecting?hv.play().catch(()=>{}):hv.pause()}).observe(hv)}}
+const saveData=!!(navigator.connection&&navigator.connection.saveData);
+let motionOff=false;try{motionOff=localStorage.getItem('pudMotion')==='off'}catch(e){}
+if(hv){const start=()=>{if(hv.dataset.started)return;hv.dataset.started='1';const src=innerWidth<=700?hv.dataset.srcM:hv.dataset.src;if(!src)return;hv.src=src;hv.preload='auto';
+    new IntersectionObserver(es=>{if(document.documentElement.classList.contains('motion-off'))return;es[0].isIntersecting?hv.play().catch(()=>{}):hv.pause()}).observe(hv)};
+  if(!reduce&&!saveData&&!motionOff){document.readyState==='complete'?start():addEventListener('load',()=>setTimeout(start,innerWidth<=700?600:0))}}
+// PA-023: one control pauses everything that moves (video, logo marquees, glowing pins)
+(()=>{const hero=$('.hero');if(!hero||reduce)return;const b=document.createElement('button');b.type='button';b.className='pause-motion';
+  const lab=()=>{const off=document.documentElement.classList.contains('motion-off');b.setAttribute('aria-pressed',off?'true':'false');b.textContent=off?'Play motion':'Pause motion'};
+  const set=off=>{document.documentElement.classList.toggle('motion-off',off);try{localStorage.setItem('pudMotion',off?'off':'on')}catch(e){}
+    if(hv){if(off)hv.pause();else{if(!hv.dataset.started&&!saveData){hv.dataset.started='';const src=innerWidth<=700?hv.dataset.srcM:hv.dataset.src;if(src){hv.src=src;hv.dataset.started='1'}}hv.play().catch(()=>{})}}lab()};
+  if(motionOff)document.documentElement.classList.add('motion-off');lab();b.addEventListener('click',()=>set(!document.documentElement.classList.contains('motion-off')));hero.appendChild(b)})();
 
 const stage=$('.stage.depth');
 if(stage&&!reduce){
@@ -72,6 +86,8 @@ if(lb){const imgs=$$('.gal button');let i=0;const img=$('img',lb);const show=n=>
   imgs.forEach((b,n)=>b.addEventListener('click',()=>show(n)));$('.x',lb).onclick=()=>lb.classList.remove('on');$('.p',lb).onclick=()=>show(i-1);$('.n',lb).onclick=()=>show(i+1);
   addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')show(i-1);if(e.key==='ArrowRight')show(i+1)})}
 
+addEventListener('load',()=>{$$('[data-dup]').forEach(t=>{const kids=[...t.children];kids.forEach(k=>{const c=k.cloneNode(true);c.setAttribute('aria-hidden','true');c.querySelectorAll('img').forEach(i=>{i.alt='';i.loading='lazy'});t.appendChild(c)})})});
+
 const DATA=window.__PROJECTS||[];const MS=window.__MILESTONES||[];
 const box=$('.atlas .box');
 let atlas=null;
@@ -79,7 +95,11 @@ const state={q:'',country:'All',cat:'All',region:'All',svc:'All',era:'All',year:
 const eraOk=y=>state.era==='All'||(state.era==='pre'?y<2000:(y>=+state.era&&y<+state.era+10));
 const regOk=c=>state.region==='All'||(state.region==='Intl'?(c!=='Egypt'&&c!=='Saudi Arabia'):c===state.region);
 function pass(p){return (state.country==='All'||p.country===state.country)&&(state.cat==='All'||p.category.includes(state.cat))&&regOk(p.country)&&(state.svc==='All'||(p.svc||[]).includes(state.svc))&&eraOk(p.year_start)&&(!state.q||(p.name+' '+p.city+' '+p.client+' '+p.country).toLowerCase().includes(state.q))}
-function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct){const T=+ct.dataset.total||DATA.length;ct.innerHTML=n>=T?'<b>'+T+'</b> projects':'<b>'+n+'</b> of '+T+' projects'}}
+function resetFilters(){state.q='';state.region='All';state.svc='All';state.era='All';state.country='All';state.cat='All';state.year=2026;const s=$('.search');if(s)s.value='';const r=$('.atlas input[type=range]');if(r)r.value=2026;
+  $$('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(/:All$/.test(x.dataset.filter))));applyAll()}
+function applyGrid(){const g=$('.pgrid');if(!g||!DATA.length)return;let n=0;$$('.pcard',g).forEach(c=>{const p=DATA[+c.dataset.i];const ok=pass(p)&&p.year_start<=state.year;c.hidden=!ok;if(ok)n++});const ct=$('.count');if(ct){const T=+ct.dataset.total||DATA.length;ct.innerHTML=n>=T?'<b>'+T+'</b> projects':'<b>'+n+'</b> of '+T+' projects'}
+  let em=$('.p-empty');if(!n){if(!em){em=document.createElement('p');em.className='p-empty';em.setAttribute('role','status');em.innerHTML='No projects match. <button type="button" class="btn ghost">Clear filters</button>';g.before(em);em.querySelector('button').addEventListener('click',resetFilters)}em.hidden=false}else if(em)em.hidden=true}
+let jumpT=0;const showResults=()=>{if(innerWidth>=800)return;clearTimeout(jumpT);jumpT=setTimeout(()=>{const t=$('.p-empty:not([hidden])')||$('.pgrid .pcard:not([hidden])');t&&t.scrollIntoView({behavior:'smooth',block:'center'})},700)};
 function count(){return DATA.filter(p=>pass(p)&&p.year_start<=state.year).length}
 function applyMap(){atlas&&atlas.setFilter(pass);atlas&&atlas.setYear(state.year);const y=$('.atlas .yr');if(y)y.textContent=state.year;const n=$('.atlas .n');if(n){const c=count();n.textContent=c+(c===1?' project':' projects')}}
 function applyAll(){applyMap();applyGrid()}
@@ -91,18 +111,28 @@ function showCap(m){if(!cap)return;if(!m){cap.classList.remove('on');return}cap.
 let lastNow=-9;
 function showNow(y){if(!now)return;const L=DATA.filter(p=>p.year_start===y&&pass(p)).slice(0,3);
   if(!L.length){if(y-lastNow>2)now.innerHTML='';return}
-  lastNow=y;now.innerHTML=L.map(p=>'<a href="'+p.url+'">'+(p.thumb?'<img src="'+p.thumb+'" alt="">':'<i class="dot"></i>')+'<span><b>'+p.name+'</b><small>'+(p.city||p.country)+' · '+p.year+'</small></span></a>').join('')}
-if(box&&GL&&DATA.length){
+  lastNow=y;now.innerHTML=L.map(p=>'<a href="'+p.url+'">'+(p.thumb?'<img src="'+p.thumb+'" alt="">':'<i class="dot"></i>')+'<span><b>'+p.name+'</b><small>'+[(p.city||p.country),p.year].filter(Boolean).join(' · ')+'</small></span></a>').join('')}
+const initAtlas=()=>{
   Promise.all([fetch(box.dataset.geo).then(r=>r.json()),import('./atlas.js')]).then(([geo,m])=>{
-    atlas=m.atlasScene(box,geo,DATA,{onSelect:p=>{const c=$('.cardsel');if(!c)return;c.classList.add('on');const im=$('img',c);im.src=p.thumb||'';im.style.display=p.thumb?'':'none';$('h3',c).textContent=p.name;$('p',c).textContent=(p.city?p.city+', ':'')+p.country+' · '+p.year+' · '+p.client;$('a',c).href=p.url}});
+    atlas=m.atlasScene(box,geo,DATA,{onSelect:p=>{const c=$('.cardsel');if(!c)return;c.classList.add('on');const im=$('img',c);im.src=p.thumb||'';im.style.display=p.thumb?'':'none';$('h3',c).textContent=p.name;$('p',c).textContent=[(p.city?p.city+', ':'')+p.country,p.year,p.client].filter(x=>x&&x!=='None').join(' · ');$('a',c).href=p.url}});
     applyAll();box.classList.add('ready');$('canvas',box).addEventListener('webglcontextlost',()=>box.classList.remove('ready'));
     $$('[data-view]').forEach(b=>b.addEventListener('click',()=>{const v=b.dataset.view;if(v==='in')atlas.zoomBy(1.4);else if(v==='out')atlas.zoomBy(1/1.4);else moveTo(v)}));
-  });
-}else if(box){box.classList.add('static')}
+  })};
+// PA-011: the WebGL map starts when it comes within a screen of view, after the page is idle
+if(box&&GL&&DATA.length){const go=()=>{const io3=new IntersectionObserver(es=>{if(es[0].isIntersecting){io3.disconnect();initAtlas()}},{rootMargin:'100% 0px'});io3.observe(box)};
+  'requestIdleCallback' in window?requestIdleCallback(go,{timeout:1200}):setTimeout(go,300)}
+else if(box){box.classList.add('static')}
 $$('[data-filter]').forEach(b=>b.addEventListener('click',()=>{const [k,v]=b.dataset.filter.split(':');state[k]=v;$$('[data-filter^="'+k+':"]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.filter===b.dataset.filter)));applyAll();
   if(b.classList.contains('ex-i')){const g=$('.pgrid');g&&g.scrollIntoView({behavior:'smooth',block:'start'})}}));
 $('.search')?.addEventListener('input',e=>{state.q=e.target.value.trim().toLowerCase();applyAll()});
-const sl=$('.atlas input[type=range]');const playBtn=$('.play');let run=0,speed=1;
+$('.search')?.addEventListener('change',showResults);
+$$('.fp').forEach(b=>b.addEventListener('click',showResults));
+const sl=$('.atlas input[type=range]');const playBtn=$('.play');let run=0,speed=matchMedia('(max-width:800px)').matches?2:1;
+{const sp=$('.speed');if(sp)sp.textContent='Speed '+speed+'x'}
+(()=>{const hint=$('.atlas-hint');if(!hint)return;if(!GL||!box){hint.textContent='The map is shown as a still image. Browse all projects in the list below.';return}
+  if(matchMedia('(hover:none)').matches)hint.textContent='Press play to watch the practice grow from Cairo across the region. Swipe to turn the map and tap a pin to open a project.'})();
+$$('.atlas [data-view]').forEach(b=>{if(!/^(in|out)$/.test(b.dataset.view)){b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>$$('.atlas [data-view]').forEach(x=>{if(!/^(in|out)$/.test(x.dataset.view))x.setAttribute('aria-pressed',String(x===b))}))}});
+if(box){document.body.classList.add('has-atlas');new IntersectionObserver(es=>document.body.classList.toggle('atlas-on',es[0].isIntersecting&&es[0].intersectionRatio>.35),{threshold:[0,.35,.6]}).observe(box)}
 const wait=ms=>new Promise(r=>setTimeout(r,ms));
 function stopPlay(label){run++;if(playBtn)playBtn.textContent=label||'Play the story'}
 async function play(){const my=++run;playBtn.textContent='Pause';const min=+sl.min,max=+sl.max;state.year=min;sl.value=min;showCap(null);now&&(now.innerHTML='');lastNow=-9;applyMap();moveTo('egypt');
@@ -117,19 +147,23 @@ async function resume(){const my=++run;playBtn.textContent='Pause';const max=+sl
   for(let y=state.year+1;y<=max;y++){if(my!==run)return;state.year=y;sl.value=y;applyMap();showNow(y);const m=MS.find(m=>m.y===y);if(m){showCap(m);moveTo(m.view);await wait((m.hold||3800)/speed)}else await wait(380/speed)}
   if(my!==run)return;showCap({y:'1966 to 2026',t:'Sixty years of work, on one map.'});moveTo('all');playBtn.textContent='Replay the story';applyGrid();run++}
 $('.speed')?.addEventListener('click',e=>{speed=speed===1?2:1;e.currentTarget.textContent=speed===1?'Speed 1x':'Speed 2x'});
+$('.skip26')?.addEventListener('click',()=>{run++;state.year=2026;if(sl)sl.value=2026;applyMap();showNow(2026);showCap({y:'1966 to 2026',t:'Sixty years of work, on one map.'});moveTo('all');if(playBtn)playBtn.textContent='Replay the story';applyGrid()});
 if(sl){sl.addEventListener('input',()=>{if(playBtn&&playBtn.textContent==='Pause')stopPlay('Resume');state.year=+sl.value;showCap(null);applyMap();showNow(state.year);applyGridSoon()})}
 if(DATA.length)applyAll();
 addEventListener('load',()=>ScrollTrigger.refresh());
 
-(()=>{const w=document.querySelector('.welcome');if(w&&w.dataset.until&&new Date()>new Date(w.dataset.until+'T23:59:59'))w.remove()})();
-(()=>{const nav=document.querySelector('.nav'),bg=document.querySelector('.burger');if(!nav||!bg)return;
- const set=o=>{nav.classList.toggle('open',o);bg.setAttribute('aria-expanded',o?'true':'false')};
- addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){set(false);bg.focus()}});})();
+(()=>{const now=new Date();document.querySelectorAll('.welcome').forEach(x=>{const off=(x.dataset.until&&now>new Date(x.dataset.until+'T23:59:59+02:00'))||(x.dataset.from&&now<new Date(x.dataset.from+'T00:00:00+02:00'));if(off)x.remove();else x.hidden=false});
+  const w=document.querySelector('.welcome');if(!w)return;let gone=false;try{gone=sessionStorage.getItem('pudBanner')==='x'}catch(e){}
+  if(gone){w.remove();return}
+  const x=document.createElement('button');x.type='button';x.className='w-x';x.setAttribute('aria-label','Close this announcement');x.innerHTML='&times;';w.appendChild(x);
+  x.addEventListener('click',()=>{try{sessionStorage.setItem('pudBanner','x')}catch(e){}w.remove();document.documentElement.style.setProperty('--banner-h','0px');$('.nav')&&($('.nav').style.transform='');dispatchEvent(new Event('resize'))})})();
+(()=>{const w=document.querySelector('.welcome');const set=()=>document.documentElement.style.setProperty('--banner-h',(w&&w.isConnected?w.offsetHeight:0)+'px');set();addEventListener('resize',set)})();
+
 (()=>{const lb=document.querySelector('.lb');if(!lb)return;let last=null;
  new MutationObserver(()=>{if(lb.classList.contains('on')){last=document.activeElement;(lb.querySelector('.x')||lb).focus()}else if(last){last.focus();last=null}}).observe(lb,{attributes:true,attributeFilter:['class']});
  lb.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...lb.querySelectorAll('button')];const i=f.indexOf(document.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()});})();
 
-(()=>{const w=document.querySelector('.welcome'),nav=document.querySelector('.nav');if(!w||!nav)return;let h=w.offsetHeight,last=-1,q=0;const set=()=>{q=0;const y=Math.max(0,h-scrollY);if(y!==last){last=y;nav.style.transform=y?'translate3d(0,'+y+'px,0)':''}};set();addEventListener('scroll',()=>{if(!q){q=1;requestAnimationFrame(set)}},{passive:true});addEventListener('resize',()=>{h=w.offsetHeight;set()})})();
+(()=>{const w=document.querySelector('.welcome'),nav=document.querySelector('.nav');if(!w||!nav)return;let h=w.offsetHeight,last=-1,q=0;const set=()=>{q=0;if(!w.isConnected)h=0;const y=Math.max(0,h-scrollY);if(y!==last){last=y;nav.style.transform=y?'translate3d(0,'+y+'px,0)':''}};set();addEventListener('scroll',()=>{if(!q){q=1;requestAnimationFrame(set)}},{passive:true});addEventListener('resize',()=>{h=w.offsetHeight;set()})})();
 
 /* ===== v6 immersive home ===== */
 // services: active row follows scroll and hover; image frame tilts with the mouse
@@ -194,16 +228,18 @@ addEventListener('load',()=>ScrollTrigger.refresh());
     r.addEventListener('scroll',()=>{if(!rq)rq=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()});
 })();
 
-/* floating chat: same as the PUD 60-year site; enquiries go through FormSubmit to the same inbox */
+/* floating chat: enquiries go through FormSubmit to the PUD office inbox (info@pudconsultants.com).
+   Copies to other people are set up as forwarding on that mailbox, never in this public file. */
+const MAIL='info@pudconsultants.com';
 (()=>{const R=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
   const w=document.createElement('div');w.className='pchat';w.innerHTML=`
-  <button class="pc-btn" type="button" aria-label="Chat with PUD" aria-expanded="false" aria-controls="pcPanel">
+  <button class="pc-btn" type="button" aria-label="Write to PUD" aria-expanded="false" aria-controls="pcPanel">
     <svg class="pc-i1" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>
     <svg class="pc-i2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <section class="pc-panel" id="pcPanel" role="dialog" aria-label="Send PUD a message" hidden>
     <header class="pc-h"><img src="${R}assets/logo-mark.png" alt=""><div><b>PUD Consultants</b><span>We usually reply within 48 hours</span></div></header>
     <div class="pc-body">
-      <div class="pc-msg">Hello 👋 How can we help? Leave your details and our team will get back to you.</div>
+      <div class="pc-msg">Hello. How can we help? Leave your details and our team will reply by email.</div>
       <form class="pc-form" novalidate>
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="pc-hp" aria-hidden="true">
         <label>Name<input name="name" autocomplete="name" required></label>
@@ -212,6 +248,7 @@ addEventListener('load',()=>ScrollTrigger.refresh());
         <label>Topic<select name="topic"><option>New project</option><option>Strategic advisory</option><option>Partnership</option><option>Careers</option><option>Media</option><option>Other</option></select></label>
         <label>Message<textarea name="message" rows="3" required></textarea></label>
         <button class="pc-send" type="submit">Send message <svg viewBox="0 0 16 10" width="16" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4"/></svg></button>
+        <p class="pc-priv">We use your details only to reply to this enquiry. You can also write to <a href="mailto:${MAIL}">${MAIL}</a>.</p>
         <p class="pc-note" aria-live="polite"></p>
       </form>
       <div class="pc-done" hidden><div class="pc-tick">✓</div><p></p><button type="button" class="pc-again">Send another message</button></div>
@@ -219,28 +256,28 @@ addEventListener('load',()=>ScrollTrigger.refresh());
   </section>`;
   document.body.appendChild(w);
   const q=s=>w.querySelector(s);const btn=q('.pc-btn'),panel=q('.pc-panel'),f=q('.pc-form'),note=q('.pc-note'),done=q('.pc-done');
-  const MAIL_TO='0da4bada9ef65bbe295f6ada2514de50',MAIL_CC='m.sawaf@risepersonal.com';
-  const THANKS='Thank you for contacting us. Our team will respond and get back to you within 48 hours.';
+  const THANKS='Thank you for contacting us. Our team will reply within 48 hours.';
   const okEmail=v=>/^\S+@\S+\.\S+$/.test(v.trim());
-  const failMsg=err=>/activ/i.test(err&&err.message||'')?'Almost ready: this form is waiting for a one-time activation by the site owner. Please try again shortly, or call +20 2 2414 7537.':'Sorry, your message could not be sent. Please try again or call +20 2 2414 7537.';
-  const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'—'));fd.append('Source','Website chat (pud-consultants-website) · '+location.href);
-    fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+' — '+(d.Name||''));fd.append('_cc',MAIL_CC);fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
-    const r=await fetch('https://formsubmit.co/ajax/'+MAIL_TO,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
-  const setOpen=o=>{w.classList.toggle('open',o);panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o&&done.hidden)setTimeout(()=>f.elements.name.focus(),60)};
+  // if the relay fails for any reason, the visitor's message is not lost: offer it as a prefilled email
+  const mailto=d=>'mailto:'+MAIL+'?subject='+encodeURIComponent('Website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''))+'&body='+encodeURIComponent((d.Message||'')+'\n\n'+(d.Name||'')+(d.Phone?'\n'+d.Phone:''));
+  const fail=d=>{note.innerHTML='Sorry, the form could not send your message. <a href="'+mailto(d).replace(/"/g,'&quot;')+'">Send it by email instead</a> or call +20 2 2414 7537.'};
+  const send=async d=>{const fd=new FormData();Object.entries(d).forEach(([k,v])=>fd.append(k,v||'-'));fd.append('Source','Website form · '+location.href);
+    fd.append('_subject','PUD website enquiry: '+(d.Enquiry||'General')+', '+(d.Name||''));fd.append('_template','table');fd.append('_captcha','false');if(d.Email)fd.append('_replyto',d.Email);
+    const r=await fetch('https://formsubmit.co/ajax/'+MAIL,{method:'POST',headers:{Accept:'application/json'},body:fd});const j=await r.json().catch(()=>({}));if(!r.ok||String(j.success)==='false')throw new Error(j.message||'Send failed');return j};
+  const setOpen=o=>{w.classList.toggle('open',o);panel.hidden=!o;btn.setAttribute('aria-expanded',String(o));if(o&&done.hidden)setTimeout(()=>f.elements.name.focus(),60);if(!o)btn.focus()};
   btn.addEventListener('click',()=>setOpen(panel.hidden));
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!panel.hidden)setOpen(false)});
+  // any "Write to us" link or button on the page opens the panel
+  document.addEventListener('click',e=>{const t=e.target.closest('[data-write]');if(!t)return;e.preventDefault();if(t.dataset.topic){const o=[...f.elements.topic.options].find(o=>o.text===t.dataset.topic);if(o)f.elements.topic.value=o.text}setOpen(true)});
   q('.pc-again').addEventListener('click',()=>{done.hidden=true;f.hidden=false;f.elements.name.focus()});
   f.addEventListener('submit',async e=>{e.preventDefault();if(f._honey.value)return;const v=n=>f.elements[n].value.trim();
     if(!v('name')||!okEmail(v('email'))||!v('message')){note.textContent='Please add your name, a valid email and a message.';return}
-    const sb=q('.pc-send');sb.disabled=true;note.textContent='Sending…';
-    try{await send({Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')});f.reset();note.textContent='';f.hidden=true;done.querySelector('p').textContent=THANKS;done.hidden=false}
-    catch(err){note.textContent=failMsg(err)}finally{sb.disabled=false}});
+    const sb=q('.pc-send');sb.disabled=true;note.textContent='Sending…';const d={Name:v('name'),Email:v('email'),Phone:v('phone'),Enquiry:v('topic'),Message:v('message')};
+    try{await send(d);f.reset();note.textContent='';f.hidden=true;done.querySelector('p').textContent=THANKS;done.hidden=false}
+    catch(err){fail(d)}finally{sb.disabled=false}});
 })();
 
-(()=>{const m=document.querySelector('meta[name=pud-build]');if(!m||location.protocol==='file:')return;
-  const base=document.querySelector('link[rel=stylesheet]').getAttribute('href').replace(/css\/style\.css.*$/,'');
-  fetch(base+'build.txt?t='+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.text():'').then(b=>{b=b.trim();if(!b||b===m.content)return;
-    let k='pudReload:'+b;try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,'1')}catch(e){return}location.reload()}).catch(()=>{})})();
+
 
 // selected work: images drift inside their cards while scrolling (desktop; phones use the swipe parallax)
 (()=>{const cards=[...document.querySelectorAll('.bento .pcard')];if(!cards.length||reduce)return;const mq=matchMedia('(min-width:801px)');

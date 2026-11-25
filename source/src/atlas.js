@@ -72,7 +72,7 @@ export function atlasScene(box,geo,projects,api){
       a.mat.opacity=clamp(t*(isH?1:.92));a.s.material.opacity=a.mat.opacity*.7;a.g.visible=t>.01;
       if(a.was!==undefined&&show&&!a.was)a.pulse=1;a.was=show;
       if(a.pulse>0){a.pulse=Math.max(0,a.pulse-dt*.55);const k=1-a.pulse;a.ring.visible=true;a.ring.scale.setScalar(1+k*(a.p.featured?9:6));a.ring.material.opacity=a.pulse*.85}else a.ring.visible=false}
-    if(tip){if(hover){v.set(hover.x,hover.hh,hover.z).project(cam);const r=box.getBoundingClientRect();tip.style.left=((v.x*.5+.5)*r.width)+'px';tip.style.top=((-v.y*.5+.5)*r.height)+'px';tip.style.opacity=1;tip.innerHTML='<b></b><span></span>';tip.firstChild.textContent=hover.p.name;tip.lastChild.textContent=(hover.p.city||hover.p.country)+' · '+hover.p.year}else tip.style.opacity=0}
+    if(tip){if(hover){v.set(hover.x,hover.hh,hover.z).project(cam);const r=box.getBoundingClientRect();tip.style.left=((v.x*.5+.5)*r.width)+'px';tip.style.top=((-v.y*.5+.5)*r.height)+'px';tip.style.opacity=1;tip.innerHTML='<b></b><span></span>';tip.firstChild.textContent=hover.p.name;tip.lastChild.textContent=(hover.p.city||hover.p.country)+(hover.p.year&&hover.p.year!=='None'?' · '+hover.p.year:'')+(hover.p.approx?' · approximate location':'')}else tip.style.opacity=0}
     renderer.render(scene,cam);
   }
   new IntersectionObserver(es=>{const on=es[0].isIntersecting;if(on&&!run){run=true;last=performance.now();requestAnimationFrame(frame)}else if(!on)run=false},{rootMargin:'200px'}).observe(box);
