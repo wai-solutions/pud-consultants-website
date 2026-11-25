@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""SEO / GEO copy: services, insight articles, FAQ, place aliases. Facts come from the PUD company profile 2025/26 and the PUD site; general definitions are plain and non-numeric."""
+"""SEO / GEO copy: services, insight articles, FAQ, place aliases. Facts come from PUD-approved public facts and the PUD site; general definitions are plain and non-numeric."""
 
 SERVICES = [
  dict(slug='urban-and-regional-planning', name='Urban and regional planning', kw='urban planning consultants',
@@ -73,7 +73,7 @@ SERVICES = [
   h1='Strategic advisory and development consultancy',
   lead='PUD provides end-to-end consulting and development economics, aligning vision with market feasibility, investment strategy and regenerative economic models.',
   body=['Good plans need an answer to who will pay for them, who will build them and who will run them. PUD advises authorities and investors on feasibility, steering committees, consultant selection, public-private partnerships and policy alignment.',
-        'Recent advisory roles include steering-committee advisory for Kidana at the holy sites of Makkah, advisory on Phases 2 to 4 of the New Administrative Capital for ACUD, and a subject-matter-expert group for the Sumou Boulevard development in New Cairo.'],
+        'Recent advisory roles include steering-committee advisory for Kidana at the holy sites of Makkah, advisory on Phases 2 to 4 of the New Administrative Capital for ACUD, and a subject-matter-expert group for the Somou Boulevard development in New Cairo.'],
   points=['Strategic advisory and steering committees','Feasibility and development economics','Consultant selection support','Public-private partnerships and policy','Design management and client representation','Capacity building'],
   cats=['Advisory'], extra=[],
   faq=[('What advisory services does PUD offer?','PUD advises on strategy, feasibility and economics, steering committees, consultant selection, public-private partnerships and design management for large development programmes.')]),
@@ -119,23 +119,23 @@ ARTICLES = [
             ('Holy sites and cities','The holy sites of Makkah and the growth of Jeddah, Madinah, Taif and Jazan are a long-running planning programme. PUD advised on the Al Mashaaer master plan and Jabal Thabeer park for Kidana, and worked with AECOM Arabia on Jeddah, Taif and Jazan plans.'),
             ('Regional plans and housing','Sub-regional plans for the Red Sea coast, land strategies for the Saudi Railway Organization and a density and housing framework for Riyadh, Jeddah and Dammam show the shift from single sites to systems. PUD Saudi opened in Riyadh in 2018.')],
   related=['master-planning-and-urban-design','cultural-heritage-planning'],
-  faq=[('Does PUD have an office in Saudi Arabia?','Yes. PUD Saudi was co-founded in Riyadh in 2018 by Prof. Dr. Amr Attia. The Riyadh office is in the Diplomatic Quarter.')]),
+  faq=[('Does PUD have an office in Saudi Arabia?','Yes. Prof. Dr. Amr Attia co-founded PUD Saudi in Riyadh in 2018. PUD has two Riyadh offices, in the Diplomatic Quarter and Al Nakheel.')]),
 ]
 
 FAQ = [
  ('Is PUD Consultants related to a planned unit development (PUD)?','No. PUD Consultants is an urban planning and architecture practice in Cairo. The acronym stands for Planning and Urban Development.'),
  ('Who is PUD Consultants?','PUD Consultants (Planning & Urban Development Consultants) is an urban planning, master planning, architecture and sustainable tourism consultancy founded in Cairo in 1966 by Prof. Dr. Abdallah Abdel Aziz Attia. It has offices in Cairo, Riyadh and Dubai.'),
- ('What does PUD do?','PUD offers nine services: urban and regional planning, master planning and urban design, sustainable tourism planning, cultural heritage planning, architecture and interior design, landscape planning and design, environment and sustainability, infrastructure and mobility planning, and strategic advisory.'),
+ ('What does PUD do?','PUD offers six services: urban and regional planning, master planning and urban design, architecture and interior design, environmentally sustainable development, cultural heritage planning, and development consultancy and strategic advisory.'),
  ('Where does PUD work?','PUD has worked in {C} countries: Egypt, Saudi Arabia, Kuwait, Iraq, Syria, the UAE, Qatar, Iran, Germany, Cameroon and The Gambia. Most of its projects are in Egypt and Saudi Arabia.'),
  ('Who founded PUD and who leads it now?','Prof. Dr. Abdallah Abdel Aziz Attia founded PUD in 1966. His son, Prof. Dr. Amr Attia, joined in 1991, became CEO in 2005 and leads the practice today. He is also Professor of Urban Planning at Ain Shams University.'),
- ('How many projects has PUD done?','This site documents {N} PUD projects between 1964 and 2026 in {C} countries, each with its own page. They include built work, competition entries, master plans and advisory roles. The list grows as records are verified.'),
- ('What is PUD\'s best-known work?','Marina El Alamein on Egypt\'s North Coast, Tut Amun on Lake Nasser, Hilton Dahab on the Gulf of Aqaba, New Najaf City, the Khaybar heritage area plan, the AlUla Strategic Framework Plan, the Pyramids Plateau destination plan, Jabal Thabeer park in Makkah and Sumou Boulevard in New Cairo.'),
+ ('How many projects has PUD done?','This site lists {N} PUD projects from 1964 to 2026 in {C} countries, including the founder\'s earliest commissions before PUD was formally founded in 1966. They include built work, competition entries, master plans and advisory roles. The list grows as records are verified.'),
+ ('What is PUD\'s best-known work?','Marina El Alamein on Egypt\'s North Coast, Tut Amun on Lake Nasser, Hilton Dahab on the Gulf of Aqaba, and, more recently, the Pyramids Plateau destination plan, the AlUla Strategic Framework Plan and Jabal Thabeer park in Makkah.'),
  ('Does PUD work with international firms?','Yes. PUD has collaborated with WATG on more than 30 projects and has worked with AECOM Arabia, Hill International, Gillespies, Systematica, HOK, Buro Happold, SHAKER Group, Dar Al-Handasah and others.'),
  ('Who are PUD\'s clients?','Clients include national authorities such as the New Urban Communities Authority (NUCA), the Ministry of Municipal and Rural Affairs and Housing, the Royal Commission for AlUla and the Royal Commission for Makkah City and Holy Sites, as well as private developers and universities.'),
- ('Does PUD plan sustainable cities?','Yes. PUD designed the Abo Dabbab marine field station on the Red Sea, worked on the Green Star Hotels initiative with GIZ and contributed as sustainability expert to WATG\'s Sharaan Nature Reserve master plan in AlUla.'),
+ ('Does PUD plan sustainable cities?','Sustainability enters PUD\'s plans through land use, water, mobility and heritage. Examples are the Abo Dabbab marine field station, the Green Star Hotels initiative with GIZ, and the Sharaan Nature Reserve master plan in AlUla, where PUD was sustainability expert to WATG.'),
  ('Where are PUD\'s offices?','Cairo (Beverly Hills in Sheikh Zayed City, and Heliopolis), Riyadh (Diplomatic Quarter and Al Nakheel) and Dubai (Palm Jumeirah). Full addresses and phone numbers are on the contact page.'),
  ('Does PUD work on heritage sites?','Yes. PUD is the cultural-heritage specialist on the WATG team for the Giza Pyramids Plateau destination plan and prepared the development brief for the Khaybar heritage area master plan.'),
- ('How can I contact PUD?','Call the office closest to your site: Cairo on +20 100 198 1111 or +20 2 2414 7537, Riyadh on +966 540 39 8178 or 800 111 0893, or Dubai on +971 509 29 8178.'),
+ ('How can I contact PUD?','Write to info@pudconsultants.com, or call the office closest to your site: Cairo on +20 100 198 1111 or +20 2 2414 7537, Riyadh on +966 540 39 8178 or 800 111 0893 (toll-free inside Saudi Arabia), or Dubai on +971 509 29 8178.'),
 ]
 
 # explicit place aliases: city string -> [(place name, country, kind)]; kind 'city' or 'region'

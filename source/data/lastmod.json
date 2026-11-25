@@ -1,1130 +1,1174 @@
 {
 "60-years.html": [
-"94b906cfa9cc",
-"2026-11-24"
+"c796e47f28ca",
+"2026-11-25"
+],
+"abdallah-attia.html": [
+"1985312b315a",
+"2026-11-25"
 ],
 "about.html": [
-"dcde01bbd9ca",
-"2026-11-24"
+"3d978c9b5f78",
+"2026-11-25"
+],
+"accessibility.html": [
+"5aa0ce427d77",
+"2026-11-25"
 ],
 "amr-attia.html": [
-"fdc6a0f7098a",
-"2026-11-24"
+"7073048bfdcb",
+"2026-11-25"
+],
+"awards.html": [
+"8948c7d9f4ba",
+"2026-11-25"
 ],
 "cities/10th-of-ramadan-city.html": [
-"cd4f7395cca0",
-"2026-11-24"
+"2d9da7fac420",
+"2026-11-25"
 ],
 "cities/6th-of-october-city.html": [
-"75cbff99a8c5",
-"2026-11-24"
+"04d33d896a67",
+"2026-11-25"
 ],
 "cities/abu-dhabi.html": [
-"cff827e6127d",
-"2026-11-24"
+"3e23d1221b0e",
+"2026-11-25"
 ],
 "cities/ain-el-sokhna.html": [
-"a0240780b061",
-"2026-11-24"
+"41e161e3853d",
+"2026-11-25"
 ],
 "cities/al-khafji.html": [
-"6bcc219d41be",
-"2026-11-24"
+"019a8966dddb",
+"2026-11-25"
 ],
 "cities/alexandria.html": [
-"a99049ccaa3e",
-"2026-11-24"
+"17270a0feff7",
+"2026-11-25"
 ],
 "cities/alula.html": [
-"15b73ab0dc9d",
-"2026-11-24"
+"e898b9420cb7",
+"2026-11-25"
 ],
 "cities/assiut.html": [
-"4710b70be7d3",
-"2026-11-24"
+"c4a2ae6648c9",
+"2026-11-25"
 ],
 "cities/aswan.html": [
-"413c7ffcd0b6",
-"2026-11-24"
+"954404979ff0",
+"2026-11-25"
+],
+"cities/atlantic-coast.html": [
+"b5670c0a3dcd",
+"2026-11-25"
 ],
 "cities/cairo-alexandria-desert-road.html": [
-"72fa824194ac",
-"2026-11-24"
+"2e91f9d515d4",
+"2026-11-25"
 ],
 "cities/cairo.html": [
-"4886465513f4",
-"2026-11-24"
+"6180a215b6f3",
+"2026-11-25"
 ],
 "cities/coast-of-the-gambia.html": [
-"2c49eb7fdf31",
-"2026-11-24"
+"406db1e8f69d",
+"2026-11-25"
 ],
 "cities/dahab.html": [
-"695f9166fd8c",
-"2026-11-24"
+"c56d80ac594e",
+"2026-11-25"
 ],
 "cities/damascus.html": [
-"178005bf2c0e",
-"2026-11-24"
+"ecbdeda77902",
+"2026-11-25"
 ],
 "cities/dammam.html": [
-"5203f4b25136",
-"2026-11-24"
+"37b67fa99005",
+"2026-11-25"
 ],
 "cities/dhahran.html": [
-"828f93d8f6c6",
-"2026-11-24"
+"62037954e50d",
+"2026-11-25"
 ],
 "cities/diriyah.html": [
-"92b7ee929c7f",
-"2026-11-24"
+"c8b7f1d09afb",
+"2026-11-25"
 ],
 "cities/dubai.html": [
-"2fd2a1772c42",
-"2026-11-24"
+"6c7ce23b43d0",
+"2026-11-25"
 ],
 "cities/el-arish.html": [
-"4621a3f75517",
-"2026-11-24"
+"65c548131e8f",
+"2026-11-25"
 ],
 "cities/fao.html": [
-"d53a8c14c236",
-"2026-11-24"
+"5fb13d7451c3",
+"2026-11-25"
 ],
 "cities/gargoub.html": [
-"7a280823c302",
-"2026-11-24"
+"00ee436e1b6f",
+"2026-11-25"
 ],
 "cities/giza.html": [
-"5aab88468f22",
-"2026-11-24"
+"bd814414a526",
+"2026-11-25"
 ],
 "cities/homs.html": [
-"5df1424c684d",
-"2026-11-24"
+"d8d401c276f4",
+"2026-11-25"
 ],
 "cities/hurghada.html": [
-"50fa3ee5f140",
-"2026-11-24"
+"0c3fe60f0f96",
+"2026-11-25"
 ],
 "cities/ismailia.html": [
-"2f2d97d1cb79",
-"2026-11-24"
+"11ebf150a63d",
+"2026-11-25"
 ],
 "cities/jazan.html": [
-"3a465658f402",
-"2026-11-24"
+"88646d0983d7",
+"2026-11-25"
 ],
 "cities/jeddah.html": [
-"9e21f8e2e03f",
-"2026-11-24"
+"d98b372458c1",
+"2026-11-25"
 ],
 "cities/khaybar.html": [
-"5c892d6d815b",
-"2026-11-24"
+"a2487436f295",
+"2026-11-25"
 ],
 "cities/kuwait-city.html": [
-"605d7a6a3219",
-"2026-11-24"
+"eeafced1a04e",
+"2026-11-25"
 ],
 "cities/latakia.html": [
-"97b0af8e1f79",
-"2026-11-24"
+"8e251c10f256",
+"2026-11-25"
 ],
 "cities/lusail.html": [
-"2a21b966ae3a",
-"2026-11-24"
+"c3462e2d5632",
+"2026-11-25"
 ],
 "cities/luxor.html": [
-"25b9e372be50",
-"2026-11-24"
+"a4bf797442a9",
+"2026-11-25"
 ],
 "cities/madinah.html": [
-"d8f39e09ee38",
-"2026-11-24"
+"8eca5c9d4baa",
+"2026-11-25"
 ],
 "cities/makkah.html": [
-"3e035f294ca9",
-"2026-11-24"
+"adb0212f8b63",
+"2026-11-25"
 ],
 "cities/mansoura.html": [
-"e51e5cf16a55",
-"2026-11-24"
+"1261981940ba",
+"2026-11-25"
 ],
 "cities/marsa-alam.html": [
-"175c32d5de0a",
-"2026-11-24"
+"1013ad6737b9",
+"2026-11-25"
 ],
 "cities/marsa-matrouh.html": [
-"9ec1971f4dc7",
-"2026-11-24"
+"8fd549c9df9d",
+"2026-11-25"
 ],
 "cities/massoumbou-diwom.html": [
-"dc31f809b69e",
-"2026-11-24"
+"f62cafa349d0",
+"2026-11-25"
 ],
 "cities/minya.html": [
-"45fd9c709467",
-"2026-11-24"
+"12aa998097b1",
+"2026-11-25"
 ],
 "cities/najaf.html": [
-"a0541a793398",
-"2026-11-24"
+"714b4aac15e0",
+"2026-11-25"
 ],
 "cities/najran.html": [
-"299ae0181739",
-"2026-11-24"
+"334f91d685df",
+"2026-11-25"
 ],
 "cities/new-administrative-capital.html": [
-"139710ccc96f",
-"2026-11-24"
+"e1ff63c55d8f",
+"2026-11-25"
 ],
 "cities/new-alamein.html": [
-"f1cdf14189c6",
-"2026-11-24"
+"86cde0ae926c",
+"2026-11-25"
 ],
 "cities/new-cairo.html": [
-"60278809f353",
-"2026-11-24"
+"1b948e42e369",
+"2026-11-25"
 ],
 "cities/new-damietta.html": [
-"b26bbbb2db2c",
-"2026-11-24"
+"864a9e675600",
+"2026-11-25"
 ],
 "cities/north-coast.html": [
-"8feeba792995",
-"2026-11-24"
+"15bd93851a4c",
+"2026-11-25"
 ],
 "cities/port-said.html": [
-"73c14acbbe36",
-"2026-11-24"
+"a7ae84537550",
+"2026-11-25"
 ],
 "cities/ras-el-hekma.html": [
-"274f55c1e6ad",
-"2026-11-24"
+"78915f9152cf",
+"2026-11-25"
 ],
 "cities/riyadh.html": [
-"3d316f59c5fe",
-"2026-11-24"
+"d9a7771b126c",
+"2026-11-25"
 ],
 "cities/sheikh-zayed-city.html": [
-"dcafbde43411",
-"2026-11-24"
+"17754a7846bf",
+"2026-11-25"
 ],
 "cities/taba-nuweiba-coast.html": [
-"53d6e6294440",
-"2026-11-24"
+"49781fc52706",
+"2026-11-25"
 ],
 "cities/taif.html": [
-"3557f782be03",
-"2026-11-24"
+"9b212897ec8d",
+"2026-11-25"
 ],
 "cities/tanta.html": [
-"9c2fb5becdb9",
-"2026-11-24"
+"7edcd59b92f7",
+"2026-11-25"
 ],
 "cities/tehran.html": [
-"42b85c42f5e3",
-"2026-11-24"
+"32c0c76217c8",
+"2026-11-25"
 ],
 "cities/yanbu.html": [
-"e67e2111dd3e",
-"2026-11-24"
+"d17f7c0d9d1e",
+"2026-11-25"
 ],
 "cities/zamalek.html": [
-"9b03544a2a4d",
-"2026-11-24"
+"c436468a4d3c",
+"2026-11-25"
+],
+"clients.html": [
+"e62f5e9fe078",
+"2026-11-25"
 ],
 "contact.html": [
-"a928a3fdd56c",
-"2026-11-24"
+"0f348c8d16cd",
+"2026-11-25"
 ],
 "countries/cameroon.html": [
-"02681973072d",
-"2026-11-24"
+"0d300a8d68f8",
+"2026-11-25"
 ],
 "countries/egypt.html": [
-"2833a57ac94d",
-"2026-11-24"
+"21b80e47d3b0",
+"2026-11-25"
 ],
 "countries/gambia.html": [
-"690eb106fe2a",
-"2026-11-24"
+"3b818f0e9479",
+"2026-11-25"
 ],
 "countries/germany.html": [
-"9b206a4c0912",
-"2026-11-24"
+"c7fe25d04c3f",
+"2026-11-25"
 ],
 "countries/iran.html": [
-"36d903ad14d1",
-"2026-11-24"
+"a08463d73c0a",
+"2026-11-25"
 ],
 "countries/iraq.html": [
-"c4fe3b6db3af",
-"2026-11-24"
+"4095a0042d12",
+"2026-11-25"
 ],
 "countries/kuwait.html": [
-"095bf806545f",
-"2026-11-24"
+"d322a5e71783",
+"2026-11-25"
 ],
 "countries/qatar.html": [
-"0d2171816790",
-"2026-11-24"
+"e6ffde4c6243",
+"2026-11-25"
 ],
 "countries/saudi-arabia.html": [
-"2154fc3bfc15",
-"2026-11-24"
+"dbdea3a398f2",
+"2026-11-25"
 ],
 "countries/syria.html": [
-"d49d18aaa853",
-"2026-11-24"
+"108f79b945fe",
+"2026-11-25"
 ],
 "countries/uae.html": [
-"c2eba147e910",
-"2026-11-24"
+"9fe81aa1079b",
+"2026-11-25"
 ],
 "destinations/red-sea.html": [
-"6a00d4923a75",
-"2026-11-24"
+"8746ce7c8337",
+"2026-11-25"
 ],
 "faq.html": [
-"2f7ab38b311f",
-"2026-11-24"
+"22b0e85d966a",
+"2026-11-25"
 ],
 "index.html": [
-"3e8a748ef9cb",
-"2026-11-24"
+"f766934837fd",
+"2026-11-25"
 ],
 "insights.html": [
-"b05fd04958eb",
-"2026-11-24"
+"a5a9504228ed",
+"2026-11-25"
 ],
 "insights/urban-planning-in-egypt.html": [
-"c9f5441f6d90",
-"2026-11-24"
+"519822dd513a",
+"2026-11-25"
 ],
 "insights/urban-planning-in-saudi-arabia.html": [
-"6f8b3c0c54c4",
-"2026-11-24"
+"f495a7e1dd7f",
+"2026-11-25"
 ],
 "insights/what-is-master-planning.html": [
-"48d1f95a628a",
-"2026-11-24"
+"be113eb52f25",
+"2026-11-25"
 ],
 "insights/what-is-sustainable-tourism-planning.html": [
-"5f4ccde32215",
-"2026-11-24"
+"9128c8c78b61",
+"2026-11-25"
 ],
 "insights/what-is-urban-planning.html": [
-"fe2f83da0c20",
-"2026-11-24"
+"dd14c1c356db",
+"2026-11-25"
+],
+"news.html": [
+"41185b311736",
+"2026-11-25"
 ],
 "partners.html": [
-"4b8819a02792",
-"2026-11-24"
+"3ce201d09996",
+"2026-11-25"
 ],
 "people.html": [
-"17c3161b0f4e",
-"2026-11-24"
+"a1932cc8e063",
+"2026-11-25"
+],
+"privacy.html": [
+"d652282ff5de",
+"2026-11-25"
 ],
 "projects.html": [
-"5c4bd7ac8bcb",
-"2026-11-24"
+"30c3317a038a",
+"2026-11-25"
 ],
 "projects/47-compound-cairo-alexandria-desert-road.html": [
-"20009b825c85",
-"2026-11-24"
+"01371cfd4ee9",
+"2026-11-25"
 ],
 "projects/abo-dabbab-marine-field-station.html": [
-"532378a203b4",
-"2026-11-24"
+"77d8516efdc9",
+"2026-11-25"
 ],
 "projects/abu-qir-city-and-port-extension.html": [
-"022649f011a1",
-"2026-11-24"
+"415260d7c0e0",
+"2026-11-25"
 ],
 "projects/ain-el-sokhna-tourist-center.html": [
-"8a86da292193",
-"2026-11-24"
+"0b7234725991",
+"2026-11-25"
 ],
 "projects/ain-shams-faculty-of-medicine-concept-master-plan-phase-1.html": [
-"cd88943df50e",
-"2026-11-24"
+"9ac94e716ebe",
+"2026-11-25"
 ],
 "projects/ain-shams-faculty-of-medicine-expansion-stage-2.html": [
-"e69fa99f2675",
-"2026-11-24"
+"7e004a373230",
+"2026-11-25"
 ],
 "projects/ain-shams-lecture-halls-and-research-institute.html": [
-"69694470b000",
-"2026-11-24"
+"22ca55b13bcc",
+"2026-11-25"
 ],
 "projects/al-aqeelah-oasis-damascus.html": [
-"fb0c9ca967a9",
-"2026-11-24"
+"71144420f3db",
+"2026-11-25"
 ],
 "projects/al-aqeeq-marina-al-khiran.html": [
-"ec4e0e87f980",
-"2026-11-24"
+"ec70536e034a",
+"2026-11-25"
 ],
 "projects/al-ashish-urbanized-communities-kuwait.html": [
-"f07d030d9d47",
-"2026-11-24"
+"832ab305ea15",
+"2026-11-25"
 ],
 "projects/al-faw-heritage-area-pre-concept-master-plan.html": [
-"aa23c819390c",
-"2026-11-24"
+"a0dec0a777e6",
+"2026-11-25"
 ],
 "projects/al-hashimi-hotel-concept-design.html": [
-"9ca8641b72a9",
-"2026-11-24"
+"ef6e40210ef4",
+"2026-11-25"
 ],
 "projects/al-jahraa-housing-project-kuwait.html": [
-"70a08df40dff",
-"2026-11-24"
+"d9506b09cf4e",
+"2026-11-25"
 ],
 "projects/al-jawhara-residence.html": [
-"31a997c1baf8",
-"2026-11-24"
+"f44015e46acb",
+"2026-11-25"
 ],
 "projects/al-kattan-hotel-concept-design.html": [
-"f4253ab2b79a",
-"2026-11-24"
+"edde24430df9",
+"2026-11-25"
 ],
 "projects/al-madinah-hotels-detailed-designs.html": [
-"8a2e7361199c",
-"2026-11-24"
+"14d7a31d64c6",
+"2026-11-25"
 ],
 "projects/al-mashaaer-al-mugaddassah-master-plan.html": [
-"191c72f946a2",
-"2026-11-24"
+"e12529713feb",
+"2026-11-25"
 ],
 "projects/al-rabita-pre-concept-design-competition.html": [
-"76c1645d47c2",
-"2026-11-24"
+"5a84e11ceec8",
+"2026-11-25"
 ],
 "projects/al-rabwa-resettlement-program.html": [
-"2a64a35c8820",
-"2026-11-24"
+"a186d40163c3",
+"2026-11-25"
 ],
 "projects/al-ras-al-abiyad-pre-concept-master-plan.html": [
-"9fa06e413d29",
-"2026-11-24"
+"6f3df2d2fa04",
+"2026-11-25"
 ],
 "projects/al-salam-oasis-master-plan.html": [
-"9f6ca594a350",
-"2026-11-24"
+"b62bba110c37",
+"2026-11-25"
 ],
 "projects/al-shirbini-complex-concept-design.html": [
-"eab0e2f88b33",
-"2026-11-24"
+"a2053bc70068",
+"2026-11-25"
 ],
 "projects/al-soudah-master-plan-competition.html": [
-"fb77f63bfb44",
-"2026-11-24"
+"514eb5399438",
+"2026-11-25"
 ],
 "projects/al-tahrir-bus-terminals.html": [
-"192e91d883b1",
-"2026-11-24"
+"6efe7739c7a9",
+"2026-11-25"
 ],
 "projects/al-uqair-development.html": [
-"5c7d7a8540d2",
-"2026-11-24"
+"ca933e88916f",
+"2026-11-25"
 ],
 "projects/al-zahem-hotel-concept-design.html": [
-"a47e384c70cf",
-"2026-11-24"
+"65791ef5baa0",
+"2026-11-25"
 ],
 "projects/alamein-riviera-vision-master-plan.html": [
-"f731568b7c6d",
-"2026-11-24"
+"90e34af38141",
+"2026-11-25"
 ],
 "projects/alex-gate-agpp-master-plan.html": [
-"60e6360744d5",
-"2026-11-24"
+"c2d8ea66d8a0",
+"2026-11-25"
 ],
 "projects/alex-gate-mixed-use-development.html": [
-"b554cec0dee7",
-"2026-11-24"
+"09ddead64fad",
+"2026-11-25"
 ],
 "projects/alexandria-west-planning-maxx-to-km-34.html": [
-"41518fcbb9be",
-"2026-11-24"
+"a4315399fc3b",
+"2026-11-25"
 ],
 "projects/alula-county-infrastructure-master-plan.html": [
-"9b2cabdea32b",
-"2026-11-24"
+"6463ed0afb3a",
+"2026-11-25"
 ],
 "projects/alula-strategic-framework-plan.html": [
-"ce9297e9e127",
-"2026-11-24"
+"22341173344d",
+"2026-11-25"
 ],
 "projects/aluminum-city-residential-quarters-nagaa-hammady.html": [
-"8df344fffe67",
-"2026-11-24"
+"ee8c219bd719",
+"2026-11-25"
 ],
 "projects/asmaak-plaza-zamalek.html": [
-"104b0b9fa788",
-"2026-11-24"
+"d5703987e4f4",
+"2026-11-25"
 ],
 "projects/assiut-regional-and-urban-planning.html": [
-"24902f95d0ca",
-"2026-11-24"
+"aa57de746bad",
+"2026-11-25"
 ],
 "projects/badya-mixed-use-and-gate.html": [
-"11c57f9a04aa",
-"2026-11-24"
+"9b7e8434bcdd",
+"2026-11-25"
 ],
 "projects/baker-atlas-plant-matrouh.html": [
-"728204dab731",
-"2026-11-24"
+"ec2ad36fcd42",
+"2026-11-25"
 ],
 "projects/bank-of-alexandria-branches.html": [
-"9c612267595d",
-"2026-11-24"
+"cbc6f6a16b01",
+"2026-11-25"
 ],
 "projects/basharia-hotel-concept-design.html": [
-"47101ab3dc8d",
-"2026-11-24"
+"72afcc6b7aec",
+"2026-11-25"
 ],
 "projects/black-pegasus-design-competition.html": [
-"1ff2e2b5e579",
-"2026-11-24"
+"8b8363e8a64f",
+"2026-11-25"
 ],
 "projects/cairo-airport-city.html": [
-"5019d3367051",
-"2026-11-24"
+"d843ece0f49b",
+"2026-11-25"
 ],
 "projects/cairo-gate-master-plan.html": [
-"580f014b6cb9",
-"2026-11-24"
+"aa7da36c0df1",
+"2026-11-25"
 ],
 "projects/cairo-media-city.html": [
-"a0d4e2510020",
-"2026-11-24"
+"1ac7a3b4b81f",
+"2026-11-25"
 ],
 "projects/castle-zaman-hotel-red-sea.html": [
-"a57f26e80434",
-"2026-11-24"
+"fd6a080a2f37",
+"2026-11-25"
 ],
 "projects/city-of-knowledge-university-of-islamic-sciences-najaf.html": [
-"1bad9fbb70be",
-"2026-11-24"
+"a6a56464e729",
+"2026-11-25"
 ],
 "projects/commercial-registry-branding-manual.html": [
-"a4fa0bdb954e",
-"2026-11-24"
+"63792cd681b4",
+"2026-11-25"
 ],
 "projects/continental-savoy-hotel-and-shopping-complex.html": [
-"0c703beaad61",
-"2026-11-24"
+"d75f6af3f262",
+"2026-11-25"
 ],
 "projects/cotton-ginning-factories-el-wadi-and-delta.html": [
-"9d6875f95414",
-"2026-11-24"
+"14f88524e852",
+"2026-11-25"
 ],
 "projects/crystal-asfour-factory-and-headquarters-extension.html": [
-"114f60312d03",
-"2026-11-24"
+"b2a9426ffefb",
+"2026-11-25"
 ],
 "projects/dhahran-investment-land-concept-master-plan.html": [
-"e22226d74c9f",
-"2026-11-24"
+"28f01117b7a0",
+"2026-11-25"
 ],
 "projects/directive-plans-rural-settlements-egypt.html": [
-"c4036365fd5f",
-"2026-11-24"
+"bc6cdff2bf40",
+"2026-11-25"
 ],
 "projects/downtown-cairo-regeneration.html": [
-"2806bd24fcae",
-"2026-11-24"
+"5afb9bcd7702",
+"2026-11-25"
 ],
 "projects/dream-beach-resort-gambia.html": [
-"8b4873eb123a",
-"2026-11-24"
+"c43b59a645bb",
+"2026-11-25"
 ],
 "projects/el-arish-city-master-plan.html": [
-"4dca51039774",
-"2026-11-24"
+"a6b04bf7a41c",
+"2026-11-25"
 ],
 "projects/el-bustan-hotel-recreational-and-offices-building.html": [
-"74902d6e2f76",
-"2026-11-24"
+"33250f0f47b0",
+"2026-11-25"
 ],
 "projects/el-khamayel-city-6th-of-october.html": [
-"dc72ffaa442a",
-"2026-11-24"
+"cf6cb3ad0dac",
+"2026-11-25"
 ],
 "projects/el-shams-city-assiut.html": [
-"ea0bd28ffb5f",
-"2026-11-24"
+"8f7f02841b53",
+"2026-11-25"
 ],
 "projects/el-shams-city-housing-companies.html": [
-"bc0503ec4571",
-"2026-11-24"
+"7a0eee12a5d4",
+"2026-11-25"
 ],
 "projects/elegect-company-headquarters-cairo.html": [
-"d5b80655e863",
-"2026-11-24"
+"4b38b022b303",
+"2026-11-25"
 ],
 "projects/elysium-mixed-use-development.html": [
-"767e9e50e45c",
-"2026-11-24"
+"451957719623",
+"2026-11-25"
 ],
 "projects/etap-tourism-development-ras-el-hekma.html": [
-"3717a6b4596d",
-"2026-11-24"
+"8930cb6aaefd",
+"2026-11-25"
 ],
 "projects/faculty-of-agriculture-campus-master-plan.html": [
-"ecf2df1e7cac",
-"2026-11-24"
+"e6090334617d",
+"2026-11-25"
 ],
 "projects/faculty-of-agriculture-students-affairs-complex.html": [
-"84b561f1940a",
-"2026-11-24"
+"018e072c82b0",
+"2026-11-25"
 ],
 "projects/faculty-of-agriculture-urban-renewal-cairo-university.html": [
-"fa0b83525099",
-"2026-11-24"
+"5668b2e74532",
+"2026-11-25"
 ],
 "projects/fanarah-tourist-resort.html": [
-"ae3a213bbbb6",
-"2026-11-24"
+"19965c750e4a",
+"2026-11-25"
 ],
 "projects/fao-international-marine-port-city.html": [
-"614b1b42e5e6",
-"2026-11-24"
+"b6330e392665",
+"2026-11-25"
 ],
 "projects/farm-house-cairo-alexandria-desert-road.html": [
-"78da02dbd904",
-"2026-11-24"
+"62010e25e91a",
+"2026-11-25"
+],
+"projects/fawaz-alhokair-beachfront-residence-dubai.html": [
+"4304c55c8cfb",
+"2026-11-25"
 ],
 "projects/fawaz-alhokair-bvlgari-mansion-dubai.html": [
-"1cc99696d4f5",
-"2026-11-24"
+"b0596cc6123d",
+"2026-11-25"
 ],
 "projects/fawaz-alhokair-diriyah-farm-and-compound.html": [
-"25f05a53b43f",
-"2026-11-24"
+"ddd434988828",
+"2026-11-25"
 ],
 "projects/fawaz-alhokair-estate-riyadh.html": [
-"9b6d6b975484",
-"2026-11-24"
+"15a5ddbc23d3",
+"2026-11-25"
 ],
 "projects/fawaz-alhokair-palace-extension-riyadh.html": [
-"57dac3079b3e",
-"2026-11-24"
+"5d9f1ee579ff",
+"2026-11-25"
+],
+"projects/fawaz-alhokair-residence-extension-riyadh.html": [
+"cd1dfd4e030f",
+"2026-11-25"
 ],
 "projects/fayrouz-tower-kuwait.html": [
-"56f072fb90ea",
-"2026-11-24"
+"0a7a974bfabb",
+"2026-11-25"
 ],
 "projects/fragrance-factory-greiss.html": [
-"68c98d781465",
-"2026-11-24"
+"33069cbd8b38",
+"2026-11-25"
 ],
 "projects/frankfurt-book-fair-arab-world-galleries.html": [
-"ed0048a688ab",
-"2026-11-24"
+"d3db3503511f",
+"2026-11-25"
 ],
 "projects/gargoub-new-port-city.html": [
-"b17a1ab35f2f",
-"2026-11-24"
+"de3ab67cf29d",
+"2026-11-25"
 ],
 "projects/golden-gate-new-cairo.html": [
-"b39e022d66e5",
-"2026-11-24"
+"0c46b542404d",
+"2026-11-25"
 ],
 "projects/green-egypt-packhouse.html": [
-"c67a1b79a6a1",
-"2026-11-24"
+"227310481439",
+"2026-11-25"
 ],
 "projects/green-pearl-prime-dubai-competition.html": [
-"945cf191ba00",
-"2026-11-24"
+"b87d85346020",
+"2026-11-25"
 ],
 "projects/green-star-hotels-initiative.html": [
-"229171e4e047",
-"2026-11-24"
+"d1799bfeeeb8",
+"2026-11-25"
 ],
 "projects/heliopark-concept-masterplan.html": [
-"fefef4de4f0f",
-"2026-11-24"
+"3e3618d6a0c5",
+"2026-11-25"
 ],
 "projects/hilton-dahab-village-hotel.html": [
-"93fac4d12630",
-"2026-11-24"
+"c86fd788b415",
+"2026-11-25"
 ],
 "projects/homs-club-syria.html": [
-"9760ce4ce2c0",
-"2026-11-24"
+"8441b878b11f",
+"2026-11-25"
 ],
 "projects/homs-international-airport-city.html": [
-"e49f139c4fdd",
-"2026-11-24"
+"cd45e878a074",
+"2026-11-25"
 ],
 "projects/hostess-factory-extensions-10th-of-ramadan.html": [
-"1304cf38a337",
-"2026-11-24"
+"f9f2cc016117",
+"2026-11-25"
 ],
 "projects/hurghada-apartments-hotel-and-shopping-mall.html": [
-"ac749f2cb752",
-"2026-11-24"
+"efea9abec6ee",
+"2026-11-25"
 ],
 "projects/industrial-park-master-plans-6th-of-october-and-ismailia.html": [
-"692bcbf765d7",
-"2026-11-24"
+"f04b54ae1bb7",
+"2026-11-25"
 ],
 "projects/industrial-union-building.html": [
-"e066a135aa72",
-"2026-11-24"
+"f5101e9bd802",
+"2026-11-25"
 ],
 "projects/investors-tourism-village-new-damietta.html": [
-"3f9408bd48ba",
-"2026-11-24"
+"8751eec00bd1",
+"2026-11-25"
 ],
 "projects/jabal-thabeer-park.html": [
-"ef46e6f8c4af",
-"2026-11-24"
+"30da70e33c97",
+"2026-11-25"
 ],
 "projects/jazan-city-primary-downstream-industries.html": [
-"87959bf05158",
-"2026-11-24"
+"a15a65b91c25",
+"2026-11-25"
 ],
 "projects/jazan-economic-city.html": [
-"6516060ca6a2",
-"2026-11-24"
+"c76de9047633",
+"2026-11-25"
 ],
 "projects/jeddah-hamdaniyah-investment-lands-concept-master-plan.html": [
-"03cfc9f9e9a4",
-"2026-11-24"
+"142aa4a91020",
+"2026-11-25"
 ],
 "projects/jeddah-regional-strategic-and-local-plans.html": [
-"e7dd91188634",
-"2026-11-24"
+"7f783f804b37",
+"2026-11-25"
 ],
 "projects/jeddah-spatial-framework-plan.html": [
-"5387af94e4a9",
-"2026-11-24"
+"3b924981691f",
+"2026-11-25"
 ],
 "projects/jeddah-stormwater-drainage-program.html": [
-"6b969223380d",
-"2026-11-24"
+"7deb4ef2122f",
+"2026-11-25"
 ],
 "projects/jewellery-factory-and-headquarters-6th-of-october.html": [
-"da2df0aafaf8",
-"2026-11-24"
+"c0392509bcdb",
+"2026-11-25"
 ],
 "projects/jorhum-destination.html": [
-"629a98f8d84c",
-"2026-11-24"
+"6178513c7477",
+"2026-11-25"
 ],
 "projects/kasr-el-nil-street-hotel-and-administrative-complex.html": [
-"86a0594f0362",
-"2026-11-24"
+"58fc1d31922f",
+"2026-11-25"
 ],
 "projects/katameya-dunes-villas.html": [
-"7a971b84336f",
-"2026-11-24"
+"1c48249138c3",
+"2026-11-25"
 ],
 "projects/khaybar-heritage-area-master-plan.html": [
-"f37eddeea278",
-"2026-11-24"
+"1b6eeaa3a2f5",
+"2026-11-25"
 ],
 "projects/kidana-al-khaif.html": [
-"a832034054df",
-"2026-11-24"
+"86f01a44a444",
+"2026-11-25"
 ],
 "projects/king-salman-bay-mixed-use-development.html": [
-"5faeac384e37",
-"2026-11-24"
+"6f8f62d64eba",
+"2026-11-25"
 ],
 "projects/kuwait-industrial-free-zone.html": [
-"33457c6695b2",
-"2026-11-24"
+"1153724d433d",
+"2026-11-25"
 ],
 "projects/kuwait-shopping-mall-offices-and-garage.html": [
-"526c47b87ca3",
-"2026-11-24"
+"964d61a2113f",
+"2026-11-25"
 ],
 "projects/la-vista-town-new-cairo.html": [
-"2aa07e2b57fd",
-"2026-11-24"
+"5ebb5d492ee9",
+"2026-11-25"
 ],
 "projects/luxor-city-and-region-planning.html": [
-"66b6584c3a65",
-"2026-11-24"
+"0869cdc406d2",
+"2026-11-25"
 ],
 "projects/maadi-housing-and-offices-complex.html": [
-"01d98ea19d65",
-"2026-11-24"
+"10ec7abb1cfd",
+"2026-11-25"
 ],
 "projects/madaar-ras-el-hekma.html": [
-"854b79ab26f4",
-"2026-11-24"
+"ecbb982e6c91",
+"2026-11-25"
 ],
 "projects/magra-el-oyoun-urban-renewal.html": [
-"2fbe24349a48",
-"2026-11-24"
+"23e1fe4b1856",
+"2026-11-25"
 ],
 "projects/majar-al-kabsh-pre-concept-design.html": [
-"f8242ae4171b",
-"2026-11-24"
+"552bf13bbd7d",
+"2026-11-25"
 ],
 "projects/makkah-township-vision-master-plan.html": [
-"17f94a5cccdd",
-"2026-11-24"
+"c03f63e780c8",
+"2026-11-25"
 ],
 "projects/mansoura-strategic-plan.html": [
-"164be2781b91",
-"2026-11-24"
+"f1995ad5be5b",
+"2026-11-25"
 ],
 "projects/marakia-tourist-village.html": [
-"d0bb26b50512",
-"2026-11-24"
+"f86d09197868",
+"2026-11-25"
 ],
 "projects/maria-heights-tourist-complex-homs.html": [
-"bd9a19eb7937",
-"2026-11-24"
+"d68258ec3371",
+"2026-11-25"
 ],
 "projects/marina-el-alamein-concept-master-plan.html": [
-"201bc4235059",
-"2026-11-24"
+"fe9dffce2e73",
+"2026-11-25"
 ],
 "projects/marina-el-alamein-venicia-phase-3.html": [
-"4335ab7f42cf",
-"2026-11-24"
+"4d5aa612dd4e",
+"2026-11-25"
 ],
 "projects/marina-el-alamein.html": [
-"04d23888ae53",
-"2026-11-24"
+"be41f10ee867",
+"2026-11-25"
 ],
 "projects/marina-latakia-master-plan-and-detailed-design.html": [
-"3caceeb0178b",
-"2026-11-24"
+"67f7965106d0",
+"2026-11-25"
 ],
 "projects/marina-latakia-tourist-complex.html": [
-"60747e4d89fc",
-"2026-11-24"
+"24120b1aebe6",
+"2026-11-25"
 ],
 "projects/marina-matrouh-phase-2.html": [
-"75941b02e4ee",
-"2026-11-24"
+"95899ec2ae4c",
+"2026-11-25"
 ],
 "projects/marina-matrouh-phase-3.html": [
-"52d4eb910814",
-"2026-11-24"
+"37c590890d02",
+"2026-11-25"
 ],
 "projects/marina-matrouh.html": [
-"9d996d755cf6",
-"2026-11-24"
+"7318cecbfb4f",
+"2026-11-25"
 ],
 "projects/massoumbou-diwom-vision-master-plan.html": [
-"085f095700cc",
-"2026-11-24"
+"61a5cdb3461e",
+"2026-11-25"
 ],
 "projects/military-officers-club-abu-dhabi.html": [
-"2d275d201145",
-"2026-11-24"
+"7417f48fde22",
+"2026-11-25"
 ],
 "projects/minya-one-million-units-land-use-plan.html": [
-"220098b07e46",
-"2026-11-24"
+"62b8d4e387a6",
+"2026-11-25"
 ],
 "projects/muzdalifah-park.html": [
-"c82e2fec39d1",
-"2026-11-24"
+"2e6c0213e166",
+"2026-11-25"
 ],
 "projects/nahdet-el-arab-tourism-complex-phase-2.html": [
-"18953047484c",
-"2026-11-24"
+"1153f630ffea",
+"2026-11-25"
 ],
 "projects/nahdet-el-arab-tourism-complex.html": [
-"5f1abf4bf495",
-"2026-11-24"
+"b57e89a8dc79",
+"2026-11-25"
 ],
 "projects/najran-northern-border-design-guidelines.html": [
-"78ada4f98a16",
-"2026-11-24"
+"2ef9ded0297f",
+"2026-11-25"
 ],
 "projects/nasser-memorial-civic-center.html": [
-"c25de6d260e8",
-"2026-11-24"
+"45e20e252ad0",
+"2026-11-25"
 ],
 "projects/neom-hospital-landscape-conceptual-masterplan.html": [
-"6fde1fe0c608",
-"2026-11-24"
+"51846f1a84b5",
+"2026-11-25"
 ],
 "projects/new-administrative-capital-phases-2-4.html": [
-"179b742cce7d",
-"2026-11-24"
+"b717584f3d8b",
+"2026-11-25"
 ],
 "projects/new-jeddah-downtown-master-plan.html": [
-"18a745550af0",
-"2026-11-24"
+"a989ce3bf7dd",
+"2026-11-25"
 ],
 "projects/new-najaf-city.html": [
-"820930f9506e",
-"2026-11-24"
+"cd06e016a46c",
+"2026-11-25"
 ],
 "projects/nile-residential-administrative-shopping-twin-towers.html": [
-"6a6dca6c8d56",
-"2026-11-24"
+"b593268b203a",
+"2026-11-25"
 ],
 "projects/north-coast-regional-vision-fuka-matrouh.html": [
-"d2360a7005d4",
-"2026-11-24"
+"9d0cdffcaeaf",
+"2026-11-25"
 ],
 "projects/north-west-coast-structure-plan.html": [
-"3d007fd02039",
-"2026-11-24"
+"5acf3e612bc5",
+"2026-11-25"
 ],
 "projects/north-west-coast-tourism-development-planning.html": [
-"9d599e15433b",
-"2026-11-24"
+"fed534c6c138",
+"2026-11-25"
 ],
 "projects/obour-memorial-and-museum-ismailia.html": [
-"effdb3e3d7a1",
-"2026-11-24"
+"3737210c9ab0",
+"2026-11-25"
 ],
 "projects/olympic-plaza-tower-maadi.html": [
-"412d2312f852",
-"2026-11-24"
+"ea2aa62a4ca5",
+"2026-11-25"
 ],
 "projects/om-el-baneen-oasis-najaf.html": [
-"0c0604c6fca4",
-"2026-11-24"
+"adfe1377b294",
+"2026-11-25"
 ],
 "projects/organ-transplant-center-nasser-institute.html": [
-"4af6f52ab0fd",
-"2026-11-24"
+"55da5132752a",
+"2026-11-25"
 ],
 "projects/palm-beach-resort-landscape-riyadh.html": [
-"f1cf2d78c1ab",
-"2026-11-24"
+"94c9af81c659",
+"2026-11-25"
 ],
 "projects/palm-hills-golf-views-apartments.html": [
-"677707d149b7",
-"2026-11-24"
+"42e33f6603a9",
+"2026-11-25"
 ],
 "projects/pastry-factory-obour-city.html": [
-"31f2b7be1ce6",
-"2026-11-24"
+"6e3c3db3068f",
+"2026-11-25"
 ],
 "projects/port-ghalib-master-plan.html": [
-"f9ac942c0d70",
-"2026-11-24"
+"2f2eb47a9940",
+"2026-11-25"
 ],
 "projects/potato-cold-stores-minya-kafr-el-zayat.html": [
-"7904a43847d0",
-"2026-11-24"
+"02db5ba95303",
+"2026-11-25"
 ],
 "projects/prince-talal-hurghada-waterfront.html": [
-"0f0d89a09605",
-"2026-11-24"
+"17f845031ec4",
+"2026-11-25"
 ],
 "projects/private-garden-mansouria.html": [
-"9dbad8ac5247",
-"2026-11-24"
+"520bcd82a9ac",
+"2026-11-25"
 ],
 "projects/private-residence-green-hills-compound.html": [
-"d93417292082",
-"2026-11-24"
+"96856edd43de",
+"2026-11-25"
 ],
 "projects/private-villa-cairo-suez-road.html": [
-"d7bc8d74b834",
-"2026-11-24"
+"d1fe7761bd8e",
+"2026-11-25"
 ],
 "projects/private-villa-city-view-compound.html": [
-"9dcc310cee47",
-"2026-11-24"
+"383b5103e7b4",
+"2026-11-25"
+],
+"projects/private-villas-and-gardens-egypt.html": [
+"1d246df14cb6",
+"2026-11-25"
+],
+"projects/private-waterfront-property-hurghada.html": [
+"f68874acdf8b",
+"2026-11-25"
 ],
 "projects/project-elephant-pre-concept-master-plan.html": [
-"682e9e0b9377",
-"2026-11-24"
+"8c76c3959d99",
+"2026-11-25"
 ],
 "projects/project-line-al-khafji-concept-master-plan.html": [
-"b1ba4de7ac56",
-"2026-11-24"
+"86b81676b75f",
+"2026-11-25"
 ],
 "projects/project-oval-design-competition.html": [
-"29c397d09ac6",
-"2026-11-24"
+"653a2de8000e",
+"2026-11-25"
 ],
 "projects/project-raha-water-park-jeddah.html": [
-"c3049fa3a2b6",
-"2026-11-24"
+"c023c50c86b6",
+"2026-11-25"
 ],
 "projects/pyramids-plateau-destination-master-plan.html": [
-"39d5f2b936bb",
-"2026-11-24"
+"664aeb6138a6",
+"2026-11-25"
 ],
 "projects/pyramisa-apartment-hotel-hurghada.html": [
-"a659d53281a7",
-"2026-11-24"
+"f8c05baf87ce",
+"2026-11-25"
 ],
 "projects/ramla-concept-master-plan.html": [
-"24048954dcd7",
-"2026-11-24"
+"d6a38f700fa8",
+"2026-11-25"
 ],
 "projects/rcu-alula-master-planning-advisory.html": [
-"995a2919aefe",
-"2026-11-24"
+"301f3333c894",
+"2026-11-25"
 ],
 "projects/reflections-cleopatra-water-courts.html": [
-"7af09bc93f90",
-"2026-11-24"
+"384df15d4dff",
+"2026-11-25"
 ],
 "projects/reflections-mixed-use-complex-sheikh-zayed.html": [
-"479838ff98a4",
-"2026-11-24"
+"5decfc47bc6b",
+"2026-11-25"
 ],
 "projects/residential-complex-west-arabella-new-cairo.html": [
-"94e8f3f8adbb",
-"2026-11-24"
+"745787304c76",
+"2026-11-25"
 ],
 "projects/residential-compound-6th-of-october-city.html": [
-"77a89e41e914",
-"2026-11-24"
+"f786b55c6d27",
+"2026-11-25"
 ],
 "projects/residential-compound-cairo-alexandria-desert-road.html": [
-"b27cae82194a",
-"2026-11-24"
+"79310099bf1c",
+"2026-11-25"
 ],
 "projects/residential-density-planning-framework-dammam-riyadh-jeddah.html": [
-"19ed1d56bb72",
-"2026-11-24"
+"e3d463257c42",
+"2026-11-25"
 ],
 "projects/rivoli-commercial-complex-and-hotel.html": [
-"8568f34bd2a7",
-"2026-11-24"
+"8532f67eeb05",
+"2026-11-25"
 ],
 "projects/riyadh-plan-stakeholder-engagement-plan.html": [
-"f5367ca5e00b",
-"2026-11-24"
+"ed2e565655c9",
+"2026-11-25"
 ],
 "projects/rotana-cafe-zamalek.html": [
-"61ab00e3fdf7",
-"2026-11-24"
+"839e28ae2697",
+"2026-11-25"
 ],
 "projects/rotana-offices-and-studios-nile-plaza.html": [
-"52946217ff1f",
-"2026-11-24"
+"67e81f11acbf",
+"2026-11-25"
 ],
 "projects/royal-commission-alula-advisory-services.html": [
-"c017a9aa2146",
-"2026-11-24"
+"d883900fa9d8",
+"2026-11-25"
 ],
 "projects/royal-commission-makkah-city-holy-sites-advisory.html": [
-"8f363a06646f",
-"2026-11-24"
+"4f4cac1abe06",
+"2026-11-25"
 ],
 "projects/royal-oasis-sheikh-zayed.html": [
-"156d4fab4303",
-"2026-11-24"
+"d62cfd5d1e5d",
+"2026-11-25"
 ],
 "projects/rua-al-haram-concept-master-plan-competition.html": [
-"9ce6efdbb962",
-"2026-11-24"
+"f40090a1ed10",
+"2026-11-25"
 ],
 "projects/saudi-import-company-headquarters-jeddah.html": [
-"a69e47fe15cb",
-"2026-11-24"
+"69ffbb0f259a",
+"2026-11-25"
 ],
 "projects/saudi-railway-land-and-property-assets-strategy.html": [
-"9d59e90ebc2f",
-"2026-11-24"
+"68d872a573c3",
+"2026-11-25"
 ],
 "projects/science-and-space-complex-riyadh.html": [
-"55cb8e623066",
-"2026-11-24"
+"5a2656451f22",
+"2026-11-25"
 ],
 "projects/sharaan-nature-reserve-master-plan.html": [
-"3b34378af768",
-"2026-11-24"
+"90e244dfaafa",
+"2026-11-25"
 ],
 "projects/simaisma-beach-and-lusail-islands.html": [
-"2f793ea469da",
-"2026-11-24"
+"50b1144a7df8",
+"2026-11-25"
 ],
 "projects/somou-boulevard-new-cairo.html": [
-"4668635fa9b1",
-"2026-11-24"
+"db52d1839861",
+"2026-11-25"
 ],
 "projects/south-jahrah-residential-community.html": [
-"d25de10571de",
-"2026-11-24"
+"d29d79a87516",
+"2026-11-25"
 ],
 "projects/strategic-planning-rural-settlements-egypt.html": [
-"4ffe289ef1ad",
-"2026-11-24"
+"ebae0768f74e",
+"2026-11-25"
 ],
 "projects/suez-canal-bank-headquarters-cairo.html": [
-"aa2be246e763",
-"2026-11-24"
+"d1564eeb48ac",
+"2026-11-25"
 ],
 "projects/suez-canal-tunnels-port-said.html": [
-"f394c24bd80a",
-"2026-11-24"
+"15552baccc05",
+"2026-11-25"
 ],
 "projects/sukhna-heights-tourist-resort.html": [
-"5e1c97b6bb71",
-"2026-11-24"
+"e4ba26ff922f",
+"2026-11-25"
 ],
 "projects/tahrir-street-residential-administrative-shopping-complex.html": [
-"3822a2241a6b",
-"2026-11-24"
+"ecd1470d0cd8",
+"2026-11-25"
 ],
 "projects/taif-development-plan.html": [
-"ecfd2f4affc8",
-"2026-11-24"
+"1b57208ca872",
+"2026-11-25"
 ],
 "projects/taj-al-riyadh.html": [
-"9c6894697b18",
-"2026-11-24"
+"ee7902e5ac0e",
+"2026-11-25"
 ],
 "projects/tanta-strategic-plan.html": [
-"45743db57a5b",
-"2026-11-24"
+"9102781a5bb4",
+"2026-11-25"
 ],
 "projects/tehran-laleh-hotel.html": [
-"c3fa0f46b7f5",
-"2026-11-24"
+"350ce76edccf",
+"2026-11-25"
 ],
 "projects/tut-amon-village-hotel-and-resort.html": [
-"ed8f3d7582f2",
-"2026-11-24"
+"c427dc0ee93d",
+"2026-11-25"
 ],
 "projects/yuwdda-sub-regional-plan.html": [
-"6a7c5fc053bd",
-"2026-11-24"
+"aa3350c718f6",
+"2026-11-25"
 ],
 "services/architecture-and-interior-design.html": [
-"fd3eb70d6ce6",
-"2026-11-24"
+"152267dbb066",
+"2026-11-25"
 ],
 "services/cultural-heritage-planning.html": [
-"0469292e93ad",
-"2026-11-24"
+"ad968e747fc6",
+"2026-11-25"
 ],
 "services/development-consultancy-and-strategic-advisory.html": [
-"b2c5f442d71c",
-"2026-11-24"
+"31f314bbfcc4",
+"2026-11-25"
 ],
 "services/environment-and-sustainability.html": [
-"0c593a44c043",
-"2026-11-24"
+"157413c144ba",
+"2026-11-25"
 ],
 "services/master-planning-and-urban-design.html": [
-"4967f275cb4d",
-"2026-11-24"
+"8c6fd03713ca",
+"2026-11-25"
 ],
 "services/urban-and-regional-planning.html": [
-"2b9857fa86e0",
-"2026-11-24"
+"b1eade210501",
+"2026-11-25"
 ],
 "sustainability.html": [
-"fdf8b01c9f6c",
-"2026-11-24"
+"290f46a03192",
+"2026-11-25"
 ]
 }

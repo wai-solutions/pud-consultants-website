@@ -549,7 +549,7 @@ footer{background:#000}
 .ctaband{background:#000}
 .pl a,.pl div,.sec.paper .svc,.sec.paper .tiles div{background:#fff}
 
-/* ===== v7 brand typography: Antonio for titles, Roboto for text (PUD company profile) ===== */
+/* ===== v7 brand typography: Antonio for titles, Roboto for text ===== */
 .h-xl,.h-l,.h-m,.stage .step h2,.dec .yr,.dec h3,.stat b,.tiles b,.atlas .yr,.chapter b{font-family:var(--serif);font-weight:700;letter-spacing:0;text-transform:uppercase}
 .h-xl{line-height:.92}.h-l{line-height:.95}.h-m,.dec h3,.chapter b{line-height:1}
 .h-xl em,.h-l em,.h-m em,.hero .h-xl em,.stage .step h2 em{font-style:normal;color:var(--red)}
@@ -1222,3 +1222,128 @@ html{overflow-x:visible}body{overflow-x:clip!important}
 .nav,.nav.solid{backdrop-filter:none!important;-webkit-backdrop-filter:none!important;background:transparent!important}
 .nav::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:0;transition:opacity .35s;background:rgba(0,0,0,.9);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3)}
 .nav.solid::after{opacity:1}
+
+/* ===== v12: live audit fixes, 25 November 2026 ===== */
+:root{--red-fill:#d93a1c;--red-text:#cf3418}
+/* PA-005: white text on red needs 4.5:1, so filled red controls use the slightly deeper red */
+.welcome,.btn.red,.hero .btn.red,.nav .btn.red,.nav .btn.film,.btn.red.play,.chapter .next,.reel .tabs button[aria-pressed=true],.favtag,.pc-btn,.pc-send,.xp-i{background:var(--red-fill)!important}
+.btn.red:hover,.nav .btn.film:hover,.chapter .next:hover{background:#c4321a!important;filter:none!important}
+/* PA-006: red text on the light sections */
+.sec.paper .kicker,.sec.paper .mono,.tl-wrap .kicker,.sec.paper .dec-range,.paper .red-t{color:var(--red-text)!important}
+/* UX-001 / PA-008: the open menu starts under the header (never over its own button) and is opaque */
+@media(max-width:1180px){
+  .nav ul{position:absolute!important;top:100%!important;left:0!important;right:0!important;bottom:auto!important;background:#000!important;max-height:calc(100svh - 120px);overflow-y:auto;z-index:1}
+  .burger{position:relative;z-index:3;min-width:44px;min-height:44px}
+  .nav.open .burger i:first-child{transform:translateY(3.5px) rotate(45deg)}
+  .nav.open .burger i:last-child{transform:translateY(-3.5px) rotate(-45deg)}
+}
+/* UI-014: one solid value for the bar */
+.nav.solid::after,.nav.open::after{opacity:1;background:rgba(0,0,0,.96)}
+/* UI-003 / PA-018: header never pushes the menu button off a small screen */
+.nav .in .btn,.nav>.in .btn{white-space:nowrap}
+.brand{min-width:0}
+@media(max-width:480px){.nav>.in{gap:8px}.nav .btn.film{padding-inline:12px!important}}
+@media(max-width:360px){.nav>.wrap,.nav .wrap.in{padding-inline:12px}.brand b{font-size:14px}.nav .btn.film{font-size:12.5px!important;padding-inline:10px!important}}
+/* UX-002: hero content starts below banner + header */
+.hero>.wrap.in{padding-top:calc(var(--banner-h,0px) + 96px)}
+/* UX-003: anchors land below the fixed header */
+main [id],section[id]{scroll-margin-top:96px}
+/* UI-001: inner-page headings two lines, not a poster */
+main>section.page-h:first-child .h-xl,main>.page-h .h-xl{font-size:clamp(38px,5.2vw,80px);line-height:.98;max-width:22ch!important;text-wrap:balance}
+@media(max-height:560px){.h-xl{font-size:clamp(28px,8vh,46px)!important}}
+/* UI-018 */
+h1,h2,.h-xl,.h-l{text-wrap:balance}
+/* UI-002 / UI-011: projects without a photo show a compact text tile, not a fake picture */
+.pcard.ph{aspect-ratio:auto!important;min-height:0!important;height:auto;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;background:#141414!important;border:1px solid var(--line)}
+.pcard.ph .planart,.pcard.ph .yr{display:none!important}
+.pcard.ph .t{position:static!important;padding:0!important;background:none!important}
+.pgrid .pcard.ph{min-height:150px!important}
+.cardsel img[style*="none"]{display:none}
+/* UI-013: project pages with no photo get a compact header */
+.ph-hero.none{min-height:0!important;height:auto!important;padding:150px 0 40px!important}
+.ph-hero.none>.planart{display:none!important}
+.ph-hero.none .wrap.in{position:relative!important}
+/* UI-004: previous/next never overflow on phones */
+.pn{grid-template-columns:repeat(2,minmax(0,1fr))}
+.pn a{min-width:0;overflow-wrap:anywhere}.pn b{font-size:clamp(18px,5vw,26px)!important;line-height:1.15}
+@media(max-width:560px){.pn{grid-template-columns:1fr}.pn a:last-child{text-align:left}}
+/* UI-005: the last selected-work card can scroll fully into view */
+.hsx-track::after{content:"";flex:0 0 1px;margin-left:calc(var(--gut) - 18px)}
+/* UI-006: decade rail leaves room for the chat button */
+@media(max-width:800px){.dz-rail{right:calc(var(--gut) + 66px)}.dz-panels{padding-bottom:20px}}
+/* UI-007: caption readable over pale photos */
+.dz-bg figcaption{color:#fff!important;text-shadow:0 1px 10px rgba(0,0,0,.9),0 0 2px #000;white-space:nowrap}
+.dz-bg::after{content:"";position:absolute;inset:0 0 auto 0;height:220px;background:linear-gradient(rgba(0,0,0,.6),transparent);z-index:2;pointer-events:none}
+/* UI-008 / UI-016: inactive services readable; no meaningless numbers */
+.svx-list.scrolly.hov li{opacity:.6}
+.svx .svx-list li:not(.on) b{color:#a3a3a3}
+.svx-list .n,.svx .svx-list .n{display:none!important}
+/* UI-015 / PA-017: no text under 12px */
+.ap-cap{font-size:12px!important}
+.favtag{font-size:13px!important;letter-spacing:0!important;text-transform:none!important}
+.pcard .t span,.chip small,.atlas .now small{font-size:13px}
+.brand small{font-size:11px;letter-spacing:.04em}
+/* UI-017 / PA-016: touch targets */
+@media(max-width:800px){footer.f3 .f3-g>div:not(.f3-brand) a{padding:11px 0}.meta .v a{display:inline-block;padding:10px 0}}
+.nav .btn.film,.dz-rail button,.projtag{min-height:44px}
+@media(max-width:600px){.atlas .side .chip,.atlas .hud .play,.atlas .hud .speed{min-height:44px}}
+/* UI-019: landscape phones */
+@media(max-height:520px) and (orientation:landscape){.welcome{font-size:13px;padding:6px var(--gut)}.hero-h{font-size:clamp(28px,8vh,44px)!important}.hero .lede{max-width:60ch}}
+/* UX-004: map year and count never overlap */
+.atlas .hud .yrbox{display:flex;flex-direction:column;gap:4px}
+.atlas .yr{margin-right:12px}
+@media(max-width:800px){.atlas .hud .yrbox{flex-direction:row;align-items:baseline}}
+body.has-atlas .pchat{transition:transform .3s}
+body.atlas-on .pchat{transform:translateY(calc(100% + 30px));pointer-events:none}
+/* UI-010: counter readable over the map; cards stay solid */
+.atlas .hud{background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,0) 70%)}
+.atlas .now a{opacity:1!important}
+/* PA-007: scroll-reveal words readable at rest */
+.cq p span{color:rgba(255,255,255,.55)}
+.stage .step .n{color:#8a8a8a}
+/* PA-019: chat focus ring */
+.pc-form :focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.pc-priv{font-size:12px;color:#6b6b6b;margin-top:10px;line-height:1.4}.pc-priv a{color:#161616;text-decoration:underline}
+.pc-note a{color:inherit;text-decoration:underline;font-weight:600}
+/* PA-023: anything that moves can be paused */
+.motion-off .ltr,.motion-off .logos-strip .track,.motion-off .mpin2 svg,.motion-off .scrollcue{animation-play-state:paused!important}
+@media(prefers-reduced-motion:reduce){.mpin2 svg{animation:none!important}}
+.pause-motion{position:absolute;right:var(--gut);bottom:28px;z-index:5;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:99px;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.45);color:#fff;font:500 14px/1 var(--sans);cursor:pointer}
+.pause-motion:hover{background:rgba(0,0,0,.7)}
+@media(max-width:700px){.pause-motion{bottom:auto;top:calc(var(--banner-h,0px) + 84px);right:var(--gut);padding:0 12px}}
+/* UX-016: closable banner */
+.welcome .w-x{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:36px;height:36px;border:0;background:transparent;color:#fff;font-size:22px;line-height:1;cursor:pointer;border-radius:50%}
+.welcome .w-x:hover{background:rgba(0,0,0,.18)}
+.welcome{padding-right:48px!important}
+/* UX-012: empty state for project search */
+.p-empty{padding:40px 0;font-size:18px;color:var(--mute)}.p-empty button{margin-left:12px}
+/* UX-017: jump links */
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 0}
+/* contact page: email, form, maps */
+.c-mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:26px}
+.offices .maps{display:inline-flex;align-items:center;min-height:44px;margin-left:14px;color:#d3d3d3;text-decoration:underline;text-underline-offset:3px}
+.c-next{display:flex;flex-wrap:wrap;gap:12px;margin-top:50px}
+/* PA-009: footer headings are h2 now, keep the look */
+footer.f3 h2.f3-h{font-family:var(--sans);font-size:13px;font-weight:600;color:#ffffff;margin:0 0 14px;letter-spacing:0;text-transform:none;line-height:1.3}
+/* UI-012: soften the black-to-paper cut on 60 years */
+.page-h+.sec.paper{border-top:1px solid #222}
+.atlas .now .dot{display:none}
+.skip-map{position:absolute;left:-9999px}.skip-map:focus{position:static;display:inline-block;margin:0 0 12px}
+.atlas .hud .skip26{white-space:nowrap}
+@media(max-width:800px){.atlas .hud{grid-template-columns:1fr auto auto auto!important;grid-template-areas:"yr play speed skip" "range range range range"!important}.atlas .hud .skip26{grid-area:skip;padding:8px 12px!important;font-size:12.5px!important}}
+/* LG-013 / LG-004 / LG-008: client names as plain text; logos big enough to read */
+.prt .ctext,.ctext{margin:8px 0 0;color:#cfcfcf;font-size:15px;line-height:1.4}
+.prt:empty{display:none}
+.prt img{max-height:40px!important;max-width:140px!important;width:auto;height:auto}
+.pl img{max-width:100%!important}
+.pl figure{margin:0;display:flex;flex-direction:column;align-items:center;gap:8px}
+.pl figcaption{font-size:13px;color:#555;text-align:center;line-height:1.3}
+.lgcredit{font-size:12px;color:var(--mute-d,#666);margin-top:22px}
+.pl a,.pl div{flex-direction:column;gap:10px}
+.pl img{max-height:56px!important}
+/* UI-004 family: the leader card never widens the page on phones */
+.amrg>*,.grid2>*{min-width:0}
+@media(max-width:800px){.amrcard .amrg{grid-template-columns:minmax(0,1fr)!important}}
+.offices .maps{font-size:15px}
+@media(max-width:700px){.hero .kicker{display:none}.pause-motion{top:calc(var(--banner-h,0px) + 84px);bottom:auto;font-size:13px;min-height:40px}}
+@media(min-width:801px){section.stage.depth{min-height:100vh}}

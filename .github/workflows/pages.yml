@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
 
       # site/ is the production build: indexable, canonical to www.pudconsultants.com,
       # with CNAME, .nojekyll and forwarding pages for the old Wix addresses.
@@ -27,18 +27,14 @@ jobs:
           test -f site/CNAME && grep -q 'www.pudconsultants.com' site/CNAME
           ! grep -rl 'noindex,nofollow,noarchive' site --include=index.html
 
-      # Custom domain for an Actions-deployed site lives in the Pages settings, not in the CNAME file.
-      - name: Point GitHub Pages at www.pudconsultants.com
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # SC-007: internal working notes never reach the public site or the public source
+      - name: Check for internal wording
         run: |
-          curl -sS -X PUT -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
-            https://api.github.com/repos/${{ github.repository }}/pages \
-            -d '{"cname":"www.pudconsultants.com"}' -w '\nHTTP %{http_code}\n'
+          ! grep -rIil -e 'story bible' -e 'company profile' -e '/Users/' -e 'deliverables/' site source/src source/data
+          ! grep -rIl 'risepersonal' site source
 
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: site
 
@@ -50,4 +46,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
