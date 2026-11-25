@@ -11,6 +11,10 @@ document.documentElement.classList.remove('no-js');
   const W='figure,a,button,.shot,.dz-bg,.ap,li,.t',seen=new WeakSet();
   const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);e.target.querySelectorAll?(e.target.matches('img')?go(e.target):e.target.querySelectorAll('img[data-src]').forEach(go)):0}}),{rootMargin:'700px 100% 700px 100%'});
   const scan=root=>{(root.matches&&root.matches('img[data-src]')?[root]:[...(root.querySelectorAll?root.querySelectorAll('img[data-src]'):[])]).forEach(im=>{const w=im.closest(W)||im;if(!seen.has(w)){seen.add(w);io.observe(w)}})};
+  // logo rows: load every logo of a row at once, a screen before the row arrives (they move sideways, so per-image checks miss them)
+  const rowIO=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){rowIO.unobserve(e.target);e.target.querySelectorAll('img[data-src]').forEach(go)}}),{rootMargin:'1200px 0px'});
+  document.querySelectorAll('.lrow,.logos-strip,.logos2').forEach(r=>rowIO.observe(r));
+  addEventListener('load',()=>setTimeout(()=>document.querySelectorAll('.lrow,.logos-strip').forEach(r=>{const b=r.getBoundingClientRect();if(b.top<innerHeight*3)r.querySelectorAll('img[data-src]').forEach(go)}),50));
   scan(document);new MutationObserver(ms=>ms.forEach(m=>m.addedNodes.forEach(n=>n.nodeType===1&&scan(n)))).observe(document.body,{childList:true,subtree:true});})();
 
 const nav=$('.nav');const onS=()=>nav.classList.toggle('solid',scrollY>40);onS();addEventListener('scroll',onS,{passive:true});
