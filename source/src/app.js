@@ -36,7 +36,7 @@ const saveData=!!(navigator.connection&&navigator.connection.saveData);
 let motionOff=false;try{motionOff=localStorage.getItem('pudMotion')==='off'}catch(e){}
 if(hv){const start=()=>{if(hv.dataset.started)return;hv.dataset.started='1';const src=innerWidth<=700?hv.dataset.srcM:hv.dataset.src;if(!src)return;hv.src=src;hv.preload='auto';
     new IntersectionObserver(es=>{if(document.documentElement.classList.contains('motion-off'))return;es[0].isIntersecting?hv.play().catch(()=>{}):hv.pause()}).observe(hv)};
-  if(!reduce&&!saveData&&!motionOff){document.readyState==='complete'?start():addEventListener('load',()=>setTimeout(start,innerWidth<=700?600:0))}}
+  if(!reduce&&!saveData&&!motionOff)start()}
 // PA-023: one control pauses everything that moves (video, logo marquees, glowing pins)
 (()=>{const hero=$('.hero');if(!hero||reduce)return;const b=document.createElement('button');b.type='button';b.className='pause-motion';
   const lab=()=>{const off=document.documentElement.classList.contains('motion-off');b.setAttribute('aria-pressed',off?'true':'false');b.textContent=off?'Play motion':'Pause motion'};
@@ -75,7 +75,9 @@ if(tlo){
 
 $$('.reel').forEach(reel=>{const v=$('video',reel);const tabs=$$('.tabs button',reel);
   tabs.forEach(b=>b.addEventListener('click',()=>{tabs.forEach(x=>x.setAttribute('aria-pressed',x===b));v.src=b.dataset.src;v.poster=b.dataset.poster||'';v.play().catch(()=>{})}));
-  if(!reduce)new IntersectionObserver(es=>{es[0].isIntersecting?v.play().catch(()=>{}):v.pause()}).observe(v)});
+  // start downloading the founder film well before it scrolls into view, so it plays at once
+  if(!reduce){new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){v.preload='auto';v.load();o.disconnect()}},{rootMargin:'1500px 0px'}).observe(v);
+    new IntersectionObserver(es=>{es[0].isIntersecting?v.play().catch(()=>{}):v.pause()}).observe(v)}});
 
 const fm=$('.film-modal');
 if(fm){const v=$('video',fm);$$('[data-film]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();fm.classList.add('on');v.src=v.dataset.src;v.play().catch(()=>{})}));

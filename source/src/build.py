@@ -495,9 +495,9 @@ def home():
         '<h1 class="h-xl hero-h" data-r="0.1">Planning cities and destinations <em>since 1966.</em></h1>'
         '<p class="lede" data-r="0.2">PUD Consultants plans cities, regions and tourism destinations, and designs the buildings and landscapes inside them. Prof. Dr. Abdallah Attia founded it in Cairo. Prof. Dr. Amr Attia leads it today, from Cairo, Riyadh and Dubai.</p>'
         '<div class="row" data-r="0.3"><a class="btn red" href="projects.html">Explore the work</a><a class="btn ghost" href="projects.html#atlas">Play the 60-year map</a></div>'
-        '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>%d</b><span class="mono">Countries</span></div>'
-        '<div class="stat"><b>%d</b><span class="mono">Documented projects</span></div><div class="stat"><b>5</b><span class="mono">Offices in Cairo, Riyadh and Dubai</span></div></div></div>'
-        '<p class="cap">Prof. Dr. Abdallah Attia, founder of PUD. Illustrative recreation, not archive footage.</p><i class="scrollcue"></i></section>') % (len(COUNTRIES), len(PROJ))
+        '<div class="stats" data-r="0.4"><div class="stat"><b>1966</b><span class="mono">Founded in Cairo</span></div><div class="stat"><b>+12</b><span class="mono">Countries</span></div>'
+        '<div class="stat"><b>+200</b><span class="mono">Global projects</span></div><div class="stat"><b>5</b><span class="mono">Offices in Cairo, Riyadh and Dubai</span></div></div></div>'
+        '<p class="cap">Prof. Dr. Abdallah Attia, founder of PUD. Illustrative recreation, not archive footage.</p><i class="scrollcue"></i></section>')
     marq = '<div class="logos-strip" aria-label="Clients and partners"><div class="track" data-dup>%s</div></div>' % tiles if tiles else ''
     svc = ''.join('<a class="svc" href="services/%s.html"><b>%s</b><span>%s</span><i>&rarr;</i></a>' % (s['slug'], E(s['name']), E(SVC_CARD.get(s['slug']) or clip(s['lead'], 92))) for s in SERVICES)
     intro = ('<section class="sec"><div class="wrap"><div class="grid2"><div><p class="kicker mono" data-r>Our expertise</p><h2 class="h-l" data-r="0.1">Every place has <em>its own rhythm.</em></h2></div>'
@@ -532,9 +532,9 @@ def home():
     def mpin(x, y, name, side=''):
         return '<span class="mpin2 %s" style="left:%s%%;top:%s%%">%s<b>%s</b></span>' % (side, x, y, PIN, name)
     pins = mpin(33, 6, 'Germany', 'r') + mpin(3, 63, 'The Gambia', 'r')
-    teaser = ('<section class="sec mapteaser"><div class="wrap"><div class="grid2 mt-head"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">Work in <em>%d countries.</em></h2></div>'
+    teaser = ('<section class="sec mapteaser"><div class="wrap"><div class="grid2 mt-head"><div><p class="kicker mono" data-r>Where we work</p><h2 class="h-l" data-r="0.1">Working in <em>+12 countries.</em></h2></div>'
               '<div><p class="p-l" data-r="0.2">Egypt and Saudi Arabia hold most of our work. We have also worked in Kuwait, Iraq, Syria, the UAE, Qatar, Iran, Cameroon, The Gambia and Germany. Every pin opens a project page. <a href="destinations/red-sea.html">Sustainable tourism planning on the Red Sea</a>.</p><p style="margin-top:24px" data-r="0.3"><a class="btn red" href="projects.html#atlas">Open the map</a></p></div></div>'
-              '<a class="mapimg big" href="projects.html#atlas" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Map of the Middle East with PUD project locations" loading="lazy">%s</a></div></section>') % (len(COUNTRIES), pins)
+              '<a class="mapimg big" href="projects.html#atlas" data-r="0.2"><img src="assets/stills/glowing-pins-across-the-middle-east.jpg" alt="Map of the Middle East with PUD project locations" loading="lazy">%s</a></div></section>') % pins
     def lrow(L): return ''.join('<span class="lg"><img src="%s" alt="%s"%s loading="lazy" decoding="async"></span>' % (p['logo'], E(p['name']), wh(p['logo'])) for p in L)
     cl = [p for p in strip if p.get('type') == 'client']; pt = [p for p in strip if p.get('type') != 'client']
     pl = ('<div class="lrow"><p class="mono lt">Our trusted clients</p><div class="lmq"><div class="ltr" data-dup>%s</div></div></div>'
