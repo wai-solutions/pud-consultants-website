@@ -51,16 +51,20 @@ SUS_FIVE = [
 ]
 SUS_LENS = ['Adaptive land use', 'Ecological corridors', 'Human-centred access', 'Cultural continuity', 'Context-sensitive design: respecting natural topography, climate and ecosystems', 'Green infrastructure systems']
 # (SDG number, goal, UN target text, PUD contribution)
-SDGS = [
-    (8, 'Decent work and economic growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.', 'Destinations and economic cities that create jobs and local value, such as Jazan Economic City and the Pyramids Plateau.'),
-    (9, 'Industry, innovation and infrastructure', 'Build resilient infrastructure, promote inclusive and sustainable industrialisation and foster innovation.', 'Infrastructure and land strategies: the Saudi railway land strategy, the Jeddah stormwater programme and the Suez Canal tunnels.'),
-    (11, 'Sustainable cities and communities', 'Make cities and human settlements inclusive, safe, resilient and sustainable.', 'Our core work for sixty years.'),
-    (17, 'Partnerships for the goals', 'Strengthen the means of implementation and revitalise the Global Partnership for Sustainable Development.', 'Projects planned with partners such as WATG, AECOM and GIZ.'),
+SDGS = [  # (SDG, goal, UN target, PUD contribution, supporting projects)
+    (7, 'Affordable and clean energy', 'Ensure access to affordable, reliable, sustainable and modern energy for all.', 'Energy-efficient hotels and destinations through the Green Star Hotels initiative with GIZ.', ['green-star-hotels-initiative']),
+    (8, 'Decent work and economic growth', 'Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.', 'Destinations and economic cities that create jobs and local value.', ['jazan-economic-city', 'pyramids-plateau-destination-master-plan']),
+    (9, 'Industry, innovation and infrastructure', 'Build resilient infrastructure, promote inclusive and sustainable industrialisation and foster innovation.', 'Infrastructure and land strategies, from the Saudi railway network to the Suez Canal tunnels.', ['saudi-railway-land-and-property-assets-strategy', 'suez-canal-tunnels-port-said']),
+    (11, 'Sustainable cities and communities', 'Make cities and human settlements inclusive, safe, resilient and sustainable.', 'Our core purpose for sixty years: new cities, districts and destinations.', ['new-administrative-capital-phases-2-4', 'marina-el-alamein']),
+    (12, 'Responsible consumption and production', 'Ensure sustainable consumption and production patterns.', 'Hotels and facilities planned to use less water, energy and materials.', ['green-star-hotels-initiative', 'abo-dabbab-marine-field-station']),
+    (13, 'Climate action', 'Take urgent action to combat climate change and its impacts.', 'Flood resilience and long-term regional plans for coasts and cities.', ['jeddah-stormwater-drainage-program', 'north-coast-regional-vision-fuka-matrouh']),
+    (15, 'Life on land', 'Protect, restore and promote sustainable use of terrestrial ecosystems and halt biodiversity loss.', 'Protected landscapes planned for people and nature.', ['sharaan-nature-reserve-master-plan']),
+    (17, 'Partnerships for the goals', 'Strengthen the means of implementation and revitalise the Global Partnership for Sustainable Development.', 'A curated network of global partners, such as WATG, AECOM and GIZ, and local experts.', ['pyramids-plateau-destination-master-plan', 'green-star-hotels-initiative']),
 ]
 SUS_PROJECTS = ['alula-strategic-framework-plan', 'khaybar-heritage-area-master-plan', 'north-coast-regional-vision-fuka-matrouh', 'sharaan-nature-reserve-master-plan']
 SUS_FAQ = [
     ('How does PUD Consultants approach sustainability?', 'Sustainability is part of how PUD plans, through four commitments: environmental responsibility, social inclusion, cultural heritage preservation and green building standards. PUD applies them across five responsibilities: people, society, culture, the environment and the planet.'),
-    ('Which UN Sustainable Development Goals does PUD\'s work support?', 'PUD\'s work contributes most directly to four of the seventeen goals: SDG 8 (decent work and economic growth), 9 (industry, innovation and infrastructure), 11 (sustainable cities and communities) and 17 (partnerships for the goals).'),
+    ('Which UN Sustainable Development Goals does PUD\'s work support?', 'PUD\'s work contributes most directly to eight of the seventeen goals: SDG 7 (affordable and clean energy), 8 (decent work and economic growth), 9 (industry, innovation and infrastructure), 11 (sustainable cities and communities), 12 (responsible consumption and production), 13 (climate action), 15 (life on land) and 17 (partnerships for the goals). Each goal is linked to PUD projects.'),
     ('Which PUD projects show its sustainability work?', 'Examples include the AlUla Strategic Framework Plan, the Abo Dabbab marine field station, the Green Star Hotels initiative with GIZ and the Sharaan Nature Reserve master plan (as sustainability expert to WATG), and the North-West Coast regional vision in Egypt.'),
 ]
 

@@ -1390,3 +1390,13 @@ footer.f3 h2.f3-h{font-family:var(--sans);font-size:13px;font-weight:600;color:#
 .irow b{text-align:right}.irow:hover span:first-child{color:var(--red-text)}
 @media(max-width:800px){.istats{grid-template-columns:1fr 1fr}.icharts{grid-template-columns:1fr}.irow{grid-template-columns:100px 1fr 36px}}
 .ahero{margin:0 0 40px}.ahero img{width:100%;height:auto;border-radius:var(--r);display:block}.ahero figcaption{margin-top:8px;color:var(--mute);font-size:13px}
+/* v15: SDG cards in the official UN goal colours */
+.sdgs li{background:var(--sdg)!important;border:0!important;color:#fff;min-height:320px}
+.sdgs .sdg-n{color:#fff!important;font-size:clamp(64px,7vw,96px);font-weight:700}
+.sdgs b{color:#fff!important;font-family:var(--sans)!important;font-weight:700!important;font-size:20px!important}
+.sdgs .un{color:rgba(255,255,255,.88)!important}
+.sdgs .pud{color:#fff!important;border-top-color:rgba(255,255,255,.35)!important}
+.sdgs .pud em{color:#fff!important;font-weight:700}
+.sdg-p{display:flex;flex-wrap:wrap;gap:6px 14px}
+.sdg-p a{color:#fff;font-size:14px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+.sdgs li[style*="#FCC30B"] *,.sdgs li[style*="#FD9D24"] *,.sdgs li[style*="#56C02B"] *,.sdgs li[style*="#FD6925"] *,.sdgs li[style*="#BF8B2E"] *{color:#161616!important;border-top-color:rgba(0,0,0,.25)!important}

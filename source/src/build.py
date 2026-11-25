@@ -1119,7 +1119,7 @@ def about_page():
           ('What services does PUD offer?', 'PUD offers %s, and assembles bespoke advisory groups of international experts for each project.' % (', '.join(s['name'].lower() for s in SERVICES[:-1]) + ' and ' + SERVICES[-1]['name'].lower())),
           ('Where does PUD work?', 'PUD\'s record documents %d projects in %d countries: %s. Its offices are in Cairo (Egypt), Riyadh (Saudi Arabia) and Dubai (UAE).' % (len(PROJ), len(countries), ', '.join(countries[:-1]) + ' and ' + countries[-1])),
           ('What are some of PUD\'s notable projects?', 'Highlights include the Pyramids Plateau destination master plan (with WATG), Al Mashaaer Al Mugaddassah in Makkah, Alamein Riviera, Somou Boulevard, Cairo Media City, strategic advisory for the New Administrative Capital, the Khaybar Heritage Area development brief and the AlUla Strategic Framework Plan, and Jazan Economic City.'),
-          ('How does PUD approach sustainability?', 'Sustainability is part of how PUD plans, through environmental responsibility, social inclusion, cultural heritage preservation and green building standards. PUD\'s work contributes most directly to UN Sustainable Development Goals 8, 9, 11 and 17.'),
+          ('How does PUD approach sustainability?', 'Sustainability is part of how PUD plans, through environmental responsibility, social inclusion, cultural heritage preservation and green building standards. PUD\'s work contributes most directly to UN Sustainable Development Goals 7, 8, 9, 11, 12, 13, 15 and 17.'),
           ('Does PUD work with international firms?', 'Yes. PUD regularly collaborates with leading global firms including WATG, AECOM, SOM, BuroHappold, HOK, Hill International and Giugiaro, combining international expertise with deep local knowledge, alongside 100+ clients and 90+ collaborations over six decades.'),
           ('How can I contact PUD Consultants?', 'Write to info@pudconsultants.com or use the form on the contact page. Or call Cairo on +20 2 2414 7537 or +20 100 198 1111, Riyadh on +966 540 39 8178 or Dubai on +971 509 29 8178.')]
     body = ('<section class="page-h"><div class="wrap"><p class="kicker mono">About PUD</p><h1 class="h-xl" style="max-width:16ch">Planning &amp; Urban Development <em>since 1966.</em></h1><p class="lede" style="max-width:50ch">%s</p></div></section>'
@@ -1153,7 +1153,9 @@ def sustainability_page():
         im = SUS_IMG.get(slug) or hero_img(slug)
         five += ('<article class="resp%s"><div class="resp-t"><p class="n mono">%02d · %s</p><h3 class="h-m">%s</h3><p class="p-l">%s</p></div>'
                  '<a class="figure" href="projects/%s.html"><img src="%s" alt="%s" loading="lazy"%s><span class="mono">%s &rarr;</span></a></article>') % (' flip' if i % 2 else '', i + 1, E(th), E(h), E(t), slug, im, E(cap.replace(' · ', ', ')), wh(im), E(cap))
-    sdg = ''.join('<li><span class="sdg-n">%d</span><b>%s</b><span class="un">%s</span><span class="pud"><em class="mono">PUD</em> %s</span></li>' % (n, E(g), E(u), E(p)) for n, g, u, p in SDGS)
+    SDGC = {7: '#FCC30B', 8: '#A21942', 9: '#FD6925', 11: '#FD9D24', 12: '#BF8B2E', 13: '#3F7E44', 15: '#56C02B', 17: '#19486A'}
+    sdg = ''.join('<li style="--sdg:%s"><span class="sdg-n">%d</span><b>%s</b><span class="un">%s</span><span class="pud"><em class="mono">PUD</em> %s</span><span class="sdg-p">%s</span></li>' % (
+        SDGC.get(n, '#333'), n, E(g), E(u), E(p), ' '.join('<a href="projects/%s.html">%s &rarr;</a>' % (s_, E(BYSLUG[s_]['name'])) for s_ in sl if s_ in BYSLUG)) for n, g, u, p, sl in SDGS)
     lens = ''.join('<li>%s</li>' % E(x) for x in SUS_LENS)
     def scard(slug):
         p = BYSLUG[slug]; im = SUS_IMG.get(slug) or hero_img(slug)
@@ -1167,7 +1169,7 @@ def sustainability_page():
             '<section class="sec paper"><div class="wrap"><p class="kicker mono">Five responsibilities, one approach</p><h2 class="h-l" style="max-width:20ch">People, society, culture, environment <em>and planet.</em></h2>%s</div></section>'
             '<section class="sec interlude-s"><img src="assets/story/sustain-alamein-riviera.jpg" alt="Homes around a planted lagoon at dusk, Alamein Riviera" loading="lazy"%s><div class="wrap"><p class="h-l">Homes around a planted lagoon, Alamein Riviera.</p><a class="mono" href="projects/alamein-riviera-vision-master-plan.html">Alamein Riviera · North Coast, Egypt &rarr;</a></div></section>'
             '<section class="sec"><div class="wrap"><p class="kicker mono">Designing resilient futures</p><h2 class="h-l" style="max-width:18ch">Sustainability starts <em>with land use.</em></h2><p class="p-l" style="margin-top:18px">From new towns to heritage areas, we test each plan against land, water, movement, heritage and climate.</p><ul class="lens">%s</ul></div></section>'
-            '<section class="sec paper" id="sdgs"><div class="wrap"><p class="kicker mono">Goals we support</p><h2 class="h-l">Leave no place behind.</h2><p class="p-l" style="margin-top:18px">Our work contributes most directly to four of the seventeen UN Sustainable Development Goals. Each one is backed by projects on this site.</p><ol class="sdgs">%s</ol></div></section>'
+            '<section class="sec paper" id="sdgs"><div class="wrap"><p class="kicker mono">Goals we support</p><h2 class="h-l">Leave no place behind.</h2><p class="p-l" style="margin-top:18px">Our work contributes most directly to eight of the seventeen UN Sustainable Development Goals. Each goal links to the projects behind it.</p><ol class="sdgs">%s</ol></div></section>'
             '<section class="sec"><div class="wrap"><p class="kicker mono">Sustainability in practice</p><h2 class="h-l">Selected projects</h2><div class="pgrid" style="margin-top:30px">%s</div>'
             '<p style="margin-top:24px"><a class="btn ghost" href="projects.html">All projects</a> <a class="btn ghost" href="services/environment-and-sustainability.html">Environmentally sustainable development</a></p>'
             '<div style="margin-top:80px">%s</div></div></section>'
@@ -1176,9 +1178,9 @@ def sustainability_page():
         E(SUS_LEDE),
         ('<section class="wrap"><a class="figure wide" href="projects/green-pearl-prime-dubai-competition.html"><img src="%s" alt="Families walking and cycling along a green stream walk, Green Pearl, Dubai" fetchpriority="high"%s style="object-position:50%% 60%%"><span class="mono">Green Pearl · Dubai &rarr;</span></a></section>' % (hi, wh(hi))) if hi else '',
         ''.join('<p class="p-l">%s</p>' % E(t) for t in SUS_COMMIT), numbered(SUS_FOUR, 'nlist four'), five, wh('assets/story/sustain-alamein-riviera.jpg'), lens, sdg, projs, faq_html(SUS_FAQ))
-    wp = {'@context': 'https://schema.org', '@type': 'WebPage', 'url': BASE + '/sustainability.html', 'name': 'Sustainability commitments and SDGs', 'description': SUS_LEDE, 'about': [{'@id': BASE + '/#org'}, {'@type': 'Thing', 'name': 'Sustainable development'}] + [{'@type': 'Thing', 'name': 'SDG %d: %s' % (n, g)} for n, g, u, p in SDGS], 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
+    wp = {'@context': 'https://schema.org', '@type': 'WebPage', 'url': BASE + '/sustainability.html', 'name': 'Sustainability commitments and SDGs', 'description': SUS_LEDE, 'about': [{'@id': BASE + '/#org'}, {'@type': 'Thing', 'name': 'Sustainable development'}] + [{'@type': 'Thing', 'name': 'SDG %d: %s' % (n, g)} for n, g, u, p, sl in SDGS], 'publisher': {'@id': BASE + '/#org'}, 'inLanguage': 'en'}
     return page('sustainability.html', 'Sustainability Commitments and UN SDGs | PUD Consultants', body,
-                'How PUD Consultants plans for sustainability: four commitments, five responsibilities and the UN goals its projects support (SDGs 8, 9, 11 and 17).', 'sustainability.html',
+                'How PUD Consultants plans for sustainability: four commitments, five responsibilities and the UN goals its projects support (SDGs 7, 8, 9, 11, 12, 13, 15 and 17).', 'sustainability.html',
                 schema=[wp, crumbs([('Home', ''), ('Sustainability', 'sustainability.html')])], og_img=hi)
 
 def network_sections():

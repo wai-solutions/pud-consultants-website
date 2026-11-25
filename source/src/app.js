@@ -317,3 +317,22 @@ const FORM_TO='inas.bakeer@wai-s.com';
 // insights: tap a decade bar to read its count
 (()=>{const bs=$$('.ibar');const out=$('.ibar-out');if(!bs.length)return;bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));if(out)out.textContent=b.dataset.d+': '+b.dataset.n+' projects'}));
   const last=bs[bs.length-1];last.click()})();
+
+// Stale-page guard: if the browser served an old cached copy, reload once with the fresh one.
+(function () {
+  try {
+    var m = document.querySelector('meta[name="pud-build"]');
+    if (!m || !window.fetch || location.protocol === 'file:') return;
+    var cur = m.content, key = 'pud-fresh:' + location.pathname;
+    fetch(location.pathname, { cache: 'no-store', credentials: 'same-origin' })
+      .then(function (r) { return r.ok ? r.text() : ''; })
+      .then(function (t) {
+        var x = /name="pud-build" content="([^"]+)"/.exec(t);
+        if (!x || x[1] === cur) return;
+        var done; try { done = sessionStorage.getItem(key) === x[1]; } catch (e) {}
+        if (done) return;
+        try { sessionStorage.setItem(key, x[1]); } catch (e) {}
+        location.reload();
+      }).catch(function () {});
+  } catch (e) {}
+})();
