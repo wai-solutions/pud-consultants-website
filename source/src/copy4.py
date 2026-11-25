@@ -116,3 +116,26 @@ NETWORK = [
 ]
 STRATEGY = ''
 STRATEGY_TAGS = []
+
+# The UN target (from sdgs.un.org) each goal card points to, paraphrased short.
+SDG_TARGET = {
+    7: ('7.3', 'Double the global rate of improvement in energy efficiency.'),
+    8: ('8.9', 'Promote sustainable tourism that creates jobs and promotes local culture and products.'),
+    9: ('9.1', 'Develop quality, reliable, sustainable and resilient infrastructure.'),
+    11: ('11.3', 'Inclusive, sustainable urbanisation and participatory, integrated planning.'),
+    12: ('12.b', 'Monitor the sustainable development impacts of tourism.'),
+    13: ('13.1', 'Strengthen resilience and adaptive capacity to climate hazards.'),
+    15: ('15.1', 'Conserve, restore and sustainably use land ecosystems.'),
+    17: ('17.17', 'Encourage effective public, public-private and civil society partnerships.'),
+}
+# Simple line icons drawn for PUD (not the official UN icons), 24x24, stroke = currentColor.
+SDG_ICON = {
+    7: '<circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>',
+    8: '<path d="M3 21h18M6 17v-4M11 17V9M16 17v-7"/><path d="M4 9l6-5 4 3 6-4M16 3h4v4"/>',
+    9: '<rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="8.5" y="4" width="7" height="7"/>',
+    11: '<path d="M3 21h18M5 21V9l5-3v15M10 21V4h6v17M16 21v-9h4v9M12.5 8h1M12.5 12h1M12.5 16h1M7 12h1M7 16h1"/>',
+    12: '<path d="M6.5 8.5C3 8.5 3 15.5 6.5 15.5S11 12 12 12s2.5 3.5 5.5 3.5 3.5-7 0-7S13 12 12 12 9.5 8.5 6.5 8.5z"/>',
+    13: '<circle cx="12" cy="12" r="9"/><path d="M3.5 9h17M3.5 15h17M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>',
+    15: '<path d="M12 21v-7M12 14l-4-3M12 16l4-3"/><path d="M12 3c4 0 7 3 7 7 0 3-3 5-7 5s-7-2-7-5c0-4 3-7 7-7z"/><path d="M8 21h8"/>',
+    17: '<circle cx="8" cy="12" r="5"/><circle cx="16" cy="12" r="5"/>',
+}
