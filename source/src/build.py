@@ -848,15 +848,11 @@ def insights_page():
     top = ''.join('<a class="irow" href="countries/%s.html"><span>%s</span><span class="irow-b" style="--w:%d%%"></span><b>%d</b></a>' % (cslug(c), E('UAE' if c == 'United Arab Emirates' else cname(c, True)), round(100 * len(ps) / len(cn[0][1])), len(ps)) for c, ps in cn[:6])
     news = ''.join('<li><b>%s</b><span><a href="%s">%s</a></span></li>' % (E(d), l, E(t)) for d, t, x, u, l in NEWS[:3])
     body = ('<section class="page-h ihero"><img class="ihero-im" src="assets/stills/pyramids-plateau-egypt.jpg" alt="" fetchpriority="high"><div class="wrap"><p class="kicker mono">Insights</p><h1 class="h-xl">Urban planning, <em>explained.</em></h1>'
-            '<p class="lede">Short guides from a practice that has planned cities, coasts and holy sites since 1966, with the numbers behind the work.</p></div></section>'
+            '<p class="lede">Short guides from a practice that has planned cities, coasts and holy sites since 1966.</p></div></section>'
             '<section class="sec" style="padding-top:30px"><div class="wrap"><div class="igrid">%s</div></div></section>'
-            '<section class="sec paper"><div class="wrap"><p class="kicker mono">The work in numbers</p><h2 class="h-l">Sixty years, <em>counted.</em></h2>'
-            '<div class="istats"><div><b data-count="1966">1966</b><span>Founded in Cairo</span></div><div><b>+12</b><span>Countries</span></div><div><b>+200</b><span>Global projects</span></div><div><b>%d</b><span>Projects with their own page</span></div></div>'
-            '<div class="icharts"><div><h3 class="h-m">Projects by decade</h3><p class="note">Tap a bar to see the count.</p><div class="ibars" role="group" aria-label="Projects by decade">%s</div><p class="ibar-out" aria-live="polite"></p></div>'
-            '<div><h3 class="h-m">Where the work is</h3><p class="note">Projects by country. Open a country for its projects.</p><div class="irows">%s</div></div></div></div></section>'
             '<section class="sec"><div class="wrap"><p class="kicker mono">Latest</p><h2 class="h-l">News and events.</h2><ul class="facts wide" style="margin-top:26px">%s</ul><p style="margin-top:24px"><a class="btn ghost" href="news.html">All news and events</a></p></div></section>'
-            ) % (cards, len(PROJ), bars, top, news) + cta('')
-    return page('insights.html', 'Urban Planning Explained: Plain Guides | PUD Consultants', body, 'Plain guides to urban planning, master planning and sustainable tourism from PUD Consultants, with the numbers behind sixty years of work in Egypt, Saudi Arabia and the region.', 'insights.html', schema=[crumbs([('Home', ''), ('Insights', 'insights.html')])], og_img='assets/stills/pyramids-plateau-egypt.jpg')
+            ) % (cards, news) + cta('')
+    return page('insights.html', 'Urban Planning Explained: Plain Guides | PUD Consultants', body, 'Plain guides to urban planning, master planning and sustainable tourism from PUD Consultants, a practice that has planned cities, coasts and holy sites since 1966.', 'insights.html', schema=[crumbs([('Home', ''), ('Insights', 'insights.html')])], og_img='assets/stills/pyramids-plateau-egypt.jpg')
 
 def article_page(a):
     R = '../'
