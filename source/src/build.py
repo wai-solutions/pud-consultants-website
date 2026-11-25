@@ -236,8 +236,8 @@ WEB = {'@context': 'https://schema.org', '@type': 'WebSite', '@id': BASE + '/#si
 
 # CT-002: the home hero uses the counts the site can show (countries and documented projects)
 AMR = load('data/amr.public.json', {})
-NAV = [('about.html', 'About'), ('projects.html', 'Projects'), ('60-years.html', '60 years'), ('people.html', 'People'), ('partners.html', 'Partners'), ('sustainability.html', 'Sustainability'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
-CHAPTERS = [('index.html', 'Home', 'Back to the start'), ('60-years.html', 'The 60-year story', 'Six decades of work'), ('people.html', 'The people', 'The founder and the practice'), ('projects.html', 'The work', 'Every project on one map'),
+NAV = [('about.html', 'About'), ('projects.html', 'Projects'), ('60-years.html', '60 years'), ('people.html', 'Leadership'), ('partners.html', 'Partners'), ('sustainability.html', 'Sustainability'), ('insights.html', 'Insights'), ('contact.html', 'Contact')]
+CHAPTERS = [('index.html', 'Home', 'Back to the start'), ('60-years.html', 'The 60-year story', 'Six decades of work'), ('people.html', 'Leadership', 'The founder and the practice'), ('projects.html', 'The work', 'Every project on one map'),
             ('about.html', 'Who we are', 'About, expertise and values'), ('partners.html', 'Who we plan with', 'Clients and partners'), ('contact.html', 'Talk to us', 'Five offices')]
 
 def fit(*c):
@@ -464,7 +464,7 @@ def culture_section():
     q = ' '.join('<span>%s</span>' % E(w) for w in words)
     vals = ''.join('<li><b>%s</b><span>%s</span></li>' % (E(a), E(b)) for a, b in VALUES)
     return ('<section class="sec culture"><div class="wrap"><p class="kicker mono" data-r>Our culture</p><blockquote class="cq"><p>%s</p><footer class="mono">Prof. Dr. Amr Attia, CEO</footer></blockquote>'
-            '<p style="margin-top:34px"><a class="btn ghost" href="people.html">Meet our people</a></p></div></section>') % q
+            '<p style="margin-top:34px"><a class="btn ghost" href="people.html">Meet our leadership</a></p></div></section>') % q
 
 SUSTAIN = [('People', 'Places designed around people: human-scale streets, shade, walkability and public space.'),
            ('Society', 'Inclusive, affordable and connected neighbourhoods that give every generation a place to belong.'),
@@ -565,7 +565,7 @@ def story():
 def people():
     f = ''.join('<li><b>%s</b><span>%s</span></li>' % (a, E(b)) for a, b in sorted(FOUNDER_FACTS))
     loved = ''.join(card(BYSLUG[s], '', tag=lab.split(',')[0]) for s, lab in FOUNDER_LOVED if s in BYSLUG)
-    body = ('<section class="page-h"><div class="wrap"><p class="kicker">People</p><h1 class="h-xl" style="max-width:16ch">Two generations <em>lead PUD.</em></h1><p class="lede"><a href="abdallah-attia.html">Prof. Dr. Abdallah Attia</a> founded the practice in 1966. <a href="amr-attia.html">Prof. Dr. Amr Attia</a> leads it today. <a href="partners.html#team">Meet the key staff</a></p></div></section>'
+    body = ('<section class="page-h"><div class="wrap"><p class="kicker">Leadership</p><h1 class="h-xl" style="max-width:16ch">Two generations <em>lead PUD.</em></h1><p class="lede"><a href="abdallah-attia.html">Prof. Dr. Abdallah Attia</a> founded the practice in 1966. <a href="amr-attia.html">Prof. Dr. Amr Attia</a> leads it today. <a href="partners.html#team">Meet the key staff</a></p></div></section>'
         '<section class="sec founder" id="abdallah-attia" style="padding-top:70px"><div class="wrap"><div class="grid2" style="align-items:start">%s'
         '<div><p class="kicker">The founder</p><h2 class="h-l">Prof. Dr. Abdallah Attia</h2><p class="p-l" style="margin-top:16px;color:#fff">%s</p><p class="p-l" style="margin-top:14px">%s</p><ul class="facts">%s</ul>'
         '<p class="note">Footage is an illustrative recreation made for the 60-year celebration, not archive film.</p><p style="margin-top:22px"><a class="btn ghost" href="abdallah-attia.html">Read his page</a></p></div></div>'
@@ -574,9 +574,9 @@ def people():
         founder_block(), E(FOUNDER_LEAD), E(FOUNDER_BIO), f, E(FOUNDER_LOVED_NOTE), loved, amr_photo('', 'light'), E(AMR_HEADLINE), stat_tiles(AMR_TILES)) + chapter(2)
     vals = '<section class="sec culture" style="padding-top:10px;padding-bottom:30px"><div class="wrap"><p class="trio mono" style="margin-top:0">Leadership · Harmony · Clarity</p><ul class="vals">%s</ul></div></section>' % ''.join('<li><b>%s</b><span>%s</span></li>' % (E(a_), E(b_)) for a_, b_ in VALUES)
     body = body.replace('</section>', '</section>' + vals, 1)
-    pers = [{'@context': 'https://schema.org', '@type': 'ProfilePage', 'url': BASE + '/people.html', 'name': 'People of PUD Consultants', 'hasPart': [{'@id': BASE + '/abdallah-attia.html#person'}, {'@id': BASE + '/amr-attia.html#amr-attia'}]}]
-    return page('people.html', 'Prof. Dr. Abdallah Attia and Prof. Dr. Amr Attia | PUD Consultants', body, 'Meet Prof. Dr. Abdallah Attia, who founded PUD in Cairo in 1966, and Prof. Dr. Amr Attia, his son, who leads the practice today.', 'people.html',
-                schema=pers + [crumbs([('Home', ''), ('People', 'people.html')])])
+    pers = [{'@context': 'https://schema.org', '@type': 'ProfilePage', 'url': BASE + '/people.html', 'name': 'Leadership of PUD Consultants', 'hasPart': [{'@id': BASE + '/abdallah-attia.html#person'}, {'@id': BASE + '/amr-attia.html#amr-attia'}]}]
+    return page('people.html', 'Leadership: Prof. Dr. Abdallah Attia and Prof. Dr. Amr Attia | PUD', body, 'Meet Prof. Dr. Abdallah Attia, who founded PUD in Cairo in 1966, and Prof. Dr. Amr Attia, his son, who leads the practice today.', 'people.html',
+                schema=pers + [crumbs([('Home', ''), ('Leadership', 'people.html')])])
 
 
 
@@ -584,7 +584,7 @@ def founder_page():
     # SE-005: the founder gets his own page and the Person entity
     f = ''.join('<li><b>%s</b><span>%s</span></li>' % (a, E(b_)) for a, b_ in sorted(FOUNDER_FACTS))
     loved = ''.join(card(BYSLUG[s], '', tag=lab.split(',')[0]) for s, lab in FOUNDER_LOVED if s in BYSLUG)
-    body = ('<section class="page-h"><div class="wrap"><p class="crumb"><a href="people.html">People</a></p><p class="kicker">Founder, 1966</p><h1 class="h-xl">Prof. Dr. Abdallah Attia</h1><p class="lede" style="max-width:52ch">%s</p></div></section>'
+    body = ('<section class="page-h"><div class="wrap"><p class="crumb"><a href="people.html">Leadership</a></p><p class="kicker">Founder, 1966</p><h1 class="h-xl">Prof. Dr. Abdallah Attia</h1><p class="lede" style="max-width:52ch">%s</p></div></section>'
             '<section class="sec founder" style="padding-top:30px"><div class="wrap"><div class="grid2" style="align-items:start">%s<div><p class="p-l">%s</p>'
             '<details class="more" open><summary>Education and posts</summary><ul class="facts">%s</ul></details>'
             '<p class="note">The footage is an illustrative recreation made for the 60-year celebration. It is not archive film.</p></div></div>'
@@ -599,7 +599,7 @@ def founder_page():
             'award': 'State Encouragement Prize in Architecture (1990), for Marina El Alamein'}
     return page('abdallah-attia.html', 'Prof. Dr. Abdallah Attia | Founder of PUD Consultants', body,
                 'Prof. Dr. Abdallah Attia, architect and professor, founded PUD Consultants in Cairo in 1966. Marina El Alamein, Tut Amun and Hilton Dahab are among his best-known work.', 'people.html',
-                schema=[pers, crumbs([('Home', ''), ('People', 'people.html'), ('Abdallah Attia', 'abdallah-attia.html')])], og_img='assets/founder/draw.jpg', og_type='profile', og_alt='Prof. Dr. Abdallah Attia at work, illustrative recreation')
+                schema=[pers, crumbs([('Home', ''), ('Leadership', 'people.html'), ('Abdallah Attia', 'abdallah-attia.html')])], og_img='assets/founder/draw.jpg', og_type='profile', og_alt='Prof. Dr. Abdallah Attia at work, illustrative recreation')
 
 def amr_photo(R='', cls=''):
     pri = ' fetchpriority="high"' if cls == 'lead' else ' loading="lazy"'  # PA-021: the portrait is the LCP image on his page
@@ -635,7 +635,7 @@ def amr_page():
     leadrows = rows(lead_items, lambda x: E(x['text']) + src(x.get('source')))
     career = rows(A.get('education', []) + A.get('roles', []), lambda x: E(x['text']) + src(x.get('source')))
     media = ''.join('<li><b>%s</b><span><a class="srcl" style="margin:0" href="%s" target="_blank" rel="noopener">%s</a> &middot; %s</span></li>' % (E(str(x.get('year') or '')), E(re.search(r'https?://[^\s;,)\]]+', x['url']).group(0)), E(x['outlet']), E(re.sub(r'\s*\((?:rotating|the URL|names)[^)]*\)', '', x['title']))) for x in A.get('press_and_media', []))
-    body = ('<section class="page-h" id="amr-attia"><div class="wrap grid2 amrg"><div><p class="crumb"><a href="people.html">People</a></p><p class="kicker">Leadership</p><h1 class="h-xl" style="max-width:15ch">Prof. Dr. Amr Attia</h1><p class="lede" style="max-width:34ch">%s</p></div><div>%s</div></div></section>'
+    body = ('<section class="page-h" id="amr-attia"><div class="wrap grid2 amrg"><div><p class="crumb"><a href="people.html">Leadership</a></p><p class="kicker">Leadership</p><h1 class="h-xl" style="max-width:15ch">Prof. Dr. Amr Attia</h1><p class="lede" style="max-width:34ch">%s</p></div><div>%s</div></div></section>'
             '<section class="sec" style="padding-top:20px"><div class="wrap"><nav class="jump" aria-label="On this page"><a class="chip" href="#selected-work">Selected work</a><a class="chip" href="#on-stage">On stage</a><a class="chip" href="#recognition">Recognition</a><a class="chip" href="#research">Research and teaching</a></nav>%s<div class="narrow2">%s</div>'
             '<h2 class="h-m" id="selected-work" style="margin-top:70px">Selected work</h2><div class="pgrid">%s</div>'
             '<h2 class="h-m" id="roles" style="margin-top:70px">Roles and projects</h2><ul class="facts wide">%s</ul>'
@@ -648,7 +648,7 @@ def amr_page():
             '</div></section>') % (E(AMR_HEADLINE), amr_photo('', 'lead'), stat_tiles(AMR_TILES), paras, amr_work('', 6), leadrows, spot, stage, recog, giza, research, career, media) + cta('') + chapter(2)
     pers = {'@context': 'https://schema.org', '@type': 'Person', '@id': BASE + '/amr-attia.html#amr-attia', 'name': 'Amr Attia', 'honorificPrefix': 'Prof. Dr.', 'alternateName': 'Amr A. Attia', 'jobTitle': 'CEO and Principal, PUD Consultants; Professor of Urban Planning, Ain Shams University', 'worksFor': {'@id': BASE + '/#org'}, 'affiliation': {'@type': 'CollegeOrUniversity', 'name': 'Ain Shams University'}, 'url': BASE + '/amr-attia.html', 'image': BASE + '/assets/people/amr-attia.jpg',
             'alumniOf': {'@type': 'CollegeOrUniversity', 'name': 'University College London'}, 'sameAs': ['https://www.linkedin.com/in/amr-attia-9181898/', 'https://share-architects.com/speaker/amr-attia/', 'https://eng.asu.edu.eg/staff/Amr.Attia']}
-    return page('amr-attia.html', 'Prof. Dr. Amr Attia | Urban Planner, PUD Consultants', body, 'Prof. Dr. Amr Attia leads PUD Consultants and teaches urban planning at Ain Shams University. Eisenhower Fellow. Board Chairman of SHARE Egypt 2026.', 'people.html', schema=[pers, crumbs([('Home', ''), ('People', 'people.html'), ('Amr Attia', 'amr-attia.html')])], og_img='assets/people/amr-attia.jpg', og_type='profile', og_alt='Prof. Dr. Amr Attia')
+    return page('amr-attia.html', 'Prof. Dr. Amr Attia | Urban Planner, PUD Consultants', body, 'Prof. Dr. Amr Attia leads PUD Consultants and teaches urban planning at Ain Shams University. Eisenhower Fellow. Board Chairman of SHARE Egypt 2026.', 'people.html', schema=[pers, crumbs([('Home', ''), ('Leadership', 'people.html'), ('Amr Attia', 'amr-attia.html')])], og_img='assets/people/amr-attia.jpg', og_type='profile', og_alt='Prof. Dr. Amr Attia')
 
 def expertise_filters():
     n = {x['slug']: sum(1 for p in PROJ if x['slug'] in svc_of(p)) for x in SERVICES}
