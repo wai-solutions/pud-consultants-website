@@ -1277,7 +1277,7 @@ h1,h2,.h-xl,.h-l{text-wrap:balance}
 /* UI-008 / UI-016: inactive services readable; no meaningless numbers */
 .svx-list.scrolly.hov li{opacity:.6}
 .svx .svx-list li:not(.on) b{color:#a3a3a3}
-.svx-list .n,.svx .svx-list .n{display:none!important}
+.svx-list .n,.svx .svx-list .n{visibility:hidden!important}
 /* UI-015 / PA-017: no text under 12px */
 .ap-cap{font-size:12px!important}
 .favtag{font-size:13px!important;letter-spacing:0!important;text-transform:none!important}
@@ -1347,3 +1347,12 @@ footer.f3 h2.f3-h{font-family:var(--sans);font-size:13px;font-weight:600;color:#
 .offices .maps{font-size:15px}
 @media(max-width:700px){.hero .kicker{display:none}.pause-motion{top:calc(var(--banner-h,0px) + 84px);bottom:auto;font-size:13px;min-height:40px}}
 @media(min-width:801px){section.stage.depth{min-height:100vh}}
+
+/* v13 (25 Nov): no scroll-driven image motion, so photos stay still while scrolling */
+[data-px]{translate:none!important}
+.hsx .hs-card img,.bento .pcard img{transform:scale(1.04)!important;transition:none!important}
+.dz-bg img{transform:scale(1.04)!important}
+.svx .svx-list.scrolly li.on .mbg,.svx .svx-list .mbg{transform:none!important}
+.svx-frame{transform:none!important}
+.pause-motion{right:calc(var(--gut) + 84px)}
+@media(max-width:700px){.pause-motion{right:var(--gut)}}
