@@ -1154,8 +1154,17 @@ def sustainability_page():
         five += ('<article class="resp%s"><div class="resp-t"><p class="n mono">%02d · %s</p><h3 class="h-m">%s</h3><p class="p-l">%s</p></div>'
                  '<a class="figure" href="projects/%s.html"><img src="%s" alt="%s" loading="lazy"%s><span class="mono">%s &rarr;</span></a></article>') % (' flip' if i % 2 else '', i + 1, E(th), E(h), E(t), slug, im, E(cap.replace(' · ', ', ')), wh(im), E(cap))
     SDGC = {7: '#FCC30B', 8: '#A21942', 9: '#FD6925', 11: '#FD9D24', 12: '#BF8B2E', 13: '#3F7E44', 15: '#56C02B', 17: '#19486A'}
-    sdg = ''.join('<li style="--sdg:%s"><span class="sdg-n">%d</span><b>%s</b><span class="un">%s</span><span class="pud"><em class="mono">PUD</em> %s</span><span class="sdg-p">%s</span></li>' % (
-        SDGC.get(n, '#333'), n, E(g), E(u), E(p), ' '.join('<a href="projects/%s.html">%s &rarr;</a>' % (s_, E(BYSLUG[s_]['name'])) for s_ in sl if s_ in BYSLUG)) for n, g, u, p, sl in SDGS)
+    def sdg_card(n, g, u, p, sl):
+        tn, tt = SDG_TARGET.get(n, ('', ''))
+        links = ' '.join('<a href="projects/%s.html">%s &rarr;</a>' % (s_, E(BYSLUG[s_]['name'])) for s_ in sl if s_ in BYSLUG)
+        return ('<li style="--sdg:%s"><span class="sdg-top"><span class="sdg-n">%d</span>'
+                '<svg class="sdg-i" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">%s</svg></span>'
+                '<b>%s</b><span class="un">%s</span>'
+                '<span class="sdg-t"><em class="mono">UN target %s</em> %s</span>'
+                '<span class="pud"><em class="mono">PUD</em> %s</span><span class="sdg-p">%s</span>'
+                '<a class="sdg-un" href="https://sdgs.un.org/goals/goal%d" target="_blank" rel="noopener">Goal %d on the UN site &#8599;</a></li>') % (
+            SDGC.get(n, '#333'), n, SDG_ICON.get(n, ''), E(g), E(u), tn, E(tt), E(p), links, n, n)
+    sdg = ''.join(sdg_card(*x) for x in SDGS)
     lens = ''.join('<li>%s</li>' % E(x) for x in SUS_LENS)
     def scard(slug):
         p = BYSLUG[slug]; im = SUS_IMG.get(slug) or hero_img(slug)
